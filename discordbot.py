@@ -69,7 +69,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="pa" and v['data'][1]=="P&A"):
                     u.append(v)
-                else: u.append(v)
+                elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="11"):
                 if(op2=="or" and v['data'][1]=="ORI"):
                     u.append(v)
@@ -85,7 +85,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="pa" and v['data'][1]=="P&A"):
                     u.append(v)
-                else: u.append(v)
+                elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="11+"):
                 if(v['diff']!="11"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -102,7 +102,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="12"):
                 if(v['diff']!="11" or v['diff']!="11+"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -119,7 +119,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="12+"):
                 if(v['diff']!="11" or v['diff']!="11+" or v['diff']!="12"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -136,7 +136,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="13"):
                 if(v['diff']!="11" or v['diff']!="11+" or v['diff']!="12" or v['diff']!="12+"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -153,7 +153,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="13+"):
                 if(v['diff']!="11" or v['diff']!="11+" or v['diff']!="12" or v['diff']!="12+" or v['diff']!="13"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -170,7 +170,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="14"):
                 if(v['diff']=="14" or v['diff']=="14+" or v['diff']=="15" or v['diff']=="15+"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -187,7 +187,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="14+"):
                 if(v['diff']=="14+" or v['diff']=="15" or v['diff']=="15+"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -204,7 +204,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="15"):
                 if(v['diff']=="15" or v['diff']=="15+"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -221,7 +221,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="15+"):
                 if(v['diff']=="15+"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -238,7 +238,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="15+"):
                 if(op2=="or" and v['data'][1]=="ORI"):
                     u.append(v)
@@ -254,7 +254,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="pa" and v['data'][1]=="P&A"):
                     u.append(v)
-                else: u.append(v)
+                elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="15"):
                 if(v['diff']!="15+"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -271,7 +271,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="14+"):
                 if(v['diff']!="15" or v['diff']!="15+"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -288,7 +288,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="14"):
                 if(v['diff']!="14+" or v['diff']!="15" or v['diff']!="15+"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -305,7 +305,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="13+"):
                 if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12" or v['diff']=="12+" or v['diff']=="13" or v['diff']=="13+"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -322,7 +322,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="13"):
                 if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12" or v['diff']=="12+" or v['diff']=="13"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -339,7 +339,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="12+"):
                 if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12" or v['diff']=="12+"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -356,7 +356,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="12"):
                 if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -373,7 +373,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="11+"):
                 if(v['diff']=="11" or v['diff']=="11+"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -390,7 +390,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="11"):
                 if(v['diff']=="11"):
                     if(op2=="or" and v['data'][1]=="ORI"):
@@ -407,7 +407,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
-                    else: u.append(v)
+                    elif(op2=="no"): u.append(v)
                 #u2.append(v['diff'])
                 #u3.append(v['data'][0])
                 #u4.append(v['data'][1])
