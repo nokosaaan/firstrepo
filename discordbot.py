@@ -42,7 +42,7 @@ async def roll(ctx, dice: str):
     await ctx.send(result)
 
 @bot.command()
-async def omi(ctx, game: str, diff: str, op: str):
+async def omi(ctx, game: str, diff: str, op: str, op2: str):
     """Randomly select 3 songs from that game"""
     if(game=='c'):
         f = open("data.json", 'r')
@@ -55,79 +55,359 @@ async def omi(ctx, game: str, diff: str, op: str):
         #u5=[]
         for v in json_data.values():
             if(op=="s" and v['diff']==diff):
-                u.append(v)
+                if(op2=="or" and v['data'][1]=="ORI"):
+                    u.append(v)
+                elif(op2=="ge" and v['data'][1]=="撃舞"):
+                    u.append(v)
+                elif(op2=="ir" and v['data'][1]=="イロ"):
+                    u.append(v)
+                elif(op2=="va" and v['data'][1]=="VAR"):
+                    u.append(v)
+                elif(op2=="to" and v['data'][1]=="東方"):
+                    u.append(v)
+                elif(op2=="ni" and v['data'][1]=="nico"):
+                    u.append(v)
+                elif(op2=="pa" and v['data'][1]=="P&A"):
+                    u.append(v)
+                else: u.append(v)
             elif(op=="h" and diff=="11"):
-                u.append(v)
+                if(op2=="or" and v['data'][1]=="ORI"):
+                    u.append(v)
+                elif(op2=="ge" and v['data'][1]=="撃舞"):
+                    u.append(v)
+                elif(op2=="ir" and v['data'][1]=="イロ"):
+                    u.append(v)
+                elif(op2=="va" and v['data'][1]=="VAR"):
+                    u.append(v)
+                elif(op2=="to" and v['data'][1]=="東方"):
+                    u.append(v)
+                elif(op2=="ni" and v['data'][1]=="nico"):
+                    u.append(v)
+                elif(op2=="pa" and v['data'][1]=="P&A"):
+                    u.append(v)
+                else: u.append(v)
             elif(op=="h" and diff=="11+"):
                 if(v['diff']!="11"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="h" and diff=="12"):
                 if(v['diff']!="11" or v['diff']!="11+"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="h" and diff=="12+"):
                 if(v['diff']!="11" or v['diff']!="11+" or v['diff']!="12"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="h" and diff=="13"):
                 if(v['diff']!="11" or v['diff']!="11+" or v['diff']!="12" or v['diff']!="12+"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="h" and diff=="13+"):
                 if(v['diff']!="11" or v['diff']!="11+" or v['diff']!="12" or v['diff']!="12+" or v['diff']!="13"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="h" and diff=="14"):
                 if(v['diff']=="14" or v['diff']=="14+" or v['diff']=="15" or v['diff']=="15+"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="h" and diff=="14+"):
                 if(v['diff']=="14+" or v['diff']=="15" or v['diff']=="15+"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="h" and diff=="15"):
                 if(v['diff']=="15" or v['diff']=="15+"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="h" and diff=="15+"):
                 if(v['diff']=="15+"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="l" and diff=="15+"):
-                u.append(v)
-            elif(op=="h" and diff=="15"):
-                if(v['diff']!="15+"):
+                if(op2=="or" and v['data'][1]=="ORI"):
                     u.append(v)
+                elif(op2=="ge" and v['data'][1]=="撃舞"):
+                    u.append(v)
+                elif(op2=="ir" and v['data'][1]=="イロ"):
+                    u.append(v)
+                elif(op2=="va" and v['data'][1]=="VAR"):
+                    u.append(v)
+                elif(op2=="to" and v['data'][1]=="東方"):
+                    u.append(v)
+                elif(op2=="ni" and v['data'][1]=="nico"):
+                    u.append(v)
+                elif(op2=="pa" and v['data'][1]=="P&A"):
+                    u.append(v)
+                else: u.append(v)
+            elif(op=="l" and diff=="15"):
+                if(v['diff']!="15+"):
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="l" and diff=="14+"):
                 if(v['diff']!="15" or v['diff']!="15+"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="l" and diff=="14"):
                 if(v['diff']!="14+" or v['diff']!="15" or v['diff']!="15+"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="l" and diff=="13+"):
                 if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12" or v['diff']=="12+" or v['diff']=="13" or v['diff']=="13+"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="l" and diff=="13"):
                 if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12" or v['diff']=="12+" or v['diff']=="13"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="l" and diff=="12+"):
                 if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12" or v['diff']=="12+"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="l" and diff=="12"):
                 if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="l" and diff=="11+"):
                 if(v['diff']=="11" or v['diff']=="11+"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
             elif(op=="l" and diff=="11"):
                 if(v['diff']=="11"):
-                    u.append(v)
-            elif(op=="or" and v['data'][0]=="ORI"):
-                    u.append(v)
-            elif(op=="ge" and v['data'][0]=="撃舞"):
-                    u.append(v)
-            elif(op=="ir" and v['data'][0]=="イロ"):
-                    u.append(v)
-            elif(op=="va" and v['data'][0]=="VAR"):
-                    u.append(v)
-            elif(op=="to" and v['data'][0]=="東方"):
-                    u.append(v)
-            elif(op=="ni" and v['data'][0]=="nico"):
-                    u.append(v)
-            elif(op=="pa" and v['data'][0]=="P&A"):
-                    u.append(v)
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    else: u.append(v)
                 #u2.append(v['diff'])
                 #u3.append(v['data'][0])
                 #u4.append(v['data'][1])
