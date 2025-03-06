@@ -114,6 +114,20 @@ async def omi(ctx, game: str, diff: str, op: str):
             elif(op=="l" and diff=="11"):
                 if(v['diff']=="11"):
                     u.append(v)
+            elif(op=="or" and v['data'][0]=="ORI"):
+                    u.append(v)
+            elif(op=="ge" and v['data'][0]=="撃舞"):
+                    u.append(v)
+            elif(op=="ir" and v['data'][0]=="イロ"):
+                    u.append(v)
+            elif(op=="va" and v['data'][0]=="VAR"):
+                    u.append(v)
+            elif(op=="to" and v['data'][0]=="東方"):
+                    u.append(v)
+            elif(op=="ni" and v['data'][0]=="nico"):
+                    u.append(v)
+            elif(op=="pa" and v['data'][0]=="P&A"):
+                    u.append(v)
                 #u2.append(v['diff'])
                 #u3.append(v['data'][0])
                 #u4.append(v['data'][1])
