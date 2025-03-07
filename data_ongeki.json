@@ -9052,5 +9052,1643 @@
 			"15.7"
 		],
 		"diff": "15+"
+	},
+	"1007": {
+		"name": "天ノ弱",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1008": {
+		"name": "千本桜",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1009": {
+		"name": "炉心融解",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1010": {
+		"name": "Snow Fairy Story",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1011": {
+		"name": "月に叢雲華に風",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1012": {
+		"name": "君のStarlight Road",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1013": {
+		"name": "青空コントレール",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1014": {
+		"name": "ヒアソビ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1015": {
+		"name": "ナイト・オブ・ナイツ (xi Remix)",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1016": {
+		"name": "U.N.オーエンは彼女なのか？ - Greater Scarlet",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1017": {
+		"name": "FREEDOM DiVE (tpz Overcute Remix)",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1018": {
+		"name": "ENERGY SYNERGY MATRIX",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1019": {
+		"name": "音弾超人ゴリライザー",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1020": {
+		"name": "U.A.D",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1021": {
+		"name": "World Vanquisher",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1022": {
+		"name": "宙の隣",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1023": {
+		"name": "つっぱれ！にゃんきー魂",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1024": {
+		"name": "Last Kingdom",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1025": {
+		"name": "ICEBURN",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1026": {
+		"name": "Vibes 2k20 (owl＊aging remix)",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1027": {
+		"name": "Rhythm of Love",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1028": {
+		"name": "ブレス・ユア・ブレス",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1029": {
+		"name": "乙女解剖",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1030": {
+		"name": "GO！GO！ラブリズム♥",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1031": {
+		"name": "タテマエと本心の大乱闘",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1032": {
+		"name": "偉大なる悪魔は実は大天使パトラちゃん様なのだ！",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1033": {
+		"name": "snooze",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1034": {
+		"name": "c.s.q.n.",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1035": {
+		"name": "In Chaos",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1036": {
+		"name": "アルカンシエル",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1037": {
+		"name": "エンドマークに希望と涙を添えて",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1038": {
+		"name": "Climax",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1039": {
+		"name": "シャッキーーン！！",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1040": {
+		"name": "ここからはじまるプロローグ。",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1041": {
+		"name": "C & B",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1042": {
+		"name": "ガチ恋ラビリンス",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1043": {
+		"name": "Sparkle",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1044": {
+		"name": "DAWNBREAKER",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1045": {
+		"name": "fulgente (flip-side color mix)",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1046": {
+		"name": "Suspiro",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1047": {
+		"name": "ロッキンピンクモンスター (豚乙女ランコVoVer.)",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1048": {
+		"name": "Dramatic…?",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1049": {
+		"name": "はっぴ〜しゅ〜てぃんぐすた〜",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1050": {
+		"name": "Hand in Hand",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1051": {
+		"name": "Sentimental Snow",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1052": {
+		"name": "INTERNET YAMERO",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1053": {
+		"name": "カミサマネジマキ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1054": {
+		"name": "初音ミクの消失",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1055": {
+		"name": "星界ちゃんと可不ちゃんのおつかい合騒曲",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1056": {
+		"name": "ウサテイ",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1057": {
+		"name": "LUNA DIAL -Version X-SAKUYA-",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1058": {
+		"name": "レータイスパークEx",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1059": {
+		"name": "felys -final remix-",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1060": {
+		"name": "エピトゥリカの祀",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1061": {
+		"name": "Singularity -MJ-",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1062": {
+		"name": "ニニ",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1063": {
+		"name": "BLUE ZONE",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1064": {
+		"name": "Electric Emotion",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1065": {
+		"name": "Quon",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1066": {
+		"name": "7thSense",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1067": {
+		"name": "Summer is over",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1068": {
+		"name": "四月の雨",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1069": {
+		"name": "CHOCOLATE BOMB!!!!",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1070": {
+		"name": "花と、雪と、ドラムンベース。",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1071": {
+		"name": "Touch and Go",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1072": {
+		"name": "Lostwizz",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1073": {
+		"name": "LiftOff",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1074": {
+		"name": "Ruler Count, Zero",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1075": {
+		"name": "天つ風",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1076": {
+		"name": "MY GLORY WANTED!!!",
+		"data": [
+			"ADVANCED",
+			"オンゲキ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1077": {
+		"name": "電脳少女は歌姫の夢を見るか？",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1078": {
+		"name": "Imperishable Night 2006 (2016 Refine)",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1079": {
+		"name": "Satori ～3rd EyEs (2020 Recall)",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1080": {
+		"name": "Dreadnought",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1081": {
+		"name": "僕たちの旅とエピローグ。",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1082": {
+		"name": "CO5M1C R4ILR0AD",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1083": {
+		"name": "Löschen",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1084": {
+		"name": "YO-KAI Disco",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1085": {
+		"name": "Oshama Scramble! (Cranky Remix)",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1086": {
+		"name": "U ARE",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1087": {
+		"name": "Lazy Addiction",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1088": {
+		"name": "撩乱乙女†無双劇",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1089": {
+		"name": "Perfect Shining!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1090": {
+		"name": "みんな Happy!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1091": {
+		"name": "GOODRAGE",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1092": {
+		"name": "花たちに希望を",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1093": {
+		"name": "Singularity -ETIA-",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1094": {
+		"name": "OBLIVION",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1095": {
+		"name": "folern",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1096": {
+		"name": "ヤミツキ",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1097": {
+		"name": "月詠に鳴る",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1098": {
+		"name": "Radiance",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1099": {
+		"name": "アマツカミ",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1100": {
+		"name": "All Right!",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1101": {
+		"name": "Random Access Emotions",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1102": {
+		"name": "いちげき！のテーマ",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1103": {
+		"name": "Cream+Mint",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1104": {
+		"name": "檄!帝国華撃団",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1105": {
+		"name": "First Twinkle",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1106": {
+		"name": "カナリア",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1107": {
+		"name": "アンチグラビティ・ガール",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1108": {
+		"name": "パラジクロロベンゼン",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1109": {
+		"name": "疾走あんさんぶる",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1110": {
+		"name": "Bad Apple!! feat.nomico (Camellia’s “Bad Psy” Remix)",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1111": {
+		"name": "conflict",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1112": {
+		"name": "Destr0yer",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1113": {
+		"name": "迷える音色は恋の唄",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1114": {
+		"name": "Dement ～after legend～",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1115": {
+		"name": "MUSIC PЯAYER",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1116": {
+		"name": "Baqeela",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1117": {
+		"name": "ludicium \"Apocalypsis Mix\"",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1118": {
+		"name": "Daredevil Glaive",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1119": {
+		"name": "ゲーミングポーラーベア",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1120": {
+		"name": "Elusive Emotes",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1121": {
+		"name": "超前進！満点スマイル！",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1122": {
+		"name": "μ3",
+		"data": [
+			"ADVANCED",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1123": {
+		"name": "Lost Princess",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1124": {
+		"name": "なんどでも笑おう",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1125": {
+		"name": "恋のイリュージョニスタ",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1126": {
+		"name": "get the regret over",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1127": {
+		"name": "アンハッピーリフレイン",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1128": {
+		"name": "人生リセットボタン",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1129": {
+		"name": "裏表ラバーズ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1130": {
+		"name": "イカサマライフゲイム",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1131": {
+		"name": "初音天地開闢神話",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1132": {
+		"name": "ポジティブ☆ダンスタイム",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1133": {
+		"name": "断罪は遍く人間の元に",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1134": {
+		"name": "Party 4U \"holy nite mix\"",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1135": {
+		"name": "BOKUTO",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1136": {
+		"name": "Paradisoda",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1137": {
+		"name": "STARTLINER",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1138": {
+		"name": "HEAVEN'S RAVE",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1139": {
+		"name": "夜咄ディセイブ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1140": {
+		"name": "ジャンキーナイトタウンオーケストラ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1141": {
+		"name": "タイガーランペイジ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1142": {
+		"name": "孤独の果て",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1143": {
+		"name": "ロストワードクロニカル",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1144": {
+		"name": "Singing to the gods",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1145": {
+		"name": "Hyper Active",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1146": {
+		"name": "Death Doll",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1147": {
+		"name": "Skip & Smile!!",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1148": {
+		"name": "STARRED HEART",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1149": {
+		"name": "君よ",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1150": {
+		"name": "オートファジー",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1151": {
+		"name": "Doll Judgment",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1152": {
+		"name": "物凄い狂っとるフランちゃんが物凄いうた",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1153": {
+		"name": "神々が恋した幻想郷",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1154": {
+		"name": "Cutter",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1155": {
+		"name": "まりもとおもちゃ箱",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1156": {
+		"name": "夢を叶える場所",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1157": {
+		"name": "Event Horizon",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1158": {
+		"name": "Let Me Know (feat. Masayoshi Iimori)",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11"
+		],
+		"diff": ""
+	},
+	"1159": {
+		"name": "INTERNET OVERDOSE",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11"
+		],
+		"diff": ""
+	},
+	"1160": {
+		"name": "Lots of love",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11"
+		],
+		"diff": ""
+	},
+	"1161": {
+		"name": "Faith in Expression",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11"
+		],
+		"diff": ""
+	},
+	"1162": {
+		"name": "On your mark (104期 Ver.)",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11"
+		],
+		"diff": ""
+	},
+	"1163": {
+		"name": "初音ミクの激唱",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11"
+		],
+		"diff": ""
+	},
+	"1164": {
+		"name": "こどものしくみ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11"
+		],
+		"diff": ""
+	},
+	"1165": {
+		"name": "アンノウン・マザーグース",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11"
+		],
+		"diff": ""
+	},
+	"1166": {
+		"name": "ステラ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11"
+		],
+		"diff": ""
+	},
+	"1167": {
+		"name": "患部で止まってすぐ溶ける～狂気の優曇華院",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11"
+		],
+		"diff": ""
+	},
+	"1168": {
+		"name": "Burning Steel Inferno",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11"
+		],
+		"diff": ""
+	},
+	"1169": {
+		"name": "Small Cloud Sugar Candy",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11"
+		],
+		"diff": ""
+	},
+	"1170": {
+		"name": "AMAZING MIGHTYYYY!!!!",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1171": {
+		"name": "Change Our MIRAI！（Our 7 Lights）",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1172": {
+		"name": "足立オウフwwww",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1173": {
+		"name": "L'epilogue",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1174": {
+		"name": "とびだせ！TO THE COSMIC!!",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1175": {
+		"name": "Imitation:Loud Lounge",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1176": {
+		"name": "Candy Tall Woman",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1177": {
+		"name": "Rainbow Rush Story",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1178": {
+		"name": "群青シグナル",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1179": {
+		"name": "Ai Nov",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1180": {
+		"name": "Honey Bear",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1181": {
+		"name": "STARRED HEART",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1182": {
+		"name": "give it up to you",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1183": {
+		"name": "おやすみのうた",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1184": {
+		"name": "いつか花咲くその前に",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1185": {
+		"name": "ヒストリー×ブレイカー",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1186": {
+		"name": "Memories of O.N.G.E.K.I.",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1187": {
+		"name": "Livmetarryr",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1188": {
+		"name": "FestA of PandemoniuM",
+		"data": [
+			"ADVANCED",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
 	}
 }

@@ -13570,5 +13570,266 @@
             "15.7"
         ],
         "diff":"15+"
-    }
+    },
+    "1508": {
+		"name": "ENDYMION",
+		"data": [
+			"EXP",
+			"VAR",
+			"14.5"
+		],
+		"diff": "14+"
+	},
+	"1509": {
+		"name": "祈 -我ら神祖と共に歩む者なり-",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.5"
+		],
+		"diff": "14+"
+	},
+	"1510": {
+		"name": "MALKUTH -The Last Ruler of Terrestrials-",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.5"
+		],
+		"diff": "14+"
+	},
+	"1511": {
+		"name": "Forsaken Tale",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.5"
+		],
+		"diff": "14+"
+	},
+	"1512": {
+		"name": "Aether Crest: Celestial",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"1513": {
+		"name": "混沌を越えし我らが神聖なる調律主を讃えよ",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"1514": {
+		"name": "Disruptor Array",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"1515": {
+		"name": "Daphnis",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"1516": {
+		"name": "Ultimate Force",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"1517": {
+		"name": "To：Be Continued",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"1518": {
+		"name": "ラストピースに祝福と栄光を",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"1519": {
+		"name": "Killing Rhythm",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"1520": {
+		"name": "X7124",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"1521": {
+		"name": "DA’AT -The First Seeker of Souls-",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"1522": {
+		"name": "Chaotic Ørder",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"1523": {
+		"name": "Tuatha Dé Danann",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"1524": {
+		"name": "The Devil Incarnate",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"1525": {
+		"name": "業 -善なる神とこの世の悪について-",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"1526": {
+		"name": "The Metaverse -First story of the SeelischTact-",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"1527": {
+		"name": "ピアノ協奏曲第1番\"蠍火\"",
+		"data": [
+			"EXP",
+			"VAR",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"1528": {
+		"name": "What's up? Pop!",
+		"data": [
+			"EXP",
+			"nico",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"1529": {
+		"name": "LAMIA",
+		"data": [
+			"EXP",
+			"撃舞",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"1530": {
+		"name": "Rebellion",
+		"data": [
+			"EXP",
+			"ORI",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"1531": {
+		"name": "チューリングの跡",
+		"data": [
+			"EXP",
+			"撃舞",
+			"14"
+		],
+		"diff": "14"
+	},
+	"1532": {
+		"name": "POTENTIAL",
+		"data": [
+			"EXP",
+			"ORI",
+			"14"
+		],
+		"diff": "14"
+	},
+	"1533": {
+		"name": "怒槌",
+		"data": [
+			"EXP",
+			"ORI",
+			"14"
+		],
+		"diff": "14"
+	},
+	"1534": {
+		"name": "グラウンドスライダー協奏曲第一番「風唄」",
+		"data": [
+			"EXP",
+			"ORI",
+			"14"
+		],
+		"diff": "14"
+	},
+	"1535": {
+		"name": "Makear",
+		"data": [
+			"EXP",
+			"ORI",
+			"14"
+		],
+		"diff": "14"
+	},
+	"1536": {
+		"name": "Acid God",
+		"data": [
+			"EXP",
+			"ORI",
+			"14"
+		],
+		"diff": "14"
+	}
 }
