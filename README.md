@@ -4,8 +4,7 @@
     https://docs.google.com/spreadsheets/d/1NTGkrOoLdzOoaYyz7d4vDT3cW2Q6lZfoc1nvd7nlNLE/edit?gid=1233839899#gid=1233839899
     
     https://docs.google.com/spreadsheets/d/1a7nDEG8N3QQUHl3WDwZedInX3_0EMSpU7qUuW89Lq3c/edit?gid=1885837597#gid=1885837597
-&copy; CHUNITHM譜面定数メインフレーム(@RCMF_chunithm)
-&copy; オンゲキ譜面定数部(@ongeki_level)
+&copy; CHUNITHM譜面定数メインフレーム(@RCMF_chunithm)  &copy; オンゲキ譜面定数部(@ongeki_level)
 
 # jsonファイルの秘匿方法の提案
 ## 1. Google Cloudに保存→pythonから取得
