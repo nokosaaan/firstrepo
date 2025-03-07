@@ -427,7 +427,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                     u.append(v)
-                elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                     u.append(v)
                 elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="12"):
@@ -443,7 +443,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                     u.append(v)
-                elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                     u.append(v)
                 elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="12+"):
@@ -460,7 +460,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="13"):
@@ -477,7 +477,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="13+"):
@@ -494,7 +494,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="14"):
@@ -511,7 +511,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="14+"):
@@ -528,7 +528,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="15"):
@@ -545,7 +545,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="15+"):
@@ -562,7 +562,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="15+"):
@@ -578,7 +578,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                     u.append(v)
-                elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                     u.append(v)
                 elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="15"):
@@ -595,7 +595,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="14+"):
@@ -612,7 +612,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="14"):
@@ -629,7 +629,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="13+"):
@@ -646,7 +646,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="13"):
@@ -663,7 +663,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="12+"):
@@ -697,7 +697,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
-                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
         await ctx.send(f"本日の{ctx.author.mention}の課題曲\n")
