@@ -408,10 +408,298 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     elif(op2=="pa" and v['data'][1]=="P&A"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
-                #u2.append(v['diff'])
-                #u3.append(v['data'][0])
-                #u4.append(v['data'][1])
-                #u5.append(v['data'][2])
+    elif(game=='o'):
+        f = open("data_ongeki.json", 'r')
+
+        json_data = json.load(f)
+        u=[]
+        for v in json_data.values():
+            if(op=="s" and v['diff']==diff):
+                if(op2=="on" and v['data'][1]=="オンゲキ"):
+                    u.append(v)
+                elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                    u.append(v)
+                elif(op2=="va" and v['data'][1]=="VARIETY"):
+                    u.append(v)
+                elif(op2=="to" and v['data'][1]=="東方Project"):
+                    u.append(v)
+                elif(op2=="ni" and v['data'][1]=="niconico"):
+                    u.append(v)
+                elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                    u.append(v)
+                elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    u.append(v)
+                elif(op2=="no"): u.append(v)
+            elif(op=="h" and diff=="12"):
+                if(op2=="on" and v['data'][1]=="オンゲキ"):
+                    u.append(v)
+                elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                    u.append(v)
+                elif(op2=="va" and v['data'][1]=="VARIETY"):
+                    u.append(v)
+                elif(op2=="to" and v['data'][1]=="東方Project"):
+                    u.append(v)
+                elif(op2=="ni" and v['data'][1]=="niconico"):
+                    u.append(v)
+                elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                    u.append(v)
+                elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    u.append(v)
+                elif(op2=="no"): u.append(v)
+            elif(op=="h" and diff=="12+"):
+                if(v['diff']!="12"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="h" and diff=="13"):
+                if(v['diff']!="12" and v['diff']!="12+"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="h" and diff=="13+"):
+                if(v['diff']!="12" and v['diff']!="12+" and v['diff']!="13"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="h" and diff=="14"):
+                if(v['diff']!="12" and v['diff']!="12+" and v['diff']!="13" and v['diff']!="13+"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="h" and diff=="14+"):
+                if(v['diff']!="12" and v['diff']!="12+" and v['diff']!="13" and v['diff']!="13+" and v['diff']!="14"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="h" and diff=="15"):
+                if(v['diff']=="15" or v['diff']=="15+"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="h" and diff=="15+"):
+                if(v['diff']=="15+"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="l" and diff=="15+"):
+                if(op2=="on" and v['data'][1]=="オンゲキ"):
+                    u.append(v)
+                elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                    u.append(v)
+                elif(op2=="va" and v['data'][1]=="VARIETY"):
+                    u.append(v)
+                elif(op2=="to" and v['data'][1]=="東方Project"):
+                    u.append(v)
+                elif(op2=="ni" and v['data'][1]=="niconico"):
+                    u.append(v)
+                elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                    u.append(v)
+                elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                    u.append(v)
+                elif(op2=="no"): u.append(v)
+            elif(op=="l" and diff=="15"):
+                if(v['diff']!="15+"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="l" and diff=="14+"):
+                if(v['diff']!="15" and v['diff']!="15+"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="l" and diff=="14"):
+                if(v['diff']!="14+" and v['diff']!="15" and v['diff']!="15+"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="l" and diff=="13+"):
+                if(v['diff']=="12" or v['diff']=="12+" or v['diff']=="13" or v['diff']=="13+"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="l" and diff=="13"):
+                if(v['diff']=="12" or v['diff']=="12+" or v['diff']=="13"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="l" and diff=="12+"):
+                if(v['diff']=="12" or v['diff']=="12+"):
+                    if(op2=="or" and v['data'][1]=="ORI"):
+                        u.append(v)
+                    elif(op2=="ge" and v['data'][1]=="撃舞"):
+                        u.append(v)
+                    elif(op2=="ir" and v['data'][1]=="イロ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VAR"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="nico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="P&A"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
+            elif(op=="l" and diff=="12"):
+                if(v['diff']=="12"):
+                    if(op2=="on" and v['data'][1]=="オンゲキ"):
+                        u.append(v)
+                    elif(op2=="cm" and v['data'][1]=="チュウマイ"):
+                        u.append(v)
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
+                        u.append(v)
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
+                        u.append(v)
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
+                        u.append(v)
+                    elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
+                        u.append(v)
+                    elif(op=="lu" and v['data'][1]=="LUNATIC"):
+                        u.append(v)
+                    elif(op2=="no"): u.append(v)
         await ctx.send(f"本日の{ctx.author.mention}の課題曲\n")
         for a in range(3):
             answer = random.choice(u)
@@ -449,26 +737,3 @@ async def _bot(ctx):
     await ctx.send('Yes, the bot is cool.')
 
 bot.run(config.DISCORD_TOKEN)
-'''
-@client.event
-async def on_ready():
-    print("Ready!")
-
-# メッセージの検知
-@client.event
-async def on_message(message):
-    # 自身が送信したメッセージには反応しない
-    if message.author == client.user:
-        return
-
-    # ユーザーからのメンションを受け取った場合、あらかじめ用意された配列からランダムに返信を返す
-    if client.user in message.mentions:
-
-        ansewr_list = ["さすがですね！","知らなかったです！","すごいですね！","センスが違いますね！","そうなんですか？"]
-        answer = random.choice(ansewr_list)
-        print(answer)
-        await message.channel.send(answer)
-
-# Bot起動
-client.run(config.DISCORD_TOKEN)
-'''
