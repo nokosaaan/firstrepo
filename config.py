@@ -3,3 +3,4 @@ load_dotenv()
 
 import os
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
+SECRET = os.getenv('SECRET')

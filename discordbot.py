@@ -13,7 +13,7 @@ intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
 
-bot = commands.Bot(command_prefix='!', description=description, intents=intents, activity=discord.Game("bot")) # botをプレイ中)
+bot = commands.Bot(command_prefix='!', description=description, intents=intents, activity=discord.Game("!omi")) # botをプレイ中)
 #intents = discord.Intents.all()
 #client = discord.Client(intents=intents)
 
@@ -28,6 +28,13 @@ async def on_ready():
 async def add(ctx, left: int, right: int):
     """Adds two numbers together."""
     await ctx.send(left + right)
+
+@bot.command()
+async def etatoto(ctx, flag: str):
+    """send url"""
+    if(flag==config.SECRET):
+        url=https://canary.discord.com/channels/1272144197524394125/1350530010058068038
+        await ctx.send(url)
 
 @bot.command()
 async def roll(ctx, dice: str):
