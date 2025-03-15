@@ -33,8 +33,7 @@ async def add(ctx, left: int, right: int):
 async def etatoto(ctx, flag: str):
     """send url"""
     if(flag==config.SECRET):
-        url=ctx.Thread.name
-        await ctx.send(url)
+        await ctx.send("ok")
 
 @bot.command()
 async def roll(ctx, dice: str):
