@@ -35,7 +35,7 @@ async def etatoto(ctx, flag: str):
     th_id = 1350530010058068038
     if(flag==config.SECRET):
         #await ctx.send("ok")
-        thread = bot.get_channel(th_id)
+        thread = bot.get_channel(th_id) #get_channel(id):Returns a channel or thread with the given ID.
         await thread.send(ctx.author.mention)
         
 
