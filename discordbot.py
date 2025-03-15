@@ -774,10 +774,10 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
-        await ctx.send(f"本日の{ctx.author.mention}の課題曲\n")
-        for a in range(3):
-            answer = random.choice(u)
-            await ctx.send("{0}\t Title: {1}\t Difficulty: {2}\t Level: {3}\t Genre: {4}\t CN: {5}\n".format(a+1,answer['name'],answer['diff'],answer['data'][0],answer['data'][1],answer['data'][2]))
+    await ctx.send(f"本日の{ctx.author.mention}の課題曲\n")
+    for a in range(3):
+        answer = random.choice(u)
+        await ctx.send("{0}\t Title: {1}\t Difficulty: {2}\t Level: {3}\t Genre: {4}\t CN: {5}\n".format(a+1,answer['name'],answer['diff'],answer['data'][0],answer['data'][1],answer['data'][2]))
         '''
         for a in range(3):
             answer = random.choice(u)
