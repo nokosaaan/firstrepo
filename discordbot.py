@@ -33,6 +33,10 @@ async def add(ctx, left: int, right: int):
 async def etatoto(ctx, flag: str):
     """send url"""
     if(flag==config.SECRET):
+        ch_name = "コマンド"
+        for channel in bot.get_all_channels():
+		    if channel.name == ch_name:
+			    await channel.send("起動しました")
         await ctx.send("ok")
 
 @bot.command()
