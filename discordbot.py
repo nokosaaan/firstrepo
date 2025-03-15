@@ -36,8 +36,8 @@ async def etatoto(ctx, flag: str):
     if(flag==config.SECRET):
         await ctx.send("ok")
         for channel in bot.get_all_channels():
-		    if (channel.name == ch_name):
-			    await channel.send("起動しました")
+            if (channel.name == ch_name):
+                await channel.send("起動しました")
         
 
 @bot.command()
