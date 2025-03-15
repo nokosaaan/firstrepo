@@ -33,7 +33,7 @@ async def add(ctx, left: int, right: int):
 async def etatoto(ctx, flag: str):
     """send url"""
     if(flag==config.SECRET):
-        url=https://canary.discord.com/channels/1272144197524394125/1350530010058068038
+        url=ctx.Thread.name
         await ctx.send(url)
 
 @bot.command()
