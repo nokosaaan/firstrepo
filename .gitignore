@@ -1,3 +1,4 @@
 .env
 .resource
 /test2.py
+*.json
