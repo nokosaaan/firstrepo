@@ -1,0 +1,10694 @@
+{
+	"0": {
+		"name": "Purple Rays",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"1": {
+		"name": "Hide & Attack",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"2": {
+		"name": "ミライメモリーズ！",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"3": {
+		"name": "無敵☆moment",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"4": {
+		"name": "Departure",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"5": {
+		"name": "恋ひ恋ふ縁",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"6": {
+		"name": "愛言葉Ⅲ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"7": {
+		"name": "おねがいダーリン",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"8": {
+		"name": "ビビッドヒーロー",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"9": {
+		"name": "メランコリック",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"10": {
+		"name": "アクアテラリウム",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"11": {
+		"name": "Melody！",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"12": {
+		"name": "LOVERS",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"13": {
+		"name": "Nowhere Girl",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"14": {
+		"name": "こころここから",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"15": {
+		"name": "Snow Colored Score",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"16": {
+		"name": "RIFFRAIN",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"17": {
+		"name": "Here We Go",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"18": {
+		"name": "絆はずっとGrowing Up!!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"19": {
+		"name": "Seventeen Feels",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"20": {
+		"name": "Love & Justice",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"21": {
+		"name": "BABYLON",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"22": {
+		"name": "PARALLEL★PRISM",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"23": {
+		"name": "L9",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"24": {
+		"name": "Haunted Dance",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"25": {
+		"name": "Starry Colors",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"26": {
+		"name": "Aenbharr",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"27": {
+		"name": "ヒトリボッチサテライト",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"28": {
+		"name": "エータ・ベータ・イータ",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"29": {
+		"name": "Apollo -onoken AxSwing Remix-",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"30": {
+		"name": ".locasignore",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.6"
+		],
+		"diff": "12"
+	},
+	"31": {
+		"name": "未来の彼方",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"32": {
+		"name": "700,000,000,000,000,000,000,000の空で",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"33": {
+		"name": "空色メモリーズ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"34": {
+		"name": "シル・ヴ・プレジデント",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"35": {
+		"name": "ラブ・ラビリンス",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"36": {
+		"name": "キミノヨゾラ哨戒班",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"37": {
+		"name": "ダンスロボットダンス",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"38": {
+		"name": "白い雪のプリンセスは",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"39": {
+		"name": "メルティランドナイトメア",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"40": {
+		"name": "チェチェ・チェック・ワンツー！",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"41": {
+		"name": "名探偵連続殺人事件",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"42": {
+		"name": "愛されなくても君がいる",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"43": {
+		"name": "ウミユリ海底譚",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"44": {
+		"name": "ビターチョコデコレーション",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"45": {
+		"name": "キャットラビング",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"46": {
+		"name": "色は匂へど散りぬるを",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"47": {
+		"name": "Mare Maris",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"48": {
+		"name": "GranFatalité",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"49": {
+		"name": "めんどーい！やっほーい！ともだち！",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"50": {
+		"name": "Starring Stars",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"51": {
+		"name": "トリドリ⇒モリモリ！Lovely fruits☆",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"52": {
+		"name": "Transcend Lights",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"53": {
+		"name": "涙隠しておんな道",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"54": {
+		"name": "オン×ステージ！",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"55": {
+		"name": "Duello",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"56": {
+		"name": "Amphisbaena",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"57": {
+		"name": "Cyaegha",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"58": {
+		"name": "Grayed Out-Antifront-",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"59": {
+		"name": "Sulfur",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"60": {
+		"name": "宛城、炎上！！",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"61": {
+		"name": "See The Light",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"62": {
+		"name": "colorful transparency",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"63": {
+		"name": "RELOAD",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"64": {
+		"name": "B WiZ U",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"65": {
+		"name": "Island Breeze",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"66": {
+		"name": "Buck's Fizz",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"67": {
+		"name": "Recollect Lines",
+		"data": [
+			"ADVANCED",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"68": {
+		"name": "ネ！コ！",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"69": {
+		"name": "Forever Friends",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"70": {
+		"name": "エッビーナースデイ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"71": {
+		"name": "うまぴょい伝説",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"72": {
+		"name": "ヒバナ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"73": {
+		"name": "サマータイムレコード",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"74": {
+		"name": "METEOR",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"75": {
+		"name": "セカイはまだ始まってすらいない",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"76": {
+		"name": "セカイ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"77": {
+		"name": "ポジティブ☆ダンスタイム",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"78": {
+		"name": "朝焼けプラットホーム",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"79": {
+		"name": "Ring",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"80": {
+		"name": "Jump!! Jump!! Jump!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"81": {
+		"name": "最強 the サマータイム!!!!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"82": {
+		"name": "夜明けのストリング",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"83": {
+		"name": "No Limit RED Force",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"84": {
+		"name": "キミは\"見ていたね\"？",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"85": {
+		"name": "Girl's Party Planet!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"86": {
+		"name": "天つ風 feat. 夏川陽子",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"87": {
+		"name": "神威",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"88": {
+		"name": "竹",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"89": {
+		"name": "8OROCHI",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"90": {
+		"name": "Akasagarbha -reincarnate-",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"91": {
+		"name": "otorii INNOVATED -[i]3-",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"92": {
+		"name": "Genesis",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"93": {
+		"name": "Last Celebration",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"94": {
+		"name": "Death Scythe",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"95": {
+		"name": "Knocking Harder",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"96": {
+		"name": "HARMONIZE",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"97": {
+		"name": "My Soul,Your Beats!",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"98": {
+		"name": "ハッピータイフーン",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"99": {
+		"name": "クライングハート",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"100": {
+		"name": "六兆年と一夜物語",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"101": {
+		"name": "グリーンライツ・セレナーデ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"102": {
+		"name": "砂の惑星 feat. HATSUNE MIKU",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"103": {
+		"name": 39,
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"104": {
+		"name": "快晴",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"105": {
+		"name": "太陽系デスコ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"106": {
+		"name": "アルカリレットウセイ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"107": {
+		"name": "空奏列車",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"108": {
+		"name": "恋愛裁判",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"109": {
+		"name": "進捗どうですか？",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"110": {
+		"name": "東方妖々夢 ～the maximum moving about～",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"111": {
+		"name": "櫻結び",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"112": {
+		"name": "Y.Y.Y.計画!!!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"113": {
+		"name": "ポケットからぬりつぶせ！",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"114": {
+		"name": "Handmade Good Day",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"115": {
+		"name": "キライラ",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"116": {
+		"name": "アリアの最強しもべ計画♡",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"117": {
+		"name": "狂恋ROMANCE",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"118": {
+		"name": "Supersonic Generation",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"119": {
+		"name": "Alea jacta est!",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"120": {
+		"name": "Blows Up Everything",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"121": {
+		"name": "Trrricksters!!",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"122": {
+		"name": "Dazzle hop",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"123": {
+		"name": "YURUSHITE",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"124": {
+		"name": "R'N'R Monsta",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"125": {
+		"name": "Ai Drew",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"126": {
+		"name": "Galaxy Blaster",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"127": {
+		"name": "AstrøNotes.",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"128": {
+		"name": "μάγια",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"129": {
+		"name": "Princesses Holiday",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"130": {
+		"name": "ゼーレンヴァンデルング",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"131": {
+		"name": "Starlight★Limited",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"132": {
+		"name": "Azucar",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"133": {
+		"name": "beautiful tomorrow",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"134": {
+		"name": "うぇるかむ to ONSEN!!",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"135": {
+		"name": "プラネタリウム・レヴュー",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"136": {
+		"name": "心象蜃気楼",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"137": {
+		"name": "＊ハロー、プラネット。",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"138": {
+		"name": "妄想感傷代償連盟",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"139": {
+		"name": "Henceforth",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"140": {
+		"name": "幽霊東京",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"141": {
+		"name": "レプリカの恋",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"142": {
+		"name": "進め！マイウェイ！",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"143": {
+		"name": "3分ガール",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"144": {
+		"name": "インビジブル",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"145": {
+		"name": "Calamity Fortune",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"146": {
+		"name": "ナイト・オブ・ナイツ (かめりあ's\"ワンス・アポン・ア・ナイト\"Remix)",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"147": {
+		"name": "Air",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"148": {
+		"name": "Knight Rider",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"149": {
+		"name": "The wheel to the right",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"150": {
+		"name": "Xevel",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"151": {
+		"name": "N3V3R G3T OV3R",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"152": {
+		"name": "Mini skirt",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"153": {
+		"name": "RED to RED",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"154": {
+		"name": "A Day in the Patisserie",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"155": {
+		"name": "Pastel Sprinkles",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"156": {
+		"name": "GODLINESS",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"157": {
+		"name": "Baqeela (Creepy Remix)",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"158": {
+		"name": "ホシノキズナ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"159": {
+		"name": "メーベル (self cover)",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"160": {
+		"name": "タイムマシン",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"161": {
+		"name": "寒想桜",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"162": {
+		"name": "Colors",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"163": {
+		"name": "幽闇に目醒めしは",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"164": {
+		"name": "どうぶつ☆パラダイス",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"165": {
+		"name": "夏色花火",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"166": {
+		"name": "Little Twinkle",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"167": {
+		"name": "Flower",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"168": {
+		"name": "妖々跋扈 ～ Who done it!",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"169": {
+		"name": "Jack-the-Ripper◆",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"170": {
+		"name": "Grievous Lady",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"171": {
+		"name": "DRAGONLADY",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"172": {
+		"name": "2112410403927243233368",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"173": {
+		"name": "10pt8ion",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"174": {
+		"name": "Ouvertüre",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"175": {
+		"name": "SILENT BLUE",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"176": {
+		"name": "Secret Sleuth",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"177": {
+		"name": "GEOMETRIC DANCE",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"178": {
+		"name": "Trinity Departure",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"179": {
+		"name": "最っ高のエンタメだ!!",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"180": {
+		"name": "Adverse Gaff",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"182": {
+		"name": "Connecting Happy!!",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12"
+		],
+		"diff": "12"
+	},
+	"183": {
+		"name": "レイル・ロマネスク ハチロクver.",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12"
+		],
+		"diff": "12"
+	},
+	"184": {
+		"name": "キズナヒトツ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12"
+		],
+		"diff": "12"
+	},
+	"185": {
+		"name": "木彫り鯰と右肩ゾンビ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12"
+		],
+		"diff": "12"
+	},
+	"186": {
+		"name": "いーあるふぁんくらぶ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12"
+		],
+		"diff": "12"
+	},
+	"187": {
+		"name": "Tell Your World",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12"
+		],
+		"diff": "12"
+	},
+	"188": {
+		"name": "シャルル",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12"
+		],
+		"diff": "12"
+	},
+	"189": {
+		"name": "メルト",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12"
+		],
+		"diff": "12"
+	},
+	"190": {
+		"name": "Grip & Break down !!",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12"
+		],
+		"diff": "12"
+	},
+	"191": {
+		"name": "オモイヨシノ",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"12"
+		],
+		"diff": "12"
+	},
+	"192": {
+		"name": "Zest of Blue",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12"
+		],
+		"diff": "12"
+	},
+	"193": {
+		"name": "White Magic Night!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12"
+		],
+		"diff": "12"
+	},
+	"194": {
+		"name": "Happiness on the Table",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12"
+		],
+		"diff": "12"
+	},
+	"195": {
+		"name": "宣誓センセーション",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"12"
+		],
+		"diff": "12"
+	},
+	"196": {
+		"name": "ラクガキスト",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"12"
+		],
+		"diff": "12"
+	},
+	"197": {
+		"name": "Showguts",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12"
+		],
+		"diff": "12"
+	},
+	"198": {
+		"name": "Malicious Mischance",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12"
+		],
+		"diff": "12"
+	},
+	"199": {
+		"name": "HONEY-Q",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12"
+		],
+		"diff": "12"
+	},
+	"200": {
+		"name": "PinqPiq (xovevox Remix)",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12"
+		],
+		"diff": "12"
+	},
+	"201": {
+		"name": "Daydreama",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12"
+		],
+		"diff": "12"
+	},
+	"202": {
+		"name": "YURUSHITE (LeaF Remix)",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12"
+		],
+		"diff": "12"
+	},
+	"203": {
+		"name": "だから僕は音楽を辞めた",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"204": {
+		"name": "花ハ踊レヤいろはにほ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"205": {
+		"name": "よんでミラクるん！",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"206": {
+		"name": "私たち、四季を遊ぶんです！！",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"207": {
+		"name": "Like the Sun, Like the Moon",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"208": {
+		"name": "泡白昼夢",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"209": {
+		"name": "Re:StarT (2023ver.)",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"210": {
+		"name": "鬼KYOKAN",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"211": {
+		"name": "星屑ユートピア",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"212": {
+		"name": "フィクサー",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"213": {
+		"name": "こどものしくみ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"214": {
+		"name": "だれかの心臓になれたなら",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"215": {
+		"name": "テオ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"216": {
+		"name": "あの世行きのバスに乗ってさらば。",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"217": {
+		"name": "ネガティブ進化論",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"218": {
+		"name": "とても素敵な六月でした",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"219": {
+		"name": "39みゅーじっく！",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"220": {
+		"name": "永遠にゲームで対戦したいキリタン",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"221": {
+		"name": "マチガイサガシ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"222": {
+		"name": "グッバイ宣言",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"223": {
+		"name": "ラグトレイン",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"224": {
+		"name": "パラソルサイダー",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"225": {
+		"name": "ロミオとシンデレラ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"226": {
+		"name": "幻想のサテライト",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"227": {
+		"name": "ルナティックレッドアイズ",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"228": {
+		"name": "蛙石",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"229": {
+		"name": "Singing to the gods",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"230": {
+		"name": "Psalms ～魂の還るばしょ～",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"231": {
+		"name": "Cyberozar",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"232": {
+		"name": "oboro",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"233": {
+		"name": "時の冒険者",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"234": {
+		"name": "でらっくmaimai♪てんてこまい!",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"235": {
+		"name": "ヤミツキ",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"236": {
+		"name": "マイオドレ！舞舞タイム",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"237": {
+		"name": "星めぐり、果ての君へ。",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"238": {
+		"name": "P！P！P！P！がおー!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"239": {
+		"name": "What color...",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"240": {
+		"name": "GAME IS LIFE",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"241": {
+		"name": "まっすぐ→→→ストリーム！",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"242": {
+		"name": "Splash Dance!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"243": {
+		"name": "レーイレーイ ～超絶最強アメちゃん Mix～",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"244": {
+		"name": "FANTASY BABY",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"245": {
+		"name": "アイシング・ドリーム",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"246": {
+		"name": "サンダーレスキュー！",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"247": {
+		"name": "I Wanna",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"248": {
+		"name": "Everything Will Freeze",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"249": {
+		"name": "怒槌",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"250": {
+		"name": "Glorious Crown (tpz over-Over-OVERCUTE REMIX)",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"251": {
+		"name": "TEmPTaTiON",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"252": {
+		"name": "渦状銀河のシンフォニエッタ",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"253": {
+		"name": "BREaK! BREaK! BREaK!",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"254": {
+		"name": "Megameteor",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"255": {
+		"name": "SUPER AMBULANCE",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"256": {
+		"name": "Prominence",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"257": {
+		"name": "Zitronectar",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"258": {
+		"name": "THE TRiANGLE",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"259": {
+		"name": "Chant Say Yeah!",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"260": {
+		"name": "おはようジャポニカ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"261": {
+		"name": "うっせぇわ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"262": {
+		"name": "えんじぇる♡ピタゴリ☆ほーみたい！",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"263": {
+		"name": "チュルリラ・チュルリラ・ダッダッダ！",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"264": {
+		"name": "ロキ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"265": {
+		"name": "からくりピエロ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"266": {
+		"name": "ECHO",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"267": {
+		"name": "スイートマジック",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"268": {
+		"name": "ベノム",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"269": {
+		"name": "悔やむと書いてミライ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"270": {
+		"name": "ヴァンパイア",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"271": {
+		"name": "フォニイ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"272": {
+		"name": "ナイト・オブ・ナイツ",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"273": {
+		"name": "Necro Fantasia",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"274": {
+		"name": "聖少女サクリファイス",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"275": {
+		"name": "明星ロケット",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"276": {
+		"name": "シアワセうさぎ・ぺこみこマリン",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"277": {
+		"name": "HELLO,SOFMAP WORLD",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"278": {
+		"name": "Let you DIVE!",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"279": {
+		"name": "Hyper Active",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"280": {
+		"name": "Dragoon",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"281": {
+		"name": "光線チューニング",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"282": {
+		"name": "猫祭り",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"283": {
+		"name": "Rendezvous",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"284": {
+		"name": "ロング・スロー・アライブ",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"285": {
+		"name": "レイニーカラー・ウォーターカラー",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"286": {
+		"name": "SWEET SHAKE!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"287": {
+		"name": "Let's Starry Party！",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"288": {
+		"name": "Over Voltage",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"289": {
+		"name": "STARRED HEART",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"290": {
+		"name": "ランダムサンデー",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"291": {
+		"name": "イルミネーション",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"292": {
+		"name": "Armageddon",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"293": {
+		"name": "Sound Chimera",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"294": {
+		"name": "Tempestissimo",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"295": {
+		"name": "聖者の鼓動",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"296": {
+		"name": "MEGALOVANIA",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"297": {
+		"name": "最強STRONGER",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"298": {
+		"name": "Elemental Ethnic",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"299": {
+		"name": "#狂った民族2 PRAVARGYAZOOQA",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"300": {
+		"name": "Good bye, Merry-Go-Round.",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"301": {
+		"name": "ミラージュ･フレイグランス",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"302": {
+		"name": "Final Flash Flight",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"303": {
+		"name": "FLUFFY FLASH (C-Show & Maozon Remix)",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"304": {
+		"name": "STARTLINER",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"305": {
+		"name": "アマカミサマ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"306": {
+		"name": "シャノワール",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"307": {
+		"name": "リテラチュア",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"308": {
+		"name": "金木犀 feat.Ado",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"309": {
+		"name": "ワガママMIRROR HEART",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"310": {
+		"name": "ハートサーモグラフィ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"311": {
+		"name": "彗星ハネムーン",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"312": {
+		"name": "shake it！",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"313": {
+		"name": "アンドロイドガール",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"314": {
+		"name": "Catch the Wave",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"315": {
+		"name": "絶対にチョコミントを食べるアオイチャン",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"316": {
+		"name": "ツギハギスタッカート",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"317": {
+		"name": "命に嫌われている",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"318": {
+		"name": "キレキャリオン",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"319": {
+		"name": "猫猫的宇宙論",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"320": {
+		"name": "KING",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"321": {
+		"name": "Bad Apple!! feat.nomico",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"322": {
+		"name": "Energy Booster ～ 上海紅茶館",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"323": {
+		"name": "四次元跳躍機関",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"324": {
+		"name": "れみりあ☆デスティニー",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"325": {
+		"name": "Help me, ERINNNNNN!!",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"326": {
+		"name": "Weekend Clock",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"327": {
+		"name": "回転 feat.あやぽんず＊",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"328": {
+		"name": "The Formula",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"329": {
+		"name": "Burning Hearts ～炎のANGEL～",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"330": {
+		"name": "その群青が愛しかったようだった",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"331": {
+		"name": "FestivaLight",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"332": {
+		"name": "Kiss Me Kiss",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"333": {
+		"name": "Rule the World!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"334": {
+		"name": "スン(マイル)フラワー～Sun(Mile)Flower",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"335": {
+		"name": "ぽかぽか温泉音頭",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"336": {
+		"name": "STEP BY STEP",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"337": {
+		"name": "Re：End of a Dream",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"338": {
+		"name": "Lethal Dose",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"339": {
+		"name": "クリムゾン帝王",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"340": {
+		"name": "雷切 -RAIKIRI-",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"341": {
+		"name": "larva",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"342": {
+		"name": "ハードコア・シンドローム",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"343": {
+		"name": "Caliburne 〜Story of the Legendary sword〜",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"344": {
+		"name": "WE'RE BACK!!",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"345": {
+		"name": "Blessed Rain",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"346": {
+		"name": "Everlasting Today",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"347": {
+		"name": "Desperado Waltz",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"348": {
+		"name": "Vibes 2k20",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"349": {
+		"name": "MEGATON BLAST (tpz Overcute Remix)",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"350": {
+		"name": "MAGNETAR GIRL",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"351": {
+		"name": "Diamond Dust -crystal piano Arr.-",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"352": {
+		"name": "Tricky Treat!!!",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.7"
+		],
+		"diff": "12+"
+	},
+	"353": {
+		"name": "クライノイド",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13"
+		],
+		"diff": "13"
+	},
+	"354": {
+		"name": "月影のトロイメライ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13"
+		],
+		"diff": "13"
+	},
+	"355": {
+		"name": "幸せになれる隠しコマンドがあるらしい",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13"
+		],
+		"diff": "13"
+	},
+	"356": {
+		"name": "アンハッピーリフレイン",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13"
+		],
+		"diff": "13"
+	},
+	"357": {
+		"name": "スクランブル交際",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13"
+		],
+		"diff": "13"
+	},
+	"358": {
+		"name": "アカリがやってきたぞっ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13"
+		],
+		"diff": "13"
+	},
+	"359": {
+		"name": "ネクストネスト",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13"
+		],
+		"diff": "13"
+	},
+	"360": {
+		"name": "Ready Steady",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13"
+		],
+		"diff": "13"
+	},
+	"361": {
+		"name": "夜もすがら君想ふ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13"
+		],
+		"diff": "13"
+	},
+	"362": {
+		"name": "sweet little sister",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13"
+		],
+		"diff": "13"
+	},
+	"363": {
+		"name": "サクライロフワリ",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13"
+		],
+		"diff": "13"
+	},
+	"364": {
+		"name": "Change Our MIRAI！（Our 7 Lights）",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"365": {
+		"name": "Magic",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"366": {
+		"name": "はちみつアドベンチャー",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"367": {
+		"name": "TeA",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"368": {
+		"name": "本能的 Survivor",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"369": {
+		"name": "MAKING！ハイタッチ！",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"370": {
+		"name": "感情アクセラレイション",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"371": {
+		"name": "ぱくぱく☆がーる",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"372": {
+		"name": "Glitter-Glitter",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"373": {
+		"name": "HEADLINER",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"374": {
+		"name": "Individual on parade!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"375": {
+		"name": "Crimson Phoenix",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"13"
+		],
+		"diff": "13"
+	},
+	"376": {
+		"name": "Synthesis.",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"13"
+		],
+		"diff": "13"
+	},
+	"377": {
+		"name": "混沌を越えし我らが神聖なる調律主を讃えよ",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"378": {
+		"name": "Garakuta Doll Play",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"379": {
+		"name": "QZKago Requiem",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"380": {
+		"name": "POTENTIAL",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"381": {
+		"name": "Sage",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"382": {
+		"name": "MEGATON BLAST",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"383": {
+		"name": "ω4",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"384": {
+		"name": "美夜月鏡",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"385": {
+		"name": "Ai C",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"386": {
+		"name": "Cogito ergo sum",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13"
+		],
+		"diff": "13"
+	},
+	"387": {
+		"name": "青春サイダー",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"388": {
+		"name": "STORIA",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"389": {
+		"name": "Virtual to LIVE",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"390": {
+		"name": "シリウスの輝きのように",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"391": {
+		"name": "DAYBREAK FRONTLINE",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"392": {
+		"name": "デリヘル呼んだら君が来た",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"393": {
+		"name": "Seyana. ～何でも言うことを聞いてくれるアカネチャン～",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"394": {
+		"name": "吉原ラメント",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"395": {
+		"name": "泥の分際で私だけの大切を奪おうだなんて",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"396": {
+		"name": "敗北の少年",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"397": {
+		"name": "ケロ⑨destiny",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"398": {
+		"name": "Äventyr",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"399": {
+		"name": "Gate of Doom",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"400": {
+		"name": "天火明命",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"401": {
+		"name": "Paqqin",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"402": {
+		"name": "Cosmic Train",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"403": {
+		"name": "UTAKATA",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"404": {
+		"name": "ludicium \"Apocalypsis Mix\"",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"405": {
+		"name": "ウキウキ☆Candy!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"406": {
+		"name": "反撃! 突撃! Back To Back!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"407": {
+		"name": "give it up to you",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"408": {
+		"name": "シンデレラディスコ",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"409": {
+		"name": "花時は夢を見る。",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"410": {
+		"name": "Shamshir -rough Pt.2-",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"411": {
+		"name": "DIE IN",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"412": {
+		"name": "TiamaT:F minor",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"413": {
+		"name": "FLUFFY FLASH",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"414": {
+		"name": "ジャンヌ・ダルクの慟哭",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"415": {
+		"name": "GAME:CHANGER",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"416": {
+		"name": "NEXT COLOR PLANET",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"417": {
+		"name": "ハッピーエンドをはじめから",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"418": {
+		"name": "ヒステリックナイトガール",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"419": {
+		"name": "Time and Space",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"420": {
+		"name": "君よ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"421": {
+		"name": "脳漿炸裂ガール",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"422": {
+		"name": "ドーナツホール",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"423": {
+		"name": "セツナトリップ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"424": {
+		"name": "ラストリゾート",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"425": {
+		"name": "しゅわスパ大作戦☆",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"426": {
+		"name": "カラッポ・ノンフィクション",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"427": {
+		"name": "Alice's Suitcase",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"428": {
+		"name": "今ぞ♡崇め奉れ☆オマエらよ！！～姫の秘メタル渇望～",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"429": {
+		"name": "超常マイマイン",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"430": {
+		"name": "コスモポップファンクラブ",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"431": {
+		"name": "ロッキンピンクモンスター",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"432": {
+		"name": "Heart Cooking Recipe",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"433": {
+		"name": "無敵のフロンティア三銃士",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"434": {
+		"name": "Geki Geki!! 激闘Break Out!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"435": {
+		"name": "Resolution",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"436": {
+		"name": "夏宵スターマイン",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"437": {
+		"name": "End Time",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"438": {
+		"name": "VIIIbit Explorer",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"439": {
+		"name": "Sparking Revolver",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"440": {
+		"name": "Titania",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"441": {
+		"name": "Viyella's Tears",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"442": {
+		"name": "Viyella's Scream",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"443": {
+		"name": "冥乱幻舞",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"444": {
+		"name": "からくりピエロ",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"445": {
+		"name": "Stage of Star",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"446": {
+		"name": "Let Me Know (feat. Masayoshi Iimori)",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"447": {
+		"name": "君とインフィニティ -2021-",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"448": {
+		"name": "Goodbye Innocence",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"449": {
+		"name": "予感のシグナル",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"450": {
+		"name": "アイドライフライト",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"451": {
+		"name": "人生リセットボタン",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"452": {
+		"name": "地球最後の告白を",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"453": {
+		"name": "ドラマツルギー",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"454": {
+		"name": "ナンセンス文学",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"455": {
+		"name": "ワールズエンド・ダンスホール",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"456": {
+		"name": "バイオレンストリガー",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"457": {
+		"name": "ダーリンダンス",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"458": {
+		"name": "ワーワーワールド",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"459": {
+		"name": "ミラクルペイント",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"460": {
+		"name": "さよならプリンセス",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"461": {
+		"name": "チルノのパーフェクトさんすう教室",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"462": {
+		"name": "Kattobi KEIKYU Rider",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"463": {
+		"name": "キラメケ→Shoot it Now!",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"464": {
+		"name": "Starlight Disco",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"465": {
+		"name": "アンバークロニクル",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"466": {
+		"name": "ブツメツビーターズ",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"467": {
+		"name": "TAKE ON THE WORLD",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"468": {
+		"name": "Chelly spLash♪♪",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"469": {
+		"name": "オンゲキ全域★アカネサマ？",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"470": {
+		"name": "BOUNCE & DANCE",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"471": {
+		"name": "撩乱乙女†無双劇",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"472": {
+		"name": "YAMINABE☆PANIC ～ご馳走詰め込みフルコース～",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"473": {
+		"name": "My precious holiday",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"474": {
+		"name": "Skip & Smile!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"475": {
+		"name": "天つ風",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"476": {
+		"name": "Island Breeze",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"477": {
+		"name": "ヒストリー×ブレイカー",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"478": {
+		"name": "BATTLE NO.1",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"479": {
+		"name": "FREEDOM DiVE",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"480": {
+		"name": "TECHNOPOLIS 2085",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"481": {
+		"name": "Falsum Atlantis.",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"482": {
+		"name": "MeteorSnow",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"483": {
+		"name": "ヒトガタ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"484": {
+		"name": "INTERNET OVERDOSE",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"485": {
+		"name": "Lots of love",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"486": {
+		"name": "Mornin' Bell",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"487": {
+		"name": "ボッカデラベリタ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"488": {
+		"name": "ストリーミングハート",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"489": {
+		"name": "ステラ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"490": {
+		"name": "最終鬼畜妹フランドール・S",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"491": {
+		"name": "エピクロスの虹はもう見えない",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"492": {
+		"name": "Scream out! -音華鏡 Re:BREAK-",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"493": {
+		"name": "患部で止まってすぐ溶ける～狂気の優曇華院",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"494": {
+		"name": "全力ハッピーライフ",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"495": {
+		"name": "物凄い狂っとるフランちゃんが物凄いうた",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"496": {
+		"name": "Paranoia",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"497": {
+		"name": "悪戯センセーション",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"498": {
+		"name": "お空のニュークリアフュージョン道場",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"499": {
+		"name": "キュアリアス光吉古牌　－祭－",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"500": {
+		"name": "Over the Border",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"501": {
+		"name": "Brain Power",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"502": {
+		"name": "Halcyon",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"503": {
+		"name": "ベースラインやってる？笑",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"504": {
+		"name": "Party 4U \"holy nite mix\"",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"505": {
+		"name": "Velaciela (Hyper Mix)",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"506": {
+		"name": "ロボットプラネットユートピア",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"507": {
+		"name": "福宿音屋魂音泉",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"508": {
+		"name": "REAL VOICE",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"509": {
+		"name": "Paradisoda",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"510": {
+		"name": "Dolphika",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"511": {
+		"name": "Sword of Secret",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"512": {
+		"name": "fulgente",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"513": {
+		"name": "おやすみのうた",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"514": {
+		"name": "いつか花咲くその前に",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"515": {
+		"name": "脳天直撃",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"516": {
+		"name": "Stargazing Dreamer",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"517": {
+		"name": "Don't Fight The Music",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"518": {
+		"name": "Cult future",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"519": {
+		"name": "其のエメラルドを見よ",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"520": {
+		"name": "オンソクデイズ!!",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"521": {
+		"name": "淵底のグレイ・ユークロニア",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"522": {
+		"name": "グリーンライツ・セレナーデ",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"523": {
+		"name": "夜明けのストリング",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"524": {
+		"name": "Petit Etoile",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"525": {
+		"name": "スパッと！スパイ＆スパイス",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"526": {
+		"name": "春を告げる",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"527": {
+		"name": "モンダイナイトリッパー！",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"528": {
+		"name": "アンノウン・マザーグース",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"529": {
+		"name": "イカサマライフゲイム",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"530": {
+		"name": "幾望の月",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"531": {
+		"name": "電脳少女は歌姫の夢を見るか？",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"532": {
+		"name": "ヴィラン",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"533": {
+		"name": "おひめさまになりたいのッ！",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"534": {
+		"name": "妖狐仙楽踏",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"535": {
+		"name": "サドマミホリック",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"536": {
+		"name": "天狗の落とし文 feat. ｙｔｒ",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"537": {
+		"name": "ロストワードクロニカル",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"538": {
+		"name": "風に乗せた願い",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"539": {
+		"name": "New World",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"540": {
+		"name": "花たちに希望を",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"541": {
+		"name": "Burning Steel Inferno",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"542": {
+		"name": "rePrayer",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"543": {
+		"name": "アルカンシエル",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"544": {
+		"name": "We Gonna Journey",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"545": {
+		"name": "ライトスピード・デイズ",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"546": {
+		"name": "ツクヨミステップ",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"547": {
+		"name": "STAR",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"548": {
+		"name": "Death Doll",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"549": {
+		"name": "Jörqer",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"550": {
+		"name": "fulgente (flip-side color mix)",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"551": {
+		"name": "Catch Me If You Can",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"552": {
+		"name": "Butterfly Wave",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"553": {
+		"name": "超前進！満点スマイル！",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"554": {
+		"name": "MANIERA REMASTERED",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"555": {
+		"name": "ouroboros -twin stroke of the end-",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"556": {
+		"name": "eden",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"557": {
+		"name": "the EmpErroR",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"558": {
+		"name": "Hainuwele",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"559": {
+		"name": "Singularity -technoplanet-",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"560": {
+		"name": "Magical Panic Adventure",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"561": {
+		"name": "MarbleBlue.",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"562": {
+		"name": "しとしとと",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.5"
+		],
+		"diff": "13"
+	},
+	"563": {
+		"name": "はっぴぃ にゅう にゃあ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"564": {
+		"name": "幻想楼閣",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"565": {
+		"name": "インビジブル",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"566": {
+		"name": "ジャンキーナイトタウンオーケストラ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"567": {
+		"name": "ド屑",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"568": {
+		"name": "ずんだパーリナイ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"569": {
+		"name": "Destiny Runner",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"570": {
+		"name": "銀のめぐり",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"571": {
+		"name": "ナイト・オブ・ナイツ (Cranky Remix)",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"572": {
+		"name": "疾走あんさんぶる",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"573": {
+		"name": "Bad Apple!! feat.nomico (豚乙女 Ver.)",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"574": {
+		"name": "アリサのテーマ",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"575": {
+		"name": "迷える音色は恋の唄",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"576": {
+		"name": "Once in my life",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"577": {
+		"name": "Cutter",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"578": {
+		"name": "BOKUTO",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"579": {
+		"name": "とびだせ！TO THE COSMIC!!",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"580": {
+		"name": "ユメキキョウ",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"581": {
+		"name": "Rainbow Rush Story",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"582": {
+		"name": "居並ぶ穀物と溜息まじりの運送屋",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"583": {
+		"name": "Maqrite",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"584": {
+		"name": "Radiance",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"585": {
+		"name": "DAWNBREAKER",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"586": {
+		"name": "All Right!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"587": {
+		"name": "Say Goodbye",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"588": {
+		"name": "Random Access Emotions",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"589": {
+		"name": "はっぴ〜しゅ〜てぃんぐすた〜",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"590": {
+		"name": "Rhythm of Love",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"591": {
+		"name": "Invisible Frenzy",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"592": {
+		"name": "宿星審判",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"593": {
+		"name": "雪男",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"594": {
+		"name": "Opfer",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"595": {
+		"name": "A Man In The Mirror",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"596": {
+		"name": "Diamond Dust",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"597": {
+		"name": "シル・ヴ・プレジデント",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"598": {
+		"name": "Zest of Blue",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"599": {
+		"name": "どうぶつ☆パラダイス",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"600": {
+		"name": "最強 the サマータイム!!!!!",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.6"
+		],
+		"diff": "13"
+	},
+	"601": {
+		"name": "藍の華",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"602": {
+		"name": "ぶいちゅっばの歌",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"603": {
+		"name": "せーので跳べって言ってんの！",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"604": {
+		"name": "偉大なる悪魔は実は大天使パトラちゃん様なのだ！",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"605": {
+		"name": "恋のイリュージョニスタ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"606": {
+		"name": "On your mark (104期 Ver.)",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"607": {
+		"name": "get the regret over",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"608": {
+		"name": "カミサマネジマキ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"609": {
+		"name": "クイーンオブハート",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"610": {
+		"name": "初音ミクの消失",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"611": {
+		"name": "裏表ラバーズ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"612": {
+		"name": "夜咄ディセイブ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"613": {
+		"name": "腐れ外道とチョコレゐト",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"614": {
+		"name": "So much loving you★ -DIVA Edit-",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"615": {
+		"name": "孤独の果て",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"616": {
+		"name": "Calamity Fortune",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"617": {
+		"name": "ウサテイ",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"618": {
+		"name": "Doll Judgment",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"619": {
+		"name": "Destr0yer",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"620": {
+		"name": "僕たちの旅とエピローグ。",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"621": {
+		"name": "Löschen",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"622": {
+		"name": "Quon",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"623": {
+		"name": "I want You",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"624": {
+		"name": "Oshama Scramble!",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"625": {
+		"name": "AMAZING MIGHTYYYY!!!!",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"626": {
+		"name": "The wheel to the right",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"627": {
+		"name": "Imitation:Loud Lounge",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"628": {
+		"name": "Candy Tall Woman",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"629": {
+		"name": "Lazy Addiction",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"630": {
+		"name": "Touch and Go",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"631": {
+		"name": "HONEY-Q",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"632": {
+		"name": "Honey Bear",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"633": {
+		"name": "RED to RED",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"634": {
+		"name": "Lostwizz",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"635": {
+		"name": "I got a gig tonight!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"636": {
+		"name": "Event Horizon",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"637": {
+		"name": "ツムギボシ（starring オンゲキシューターズ）",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"638": {
+		"name": "Got more raves? -xiRemix-",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"639": {
+		"name": "蜘蛛の糸",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"640": {
+		"name": "Regulus",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"641": {
+		"name": "Apollo",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"642": {
+		"name": "Stellar:Dream",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"643": {
+		"name": "Hide & Attack",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"644": {
+		"name": "うまぴょい伝説",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"645": {
+		"name": "Sakura Fubuki",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"646": {
+		"name": "タテマエと本心の大乱闘",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"647": {
+		"name": "Starring Stars",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.7"
+		],
+		"diff": "13+"
+	},
+	"648": {
+		"name": "HEAVEN'S RAVE",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"649": {
+		"name": "アンチグラビティ・ガール",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"650": {
+		"name": "Faith in Expression",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"651": {
+		"name": "ギガンティックO.T.N",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"652": {
+		"name": "撥条少女時計",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"653": {
+		"name": "サイハテ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"654": {
+		"name": "卑怯戦隊うろたんだー",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"655": {
+		"name": "オートファジー",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"656": {
+		"name": "Bad Apple!! feat.nomico (Camellia’s “Bad Psy” Remix)",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"657": {
+		"name": "断罪は遍く人間の元に",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"658": {
+		"name": "スカーレット警察のゲットーパトロール24時",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"659": {
+		"name": "conflict",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"660": {
+		"name": "Duello",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"661": {
+		"name": "Dreadnought",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"662": {
+		"name": "Reach for the Stars",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"663": {
+		"name": "CO5M1C R4ILR0AD",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"664": {
+		"name": "ニニ",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"665": {
+		"name": "Dement ～after legend～",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"666": {
+		"name": "STARLIGHT TWILIGHT -GC edit-",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"667": {
+		"name": "YO-KAI Disco",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"668": {
+		"name": "with U",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"669": {
+		"name": "風仁雷仁",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"670": {
+		"name": "Small Cloud Sugar Candy",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"671": {
+		"name": "Summer is over",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"672": {
+		"name": "Secret Sleuth",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"673": {
+		"name": "U ARE",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"674": {
+		"name": "足立オウフwwww",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"675": {
+		"name": "CHOCOLATE BOMB!!!!",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"676": {
+		"name": "We Gonna Party",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"677": {
+		"name": "ガチ恋ラビリンス",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"678": {
+		"name": "Sparkle",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"679": {
+		"name": "アマツカミ",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"680": {
+		"name": "A Day in the Patisserie",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"681": {
+		"name": "最っ高のエンタメだ!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"682": {
+		"name": "Pastel Sprinkles",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"683": {
+		"name": "MEGATON BLAST (tpz Overcute Remix)",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"684": {
+		"name": "ゲーミングポーラーベア",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"685": {
+		"name": "Mizutama-Tripster",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"686": {
+		"name": "UTOPIA CRASH",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"687": {
+		"name": "まりもとおもちゃ箱",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"688": {
+		"name": "Vibes 2k20 (owl＊aging remix)",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"689": {
+		"name": "ロッキンピンクモンスター (豚乙女ランコVoVer.)",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"690": {
+		"name": "夢を叶える場所",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"691": {
+		"name": "Memories of O.N.G.E.K.I.",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"692": {
+		"name": "いちげき！のテーマ",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"693": {
+		"name": "Apollo -onoken AxSwing Remix-",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"694": {
+		"name": "Scythe of Death",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"695": {
+		"name": "LAMIA",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"696": {
+		"name": "Op.I 《fear-TITΛN-》",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"697": {
+		"name": "Stardust:RAY",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"698": {
+		"name": "And Revive The Melody",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"699": {
+		"name": "ネ！コ！",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"700": {
+		"name": "空色メモリーズ",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"701": {
+		"name": "The world of spirit",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"702": {
+		"name": "YO-KAI Disco",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"703": {
+		"name": "Perfect Shining!!",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"704": {
+		"name": "みんな Happy!!",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"705": {
+		"name": "SWEET SHAKE!!",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.8"
+		],
+		"diff": "13+"
+	},
+	"706": {
+		"name": "Seventeen Feels",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"707": {
+		"name": "サンダーレスキュー！",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"708": {
+		"name": "初音天地開闢神話",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"709": {
+		"name": "パラジクロロベンゼン",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"710": {
+		"name": "タイガーランペイジ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"711": {
+		"name": "snooze",
+		"data": [
+			"MASTER",
+			"niconico",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"712": {
+		"name": "ナイト・オブ・ナイツ (かめりあ's\"ワンス・アポン・ア・ナイト\"Remix)",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"713": {
+		"name": "LUNA DIAL -Version X-SAKUYA-",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"714": {
+		"name": "エピトゥリカの祀",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"715": {
+		"name": "BABYLON",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"716": {
+		"name": "Electric Emotion",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"717": {
+		"name": "Cyaegha",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"718": {
+		"name": "Lethal Dose",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"719": {
+		"name": "閃鋼のブリューナク",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"720": {
+		"name": "四月の雨",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"721": {
+		"name": "L'epilogue",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"722": {
+		"name": "夢花火",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"723": {
+		"name": "C & B",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"724": {
+		"name": "遺伝子レベル∞スパイラル",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"725": {
+		"name": "つっぱれ！にゃんきー魂",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"726": {
+		"name": "Ai Nov",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"727": {
+		"name": "Baqeela",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"728": {
+		"name": "Mini skirt",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"729": {
+		"name": "Last Kingdom",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"730": {
+		"name": "Vibes 2k20",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"731": {
+		"name": "Ai Drew",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"732": {
+		"name": "Trinity Departure",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"733": {
+		"name": "Ruler Count, Zero",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"734": {
+		"name": "colorful transparency",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"735": {
+		"name": "Suspiro",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"736": {
+		"name": "Dramatic…?",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"737": {
+		"name": "Livmetarryr",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"738": {
+		"name": "Selenadia",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"739": {
+		"name": "Lazulis Gambit",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"740": {
+		"name": "ジングルベル",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"741": {
+		"name": "千本桜",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"742": {
+		"name": "ナイト・オブ・ナイツ",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"743": {
+		"name": "Here We Go",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"744": {
+		"name": "GAME IS LIFE",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"745": {
+		"name": "本能的Survivor",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"746": {
+		"name": "UTAKATA",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"747": {
+		"name": "No Limit RED Force",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"13.9"
+		],
+		"diff": "13+"
+	},
+	"748": {
+		"name": "ジングルベル",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"14"
+		],
+		"diff": "14"
+	},
+	"749": {
+		"name": "宣誓センセーション",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"14"
+		],
+		"diff": "14"
+	},
+	"750": {
+		"name": "星界ちゃんと可不ちゃんのおつかい合騒曲",
+		"data": [
+			"MASTER",
+			"niconico",
+			"14"
+		],
+		"diff": "14"
+	},
+	"751": {
+		"name": "きゅうくらりん",
+		"data": [
+			"MASTER",
+			"niconico",
+			"14"
+		],
+		"diff": "14"
+	},
+	"752": {
+		"name": "ヒアソビ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"14"
+		],
+		"diff": "14"
+	},
+	"753": {
+		"name": "ナイト・オブ・ナイツ (xi Remix)",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"14"
+		],
+		"diff": "14"
+	},
+	"754": {
+		"name": "神々が恋した幻想郷",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"14"
+		],
+		"diff": "14"
+	},
+	"755": {
+		"name": "GOODRAGE",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14"
+		],
+		"diff": "14"
+	},
+	"756": {
+		"name": "ENERGY SYNERGY MATRIX",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14"
+		],
+		"diff": "14"
+	},
+	"757": {
+		"name": "Ouvertüre",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14"
+		],
+		"diff": "14"
+	},
+	"758": {
+		"name": "7thSense",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"759": {
+		"name": "シャッキーーン！！",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"760": {
+		"name": "ここからはじまるプロローグ。",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"761": {
+		"name": "MUSIC PЯAYER",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"762": {
+		"name": "群青シグナル",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"763": {
+		"name": "Everlasting Today",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"764": {
+		"name": "Dazzle hop",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"765": {
+		"name": "R'N'R Monsta",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"766": {
+		"name": "GODLINESS",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"767": {
+		"name": "ICEBURN",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"768": {
+		"name": "Princesses Holiday",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"769": {
+		"name": "Azucar",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"770": {
+		"name": "光焔のラテラルアーク",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"771": {
+		"name": "FestA of PandemoniuM",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"772": {
+		"name": "MY GLORY WANTED!!!",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"14"
+		],
+		"diff": "14"
+	},
+	"773": {
+		"name": "ハッピータイフーン",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14"
+		],
+		"diff": "14"
+	},
+	"774": {
+		"name": "ロキ",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14"
+		],
+		"diff": "14"
+	},
+	"775": {
+		"name": "Fly to the Leaden Sky -O.N.G.E.K.I. MIX-",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14"
+		],
+		"diff": "14"
+	},
+	"776": {
+		"name": "カナリア",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"777": {
+		"name": "INTERNET YAMERO",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"778": {
+		"name": "アリアの最強しもべ計画♡",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"779": {
+		"name": "レータイスパークEx",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"780": {
+		"name": "FREEDOM DiVE (tpz Overcute Remix)",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"781": {
+		"name": "felys -final remix-",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"782": {
+		"name": "BBBLOW -rebuild-",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"783": {
+		"name": "Singularity -MJ-",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"784": {
+		"name": "c.s.q.n.",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"785": {
+		"name": "Knight Rider",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"786": {
+		"name": "OBLIVION",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"787": {
+		"name": "SILENT BLUE",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"788": {
+		"name": "Oshama Scramble! (Cranky Remix)",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"789": {
+		"name": "Blows Up Everything",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"790": {
+		"name": "宙の隣",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"791": {
+		"name": "Death Scythe",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"792": {
+		"name": "Daydreama",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"793": {
+		"name": "LiftOff",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"794": {
+		"name": "Daredevil Glaive",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"795": {
+		"name": "Elusive Emotes",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"796": {
+		"name": "Knocking Harder",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"797": {
+		"name": "YURUSHITE (LeaF Remix)",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"798": {
+		"name": "六兆年と一夜物語",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"799": {
+		"name": "ヒバナ",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"800": {
+		"name": "Calamity Fortune",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"801": {
+		"name": "GranFatalité",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"802": {
+		"name": "Rule the World!!",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.1"
+		],
+		"diff": "14"
+	},
+	"803": {
+		"name": "あ・り・ま・す・か？",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"804": {
+		"name": "初音ミクの激唱",
+		"data": [
+			"MASTER",
+			"niconico",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"805": {
+		"name": "Imperishable Night 2006 (2016 Refine)",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"806": {
+		"name": "Satori ～3rd EyEs (2020 Recall)",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"807": {
+		"name": "U.N.オーエンは彼女なのか？ - Greater Scarlet",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"808": {
+		"name": "Sound Chimera",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"809": {
+		"name": "Singularity -ETIA-",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"810": {
+		"name": "Altale",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"811": {
+		"name": "竹",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"812": {
+		"name": "音弾超人ゴリライザー",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"813": {
+		"name": "PARALLEL★PRISM",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"814": {
+		"name": "エンドマークに希望と涙を添えて",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"815": {
+		"name": "Genesis",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"816": {
+		"name": "PinqPiq (xovevox Remix)",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"817": {
+		"name": "B WiZ U",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"818": {
+		"name": "Tricky Treat!!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"819": {
+		"name": "レイル・ロマネスク ハチロクver.",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"820": {
+		"name": "私たち、四季を遊ぶんです！！",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"821": {
+		"name": "初音ミクの激唱",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"822": {
+		"name": "セガNET麻雀MJ -O.N.G.E.K.I. MIX-",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"823": {
+		"name": "トリドリ⇒モリモリ！Lovely fruits☆",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"824": {
+		"name": "Transcend Lights",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"825": {
+		"name": "3分ガール",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"826": {
+		"name": "神威",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"827": {
+		"name": "Jack-the-Ripper◆",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"828": {
+		"name": "DRAGONLADY",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"829": {
+		"name": "2112410403927243233368",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"830": {
+		"name": "BLUE ZONE",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"831": {
+		"name": "Malicious Mischance",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"832": {
+		"name": "Grayed Out-Antifront-",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"833": {
+		"name": "L9",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"834": {
+		"name": "U.A.D",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"835": {
+		"name": "混沌を越えし我らが神聖なる調律主を讃えよ",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"836": {
+		"name": "Garakuta Doll Play",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"837": {
+		"name": "folern",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"838": {
+		"name": "Supersonic Generation",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"839": {
+		"name": "Megameteor",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"840": {
+		"name": "Galaxy Blaster",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"841": {
+		"name": "Stargazing Dreamer",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"842": {
+		"name": "See The Light",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"843": {
+		"name": "ジャンヌ・ダルクの慟哭",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"844": {
+		"name": "Starlight★Limited",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"845": {
+		"name": ".locasignore",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"846": {
+		"name": "μ3",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"847": {
+		"name": "最終鬼畜全部声",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.3"
+		],
+		"diff": "14"
+	},
+	"848": {
+		"name": "キライラ",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"849": {
+		"name": "Everything Will Freeze",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"850": {
+		"name": "Armageddon",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"851": {
+		"name": "Grievous Lady",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"852": {
+		"name": "Amphisbaena",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"853": {
+		"name": "聖者の鼓動",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"854": {
+		"name": "MEGALOVANIA",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"855": {
+		"name": "10pt8ion",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"856": {
+		"name": "狂恋ROMANCE",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"857": {
+		"name": "Sulfur",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"858": {
+		"name": "雷切 -RAIKIRI-",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"859": {
+		"name": "宛城、炎上！！",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"860": {
+		"name": "Trrricksters!!",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"861": {
+		"name": "TECHNOPOLIS 2085",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"862": {
+		"name": "Starry Colors",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"863": {
+		"name": "WE'RE BACK!!",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"864": {
+		"name": "Blessed Rain",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"865": {
+		"name": "Desperado Waltz",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"866": {
+		"name": "美夜月鏡",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"867": {
+		"name": "霧の書斎",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"868": {
+		"name": "Baqeela (Creepy Remix)",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"869": {
+		"name": "脳漿炸裂ガール",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.4"
+		],
+		"diff": "14"
+	},
+	"870": {
+		"name": "デアエ・エクス・マキナ！",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"871": {
+		"name": "Air",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"872": {
+		"name": "Showguts",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"873": {
+		"name": "8OROCHI",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"874": {
+		"name": "Akasagarbha -reincarnate-",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"875": {
+		"name": "怒槌",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"876": {
+		"name": "Glorious Crown (tpz over-Over-OVERCUTE REMIX)",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"877": {
+		"name": "Climax",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"878": {
+		"name": "TEmPTaTiON",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"879": {
+		"name": "ハードコア・シンドローム",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"880": {
+		"name": "BREaK! BREaK! BREaK!",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"881": {
+		"name": "月詠に鳴る",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"882": {
+		"name": "N3V3R G3T OV3R",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"883": {
+		"name": "Aenbharr",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"884": {
+		"name": "ヒトリボッチサテライト",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"885": {
+		"name": "MAGNETAR GIRL",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"886": {
+		"name": "ミラージュ･フレイグランス",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"887": {
+		"name": "FLUFFY FLASH (C-Show & Maozon Remix)",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"888": {
+		"name": "Zitronectar",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"889": {
+		"name": "Destiny Runner",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"890": {
+		"name": "What color...",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"891": {
+		"name": "まっすぐ→→→ストリーム！",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.5"
+		],
+		"diff": "14"
+	},
+	"892": {
+		"name": "ラクガキスト",
+		"data": [
+			"MASTER",
+			"niconico",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"893": {
+		"name": "妖々跋扈 ～ Who done it!",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"894": {
+		"name": "BATTLE NO.1",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"895": {
+		"name": "最強STRONGER",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"896": {
+		"name": "World Vanquisher",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"897": {
+		"name": "Caliburne 〜Story of the Legendary sword〜",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"898": {
+		"name": "花と、雪と、ドラムンベース。",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"899": {
+		"name": "VIIIbit Explorer",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"900": {
+		"name": "#狂った民族2 PRAVARGYAZOOQA",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"901": {
+		"name": "MEGATON BLAST",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"902": {
+		"name": "GEOMETRIC DANCE",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"903": {
+		"name": "心",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"904": {
+		"name": "エータ・ベータ・イータ",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"905": {
+		"name": "μάγια",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"906": {
+		"name": "Diamond Dust -crystal piano Arr.-",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"907": {
+		"name": "Prominence",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"908": {
+		"name": "Fragrance",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"909": {
+		"name": "luna blu",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.6"
+		],
+		"diff": "14"
+	},
+	"910": {
+		"name": "End Time",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"911": {
+		"name": "Love & Justice",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"912": {
+		"name": "ouroboros -twin stroke of the end-",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"913": {
+		"name": "クリムゾン帝王",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"914": {
+		"name": "otorii INNOVATED -[i]3-",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"915": {
+		"name": "larva",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"916": {
+		"name": "Xevel",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"917": {
+		"name": "Last Celebration",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"918": {
+		"name": "Alea jacta est!",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"919": {
+		"name": "渦状銀河のシンフォニエッタ",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"920": {
+		"name": "Fragrance",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"921": {
+		"name": "Elemental Ethnic",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"922": {
+		"name": "AstrøNotes.",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"923": {
+		"name": "FLUFFY FLASH",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"924": {
+		"name": "Adverse Gaff",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"925": {
+		"name": "SUPER AMBULANCE",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"926": {
+		"name": "RELOAD",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"927": {
+		"name": "Final Flash Flight",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"928": {
+		"name": "其のエメラルドを見よ",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"929": {
+		"name": "Buck's Fizz",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"930": {
+		"name": "Cogito ergo sum",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"931": {
+		"name": "冥乱幻舞",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"932": {
+		"name": "Chant Say Yeah!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"933": {
+		"name": "Recollect Lines",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"934": {
+		"name": "P！P！P！P！がおー!!",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.7"
+		],
+		"diff": "14+"
+	},
+	"935": {
+		"name": "Re：End of a Dream",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"936": {
+		"name": "Shamshir -rough Pt.2-",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"937": {
+		"name": "Crimson Phoenix",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"938": {
+		"name": "In Chaos",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"939": {
+		"name": "Tempestissimo",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"940": {
+		"name": "Got more raves? -xiRemix-",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"941": {
+		"name": "Haunted Dance",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"942": {
+		"name": "QZKago Requiem",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"943": {
+		"name": "TiamaT:F minor",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"944": {
+		"name": "Sparking Revolver",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"945": {
+		"name": "YURUSHITE",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"946": {
+		"name": "Viyella's Tears",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"947": {
+		"name": "A Man In The Mirror",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"948": {
+		"name": "Singularity -technoplanet-",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"949": {
+		"name": "Ai C",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"950": {
+		"name": "ゼーレンヴァンデルング",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"951": {
+		"name": "しとしとと",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"952": {
+		"name": "My First Phone",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"953": {
+		"name": "Halcyon",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.8"
+		],
+		"diff": "14+"
+	},
+	"954": {
+		"name": "MANIERA REMASTERED",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"955": {
+		"name": "FREEDOM DiVE",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"956": {
+		"name": "Invisible Frenzy",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"957": {
+		"name": "Synthesis.",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"958": {
+		"name": "eden",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"959": {
+		"name": "the EmpErroR",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"960": {
+		"name": "蜘蛛の糸",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"961": {
+		"name": "Hainuwele",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"962": {
+		"name": "Sage",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"963": {
+		"name": "Titania",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"964": {
+		"name": "Good bye, Merry-Go-Round.",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"965": {
+		"name": "Falsum Atlantis.",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"966": {
+		"name": "Don't Fight The Music",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"967": {
+		"name": "Viyella's Scream",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"968": {
+		"name": "Cult future",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"969": {
+		"name": "Diamond Dust",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"970": {
+		"name": "オンソクデイズ!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"971": {
+		"name": "GAME：CHANGER",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"972": {
+		"name": "THE TRiANGLE",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"973": {
+		"name": "淵底のグレイ・ユークロニア",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"974": {
+		"name": "シリウスの輝きのように",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"975": {
+		"name": "天狗の落とし文 feat.ｙｔｒ",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"976": {
+		"name": "MEGALOVANIA",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"977": {
+		"name": "macrocosmos",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"978": {
+		"name": "GODLINESS",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"14.9"
+		],
+		"diff": "14+"
+	},
+	"979": {
+		"name": "Scythe of Death",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"15"
+		],
+		"diff": "15"
+	},
+	"980": {
+		"name": "Opfer",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15"
+		],
+		"diff": "15"
+	},
+	"981": {
+		"name": "ω4",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15"
+		],
+		"diff": "15"
+	},
+	"982": {
+		"name": "AMAZING MIGHTYYYY!!!!",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"15"
+		],
+		"diff": "15"
+	},
+	"983": {
+		"name": "怨撃",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"15"
+		],
+		"diff": "15"
+	},
+	"984": {
+		"name": "宿星審判",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"15.1"
+		],
+		"diff": "15"
+	},
+	"985": {
+		"name": "POTENTIAL",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"15.1"
+		],
+		"diff": "15"
+	},
+	"986": {
+		"name": "雪男",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"15.1"
+		],
+		"diff": "15"
+	},
+	"987": {
+		"name": "脳天直撃",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.1"
+		],
+		"diff": "15"
+	},
+	"988": {
+		"name": "Magical Panic Adventure",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.1"
+		],
+		"diff": "15"
+	},
+	"989": {
+		"name": "Op.I 《fear-TITΛN-》",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.1"
+		],
+		"diff": "15"
+	},
+	"990": {
+		"name": "Stellar:Dream",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.1"
+		],
+		"diff": "15"
+	},
+	"991": {
+		"name": "I Wanna",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"15.2"
+		],
+		"diff": "15"
+	},
+	"992": {
+		"name": "Regulus",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"15.2"
+		],
+		"diff": "15"
+	},
+	"993": {
+		"name": "Stardust:RAY",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.2"
+		],
+		"diff": "15"
+	},
+	"994": {
+		"name": "Lazulis Gambit",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.2"
+		],
+		"diff": "15"
+	},
+	"995": {
+		"name": "MarbleBlue.",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.3"
+		],
+		"diff": "15"
+	},
+	"996": {
+		"name": "光焔のラテラルアーク",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.3"
+		],
+		"diff": "15"
+	},
+	"997": {
+		"name": "MeteorSnow",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.3"
+		],
+		"diff": "15"
+	},
+	"998": {
+		"name": "And Revive The Melody",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.3"
+		],
+		"diff": "15"
+	},
+	"999": {
+		"name": "DIE IN",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"15.4"
+		],
+		"diff": "15"
+	},
+	"1000": {
+		"name": "Apollo",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.4"
+		],
+		"diff": "15"
+	},
+	"1001": {
+		"name": "LAMIA",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.4"
+		],
+		"diff": "15"
+	},
+	"1002": {
+		"name": "Selenadia",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.4"
+		],
+		"diff": "15"
+	},
+	"1003": {
+		"name": "FestA of PandemoniuM",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.4"
+		],
+		"diff": "15"
+	},
+	"1004": {
+		"name": "MY GLORY WANTED!!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.4"
+		],
+		"diff": "15"
+	},
+	"1005": {
+		"name": "μ3",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.6"
+		],
+		"diff": "15"
+	},
+	"1006": {
+		"name": "Recollect Lines",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"15.7"
+		],
+		"diff": "15+"
+	},
+	"1007": {
+		"name": "天ノ弱",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1008": {
+		"name": "千本桜",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1009": {
+		"name": "炉心融解",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1010": {
+		"name": "Snow Fairy Story",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1011": {
+		"name": "月に叢雲華に風",
+		"data": [
+			"MASTER",
+			"東方Project",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1012": {
+		"name": "君のStarlight Road",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1013": {
+		"name": "青空コントレール",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1014": {
+		"name": "ヒアソビ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1015": {
+		"name": "ナイト・オブ・ナイツ (xi Remix)",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1016": {
+		"name": "U.N.オーエンは彼女なのか？ - Greater Scarlet",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1017": {
+		"name": "FREEDOM DiVE (tpz Overcute Remix)",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1018": {
+		"name": "ENERGY SYNERGY MATRIX",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1019": {
+		"name": "音弾超人ゴリライザー",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1020": {
+		"name": "U.A.D",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1021": {
+		"name": "World Vanquisher",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1022": {
+		"name": "宙の隣",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1023": {
+		"name": "つっぱれ！にゃんきー魂",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1024": {
+		"name": "Last Kingdom",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1025": {
+		"name": "ICEBURN",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1026": {
+		"name": "Vibes 2k20 (owl＊aging remix)",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1027": {
+		"name": "Rhythm of Love",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.9"
+		],
+		"diff": "11+"
+	},
+	"1028": {
+		"name": "ブレス・ユア・ブレス",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1029": {
+		"name": "乙女解剖",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1030": {
+		"name": "GO！GO！ラブリズム♥",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1031": {
+		"name": "タテマエと本心の大乱闘",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1032": {
+		"name": "偉大なる悪魔は実は大天使パトラちゃん様なのだ！",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1033": {
+		"name": "snooze",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1034": {
+		"name": "c.s.q.n.",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1035": {
+		"name": "In Chaos",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1036": {
+		"name": "アルカンシエル",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1037": {
+		"name": "エンドマークに希望と涙を添えて",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1038": {
+		"name": "Climax",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1039": {
+		"name": "シャッキーーン！！",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1040": {
+		"name": "ここからはじまるプロローグ。",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1041": {
+		"name": "C & B",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1042": {
+		"name": "ガチ恋ラビリンス",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1043": {
+		"name": "Sparkle",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1044": {
+		"name": "DAWNBREAKER",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1045": {
+		"name": "fulgente (flip-side color mix)",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1046": {
+		"name": "Suspiro",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1047": {
+		"name": "ロッキンピンクモンスター (豚乙女ランコVoVer.)",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1048": {
+		"name": "Dramatic…?",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1049": {
+		"name": "はっぴ〜しゅ〜てぃんぐすた〜",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.8"
+		],
+		"diff": "11+"
+	},
+	"1050": {
+		"name": "Hand in Hand",
+		"data": [
+			"MASTER",
+			"niconico",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1051": {
+		"name": "Sentimental Snow",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1052": {
+		"name": "INTERNET YAMERO",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1053": {
+		"name": "カミサマネジマキ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1054": {
+		"name": "初音ミクの消失",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1055": {
+		"name": "星界ちゃんと可不ちゃんのおつかい合騒曲",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1056": {
+		"name": "ウサテイ",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1057": {
+		"name": "LUNA DIAL -Version X-SAKUYA-",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1058": {
+		"name": "レータイスパークEx",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1059": {
+		"name": "felys -final remix-",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1060": {
+		"name": "エピトゥリカの祀",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1061": {
+		"name": "Singularity -MJ-",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1062": {
+		"name": "ニニ",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1063": {
+		"name": "BLUE ZONE",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1064": {
+		"name": "Electric Emotion",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1065": {
+		"name": "Quon",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1066": {
+		"name": "7thSense",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1067": {
+		"name": "Summer is over",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1068": {
+		"name": "四月の雨",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1069": {
+		"name": "CHOCOLATE BOMB!!!!",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1070": {
+		"name": "花と、雪と、ドラムンベース。",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1071": {
+		"name": "Touch and Go",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1072": {
+		"name": "Lostwizz",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1073": {
+		"name": "LiftOff",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1074": {
+		"name": "Ruler Count, Zero",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1075": {
+		"name": "天つ風",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.7"
+		],
+		"diff": "11+"
+	},
+	"1076": {
+		"name": "MY GLORY WANTED!!!",
+		"data": [
+			"ADVANCED",
+			"オンゲキ",
+			11.7
+		],
+		"diff": "11+"
+	},
+	"1077": {
+		"name": "電脳少女は歌姫の夢を見るか？",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1078": {
+		"name": "Imperishable Night 2006 (2016 Refine)",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1079": {
+		"name": "Satori ～3rd EyEs (2020 Recall)",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1080": {
+		"name": "Dreadnought",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1081": {
+		"name": "僕たちの旅とエピローグ。",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1082": {
+		"name": "CO5M1C R4ILR0AD",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1083": {
+		"name": "Löschen",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1084": {
+		"name": "YO-KAI Disco",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1085": {
+		"name": "Oshama Scramble! (Cranky Remix)",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1086": {
+		"name": "U ARE",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1087": {
+		"name": "Lazy Addiction",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1088": {
+		"name": "撩乱乙女†無双劇",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.6"
+		],
+		"diff": ""
+	},
+	"1089": {
+		"name": "Perfect Shining!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1090": {
+		"name": "みんな Happy!!",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1091": {
+		"name": "GOODRAGE",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1092": {
+		"name": "花たちに希望を",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1093": {
+		"name": "Singularity -ETIA-",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1094": {
+		"name": "OBLIVION",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1095": {
+		"name": "folern",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1096": {
+		"name": "ヤミツキ",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1097": {
+		"name": "月詠に鳴る",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1098": {
+		"name": "Radiance",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1099": {
+		"name": "アマツカミ",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1100": {
+		"name": "All Right!",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1101": {
+		"name": "Random Access Emotions",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1102": {
+		"name": "いちげき！のテーマ",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.5"
+		],
+		"diff": ""
+	},
+	"1103": {
+		"name": "Cream+Mint",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1104": {
+		"name": "檄!帝国華撃団",
+		"data": [
+			"MASTER",
+			"VARIETY",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1105": {
+		"name": "First Twinkle",
+		"data": [
+			"MASTER",
+			"チュウマイ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1106": {
+		"name": "カナリア",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1107": {
+		"name": "アンチグラビティ・ガール",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1108": {
+		"name": "パラジクロロベンゼン",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1109": {
+		"name": "疾走あんさんぶる",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1110": {
+		"name": "Bad Apple!! feat.nomico (Camellia’s “Bad Psy” Remix)",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1111": {
+		"name": "conflict",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1112": {
+		"name": "Destr0yer",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1113": {
+		"name": "迷える音色は恋の唄",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1114": {
+		"name": "Dement ～after legend～",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1115": {
+		"name": "MUSIC PЯAYER",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1116": {
+		"name": "Baqeela",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1117": {
+		"name": "ludicium \"Apocalypsis Mix\"",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1118": {
+		"name": "Daredevil Glaive",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1119": {
+		"name": "ゲーミングポーラーベア",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1120": {
+		"name": "Elusive Emotes",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1121": {
+		"name": "超前進！満点スマイル！",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1122": {
+		"name": "μ3",
+		"data": [
+			"ADVANCED",
+			"オンゲキ",
+			"11.4"
+		],
+		"diff": ""
+	},
+	"1123": {
+		"name": "Lost Princess",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1124": {
+		"name": "なんどでも笑おう",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1125": {
+		"name": "恋のイリュージョニスタ",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1126": {
+		"name": "get the regret over",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1127": {
+		"name": "アンハッピーリフレイン",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1128": {
+		"name": "人生リセットボタン",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1129": {
+		"name": "裏表ラバーズ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1130": {
+		"name": "イカサマライフゲイム",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1131": {
+		"name": "初音天地開闢神話",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1132": {
+		"name": "ポジティブ☆ダンスタイム",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1133": {
+		"name": "断罪は遍く人間の元に",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1134": {
+		"name": "Party 4U \"holy nite mix\"",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1135": {
+		"name": "BOKUTO",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1136": {
+		"name": "Paradisoda",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.3"
+		],
+		"diff": ""
+	},
+	"1137": {
+		"name": "STARTLINER",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1138": {
+		"name": "HEAVEN'S RAVE",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1139": {
+		"name": "夜咄ディセイブ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1140": {
+		"name": "ジャンキーナイトタウンオーケストラ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1141": {
+		"name": "タイガーランペイジ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1142": {
+		"name": "孤独の果て",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1143": {
+		"name": "ロストワードクロニカル",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1144": {
+		"name": "Singing to the gods",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1145": {
+		"name": "Hyper Active",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1146": {
+		"name": "Death Doll",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1147": {
+		"name": "Skip & Smile!!",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1148": {
+		"name": "STARRED HEART",
+		"data": [
+			"LUNATIC",
+			"LUNATIC",
+			"11.2"
+		],
+		"diff": ""
+	},
+	"1149": {
+		"name": "君よ",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1150": {
+		"name": "オートファジー",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1151": {
+		"name": "Doll Judgment",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1152": {
+		"name": "物凄い狂っとるフランちゃんが物凄いうた",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1153": {
+		"name": "神々が恋した幻想郷",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1154": {
+		"name": "Cutter",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1155": {
+		"name": "まりもとおもちゃ箱",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1156": {
+		"name": "夢を叶える場所",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1157": {
+		"name": "Event Horizon",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11.1"
+		],
+		"diff": ""
+	},
+	"1158": {
+		"name": "Let Me Know (feat. Masayoshi Iimori)",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11"
+		],
+		"diff": ""
+	},
+	"1159": {
+		"name": "INTERNET OVERDOSE",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11"
+		],
+		"diff": ""
+	},
+	"1160": {
+		"name": "Lots of love",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11"
+		],
+		"diff": ""
+	},
+	"1161": {
+		"name": "Faith in Expression",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11"
+		],
+		"diff": ""
+	},
+	"1162": {
+		"name": "On your mark (104期 Ver.)",
+		"data": [
+			"EXPERT",
+			"POPS & ANIME",
+			"11"
+		],
+		"diff": ""
+	},
+	"1163": {
+		"name": "初音ミクの激唱",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11"
+		],
+		"diff": ""
+	},
+	"1164": {
+		"name": "こどものしくみ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11"
+		],
+		"diff": ""
+	},
+	"1165": {
+		"name": "アンノウン・マザーグース",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11"
+		],
+		"diff": ""
+	},
+	"1166": {
+		"name": "ステラ",
+		"data": [
+			"EXPERT",
+			"niconico",
+			"11"
+		],
+		"diff": ""
+	},
+	"1167": {
+		"name": "患部で止まってすぐ溶ける～狂気の優曇華院",
+		"data": [
+			"EXPERT",
+			"東方Project",
+			"11"
+		],
+		"diff": ""
+	},
+	"1168": {
+		"name": "Burning Steel Inferno",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11"
+		],
+		"diff": ""
+	},
+	"1169": {
+		"name": "Small Cloud Sugar Candy",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"11"
+		],
+		"diff": ""
+	},
+	"1170": {
+		"name": "AMAZING MIGHTYYYY!!!!",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1171": {
+		"name": "Change Our MIRAI！（Our 7 Lights）",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1172": {
+		"name": "足立オウフwwww",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1173": {
+		"name": "L'epilogue",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1174": {
+		"name": "とびだせ！TO THE COSMIC!!",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1175": {
+		"name": "Imitation:Loud Lounge",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1176": {
+		"name": "Candy Tall Woman",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1177": {
+		"name": "Rainbow Rush Story",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1178": {
+		"name": "群青シグナル",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1179": {
+		"name": "Ai Nov",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1180": {
+		"name": "Honey Bear",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1181": {
+		"name": "STARRED HEART",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1182": {
+		"name": "give it up to you",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1183": {
+		"name": "おやすみのうた",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1184": {
+		"name": "いつか花咲くその前に",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1185": {
+		"name": "ヒストリー×ブレイカー",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1186": {
+		"name": "Memories of O.N.G.E.K.I.",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1187": {
+		"name": "Livmetarryr",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	},
+	"1188": {
+		"name": "FestA of PandemoniuM",
+		"data": [
+			"ADVANCED",
+			"オンゲキ",
+			"11"
+		],
+		"diff": ""
+	}
+}
