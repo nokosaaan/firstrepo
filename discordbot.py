@@ -55,7 +55,7 @@ async def roll(ctx, dice: str):
 async def omi(ctx, game: str, diff: str, op: str, op2: str):
     """Randomly select 3 songs from that game"""
     if(game=='c'):
-        f = open("data.json", 'r')
+        f = open("data_c.json", 'r')
 
         json_data = json.load(f)
         u=[]
@@ -419,7 +419,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
     elif(game=='o'):
-        f = open("data_ongeki.json", 'r')
+        f = open("data_o.json", 'r')
 
         json_data = json.load(f)
         u=[]
