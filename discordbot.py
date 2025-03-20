@@ -28,7 +28,7 @@ async def on_ready():
 async def update(ctx, now: str):
     """Inform the date"""
     if(now=="now"):
-        dt_now = datetime.datetime.now()
+        dt_now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
         await ctx.send(f"{dt_now.year}年{dt_now.month}月{dt_now.day}日{dt_now.hour}時{dt_now.minute}分{dt_now.second}秒までの更新分を反映しました\n")
 
 @bot.command()
