@@ -13831,5 +13831,131 @@
 			"14"
 		],
 		"diff": "14"
+	},
+	"1537": {
+		"name": "ONLY YOUR STARS! (Trickstar Ver.)",
+		"data": [
+			"MAS",
+			"P&A",
+			"13"
+		],
+		"diff": "13"
+	},
+	"1538": {
+		"name": "BRAND NEW STARS!! (ALKALOID Ver.)",
+		"data": [
+			"MAS",
+			"P&A",
+			"12.6"
+		],
+		"diff": "12+"
+	},
+	"1539": {
+		"name": "One With One (Eden Ver.)",
+		"data": [
+			"MAS",
+			"P&A",
+			"13.5"
+		],
+		"diff": "13+"
+	},
+	"1540": {
+		"name": "Surprising Thanks!! (Crazy:B Ver.)",
+		"data": [
+			"MAS",
+			"P&A",
+			"13.2"
+		],
+		"diff": "13"
+	},
+	"1541": {
+		"name": "INFiNiTE ENERGY -Overdose-",
+		"data": [
+			"MAS",
+			"VAR",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"1542": {
+		"name": "INFiNiTE ENERGY -Overdose-",
+		"data": [
+			"EXP",
+			"VAR",
+			"13.1"
+		],
+		"diff": "13"
+	},
+	"1543": {
+		"name": "ERIS -Legend of Gaidelia-",
+		"data": [
+			"ULT",
+			"VAR",
+			"15.1"
+		],
+		"diff": "15"
+	},
+	"1544": {
+		"name": "Crush the Dystopia",
+		"data": [
+			"MAS",
+			"ORI",
+			"15.4"
+		],
+		"diff": "15"
+	},
+	"1545": {
+		"name": "Crush the Dystopia",
+		"data": [
+			"EXP",
+			"ORI",
+			"13.3"
+		],
+		"diff": "13"
+	},
+	"1546": {
+		"name": "人マニア",
+		"data": [
+			"MAS",
+			"nico",
+			"14.2"
+		],
+		"diff": "14"
+	},
+	"1547": {
+		"name": "オーバーライド",
+		"data": [
+			"MAS",
+			"nico",
+			"12.9"
+		],
+		"diff": "12+"
+	},
+	"1548": {
+		"name": "オーバーライド",
+		"data": [
+			"ULT",
+			"nico",
+			"14.6"
+		],
+		"diff": "14+"
+	},
+	"1549": {
+		"name": "ライアーダンサー",
+		"data": [
+			"MAS",
+			"nico",
+			"13.5"
+		],
+		"diff": "13+"
+	},
+	"1550": {
+		"name": "黒塗り世界宛て書簡",
+		"data": [
+			"MAS",
+			"nico",
+			"13.6"
+		],
+		"diff": "13+"
 	}
 }
