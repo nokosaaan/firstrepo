@@ -486,7 +486,7 @@
 		"diff": "12"
 	},
 	"54": {
-		"name": "μάγια",
+		"name": "colorful transparency",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -495,7 +495,7 @@
 		"diff": "12"
 	},
 	"55": {
-		"name": "RELOAD",
+		"name": "μάγια",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -504,7 +504,7 @@
 		"diff": "12"
 	},
 	"56": {
-		"name": "B WiZ U",
+		"name": "RELOAD",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -513,7 +513,7 @@
 		"diff": "12"
 	},
 	"57": {
-		"name": "Island Breeze",
+		"name": "B WiZ U",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -522,7 +522,7 @@
 		"diff": "12"
 	},
 	"58": {
-		"name": "Buck's Fizz",
+		"name": "Island Breeze",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -531,7 +531,7 @@
 		"diff": "12"
 	},
 	"59": {
-		"name": "Earthly Light",
+		"name": "Buck's Fizz",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -540,7 +540,7 @@
 		"diff": "12"
 	},
 	"60": {
-		"name": "Never Ending Adventure",
+		"name": "Earthly Light",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -549,6 +549,15 @@
 		"diff": "12"
 	},
 	"61": {
+		"name": "Never Ending Adventure",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.5"
+		],
+		"diff": "12"
+	},
+	"62": {
 		"name": "Recollect Lines",
 		"data": [
 			"ADVANCED",
@@ -557,7 +566,7 @@
 		],
 		"diff": "12"
 	},
-	"62": {
+	"63": {
 		"name": "Forever Friends",
 		"data": [
 			"MASTER",
@@ -566,7 +575,7 @@
 		],
 		"diff": "12"
 	},
-	"63": {
+	"64": {
 		"name": "エッビーナースデイ",
 		"data": [
 			"MASTER",
@@ -575,17 +584,8 @@
 		],
 		"diff": "12"
 	},
-	"64": {
-		"name": "ヒバナ",
-		"data": [
-			"MASTER",
-			"niconico",
-			"12.4"
-		],
-		"diff": "12"
-	},
 	"65": {
-		"name": "サマータイムレコード",
+		"name": "ヒバナ",
 		"data": [
 			"MASTER",
 			"niconico",
@@ -594,7 +594,7 @@
 		"diff": "12"
 	},
 	"66": {
-		"name": "METEOR",
+		"name": "サマータイムレコード",
 		"data": [
 			"MASTER",
 			"niconico",
@@ -603,7 +603,7 @@
 		"diff": "12"
 	},
 	"67": {
-		"name": "セカイはまだ始まってすらいない",
+		"name": "METEOR",
 		"data": [
 			"MASTER",
 			"niconico",
@@ -612,7 +612,7 @@
 		"diff": "12"
 	},
 	"68": {
-		"name": "セカイ",
+		"name": "セカイはまだ始まってすらいない",
 		"data": [
 			"MASTER",
 			"niconico",
@@ -621,7 +621,7 @@
 		"diff": "12"
 	},
 	"69": {
-		"name": "メランコリック",
+		"name": "セカイ",
 		"data": [
 			"MASTER",
 			"niconico",
@@ -630,6 +630,15 @@
 		"diff": "12"
 	},
 	"70": {
+		"name": "メランコリック",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"71": {
 		"name": "朝焼けプラットホーム",
 		"data": [
 			"MASTER",
@@ -638,7 +647,7 @@
 		],
 		"diff": "12"
 	},
-	"71": {
+	"72": {
 		"name": "Ring",
 		"data": [
 			"MASTER",
@@ -647,7 +656,7 @@
 		],
 		"diff": "12"
 	},
-	"72": {
+	"73": {
 		"name": "Jump!! Jump!! Jump!!",
 		"data": [
 			"MASTER",
@@ -656,17 +665,8 @@
 		],
 		"diff": "12"
 	},
-	"73": {
-		"name": "最強 the サマータイム!!!!!",
-		"data": [
-			"MASTER",
-			"オンゲキ",
-			"12.4"
-		],
-		"diff": "12"
-	},
 	"74": {
-		"name": "夜明けのストリング",
+		"name": "最強 the サマータイム!!!!!",
 		"data": [
 			"MASTER",
 			"オンゲキ",
@@ -675,7 +675,7 @@
 		"diff": "12"
 	},
 	"75": {
-		"name": "No Limit RED Force",
+		"name": "夜明けのストリング",
 		"data": [
 			"MASTER",
 			"オンゲキ",
@@ -684,7 +684,7 @@
 		"diff": "12"
 	},
 	"76": {
-		"name": "キミは\"見ていたね\"？",
+		"name": "No Limit RED Force",
 		"data": [
 			"MASTER",
 			"オンゲキ",
@@ -693,7 +693,7 @@
 		"diff": "12"
 	},
 	"77": {
-		"name": "Girl's Party Planet!",
+		"name": "キミは\"見ていたね\"？",
 		"data": [
 			"MASTER",
 			"オンゲキ",
@@ -702,7 +702,7 @@
 		"diff": "12"
 	},
 	"78": {
-		"name": "天つ風 feat. 夏川陽子",
+		"name": "Girl's Party Planet!",
 		"data": [
 			"MASTER",
 			"オンゲキ",
@@ -711,6 +711,15 @@
 		"diff": "12"
 	},
 	"79": {
+		"name": "天つ風 feat. 夏川陽子",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"80": {
 		"name": "サンダーレスキュー！",
 		"data": [
 			"EXPERT",
@@ -719,17 +728,8 @@
 		],
 		"diff": "12"
 	},
-	"80": {
-		"name": "神威",
-		"data": [
-			"EXPERT",
-			"VARIETY",
-			"12.4"
-		],
-		"diff": "12"
-	},
 	"81": {
-		"name": "竹",
+		"name": "神威",
 		"data": [
 			"EXPERT",
 			"VARIETY",
@@ -738,7 +738,7 @@
 		"diff": "12"
 	},
 	"82": {
-		"name": "8OROCHI",
+		"name": "竹",
 		"data": [
 			"EXPERT",
 			"VARIETY",
@@ -747,7 +747,7 @@
 		"diff": "12"
 	},
 	"83": {
-		"name": "Akasagarbha -reincarnate-",
+		"name": "8OROCHI",
 		"data": [
 			"EXPERT",
 			"VARIETY",
@@ -756,16 +756,16 @@
 		"diff": "12"
 	},
 	"84": {
-		"name": "otorii INNOVATED -[i]3-",
+		"name": "Akasagarbha -reincarnate-",
 		"data": [
 			"EXPERT",
-			"チュウマイ",
+			"VARIETY",
 			"12.4"
 		],
 		"diff": "12"
 	},
 	"85": {
-		"name": "Genesis",
+		"name": "otorii INNOVATED -[i]3-",
 		"data": [
 			"EXPERT",
 			"チュウマイ",
@@ -774,7 +774,7 @@
 		"diff": "12"
 	},
 	"86": {
-		"name": "Last Celebration",
+		"name": "Genesis",
 		"data": [
 			"EXPERT",
 			"チュウマイ",
@@ -783,7 +783,7 @@
 		"diff": "12"
 	},
 	"87": {
-		"name": "Death Scythe",
+		"name": "Last Celebration",
 		"data": [
 			"EXPERT",
 			"チュウマイ",
@@ -792,7 +792,7 @@
 		"diff": "12"
 	},
 	"88": {
-		"name": "N3V3R G3T OV3R",
+		"name": "Death Scythe",
 		"data": [
 			"EXPERT",
 			"チュウマイ",
@@ -801,16 +801,16 @@
 		"diff": "12"
 	},
 	"89": {
-		"name": "Knocking Harder",
+		"name": "N3V3R G3T OV3R",
 		"data": [
 			"EXPERT",
-			"オンゲキ",
+			"チュウマイ",
 			"12.4"
 		],
 		"diff": "12"
 	},
 	"90": {
-		"name": "Azucar",
+		"name": "Knocking Harder",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -819,6 +819,15 @@
 		"diff": "12"
 	},
 	"91": {
+		"name": "Azucar",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.4"
+		],
+		"diff": "12"
+	},
+	"92": {
 		"name": "ハートサーモグラフィ",
 		"data": [
 			"MASTER",
@@ -827,7 +836,7 @@
 		],
 		"diff": "12"
 	},
-	"92": {
+	"93": {
 		"name": "HARMONIZE",
 		"data": [
 			"MASTER",
@@ -836,17 +845,8 @@
 		],
 		"diff": "12"
 	},
-	"93": {
-		"name": "ハッピータイフーン",
-		"data": [
-			"MASTER",
-			"POPS & ANIME",
-			"12.3"
-		],
-		"diff": "12"
-	},
 	"94": {
-		"name": "クライングハート",
+		"name": "ハッピータイフーン",
 		"data": [
 			"MASTER",
 			"POPS & ANIME",
@@ -855,7 +855,7 @@
 		"diff": "12"
 	},
 	"95": {
-		"name": "ラブ・ラビリンス",
+		"name": "クライングハート",
 		"data": [
 			"MASTER",
 			"POPS & ANIME",
@@ -864,16 +864,16 @@
 		"diff": "12"
 	},
 	"96": {
-		"name": "六兆年と一夜物語",
+		"name": "ラブ・ラビリンス",
 		"data": [
 			"MASTER",
-			"niconico",
+			"POPS & ANIME",
 			"12.3"
 		],
 		"diff": "12"
 	},
 	"97": {
-		"name": "砂の惑星 feat. HATSUNE MIKU",
+		"name": "六兆年と一夜物語",
 		"data": [
 			"MASTER",
 			"niconico",
@@ -882,7 +882,7 @@
 		"diff": "12"
 	},
 	"98": {
-		"name": 39,
+		"name": "グリーンライツ・セレナーデ",
 		"data": [
 			"MASTER",
 			"niconico",
@@ -891,7 +891,7 @@
 		"diff": "12"
 	},
 	"99": {
-		"name": "快晴",
+		"name": "砂の惑星 feat. HATSUNE MIKU",
 		"data": [
 			"MASTER",
 			"niconico",
@@ -900,7 +900,7 @@
 		"diff": "12"
 	},
 	"100": {
-		"name": "太陽系デスコ",
+		"name": 39,
 		"data": [
 			"MASTER",
 			"niconico",
@@ -909,7 +909,7 @@
 		"diff": "12"
 	},
 	"101": {
-		"name": "アルカリレットウセイ",
+		"name": "快晴",
 		"data": [
 			"MASTER",
 			"niconico",
@@ -918,7 +918,7 @@
 		"diff": "12"
 	},
 	"102": {
-		"name": "空奏列車",
+		"name": "太陽系デスコ",
 		"data": [
 			"MASTER",
 			"niconico",
@@ -927,7 +927,7 @@
 		"diff": "12"
 	},
 	"103": {
-		"name": "恋愛裁判",
+		"name": "アルカリレットウセイ",
 		"data": [
 			"MASTER",
 			"niconico",
@@ -936,6 +936,24 @@
 		"diff": "12"
 	},
 	"104": {
+		"name": "空奏列車",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"105": {
+		"name": "恋愛裁判",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"106": {
 		"name": "進捗どうですか？",
 		"data": [
 			"MASTER",
@@ -944,7 +962,7 @@
 		],
 		"diff": "12"
 	},
-	"105": {
+	"107": {
 		"name": "東方妖々夢 ～the maximum moving about～",
 		"data": [
 			"MASTER",
@@ -953,7 +971,7 @@
 		],
 		"diff": "12"
 	},
-	"106": {
+	"108": {
 		"name": "櫻結び",
 		"data": [
 			"MASTER",
@@ -962,7 +980,7 @@
 		],
 		"diff": "12"
 	},
-	"107": {
+	"109": {
 		"name": "Y.Y.Y.計画!!!!",
 		"data": [
 			"MASTER",
@@ -971,7 +989,7 @@
 		],
 		"diff": "12"
 	},
-	"108": {
+	"110": {
 		"name": "ポケットからぬりつぶせ！",
 		"data": [
 			"MASTER",
@@ -980,7 +998,7 @@
 		],
 		"diff": "12"
 	},
-	"109": {
+	"111": {
 		"name": "Handmade Good Day",
 		"data": [
 			"MASTER",
@@ -989,7 +1007,7 @@
 		],
 		"diff": "12"
 	},
-	"110": {
+	"112": {
 		"name": "アリアの最強しもべ計画♡",
 		"data": [
 			"EXPERT",
@@ -998,7 +1016,7 @@
 		],
 		"diff": "12"
 	},
-	"111": {
+	"113": {
 		"name": "Jack-the-Ripper◆",
 		"data": [
 			"EXPERT",
@@ -1007,7 +1025,7 @@
 		],
 		"diff": "12"
 	},
-	"112": {
+	"114": {
 		"name": "狂恋ROMANCE",
 		"data": [
 			"EXPERT",
@@ -1016,7 +1034,16 @@
 		],
 		"diff": "12"
 	},
-	"113": {
+	"115": {
+		"name": "U.A.D",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.3"
+		],
+		"diff": "12"
+	},
+	"116": {
 		"name": "Alea jacta est!",
 		"data": [
 			"EXPERT",
@@ -1025,35 +1052,8 @@
 		],
 		"diff": "12"
 	},
-	"114": {
-		"name": "Dazzle hop",
-		"data": [
-			"EXPERT",
-			"オンゲキ",
-			"12.3"
-		],
-		"diff": "12"
-	},
-	"115": {
-		"name": "YURUSHITE",
-		"data": [
-			"EXPERT",
-			"オンゲキ",
-			"12.3"
-		],
-		"diff": "12"
-	},
-	"116": {
-		"name": "R'N'R Monsta",
-		"data": [
-			"EXPERT",
-			"オンゲキ",
-			"12.3"
-		],
-		"diff": "12"
-	},
 	"117": {
-		"name": "Ai Drew",
+		"name": "Dazzle hop",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -1062,7 +1062,7 @@
 		"diff": "12"
 	},
 	"118": {
-		"name": "Galaxy Blaster",
+		"name": "YURUSHITE",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -1071,7 +1071,7 @@
 		"diff": "12"
 	},
 	"119": {
-		"name": "AstrøNotes.",
+		"name": "R'N'R Monsta",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -1080,7 +1080,7 @@
 		"diff": "12"
 	},
 	"120": {
-		"name": "Princesses Holiday",
+		"name": "Ai Drew",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -1089,7 +1089,7 @@
 		"diff": "12"
 	},
 	"121": {
-		"name": "ゼーレンヴァンデルング",
+		"name": "Galaxy Blaster",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -1098,7 +1098,7 @@
 		"diff": "12"
 	},
 	"122": {
-		"name": "Starlight★Limited",
+		"name": "AstrøNotes.",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -1107,34 +1107,34 @@
 		"diff": "12"
 	},
 	"123": {
-		"name": "ネ！コ！",
+		"name": "Princesses Holiday",
 		"data": [
-			"MASTER",
-			"POPS & ANIME",
-			"12.2"
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
 		],
 		"diff": "12"
 	},
 	"124": {
-		"name": "beautiful tomorrow",
+		"name": "ゼーレンヴァンデルング",
 		"data": [
-			"MASTER",
-			"POPS & ANIME",
-			"12.2"
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
 		],
 		"diff": "12"
 	},
 	"125": {
-		"name": "うぇるかむ to ONSEN!!",
+		"name": "Starlight★Limited",
 		"data": [
-			"MASTER",
-			"POPS & ANIME",
-			"12.2"
+			"EXPERT",
+			"オンゲキ",
+			"12.3"
 		],
 		"diff": "12"
 	},
 	"126": {
-		"name": "プラネタリウム・レヴュー",
+		"name": "ネ！コ！",
 		"data": [
 			"MASTER",
 			"POPS & ANIME",
@@ -1143,6 +1143,33 @@
 		"diff": "12"
 	},
 	"127": {
+		"name": "beautiful tomorrow",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"128": {
+		"name": "うぇるかむ to ONSEN!!",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"129": {
+		"name": "プラネタリウム・レヴュー",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"130": {
 		"name": "心象蜃気楼",
 		"data": [
 			"MASTER",
@@ -1151,7 +1178,7 @@
 		],
 		"diff": "12"
 	},
-	"128": {
+	"131": {
 		"name": "Henceforth",
 		"data": [
 			"MASTER",
@@ -1160,7 +1187,7 @@
 		],
 		"diff": "12"
 	},
-	"129": {
+	"132": {
 		"name": "幽霊東京",
 		"data": [
 			"MASTER",
@@ -1169,7 +1196,7 @@
 		],
 		"diff": "12"
 	},
-	"130": {
+	"133": {
 		"name": "レプリカの恋",
 		"data": [
 			"MASTER",
@@ -1178,7 +1205,7 @@
 		],
 		"diff": "12"
 	},
-	"131": {
+	"134": {
 		"name": "進め！マイウェイ！",
 		"data": [
 			"MASTER",
@@ -1187,7 +1214,7 @@
 		],
 		"diff": "12"
 	},
-	"132": {
+	"135": {
 		"name": "3分ガール",
 		"data": [
 			"EXPERT",
@@ -1196,7 +1223,7 @@
 		],
 		"diff": "12"
 	},
-	"133": {
+	"136": {
 		"name": "インビジブル",
 		"data": [
 			"EXPERT",
@@ -1205,7 +1232,7 @@
 		],
 		"diff": "12"
 	},
-	"134": {
+	"137": {
 		"name": "Calamity Fortune",
 		"data": [
 			"EXPERT",
@@ -1214,7 +1241,7 @@
 		],
 		"diff": "12"
 	},
-	"135": {
+	"138": {
 		"name": "ナイト・オブ・ナイツ (かめりあ's\"ワンス・アポン・ア・ナイト\"Remix)",
 		"data": [
 			"EXPERT",
@@ -1223,7 +1250,7 @@
 		],
 		"diff": "12"
 	},
-	"136": {
+	"139": {
 		"name": "Air",
 		"data": [
 			"EXPERT",
@@ -1232,7 +1259,7 @@
 		],
 		"diff": "12"
 	},
-	"137": {
+	"140": {
 		"name": "Knight Rider",
 		"data": [
 			"EXPERT",
@@ -1241,7 +1268,7 @@
 		],
 		"diff": "12"
 	},
-	"138": {
+	"141": {
 		"name": "Sulfur",
 		"data": [
 			"EXPERT",
@@ -1250,7 +1277,7 @@
 		],
 		"diff": "12"
 	},
-	"139": {
+	"142": {
 		"name": "The wheel to the right",
 		"data": [
 			"EXPERT",
@@ -1259,7 +1286,7 @@
 		],
 		"diff": "12"
 	},
-	"140": {
+	"143": {
 		"name": "Xevel",
 		"data": [
 			"EXPERT",
@@ -1268,35 +1295,8 @@
 		],
 		"diff": "12"
 	},
-	"141": {
-		"name": "Mini skirt",
-		"data": [
-			"EXPERT",
-			"オンゲキ",
-			"12.2"
-		],
-		"diff": "12"
-	},
-	"142": {
-		"name": "RED to RED",
-		"data": [
-			"EXPERT",
-			"オンゲキ",
-			"12.2"
-		],
-		"diff": "12"
-	},
-	"143": {
-		"name": "A Day in the Patisserie",
-		"data": [
-			"EXPERT",
-			"オンゲキ",
-			"12.2"
-		],
-		"diff": "12"
-	},
 	"144": {
-		"name": "Pastel Sprinkles",
+		"name": "Mini skirt",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -1305,7 +1305,7 @@
 		"diff": "12"
 	},
 	"145": {
-		"name": "GODLINESS",
+		"name": "RED to RED",
 		"data": [
 			"EXPERT",
 			"オンゲキ",
@@ -1314,6 +1314,33 @@
 		"diff": "12"
 	},
 	"146": {
+		"name": "A Day in the Patisserie",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"147": {
+		"name": "Pastel Sprinkles",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"148": {
+		"name": "GODLINESS",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.2"
+		],
+		"diff": "12"
+	},
+	"149": {
 		"name": "ホシノキズナ",
 		"data": [
 			"MASTER",
@@ -1322,7 +1349,7 @@
 		],
 		"diff": "12"
 	},
-	"147": {
+	"150": {
 		"name": "タイムマシン",
 		"data": [
 			"MASTER",
@@ -1331,7 +1358,7 @@
 		],
 		"diff": "12"
 	},
-	"148": {
+	"151": {
 		"name": "寒想桜",
 		"data": [
 			"MASTER",
@@ -1340,7 +1367,7 @@
 		],
 		"diff": "12"
 	},
-	"149": {
+	"152": {
 		"name": "Colors",
 		"data": [
 			"MASTER",
@@ -1349,7 +1376,7 @@
 		],
 		"diff": "12"
 	},
-	"150": {
+	"153": {
 		"name": "幽闇に目醒めしは",
 		"data": [
 			"MASTER",
@@ -1358,35 +1385,8 @@
 		],
 		"diff": "12"
 	},
-	"151": {
-		"name": "どうぶつ☆パラダイス",
-		"data": [
-			"MASTER",
-			"オンゲキ",
-			"12.1"
-		],
-		"diff": "12"
-	},
-	"152": {
-		"name": "夏色花火",
-		"data": [
-			"MASTER",
-			"オンゲキ",
-			"12.1"
-		],
-		"diff": "12"
-	},
-	"153": {
-		"name": "Little Twinkle",
-		"data": [
-			"MASTER",
-			"オンゲキ",
-			"12.1"
-		],
-		"diff": "12"
-	},
 	"154": {
-		"name": "Flower",
+		"name": "どうぶつ☆パラダイス",
 		"data": [
 			"MASTER",
 			"オンゲキ",
@@ -1395,6 +1395,33 @@
 		"diff": "12"
 	},
 	"155": {
+		"name": "夏色花火",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"156": {
+		"name": "Little Twinkle",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"157": {
+		"name": "Flower",
+		"data": [
+			"MASTER",
+			"オンゲキ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"158": {
 		"name": "妖々跋扈 ～ Who done it!",
 		"data": [
 			"EXPERT",
@@ -1403,7 +1430,7 @@
 		],
 		"diff": "12"
 	},
-	"156": {
+	"159": {
 		"name": "マツヨイナイトバグ",
 		"data": [
 			"EXPERT",
@@ -1412,35 +1439,8 @@
 		],
 		"diff": "12"
 	},
-	"157": {
-		"name": "Grievous Lady",
-		"data": [
-			"EXPERT",
-			"VARIETY",
-			"12.1"
-		],
-		"diff": "12"
-	},
-	"158": {
-		"name": "DRAGONLADY",
-		"data": [
-			"EXPERT",
-			"VARIETY",
-			"12.1"
-		],
-		"diff": "12"
-	},
-	"159": {
-		"name": "2112410403927243233368",
-		"data": [
-			"EXPERT",
-			"VARIETY",
-			"12.1"
-		],
-		"diff": "12"
-	},
 	"160": {
-		"name": "10pt8ion",
+		"name": "Grievous Lady",
 		"data": [
 			"EXPERT",
 			"VARIETY",
@@ -1449,7 +1449,7 @@
 		"diff": "12"
 	},
 	"161": {
-		"name": "Ouvertüre",
+		"name": "DRAGONLADY",
 		"data": [
 			"EXPERT",
 			"VARIETY",
@@ -1458,6 +1458,51 @@
 		"diff": "12"
 	},
 	"162": {
+		"name": "2112410403927243233368",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"163": {
+		"name": "In Chaos",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"164": {
+		"name": "音弾超人ゴリライザー",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"165": {
+		"name": "10pt8ion",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"166": {
+		"name": "Ouvertüre",
+		"data": [
+			"EXPERT",
+			"VARIETY",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"167": {
 		"name": "SILENT BLUE",
 		"data": [
 			"EXPERT",
@@ -1466,7 +1511,7 @@
 		],
 		"diff": "12"
 	},
-	"163": {
+	"168": {
 		"name": "Secret Sleuth",
 		"data": [
 			"EXPERT",
@@ -1475,7 +1520,16 @@
 		],
 		"diff": "12"
 	},
-	"164": {
+	"169": {
+		"name": "ガチ恋ラビリンス",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"170": {
 		"name": "8-EM",
 		"data": [
 			"EXPERT",
@@ -1484,7 +1538,7 @@
 		],
 		"diff": "12"
 	},
-	"165": {
+	"171": {
 		"name": "GEOMETRIC DANCE",
 		"data": [
 			"EXPERT",
@@ -1493,7 +1547,7 @@
 		],
 		"diff": "12"
 	},
-	"166": {
+	"172": {
 		"name": "Trinity Departure",
 		"data": [
 			"EXPERT",
@@ -1502,7 +1556,7 @@
 		],
 		"diff": "12"
 	},
-	"167": {
+	"173": {
 		"name": "最っ高のエンタメだ!!",
 		"data": [
 			"EXPERT",
@@ -1511,7 +1565,7 @@
 		],
 		"diff": "12"
 	},
-	"168": {
+	"174": {
 		"name": "Adverse Gaff",
 		"data": [
 			"EXPERT",
@@ -1520,7 +1574,16 @@
 		],
 		"diff": "12"
 	},
-	"169": {
+	"175": {
+		"name": "Vibes 2k20 (owl＊aging remix)",
+		"data": [
+			"EXPERT",
+			"オンゲキ",
+			"12.1"
+		],
+		"diff": "12"
+	},
+	"176": {
 		"name": "がおっと!!最強☆ぱーりーないと",
 		"data": [
 			"EXPERT",
@@ -1529,7 +1592,7 @@
 		],
 		"diff": "12"
 	},
-	"170": {
+	"177": {
 		"name": "レイル・ロマネスク ハチロクver.",
 		"data": [
 			"MASTER",
@@ -1538,7 +1601,7 @@
 		],
 		"diff": "12"
 	},
-	"171": {
+	"178": {
 		"name": "キズナヒトツ",
 		"data": [
 			"MASTER",
@@ -1547,7 +1610,7 @@
 		],
 		"diff": "12"
 	},
-	"172": {
+	"179": {
 		"name": "木彫り鯰と右肩ゾンビ",
 		"data": [
 			"MASTER",
@@ -1556,7 +1619,7 @@
 		],
 		"diff": "12"
 	},
-	"173": {
+	"180": {
 		"name": "いーあるふぁんくらぶ",
 		"data": [
 			"MASTER",
@@ -1565,7 +1628,7 @@
 		],
 		"diff": "12"
 	},
-	"174": {
+	"181": {
 		"name": "メルト",
 		"data": [
 			"MASTER",
@@ -1574,7 +1637,7 @@
 		],
 		"diff": "12"
 	},
-	"175": {
+	"182": {
 		"name": "Grip & Break down !!",
 		"data": [
 			"MASTER",
@@ -1583,7 +1646,7 @@
 		],
 		"diff": "12"
 	},
-	"176": {
+	"183": {
 		"name": "オモイヨシノ",
 		"data": [
 			"MASTER",
@@ -1592,7 +1655,7 @@
 		],
 		"diff": "12"
 	},
-	"177": {
+	"184": {
 		"name": "Zest of Blue",
 		"data": [
 			"MASTER",
@@ -1601,7 +1664,7 @@
 		],
 		"diff": "12"
 	},
-	"178": {
+	"185": {
 		"name": "White Magic Night!",
 		"data": [
 			"MASTER",
@@ -1610,7 +1673,7 @@
 		],
 		"diff": "12"
 	},
-	"179": {
+	"186": {
 		"name": "Happiness on the Table",
 		"data": [
 			"MASTER",
@@ -1619,7 +1682,7 @@
 		],
 		"diff": "12"
 	},
-	"180": {
+	"187": {
 		"name": "宣誓センセーション",
 		"data": [
 			"EXPERT",
@@ -1628,7 +1691,7 @@
 		],
 		"diff": "12"
 	},
-	"181": {
+	"188": {
 		"name": "ラクガキスト",
 		"data": [
 			"EXPERT",
@@ -1637,7 +1700,7 @@
 		],
 		"diff": "12"
 	},
-	"182": {
+	"189": {
 		"name": "Showguts",
 		"data": [
 			"EXPERT",
@@ -1646,7 +1709,7 @@
 		],
 		"diff": "12"
 	},
-	"183": {
+	"190": {
 		"name": "BLUE ZONE",
 		"data": [
 			"EXPERT",
@@ -1655,7 +1718,7 @@
 		],
 		"diff": "12"
 	},
-	"184": {
+	"191": {
 		"name": "Malicious Mischance",
 		"data": [
 			"EXPERT",
@@ -1664,7 +1727,16 @@
 		],
 		"diff": "12"
 	},
-	"185": {
+	"192": {
+		"name": "宙の隣",
+		"data": [
+			"EXPERT",
+			"チュウマイ",
+			"12"
+		],
+		"diff": "12"
+	},
+	"193": {
 		"name": "HONEY-Q",
 		"data": [
 			"EXPERT",
@@ -1673,7 +1745,7 @@
 		],
 		"diff": "12"
 	},
-	"186": {
+	"194": {
 		"name": "PinqPiq (xovevox Remix)",
 		"data": [
 			"EXPERT",
@@ -1682,7 +1754,7 @@
 		],
 		"diff": "12"
 	},
-	"187": {
+	"195": {
 		"name": "Daydreama",
 		"data": [
 			"EXPERT",
@@ -1691,7 +1763,7 @@
 		],
 		"diff": "12"
 	},
-	"188": {
+	"196": {
 		"name": "YURUSHITE (LeaF Remix)",
 		"data": [
 			"EXPERT",
@@ -1700,7 +1772,7 @@
 		],
 		"diff": "12"
 	},
-	"189": {
+	"197": {
 		"name": "だから僕は音楽を辞めた",
 		"data": [
 			"MASTER",
@@ -1709,7 +1781,7 @@
 		],
 		"diff": "12+"
 	},
-	"190": {
+	"198": {
 		"name": "私たち、四季を遊ぶんです！！",
 		"data": [
 			"MASTER",
@@ -1718,7 +1790,7 @@
 		],
 		"diff": "12+"
 	},
-	"191": {
+	"199": {
 		"name": "Like the Sun, Like the Moon",
 		"data": [
 			"MASTER",
@@ -1727,7 +1799,7 @@
 		],
 		"diff": "12+"
 	},
-	"192": {
+	"200": {
 		"name": "泡白昼夢",
 		"data": [
 			"MASTER",
@@ -1736,7 +1808,7 @@
 		],
 		"diff": "12+"
 	},
-	"193": {
+	"201": {
 		"name": "Re:StarT (2023ver.)",
 		"data": [
 			"MASTER",
@@ -1745,7 +1817,7 @@
 		],
 		"diff": "12+"
 	},
-	"194": {
+	"202": {
 		"name": "鬼KYOKAN",
 		"data": [
 			"MASTER",
@@ -1754,7 +1826,7 @@
 		],
 		"diff": "12+"
 	},
-	"195": {
+	"203": {
 		"name": "星屑ユートピア",
 		"data": [
 			"MASTER",
@@ -1763,7 +1835,7 @@
 		],
 		"diff": "12+"
 	},
-	"196": {
+	"204": {
 		"name": "フィクサー",
 		"data": [
 			"MASTER",
@@ -1772,7 +1844,7 @@
 		],
 		"diff": "12+"
 	},
-	"197": {
+	"205": {
 		"name": "こどものしくみ",
 		"data": [
 			"MASTER",
@@ -1781,7 +1853,7 @@
 		],
 		"diff": "12+"
 	},
-	"198": {
+	"206": {
 		"name": "だれかの心臓になれたなら",
 		"data": [
 			"MASTER",
@@ -1790,7 +1862,7 @@
 		],
 		"diff": "12+"
 	},
-	"199": {
+	"207": {
 		"name": "テオ",
 		"data": [
 			"MASTER",
@@ -1799,7 +1871,7 @@
 		],
 		"diff": "12+"
 	},
-	"200": {
+	"208": {
 		"name": "ネガティブ進化論",
 		"data": [
 			"MASTER",
@@ -1808,7 +1880,7 @@
 		],
 		"diff": "12+"
 	},
-	"201": {
+	"209": {
 		"name": "とても素敵な六月でした",
 		"data": [
 			"MASTER",
@@ -1817,7 +1889,7 @@
 		],
 		"diff": "12+"
 	},
-	"202": {
+	"210": {
 		"name": "39みゅーじっく！",
 		"data": [
 			"MASTER",
@@ -1826,7 +1898,7 @@
 		],
 		"diff": "12+"
 	},
-	"203": {
+	"211": {
 		"name": "永遠にゲームで対戦したいキリタン",
 		"data": [
 			"MASTER",
@@ -1835,7 +1907,7 @@
 		],
 		"diff": "12+"
 	},
-	"204": {
+	"212": {
 		"name": "マチガイサガシ",
 		"data": [
 			"MASTER",
@@ -1844,7 +1916,7 @@
 		],
 		"diff": "12+"
 	},
-	"205": {
+	"213": {
 		"name": "グッバイ宣言",
 		"data": [
 			"MASTER",
@@ -1853,7 +1925,7 @@
 		],
 		"diff": "12+"
 	},
-	"206": {
+	"214": {
 		"name": "パラソルサイダー",
 		"data": [
 			"MASTER",
@@ -1862,7 +1934,7 @@
 		],
 		"diff": "12+"
 	},
-	"207": {
+	"215": {
 		"name": "幻想のサテライト",
 		"data": [
 			"MASTER",
@@ -1871,7 +1943,7 @@
 		],
 		"diff": "12+"
 	},
-	"208": {
+	"216": {
 		"name": "ルナティックレッドアイズ",
 		"data": [
 			"MASTER",
@@ -1880,7 +1952,7 @@
 		],
 		"diff": "12+"
 	},
-	"209": {
+	"217": {
 		"name": "蛙石",
 		"data": [
 			"MASTER",
@@ -1889,7 +1961,7 @@
 		],
 		"diff": "12+"
 	},
-	"210": {
+	"218": {
 		"name": "Singing to the gods",
 		"data": [
 			"MASTER",
@@ -1898,7 +1970,7 @@
 		],
 		"diff": "12+"
 	},
-	"211": {
+	"219": {
 		"name": "Psalms ～魂の還るばしょ～",
 		"data": [
 			"MASTER",
@@ -1907,7 +1979,7 @@
 		],
 		"diff": "12+"
 	},
-	"212": {
+	"220": {
 		"name": "Cyberozar",
 		"data": [
 			"MASTER",
@@ -1916,7 +1988,7 @@
 		],
 		"diff": "12+"
 	},
-	"213": {
+	"221": {
 		"name": "oboro",
 		"data": [
 			"MASTER",
@@ -1925,7 +1997,7 @@
 		],
 		"diff": "12+"
 	},
-	"214": {
+	"222": {
 		"name": "時の冒険者",
 		"data": [
 			"MASTER",
@@ -1934,7 +2006,7 @@
 		],
 		"diff": "12+"
 	},
-	"215": {
+	"223": {
 		"name": "でらっくmaimai♪てんてこまい!",
 		"data": [
 			"MASTER",
@@ -1943,7 +2015,7 @@
 		],
 		"diff": "12+"
 	},
-	"216": {
+	"224": {
 		"name": "ヤミツキ",
 		"data": [
 			"MASTER",
@@ -1952,7 +2024,7 @@
 		],
 		"diff": "12+"
 	},
-	"217": {
+	"225": {
 		"name": "マイオドレ！舞舞タイム",
 		"data": [
 			"MASTER",
@@ -1961,7 +2033,7 @@
 		],
 		"diff": "12+"
 	},
-	"218": {
+	"226": {
 		"name": "P！P！P！P！がおー!!",
 		"data": [
 			"MASTER",
@@ -1970,7 +2042,7 @@
 		],
 		"diff": "12+"
 	},
-	"219": {
+	"227": {
 		"name": "What color...",
 		"data": [
 			"MASTER",
@@ -1979,7 +2051,7 @@
 		],
 		"diff": "12+"
 	},
-	"220": {
+	"228": {
 		"name": "GAME IS LIFE",
 		"data": [
 			"MASTER",
@@ -1988,7 +2060,7 @@
 		],
 		"diff": "12+"
 	},
-	"221": {
+	"229": {
 		"name": "まっすぐ→→→ストリーム！",
 		"data": [
 			"MASTER",
@@ -1997,7 +2069,7 @@
 		],
 		"diff": "12+"
 	},
-	"222": {
+	"230": {
 		"name": "Splash Dance!!",
 		"data": [
 			"MASTER",
@@ -2006,7 +2078,7 @@
 		],
 		"diff": "12+"
 	},
-	"223": {
+	"231": {
 		"name": "レーイレーイ ～超絶最強アメちゃん Mix～",
 		"data": [
 			"MASTER",
@@ -2015,7 +2087,7 @@
 		],
 		"diff": "12+"
 	},
-	"224": {
+	"232": {
 		"name": "FANTASY BABY",
 		"data": [
 			"MASTER",
@@ -2024,7 +2096,7 @@
 		],
 		"diff": "12+"
 	},
-	"225": {
+	"233": {
 		"name": "アイシング・ドリーム",
 		"data": [
 			"MASTER",
@@ -2033,7 +2105,7 @@
 		],
 		"diff": "12+"
 	},
-	"226": {
+	"234": {
 		"name": "Everything Will Freeze",
 		"data": [
 			"EXPERT",
@@ -2042,7 +2114,7 @@
 		],
 		"diff": "12+"
 	},
-	"227": {
+	"235": {
 		"name": "クリムゾン帝王",
 		"data": [
 			"EXPERT",
@@ -2051,7 +2123,7 @@
 		],
 		"diff": "12+"
 	},
-	"228": {
+	"236": {
 		"name": "∀",
 		"data": [
 			"EXPERT",
@@ -2060,7 +2132,7 @@
 		],
 		"diff": "12+"
 	},
-	"229": {
+	"237": {
 		"name": "怒槌",
 		"data": [
 			"EXPERT",
@@ -2069,7 +2141,7 @@
 		],
 		"diff": "12+"
 	},
-	"230": {
+	"238": {
 		"name": "Glorious Crown (tpz over-Over-OVERCUTE REMIX)",
 		"data": [
 			"EXPERT",
@@ -2078,7 +2150,7 @@
 		],
 		"diff": "12+"
 	},
-	"231": {
+	"239": {
 		"name": "TEmPTaTiON",
 		"data": [
 			"EXPERT",
@@ -2087,7 +2159,7 @@
 		],
 		"diff": "12+"
 	},
-	"232": {
+	"240": {
 		"name": "ハードコア・シンドローム",
 		"data": [
 			"EXPERT",
@@ -2096,7 +2168,7 @@
 		],
 		"diff": "12+"
 	},
-	"233": {
+	"241": {
 		"name": "渦状銀河のシンフォニエッタ",
 		"data": [
 			"EXPERT",
@@ -2105,7 +2177,7 @@
 		],
 		"diff": "12+"
 	},
-	"234": {
+	"242": {
 		"name": "BREaK! BREaK! BREaK!",
 		"data": [
 			"EXPERT",
@@ -2114,7 +2186,7 @@
 		],
 		"diff": "12+"
 	},
-	"235": {
+	"243": {
 		"name": "Megameteor",
 		"data": [
 			"EXPERT",
@@ -2123,7 +2195,7 @@
 		],
 		"diff": "12+"
 	},
-	"236": {
+	"244": {
 		"name": "SUPER AMBULANCE",
 		"data": [
 			"EXPERT",
@@ -2132,7 +2204,7 @@
 		],
 		"diff": "12+"
 	},
-	"237": {
+	"245": {
 		"name": "Prominence",
 		"data": [
 			"EXPERT",
@@ -2141,7 +2213,7 @@
 		],
 		"diff": "12+"
 	},
-	"238": {
+	"246": {
 		"name": "Zitronectar",
 		"data": [
 			"EXPERT",
@@ -2150,7 +2222,7 @@
 		],
 		"diff": "12+"
 	},
-	"239": {
+	"247": {
 		"name": "おはようジャポニカ",
 		"data": [
 			"MASTER",
@@ -2159,7 +2231,7 @@
 		],
 		"diff": "12+"
 	},
-	"240": {
+	"248": {
 		"name": "えんじぇる♡ピタゴリ☆ほーみたい！",
 		"data": [
 			"MASTER",
@@ -2168,7 +2240,7 @@
 		],
 		"diff": "12+"
 	},
-	"241": {
+	"249": {
 		"name": "チュルリラ・チュルリラ・ダッダッダ！",
 		"data": [
 			"MASTER",
@@ -2177,80 +2249,8 @@
 		],
 		"diff": "12+"
 	},
-	"242": {
-		"name": "ロキ",
-		"data": [
-			"MASTER",
-			"niconico",
-			"12.8"
-		],
-		"diff": "12+"
-	},
-	"243": {
-		"name": "からくりピエロ",
-		"data": [
-			"MASTER",
-			"niconico",
-			"12.8"
-		],
-		"diff": "12+"
-	},
-	"244": {
-		"name": "ECHO",
-		"data": [
-			"MASTER",
-			"niconico",
-			"12.8"
-		],
-		"diff": "12+"
-	},
-	"245": {
-		"name": "スイートマジック",
-		"data": [
-			"MASTER",
-			"niconico",
-			"12.8"
-		],
-		"diff": "12+"
-	},
-	"246": {
-		"name": "ベノム",
-		"data": [
-			"MASTER",
-			"niconico",
-			"12.8"
-		],
-		"diff": "12+"
-	},
-	"247": {
-		"name": "悔やむと書いてミライ",
-		"data": [
-			"MASTER",
-			"niconico",
-			"12.8"
-		],
-		"diff": "12+"
-	},
-	"248": {
-		"name": "ヴァンパイア",
-		"data": [
-			"MASTER",
-			"niconico",
-			"12.8"
-		],
-		"diff": "12+"
-	},
-	"249": {
-		"name": "フォニイ",
-		"data": [
-			"MASTER",
-			"niconico",
-			"12.8"
-		],
-		"diff": "12+"
-	},
 	"250": {
-		"name": "ロミオとシンデレラ",
+		"name": "ロキ",
 		"data": [
 			"MASTER",
 			"niconico",
@@ -2259,6 +2259,78 @@
 		"diff": "12+"
 	},
 	"251": {
+		"name": "からくりピエロ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"252": {
+		"name": "ECHO",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"253": {
+		"name": "スイートマジック",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"254": {
+		"name": "ベノム",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"255": {
+		"name": "悔やむと書いてミライ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"256": {
+		"name": "ヴァンパイア",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"257": {
+		"name": "フォニイ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"258": {
+		"name": "ロミオとシンデレラ",
+		"data": [
+			"MASTER",
+			"niconico",
+			"12.8"
+		],
+		"diff": "12+"
+	},
+	"259": {
 		"name": "ナイト・オブ・ナイツ",
 		"data": [
 			"MASTER",
@@ -2267,7 +2339,7 @@
 		],
 		"diff": "12+"
 	},
-	"252": {
+	"260": {
 		"name": "Necro Fantasia",
 		"data": [
 			"MASTER",
@@ -2276,7 +2348,7 @@
 		],
 		"diff": "12+"
 	},
-	"253": {
+	"261": {
 		"name": "聖少女サクリファイス",
 		"data": [
 			"MASTER",
@@ -2285,7 +2357,7 @@
 		],
 		"diff": "12+"
 	},
-	"254": {
+	"262": {
 		"name": "明星ロケット",
 		"data": [
 			"MASTER",
@@ -2294,7 +2366,7 @@
 		],
 		"diff": "12+"
 	},
-	"255": {
+	"263": {
 		"name": "シアワセうさぎ・ぺこみこマリン",
 		"data": [
 			"MASTER",
@@ -2303,7 +2375,7 @@
 		],
 		"diff": "12+"
 	},
-	"256": {
+	"264": {
 		"name": "Hyper Active",
 		"data": [
 			"MASTER",
@@ -2312,7 +2384,7 @@
 		],
 		"diff": "12+"
 	},
-	"257": {
+	"265": {
 		"name": "Dragoon",
 		"data": [
 			"MASTER",
@@ -2321,7 +2393,7 @@
 		],
 		"diff": "12+"
 	},
-	"258": {
+	"266": {
 		"name": "光線チューニング",
 		"data": [
 			"MASTER",
@@ -2330,7 +2402,7 @@
 		],
 		"diff": "12+"
 	},
-	"259": {
+	"267": {
 		"name": "猫祭り",
 		"data": [
 			"MASTER",
@@ -2339,7 +2411,7 @@
 		],
 		"diff": "12+"
 	},
-	"260": {
+	"268": {
 		"name": "Rendezvous",
 		"data": [
 			"MASTER",
@@ -2348,7 +2420,7 @@
 		],
 		"diff": "12+"
 	},
-	"261": {
+	"269": {
 		"name": "ロング・スロー・アライブ",
 		"data": [
 			"MASTER",
@@ -2357,7 +2429,7 @@
 		],
 		"diff": "12+"
 	},
-	"262": {
+	"270": {
 		"name": "スローアライズ",
 		"data": [
 			"MASTER",
@@ -2366,7 +2438,7 @@
 		],
 		"diff": "12+"
 	},
-	"263": {
+	"271": {
 		"name": "SWEET SHAKE!!",
 		"data": [
 			"MASTER",
@@ -2375,7 +2447,7 @@
 		],
 		"diff": "12+"
 	},
-	"264": {
+	"272": {
 		"name": "Let's Starry Party！",
 		"data": [
 			"MASTER",
@@ -2384,7 +2456,7 @@
 		],
 		"diff": "12+"
 	},
-	"265": {
+	"273": {
 		"name": "Over Voltage",
 		"data": [
 			"MASTER",
@@ -2393,7 +2465,7 @@
 		],
 		"diff": "12+"
 	},
-	"266": {
+	"274": {
 		"name": "STARRED HEART",
 		"data": [
 			"MASTER",
@@ -2402,7 +2474,7 @@
 		],
 		"diff": "12+"
 	},
-	"267": {
+	"275": {
 		"name": "ランダムサンデー",
 		"data": [
 			"MASTER",
@@ -2411,7 +2483,7 @@
 		],
 		"diff": "12+"
 	},
-	"268": {
+	"276": {
 		"name": "イルミネーション",
 		"data": [
 			"MASTER",
@@ -2420,7 +2492,7 @@
 		],
 		"diff": "12+"
 	},
-	"269": {
+	"277": {
 		"name": "Armageddon",
 		"data": [
 			"EXPERT",
@@ -2429,7 +2501,7 @@
 		],
 		"diff": "12+"
 	},
-	"270": {
+	"278": {
 		"name": "Sound Chimera",
 		"data": [
 			"EXPERT",
@@ -2438,7 +2510,7 @@
 		],
 		"diff": "12+"
 	},
-	"271": {
+	"279": {
 		"name": "Tempestissimo",
 		"data": [
 			"EXPERT",
@@ -2447,7 +2519,7 @@
 		],
 		"diff": "12+"
 	},
-	"272": {
+	"280": {
 		"name": "聖者の鼓動",
 		"data": [
 			"EXPERT",
@@ -2456,7 +2528,7 @@
 		],
 		"diff": "12+"
 	},
-	"273": {
+	"281": {
 		"name": "MEGALOVANIA",
 		"data": [
 			"EXPERT",
@@ -2465,7 +2537,7 @@
 		],
 		"diff": "12+"
 	},
-	"274": {
+	"282": {
 		"name": "L9",
 		"data": [
 			"EXPERT",
@@ -2474,7 +2546,7 @@
 		],
 		"diff": "12+"
 	},
-	"275": {
+	"283": {
 		"name": "最強STRONGER",
 		"data": [
 			"EXPERT",
@@ -2483,7 +2555,7 @@
 		],
 		"diff": "12+"
 	},
-	"276": {
+	"284": {
 		"name": "Chronomia",
 		"data": [
 			"EXPERT",
@@ -2492,7 +2564,7 @@
 		],
 		"diff": "12+"
 	},
-	"277": {
+	"285": {
 		"name": "WE'RE BACK!!",
 		"data": [
 			"EXPERT",
@@ -2501,7 +2573,7 @@
 		],
 		"diff": "12+"
 	},
-	"278": {
+	"286": {
 		"name": "Elemental Ethnic",
 		"data": [
 			"EXPERT",
@@ -2510,7 +2582,7 @@
 		],
 		"diff": "12+"
 	},
-	"279": {
+	"287": {
 		"name": "Blessed Rain",
 		"data": [
 			"EXPERT",
@@ -2519,7 +2591,7 @@
 		],
 		"diff": "12+"
 	},
-	"280": {
+	"288": {
 		"name": "#狂った民族2 PRAVARGYAZOOQA",
 		"data": [
 			"EXPERT",
@@ -2528,7 +2600,7 @@
 		],
 		"diff": "12+"
 	},
-	"281": {
+	"289": {
 		"name": "Good bye, Merry-Go-Round.",
 		"data": [
 			"EXPERT",
@@ -2537,7 +2609,7 @@
 		],
 		"diff": "12+"
 	},
-	"282": {
+	"290": {
 		"name": "ミラージュ･フレイグランス",
 		"data": [
 			"EXPERT",
@@ -2546,7 +2618,7 @@
 		],
 		"diff": "12+"
 	},
-	"283": {
+	"291": {
 		"name": "Final Flash Flight",
 		"data": [
 			"EXPERT",
@@ -2555,7 +2627,7 @@
 		],
 		"diff": "12+"
 	},
-	"284": {
+	"292": {
 		"name": "FLUFFY FLASH (C-Show & Maozon Remix)",
 		"data": [
 			"EXPERT",
@@ -2564,7 +2636,7 @@
 		],
 		"diff": "12+"
 	},
-	"285": {
+	"293": {
 		"name": "Apollo -onoken AxSwing Remix-",
 		"data": [
 			"EXPERT",
@@ -2573,7 +2645,7 @@
 		],
 		"diff": "12+"
 	},
-	"286": {
+	"294": {
 		"name": "ALLNIGHT_DANCER",
 		"data": [
 			"EXPERT",
@@ -2582,7 +2654,7 @@
 		],
 		"diff": "12+"
 	},
-	"287": {
+	"295": {
 		"name": "Ai Me",
 		"data": [
 			"EXPERT",
@@ -2591,7 +2663,7 @@
 		],
 		"diff": "12+"
 	},
-	"288": {
+	"296": {
 		"name": "STARTLINER",
 		"data": [
 			"LUNATIC",
@@ -2600,7 +2672,7 @@
 		],
 		"diff": "12+"
 	},
-	"289": {
+	"297": {
 		"name": "アマカミサマ",
 		"data": [
 			"MASTER",
@@ -2609,7 +2681,7 @@
 		],
 		"diff": "12+"
 	},
-	"290": {
+	"298": {
 		"name": "金木犀 feat.Ado",
 		"data": [
 			"MASTER",
@@ -2618,7 +2690,7 @@
 		],
 		"diff": "12+"
 	},
-	"291": {
+	"299": {
 		"name": "シリウスの輝きのように",
 		"data": [
 			"MASTER",
@@ -2627,7 +2699,7 @@
 		],
 		"diff": "12+"
 	},
-	"292": {
+	"300": {
 		"name": "1番輝く星",
 		"data": [
 			"MASTER",
@@ -2636,7 +2708,7 @@
 		],
 		"diff": "12+"
 	},
-	"293": {
+	"301": {
 		"name": "彗星ハネムーン",
 		"data": [
 			"MASTER",
@@ -2645,7 +2717,7 @@
 		],
 		"diff": "12+"
 	},
-	"294": {
+	"302": {
 		"name": "shake it！",
 		"data": [
 			"MASTER",
@@ -2654,7 +2726,7 @@
 		],
 		"diff": "12+"
 	},
-	"295": {
+	"303": {
 		"name": "アンドロイドガール",
 		"data": [
 			"MASTER",
@@ -2663,7 +2735,7 @@
 		],
 		"diff": "12+"
 	},
-	"296": {
+	"304": {
 		"name": "Catch the Wave",
 		"data": [
 			"MASTER",
@@ -2672,7 +2744,7 @@
 		],
 		"diff": "12+"
 	},
-	"297": {
+	"305": {
 		"name": "絶対にチョコミントを食べるアオイチャン",
 		"data": [
 			"MASTER",
@@ -2681,7 +2753,7 @@
 		],
 		"diff": "12+"
 	},
-	"298": {
+	"306": {
 		"name": "ツギハギスタッカート",
 		"data": [
 			"MASTER",
@@ -2690,7 +2762,7 @@
 		],
 		"diff": "12+"
 	},
-	"299": {
+	"307": {
 		"name": "命に嫌われている",
 		"data": [
 			"MASTER",
@@ -2699,7 +2771,7 @@
 		],
 		"diff": "12+"
 	},
-	"300": {
+	"308": {
 		"name": "キレキャリオン",
 		"data": [
 			"MASTER",
@@ -2708,7 +2780,7 @@
 		],
 		"diff": "12+"
 	},
-	"301": {
+	"309": {
 		"name": "猫猫的宇宙論",
 		"data": [
 			"MASTER",
@@ -2717,7 +2789,7 @@
 		],
 		"diff": "12+"
 	},
-	"302": {
+	"310": {
 		"name": "KING",
 		"data": [
 			"MASTER",
@@ -2726,7 +2798,7 @@
 		],
 		"diff": "12+"
 	},
-	"303": {
+	"311": {
 		"name": "Bad Apple!! feat.nomico",
 		"data": [
 			"MASTER",
@@ -2735,7 +2807,7 @@
 		],
 		"diff": "12+"
 	},
-	"304": {
+	"312": {
 		"name": "Energy Booster ～ 上海紅茶館",
 		"data": [
 			"MASTER",
@@ -2744,7 +2816,7 @@
 		],
 		"diff": "12+"
 	},
-	"305": {
+	"313": {
 		"name": "四次元跳躍機関",
 		"data": [
 			"MASTER",
@@ -2753,7 +2825,7 @@
 		],
 		"diff": "12+"
 	},
-	"306": {
+	"314": {
 		"name": "れみりあ☆デスティニー",
 		"data": [
 			"MASTER",
@@ -2762,7 +2834,7 @@
 		],
 		"diff": "12+"
 	},
-	"307": {
+	"315": {
 		"name": "Help me, ERINNNNNN!!",
 		"data": [
 			"MASTER",
@@ -2771,7 +2843,7 @@
 		],
 		"diff": "12+"
 	},
-	"308": {
+	"316": {
 		"name": "Weekend Clock",
 		"data": [
 			"MASTER",
@@ -2780,7 +2852,7 @@
 		],
 		"diff": "12+"
 	},
-	"309": {
+	"317": {
 		"name": "回転 feat.あやぽんず＊",
 		"data": [
 			"MASTER",
@@ -2789,7 +2861,7 @@
 		],
 		"diff": "12+"
 	},
-	"310": {
+	"318": {
 		"name": "The Formula",
 		"data": [
 			"MASTER",
@@ -2798,7 +2870,7 @@
 		],
 		"diff": "12+"
 	},
-	"311": {
+	"319": {
 		"name": "Burning Hearts ～炎のANGEL～",
 		"data": [
 			"MASTER",
@@ -2807,7 +2879,7 @@
 		],
 		"diff": "12+"
 	},
-	"312": {
+	"320": {
 		"name": "その群青が愛しかったようだった",
 		"data": [
 			"MASTER",
@@ -2816,7 +2888,7 @@
 		],
 		"diff": "12+"
 	},
-	"313": {
+	"321": {
 		"name": "FestivaLight",
 		"data": [
 			"MASTER",
@@ -2825,7 +2897,7 @@
 		],
 		"diff": "12+"
 	},
-	"314": {
+	"322": {
 		"name": "Kiss Me Kiss",
 		"data": [
 			"MASTER",
@@ -2834,7 +2906,7 @@
 		],
 		"diff": "12+"
 	},
-	"315": {
+	"323": {
 		"name": "Rule the World!!",
 		"data": [
 			"MASTER",
@@ -2843,7 +2915,7 @@
 		],
 		"diff": "12+"
 	},
-	"316": {
+	"324": {
 		"name": "スン(マイル)フラワー～Sun(Mile)Flower",
 		"data": [
 			"MASTER",
@@ -2852,7 +2924,7 @@
 		],
 		"diff": "12+"
 	},
-	"317": {
+	"325": {
 		"name": "ぽかぽか温泉音頭",
 		"data": [
 			"MASTER",
@@ -2861,7 +2933,7 @@
 		],
 		"diff": "12+"
 	},
-	"318": {
+	"326": {
 		"name": "STEP BY STEP",
 		"data": [
 			"MASTER",
@@ -2870,7 +2942,7 @@
 		],
 		"diff": "12+"
 	},
-	"319": {
+	"327": {
 		"name": "Seventeen Feels",
 		"data": [
 			"EXPERT",
@@ -2879,7 +2951,7 @@
 		],
 		"diff": "12+"
 	},
-	"320": {
+	"328": {
 		"name": "I Wanna",
 		"data": [
 			"EXPERT",
@@ -2888,7 +2960,7 @@
 		],
 		"diff": "12+"
 	},
-	"321": {
+	"329": {
 		"name": "Re：End of a Dream",
 		"data": [
 			"EXPERT",
@@ -2897,7 +2969,7 @@
 		],
 		"diff": "12+"
 	},
-	"322": {
+	"330": {
 		"name": "PARALLEL★PRISM",
 		"data": [
 			"EXPERT",
@@ -2906,7 +2978,7 @@
 		],
 		"diff": "12+"
 	},
-	"323": {
+	"331": {
 		"name": "Haunted Dance",
 		"data": [
 			"EXPERT",
@@ -2915,7 +2987,7 @@
 		],
 		"diff": "12+"
 	},
-	"324": {
+	"332": {
 		"name": "雷切 -RAIKIRI-",
 		"data": [
 			"EXPERT",
@@ -2924,7 +2996,7 @@
 		],
 		"diff": "12+"
 	},
-	"325": {
+	"333": {
 		"name": "larva",
 		"data": [
 			"EXPERT",
@@ -2933,7 +3005,7 @@
 		],
 		"diff": "12+"
 	},
-	"326": {
+	"334": {
 		"name": "Caliburne 〜Story of the Legendary sword〜",
 		"data": [
 			"EXPERT",
@@ -2942,7 +3014,7 @@
 		],
 		"diff": "12+"
 	},
-	"327": {
+	"335": {
 		"name": "Starry Colors",
 		"data": [
 			"EXPERT",
@@ -2951,7 +3023,7 @@
 		],
 		"diff": "12+"
 	},
-	"328": {
+	"336": {
 		"name": "Everlasting Today",
 		"data": [
 			"EXPERT",
@@ -2960,7 +3032,7 @@
 		],
 		"diff": "12+"
 	},
-	"329": {
+	"337": {
 		"name": "Desperado Waltz",
 		"data": [
 			"EXPERT",
@@ -2969,7 +3041,7 @@
 		],
 		"diff": "12+"
 	},
-	"330": {
+	"338": {
 		"name": "Vibes 2k20",
 		"data": [
 			"EXPERT",
@@ -2978,7 +3050,7 @@
 		],
 		"diff": "12+"
 	},
-	"331": {
+	"339": {
 		"name": "MEGATON BLAST (tpz Overcute Remix)",
 		"data": [
 			"EXPERT",
@@ -2987,7 +3059,7 @@
 		],
 		"diff": "12+"
 	},
-	"332": {
+	"340": {
 		"name": "MAGNETAR GIRL",
 		"data": [
 			"EXPERT",
@@ -2996,7 +3068,7 @@
 		],
 		"diff": "12+"
 	},
-	"333": {
+	"341": {
 		"name": "Diamond Dust -crystal piano Arr.-",
 		"data": [
 			"EXPERT",
@@ -3005,7 +3077,7 @@
 		],
 		"diff": "12+"
 	},
-	"334": {
+	"342": {
 		"name": "Tricky Treat!!!",
 		"data": [
 			"EXPERT",
@@ -3014,7 +3086,7 @@
 		],
 		"diff": "12+"
 	},
-	"335": {
+	"343": {
 		"name": "Nȳx",
 		"data": [
 			"EXPERT",
@@ -3023,7 +3095,7 @@
 		],
 		"diff": "12+"
 	},
-	"336": {
+	"344": {
 		"name": "クライノイド",
 		"data": [
 			"MASTER",
@@ -3032,7 +3104,7 @@
 		],
 		"diff": "13"
 	},
-	"337": {
+	"345": {
 		"name": "月影のトロイメライ",
 		"data": [
 			"MASTER",
@@ -3041,7 +3113,7 @@
 		],
 		"diff": "13"
 	},
-	"338": {
+	"346": {
 		"name": "Hurrah!!",
 		"data": [
 			"MASTER",
@@ -3050,7 +3122,7 @@
 		],
 		"diff": "13"
 	},
-	"339": {
+	"347": {
 		"name": "幸せになれる隠しコマンドがあるらしい",
 		"data": [
 			"MASTER",
@@ -3059,7 +3131,7 @@
 		],
 		"diff": "13"
 	},
-	"340": {
+	"348": {
 		"name": "アンハッピーリフレイン",
 		"data": [
 			"MASTER",
@@ -3068,7 +3140,7 @@
 		],
 		"diff": "13"
 	},
-	"341": {
+	"349": {
 		"name": "スクランブル交際",
 		"data": [
 			"MASTER",
@@ -3077,7 +3149,7 @@
 		],
 		"diff": "13"
 	},
-	"342": {
+	"350": {
 		"name": "アカリがやってきたぞっ",
 		"data": [
 			"MASTER",
@@ -3086,7 +3158,7 @@
 		],
 		"diff": "13"
 	},
-	"343": {
+	"351": {
 		"name": "ネクストネスト",
 		"data": [
 			"MASTER",
@@ -3095,7 +3167,7 @@
 		],
 		"diff": "13"
 	},
-	"344": {
+	"352": {
 		"name": "Ready Steady",
 		"data": [
 			"MASTER",
@@ -3104,7 +3176,7 @@
 		],
 		"diff": "13"
 	},
-	"345": {
+	"353": {
 		"name": "夜もすがら君想ふ",
 		"data": [
 			"MASTER",
@@ -3113,7 +3185,7 @@
 		],
 		"diff": "13"
 	},
-	"346": {
+	"354": {
 		"name": "sweet little sister",
 		"data": [
 			"MASTER",
@@ -3122,7 +3194,7 @@
 		],
 		"diff": "13"
 	},
-	"347": {
+	"355": {
 		"name": "サクライロフワリ",
 		"data": [
 			"MASTER",
@@ -3131,7 +3203,7 @@
 		],
 		"diff": "13"
 	},
-	"348": {
+	"356": {
 		"name": "Let you DIVE!",
 		"data": [
 			"MASTER",
@@ -3140,7 +3212,7 @@
 		],
 		"diff": "13"
 	},
-	"349": {
+	"357": {
 		"name": "Change Our MIRAI！（Our 7 Lights）",
 		"data": [
 			"MASTER",
@@ -3149,7 +3221,7 @@
 		],
 		"diff": "13"
 	},
-	"350": {
+	"358": {
 		"name": "Magic",
 		"data": [
 			"MASTER",
@@ -3158,7 +3230,7 @@
 		],
 		"diff": "13"
 	},
-	"351": {
+	"359": {
 		"name": "はちみつアドベンチャー",
 		"data": [
 			"MASTER",
@@ -3167,7 +3239,7 @@
 		],
 		"diff": "13"
 	},
-	"352": {
+	"360": {
 		"name": "星めぐり、果ての君へ。",
 		"data": [
 			"MASTER",
@@ -3176,7 +3248,7 @@
 		],
 		"diff": "13"
 	},
-	"353": {
+	"361": {
 		"name": "TeA",
 		"data": [
 			"MASTER",
@@ -3185,7 +3257,7 @@
 		],
 		"diff": "13"
 	},
-	"354": {
+	"362": {
 		"name": "本能的 Survivor",
 		"data": [
 			"MASTER",
@@ -3194,7 +3266,7 @@
 		],
 		"diff": "13"
 	},
-	"355": {
+	"363": {
 		"name": "MAKING！ハイタッチ！",
 		"data": [
 			"MASTER",
@@ -3203,7 +3275,7 @@
 		],
 		"diff": "13"
 	},
-	"356": {
+	"364": {
 		"name": "感情アクセラレイション",
 		"data": [
 			"MASTER",
@@ -3212,7 +3284,7 @@
 		],
 		"diff": "13"
 	},
-	"357": {
+	"365": {
 		"name": "ぱくぱく☆がーる",
 		"data": [
 			"MASTER",
@@ -3221,7 +3293,7 @@
 		],
 		"diff": "13"
 	},
-	"358": {
+	"366": {
 		"name": "Glitter-Glitter",
 		"data": [
 			"MASTER",
@@ -3230,7 +3302,7 @@
 		],
 		"diff": "13"
 	},
-	"359": {
+	"367": {
 		"name": "HEADLINER",
 		"data": [
 			"MASTER",
@@ -3239,7 +3311,7 @@
 		],
 		"diff": "13"
 	},
-	"360": {
+	"368": {
 		"name": "Individual on parade!",
 		"data": [
 			"MASTER",
@@ -3248,7 +3320,7 @@
 		],
 		"diff": "13"
 	},
-	"361": {
+	"369": {
 		"name": "Crimson Phoenix",
 		"data": [
 			"EXPERT",
@@ -3257,7 +3329,7 @@
 		],
 		"diff": "13"
 	},
-	"362": {
+	"370": {
 		"name": "Synthesis.",
 		"data": [
 			"EXPERT",
@@ -3266,7 +3338,7 @@
 		],
 		"diff": "13"
 	},
-	"363": {
+	"371": {
 		"name": "混沌を越えし我らが神聖なる調律主を讃えよ",
 		"data": [
 			"EXPERT",
@@ -3275,7 +3347,7 @@
 		],
 		"diff": "13"
 	},
-	"364": {
+	"372": {
 		"name": "Garakuta Doll Play",
 		"data": [
 			"EXPERT",
@@ -3284,7 +3356,7 @@
 		],
 		"diff": "13"
 	},
-	"365": {
+	"373": {
 		"name": "QZKago Requiem",
 		"data": [
 			"EXPERT",
@@ -3293,7 +3365,7 @@
 		],
 		"diff": "13"
 	},
-	"366": {
+	"374": {
 		"name": "POTENTIAL",
 		"data": [
 			"EXPERT",
@@ -3302,7 +3374,7 @@
 		],
 		"diff": "13"
 	},
-	"367": {
+	"375": {
 		"name": "Sage",
 		"data": [
 			"EXPERT",
@@ -3311,7 +3383,7 @@
 		],
 		"diff": "13"
 	},
-	"368": {
+	"376": {
 		"name": "MEGATON BLAST",
 		"data": [
 			"EXPERT",
@@ -3320,7 +3392,7 @@
 		],
 		"diff": "13"
 	},
-	"369": {
+	"377": {
 		"name": "ω4",
 		"data": [
 			"EXPERT",
@@ -3329,7 +3401,7 @@
 		],
 		"diff": "13"
 	},
-	"370": {
+	"378": {
 		"name": "美夜月鏡",
 		"data": [
 			"EXPERT",
@@ -3338,7 +3410,7 @@
 		],
 		"diff": "13"
 	},
-	"371": {
+	"379": {
 		"name": "Ai C",
 		"data": [
 			"EXPERT",
@@ -3347,7 +3419,7 @@
 		],
 		"diff": "13"
 	},
-	"372": {
+	"380": {
 		"name": "Cogito ergo sum",
 		"data": [
 			"EXPERT",
@@ -3356,7 +3428,7 @@
 		],
 		"diff": "13"
 	},
-	"373": {
+	"381": {
 		"name": "青春サイダー",
 		"data": [
 			"MASTER",
@@ -3365,7 +3437,7 @@
 		],
 		"diff": "13"
 	},
-	"374": {
+	"382": {
 		"name": "STORIA",
 		"data": [
 			"MASTER",
@@ -3374,7 +3446,7 @@
 		],
 		"diff": "13"
 	},
-	"375": {
+	"383": {
 		"name": "Virtual to LIVE",
 		"data": [
 			"MASTER",
@@ -3383,7 +3455,7 @@
 		],
 		"diff": "13"
 	},
-	"376": {
+	"384": {
 		"name": "DAYBREAK FRONTLINE",
 		"data": [
 			"MASTER",
@@ -3392,7 +3464,7 @@
 		],
 		"diff": "13"
 	},
-	"377": {
+	"385": {
 		"name": "デリヘル呼んだら君が来た",
 		"data": [
 			"MASTER",
@@ -3401,7 +3473,7 @@
 		],
 		"diff": "13"
 	},
-	"378": {
+	"386": {
 		"name": "Seyana. ～何でも言うことを聞いてくれるアカネチャン～",
 		"data": [
 			"MASTER",
@@ -3410,7 +3482,7 @@
 		],
 		"diff": "13"
 	},
-	"379": {
+	"387": {
 		"name": "吉原ラメント",
 		"data": [
 			"MASTER",
@@ -3419,7 +3491,7 @@
 		],
 		"diff": "13"
 	},
-	"380": {
+	"388": {
 		"name": "ラグトレイン",
 		"data": [
 			"MASTER",
@@ -3428,7 +3500,7 @@
 		],
 		"diff": "13"
 	},
-	"381": {
+	"389": {
 		"name": "さよならプリンセス",
 		"data": [
 			"MASTER",
@@ -3437,7 +3509,7 @@
 		],
 		"diff": "13"
 	},
-	"382": {
+	"390": {
 		"name": "Äventyr",
 		"data": [
 			"MASTER",
@@ -3446,7 +3518,7 @@
 		],
 		"diff": "13"
 	},
-	"383": {
+	"391": {
 		"name": "Gate of Doom",
 		"data": [
 			"MASTER",
@@ -3455,7 +3527,7 @@
 		],
 		"diff": "13"
 	},
-	"384": {
+	"392": {
 		"name": "天火明命",
 		"data": [
 			"MASTER",
@@ -3464,7 +3536,7 @@
 		],
 		"diff": "13"
 	},
-	"385": {
+	"393": {
 		"name": "Paqqin",
 		"data": [
 			"MASTER",
@@ -3473,7 +3545,7 @@
 		],
 		"diff": "13"
 	},
-	"386": {
+	"394": {
 		"name": "Cosmic Train",
 		"data": [
 			"MASTER",
@@ -3482,7 +3554,7 @@
 		],
 		"diff": "13"
 	},
-	"387": {
+	"395": {
 		"name": "レイニーカラー・ウォーターカラー",
 		"data": [
 			"MASTER",
@@ -3491,7 +3563,7 @@
 		],
 		"diff": "13"
 	},
-	"388": {
+	"396": {
 		"name": "UTAKATA",
 		"data": [
 			"MASTER",
@@ -3500,7 +3572,7 @@
 		],
 		"diff": "13"
 	},
-	"389": {
+	"397": {
 		"name": "ludicium \"Apocalypsis Mix\"",
 		"data": [
 			"MASTER",
@@ -3509,7 +3581,7 @@
 		],
 		"diff": "13"
 	},
-	"390": {
+	"398": {
 		"name": "ウキウキ☆Candy!",
 		"data": [
 			"MASTER",
@@ -3518,7 +3590,7 @@
 		],
 		"diff": "13"
 	},
-	"391": {
+	"399": {
 		"name": "反撃! 突撃! Back To Back!",
 		"data": [
 			"MASTER",
@@ -3527,7 +3599,7 @@
 		],
 		"diff": "13"
 	},
-	"392": {
+	"400": {
 		"name": "give it up to you",
 		"data": [
 			"MASTER",
@@ -3536,7 +3608,7 @@
 		],
 		"diff": "13"
 	},
-	"393": {
+	"401": {
 		"name": "シンデレラディスコ",
 		"data": [
 			"MASTER",
@@ -3545,7 +3617,7 @@
 		],
 		"diff": "13"
 	},
-	"394": {
+	"402": {
 		"name": "花時は夢を見る。",
 		"data": [
 			"MASTER",
@@ -3554,7 +3626,7 @@
 		],
 		"diff": "13"
 	},
-	"395": {
+	"403": {
 		"name": "Shamshir -rough Pt.2-",
 		"data": [
 			"EXPERT",
@@ -3563,7 +3635,7 @@
 		],
 		"diff": "13"
 	},
-	"396": {
+	"404": {
 		"name": "DIE IN",
 		"data": [
 			"EXPERT",
@@ -3572,7 +3644,7 @@
 		],
 		"diff": "13"
 	},
-	"397": {
+	"405": {
 		"name": "TiamaT:F minor",
 		"data": [
 			"EXPERT",
@@ -3581,7 +3653,7 @@
 		],
 		"diff": "13"
 	},
-	"398": {
+	"406": {
 		"name": "FLUFFY FLASH",
 		"data": [
 			"EXPERT",
@@ -3590,7 +3662,7 @@
 		],
 		"diff": "13"
 	},
-	"399": {
+	"407": {
 		"name": "ジャンヌ・ダルクの慟哭",
 		"data": [
 			"EXPERT",
@@ -3599,7 +3671,7 @@
 		],
 		"diff": "13"
 	},
-	"400": {
+	"408": {
 		"name": "GAME:CHANGER",
 		"data": [
 			"EXPERT",
@@ -3608,7 +3680,7 @@
 		],
 		"diff": "13"
 	},
-	"401": {
+	"409": {
 		"name": "Chant Say Yeah!",
 		"data": [
 			"EXPERT",
@@ -3617,7 +3689,7 @@
 		],
 		"diff": "13"
 	},
-	"402": {
+	"410": {
 		"name": "ハッピーエンドをはじめから",
 		"data": [
 			"MASTER",
@@ -3626,7 +3698,7 @@
 		],
 		"diff": "13"
 	},
-	"403": {
+	"411": {
 		"name": "ヒステリックナイトガール",
 		"data": [
 			"MASTER",
@@ -3635,7 +3707,7 @@
 		],
 		"diff": "13"
 	},
-	"404": {
+	"412": {
 		"name": "Time and Space",
 		"data": [
 			"MASTER",
@@ -3644,7 +3716,7 @@
 		],
 		"diff": "13"
 	},
-	"405": {
+	"413": {
 		"name": "アイドライフライト",
 		"data": [
 			"MASTER",
@@ -3653,7 +3725,7 @@
 		],
 		"diff": "13"
 	},
-	"406": {
+	"414": {
 		"name": "ビビデバ",
 		"data": [
 			"MASTER",
@@ -3662,7 +3734,7 @@
 		],
 		"diff": "13"
 	},
-	"407": {
+	"415": {
 		"name": "脳漿炸裂ガール",
 		"data": [
 			"MASTER",
@@ -3671,7 +3743,7 @@
 		],
 		"diff": "13"
 	},
-	"408": {
+	"416": {
 		"name": "ドーナツホール",
 		"data": [
 			"MASTER",
@@ -3680,7 +3752,7 @@
 		],
 		"diff": "13"
 	},
-	"409": {
+	"417": {
 		"name": "セツナトリップ",
 		"data": [
 			"MASTER",
@@ -3689,7 +3761,7 @@
 		],
 		"diff": "13"
 	},
-	"410": {
+	"418": {
 		"name": "ラストリゾート",
 		"data": [
 			"MASTER",
@@ -3698,7 +3770,7 @@
 		],
 		"diff": "13"
 	},
-	"411": {
+	"419": {
 		"name": "敗北の少年",
 		"data": [
 			"MASTER",
@@ -3707,7 +3779,7 @@
 		],
 		"diff": "13"
 	},
-	"412": {
+	"420": {
 		"name": "しゅわスパ大作戦☆",
 		"data": [
 			"MASTER",
@@ -3716,7 +3788,7 @@
 		],
 		"diff": "13"
 	},
-	"413": {
+	"421": {
 		"name": "ケロ⑨destiny",
 		"data": [
 			"MASTER",
@@ -3725,7 +3797,7 @@
 		],
 		"diff": "13"
 	},
-	"414": {
+	"422": {
 		"name": "カラッポ・ノンフィクション",
 		"data": [
 			"MASTER",
@@ -3734,7 +3806,7 @@
 		],
 		"diff": "13"
 	},
-	"415": {
+	"423": {
 		"name": "Alice's Suitcase",
 		"data": [
 			"MASTER",
@@ -3743,7 +3815,7 @@
 		],
 		"diff": "13"
 	},
-	"416": {
+	"424": {
 		"name": "今ぞ♡崇め奉れ☆オマエらよ！！～姫の秘メタル渇望～",
 		"data": [
 			"MASTER",
@@ -3752,7 +3824,7 @@
 		],
 		"diff": "13"
 	},
-	"417": {
+	"425": {
 		"name": "超常マイマイン",
 		"data": [
 			"MASTER",
@@ -3761,7 +3833,7 @@
 		],
 		"diff": "13"
 	},
-	"418": {
+	"426": {
 		"name": "ロッキンピンクモンスター",
 		"data": [
 			"MASTER",
@@ -3770,7 +3842,7 @@
 		],
 		"diff": "13"
 	},
-	"419": {
+	"427": {
 		"name": "Heart Cooking Recipe",
 		"data": [
 			"MASTER",
@@ -3779,7 +3851,7 @@
 		],
 		"diff": "13"
 	},
-	"420": {
+	"428": {
 		"name": "無敵のフロンティア三銃士",
 		"data": [
 			"MASTER",
@@ -3788,7 +3860,7 @@
 		],
 		"diff": "13"
 	},
-	"421": {
+	"429": {
 		"name": "End Time",
 		"data": [
 			"EXPERT",
@@ -3797,7 +3869,7 @@
 		],
 		"diff": "13"
 	},
-	"422": {
+	"430": {
 		"name": "VIIIbit Explorer",
 		"data": [
 			"EXPERT",
@@ -3806,7 +3878,7 @@
 		],
 		"diff": "13"
 	},
-	"423": {
+	"431": {
 		"name": "Sparking Revolver",
 		"data": [
 			"EXPERT",
@@ -3815,7 +3887,7 @@
 		],
 		"diff": "13"
 	},
-	"424": {
+	"432": {
 		"name": "Titania",
 		"data": [
 			"EXPERT",
@@ -3824,7 +3896,7 @@
 		],
 		"diff": "13"
 	},
-	"425": {
+	"433": {
 		"name": "Viyella's Tears",
 		"data": [
 			"EXPERT",
@@ -3833,7 +3905,7 @@
 		],
 		"diff": "13"
 	},
-	"426": {
+	"434": {
 		"name": "Viyella's Scream",
 		"data": [
 			"EXPERT",
@@ -3842,7 +3914,7 @@
 		],
 		"diff": "13"
 	},
-	"427": {
+	"435": {
 		"name": "冥乱幻舞",
 		"data": [
 			"EXPERT",
@@ -3851,7 +3923,7 @@
 		],
 		"diff": "13"
 	},
-	"428": {
+	"436": {
 		"name": "からくりピエロ",
 		"data": [
 			"LUNATIC",
@@ -3860,7 +3932,7 @@
 		],
 		"diff": "13"
 	},
-	"429": {
+	"437": {
 		"name": "Stage of Star",
 		"data": [
 			"MASTER",
@@ -3869,7 +3941,7 @@
 		],
 		"diff": "13"
 	},
-	"430": {
+	"438": {
 		"name": "Let Me Know (feat. Masayoshi Iimori)",
 		"data": [
 			"MASTER",
@@ -3878,7 +3950,7 @@
 		],
 		"diff": "13"
 	},
-	"431": {
+	"439": {
 		"name": "君とインフィニティ -2021-",
 		"data": [
 			"MASTER",
@@ -3887,7 +3959,7 @@
 		],
 		"diff": "13"
 	},
-	"432": {
+	"440": {
 		"name": "Goodbye Innocence",
 		"data": [
 			"MASTER",
@@ -3896,7 +3968,7 @@
 		],
 		"diff": "13"
 	},
-	"433": {
+	"441": {
 		"name": "予感のシグナル",
 		"data": [
 			"MASTER",
@@ -3905,7 +3977,7 @@
 		],
 		"diff": "13"
 	},
-	"434": {
+	"442": {
 		"name": "君よ",
 		"data": [
 			"MASTER",
@@ -3914,7 +3986,7 @@
 		],
 		"diff": "13"
 	},
-	"435": {
+	"443": {
 		"name": "人生リセットボタン",
 		"data": [
 			"MASTER",
@@ -3923,7 +3995,7 @@
 		],
 		"diff": "13"
 	},
-	"436": {
+	"444": {
 		"name": "地球最後の告白を",
 		"data": [
 			"MASTER",
@@ -3932,7 +4004,7 @@
 		],
 		"diff": "13"
 	},
-	"437": {
+	"445": {
 		"name": "ドラマツルギー",
 		"data": [
 			"MASTER",
@@ -3941,7 +4013,7 @@
 		],
 		"diff": "13"
 	},
-	"438": {
+	"446": {
 		"name": "ナンセンス文学",
 		"data": [
 			"MASTER",
@@ -3950,7 +4022,7 @@
 		],
 		"diff": "13"
 	},
-	"439": {
+	"447": {
 		"name": "ワールズエンド・ダンスホール",
 		"data": [
 			"MASTER",
@@ -3959,7 +4031,7 @@
 		],
 		"diff": "13"
 	},
-	"440": {
+	"448": {
 		"name": "バイオレンストリガー",
 		"data": [
 			"MASTER",
@@ -3968,7 +4040,7 @@
 		],
 		"diff": "13"
 	},
-	"441": {
+	"449": {
 		"name": "ダーリンダンス",
 		"data": [
 			"MASTER",
@@ -3977,7 +4049,7 @@
 		],
 		"diff": "13"
 	},
-	"442": {
+	"450": {
 		"name": "ワーワーワールド",
 		"data": [
 			"MASTER",
@@ -3986,7 +4058,7 @@
 		],
 		"diff": "13"
 	},
-	"443": {
+	"451": {
 		"name": "ミラクルペイント",
 		"data": [
 			"MASTER",
@@ -3995,7 +4067,7 @@
 		],
 		"diff": "13"
 	},
-	"444": {
+	"452": {
 		"name": "チルノのパーフェクトさんすう教室",
 		"data": [
 			"MASTER",
@@ -4004,7 +4076,7 @@
 		],
 		"diff": "13"
 	},
-	"445": {
+	"453": {
 		"name": "Kattobi KEIKYU Rider",
 		"data": [
 			"MASTER",
@@ -4013,7 +4085,7 @@
 		],
 		"diff": "13"
 	},
-	"446": {
+	"454": {
 		"name": "コスモポップファンクラブ",
 		"data": [
 			"MASTER",
@@ -4022,7 +4094,7 @@
 		],
 		"diff": "13"
 	},
-	"447": {
+	"455": {
 		"name": "ブツメツビーターズ",
 		"data": [
 			"MASTER",
@@ -4031,7 +4103,7 @@
 		],
 		"diff": "13"
 	},
-	"448": {
+	"456": {
 		"name": "TAKE ON THE WORLD",
 		"data": [
 			"MASTER",
@@ -4040,7 +4112,7 @@
 		],
 		"diff": "13"
 	},
-	"449": {
+	"457": {
 		"name": "Chelly spLash♪♪",
 		"data": [
 			"MASTER",
@@ -4049,7 +4121,7 @@
 		],
 		"diff": "13"
 	},
-	"450": {
+	"458": {
 		"name": "オンゲキ全域★アカネサマ？",
 		"data": [
 			"MASTER",
@@ -4058,7 +4130,7 @@
 		],
 		"diff": "13"
 	},
-	"451": {
+	"459": {
 		"name": "BOUNCE & DANCE",
 		"data": [
 			"MASTER",
@@ -4067,7 +4139,7 @@
 		],
 		"diff": "13"
 	},
-	"452": {
+	"460": {
 		"name": "撩乱乙女†無双劇",
 		"data": [
 			"MASTER",
@@ -4076,7 +4148,7 @@
 		],
 		"diff": "13"
 	},
-	"453": {
+	"461": {
 		"name": "YAMINABE☆PANIC ～ご馳走詰め込みフルコース～",
 		"data": [
 			"MASTER",
@@ -4085,7 +4157,7 @@
 		],
 		"diff": "13"
 	},
-	"454": {
+	"462": {
 		"name": "My precious holiday",
 		"data": [
 			"MASTER",
@@ -4094,7 +4166,7 @@
 		],
 		"diff": "13"
 	},
-	"455": {
+	"463": {
 		"name": "Skip & Smile!!",
 		"data": [
 			"MASTER",
@@ -4103,7 +4175,7 @@
 		],
 		"diff": "13"
 	},
-	"456": {
+	"464": {
 		"name": "天つ風",
 		"data": [
 			"MASTER",
@@ -4112,7 +4184,7 @@
 		],
 		"diff": "13"
 	},
-	"457": {
+	"465": {
 		"name": "Island Breeze",
 		"data": [
 			"MASTER",
@@ -4121,7 +4193,7 @@
 		],
 		"diff": "13"
 	},
-	"458": {
+	"466": {
 		"name": "Geki Geki!! 激闘Break Out!!",
 		"data": [
 			"MASTER",
@@ -4130,7 +4202,7 @@
 		],
 		"diff": "13"
 	},
-	"459": {
+	"467": {
 		"name": "Resolution",
 		"data": [
 			"MASTER",
@@ -4139,7 +4211,7 @@
 		],
 		"diff": "13"
 	},
-	"460": {
+	"468": {
 		"name": "ヒストリー×ブレイカー",
 		"data": [
 			"MASTER",
@@ -4148,7 +4220,7 @@
 		],
 		"diff": "13"
 	},
-	"461": {
+	"469": {
 		"name": "夏宵スターマイン",
 		"data": [
 			"MASTER",
@@ -4157,7 +4229,7 @@
 		],
 		"diff": "13"
 	},
-	"462": {
+	"470": {
 		"name": "BATTLE NO.1",
 		"data": [
 			"EXPERT",
@@ -4166,7 +4238,7 @@
 		],
 		"diff": "13"
 	},
-	"463": {
+	"471": {
 		"name": "FREEDOM DiVE",
 		"data": [
 			"EXPERT",
@@ -4175,7 +4247,7 @@
 		],
 		"diff": "13"
 	},
-	"464": {
+	"472": {
 		"name": "TECHNOPOLIS 2085",
 		"data": [
 			"EXPERT",
@@ -4184,7 +4256,7 @@
 		],
 		"diff": "13"
 	},
-	"465": {
+	"473": {
 		"name": "Our Wrenally",
 		"data": [
 			"EXPERT",
@@ -4193,7 +4265,7 @@
 		],
 		"diff": "13"
 	},
-	"466": {
+	"474": {
 		"name": "Falsum Atlantis.",
 		"data": [
 			"EXPERT",
@@ -4202,7 +4274,7 @@
 		],
 		"diff": "13"
 	},
-	"467": {
+	"475": {
 		"name": "MeteorSnow",
 		"data": [
 			"EXPERT",
@@ -4211,7 +4283,7 @@
 		],
 		"diff": "13"
 	},
-	"468": {
+	"476": {
 		"name": "THE TRiANGLE",
 		"data": [
 			"EXPERT",
@@ -4220,7 +4292,7 @@
 		],
 		"diff": "13"
 	},
-	"469": {
+	"477": {
 		"name": "ヒトガタ",
 		"data": [
 			"MASTER",
@@ -4229,7 +4301,7 @@
 		],
 		"diff": "13"
 	},
-	"470": {
+	"478": {
 		"name": "INTERNET OVERDOSE",
 		"data": [
 			"MASTER",
@@ -4238,7 +4310,7 @@
 		],
 		"diff": "13"
 	},
-	"471": {
+	"479": {
 		"name": "Lots of love",
 		"data": [
 			"MASTER",
@@ -4247,7 +4319,7 @@
 		],
 		"diff": "13"
 	},
-	"472": {
+	"480": {
 		"name": "Mornin' Bell",
 		"data": [
 			"MASTER",
@@ -4256,7 +4328,7 @@
 		],
 		"diff": "13"
 	},
-	"473": {
+	"481": {
 		"name": "POP IN 2",
 		"data": [
 			"MASTER",
@@ -4265,7 +4337,7 @@
 		],
 		"diff": "13"
 	},
-	"474": {
+	"482": {
 		"name": "ボッカデラベリタ",
 		"data": [
 			"MASTER",
@@ -4274,7 +4346,7 @@
 		],
 		"diff": "13"
 	},
-	"475": {
+	"483": {
 		"name": "ステラ",
 		"data": [
 			"MASTER",
@@ -4283,7 +4355,7 @@
 		],
 		"diff": "13"
 	},
-	"476": {
+	"484": {
 		"name": "最終鬼畜妹フランドール・S",
 		"data": [
 			"MASTER",
@@ -4292,7 +4364,7 @@
 		],
 		"diff": "13"
 	},
-	"477": {
+	"485": {
 		"name": "エピクロスの虹はもう見えない",
 		"data": [
 			"MASTER",
@@ -4301,7 +4373,7 @@
 		],
 		"diff": "13"
 	},
-	"478": {
+	"486": {
 		"name": "Scream out! -音華鏡 Re:BREAK-",
 		"data": [
 			"MASTER",
@@ -4310,7 +4382,7 @@
 		],
 		"diff": "13"
 	},
-	"479": {
+	"487": {
 		"name": "患部で止まってすぐ溶ける～狂気の優曇華院",
 		"data": [
 			"MASTER",
@@ -4319,7 +4391,7 @@
 		],
 		"diff": "13"
 	},
-	"480": {
+	"488": {
 		"name": "全力ハッピーライフ",
 		"data": [
 			"MASTER",
@@ -4328,7 +4400,7 @@
 		],
 		"diff": "13"
 	},
-	"481": {
+	"489": {
 		"name": "物凄い狂っとるフランちゃんが物凄いうた",
 		"data": [
 			"MASTER",
@@ -4337,7 +4409,7 @@
 		],
 		"diff": "13"
 	},
-	"482": {
+	"490": {
 		"name": "Paranoia",
 		"data": [
 			"MASTER",
@@ -4346,7 +4418,7 @@
 		],
 		"diff": "13"
 	},
-	"483": {
+	"491": {
 		"name": "悪戯センセーション",
 		"data": [
 			"MASTER",
@@ -4355,7 +4427,7 @@
 		],
 		"diff": "13"
 	},
-	"484": {
+	"492": {
 		"name": "お空のニュークリアフュージョン道場",
 		"data": [
 			"MASTER",
@@ -4364,7 +4436,7 @@
 		],
 		"diff": "13"
 	},
-	"485": {
+	"493": {
 		"name": "キュアリアス光吉古牌　－祭－",
 		"data": [
 			"MASTER",
@@ -4373,7 +4445,7 @@
 		],
 		"diff": "13"
 	},
-	"486": {
+	"494": {
 		"name": "Over the Border",
 		"data": [
 			"MASTER",
@@ -4382,7 +4454,7 @@
 		],
 		"diff": "13"
 	},
-	"487": {
+	"495": {
 		"name": "Brain Power",
 		"data": [
 			"MASTER",
@@ -4391,7 +4463,7 @@
 		],
 		"diff": "13"
 	},
-	"488": {
+	"496": {
 		"name": "Halcyon",
 		"data": [
 			"MASTER",
@@ -4400,7 +4472,7 @@
 		],
 		"diff": "13"
 	},
-	"489": {
+	"497": {
 		"name": "ベースラインやってる？笑",
 		"data": [
 			"MASTER",
@@ -4409,7 +4481,7 @@
 		],
 		"diff": "13"
 	},
-	"490": {
+	"498": {
 		"name": "Party 4U \"holy nite mix\"",
 		"data": [
 			"MASTER",
@@ -4418,7 +4490,7 @@
 		],
 		"diff": "13"
 	},
-	"491": {
+	"499": {
 		"name": "Velaciela (Hyper Mix)",
 		"data": [
 			"MASTER",
@@ -4427,7 +4499,7 @@
 		],
 		"diff": "13"
 	},
-	"492": {
+	"500": {
 		"name": "ロボットプラネットユートピア",
 		"data": [
 			"MASTER",
@@ -4436,7 +4508,7 @@
 		],
 		"diff": "13"
 	},
-	"493": {
+	"501": {
 		"name": "福宿音屋魂音泉",
 		"data": [
 			"MASTER",
@@ -4445,7 +4517,7 @@
 		],
 		"diff": "13"
 	},
-	"494": {
+	"502": {
 		"name": "REAL VOICE",
 		"data": [
 			"MASTER",
@@ -4454,7 +4526,7 @@
 		],
 		"diff": "13"
 	},
-	"495": {
+	"503": {
 		"name": "Paradisoda",
 		"data": [
 			"MASTER",
@@ -4463,7 +4535,7 @@
 		],
 		"diff": "13"
 	},
-	"496": {
+	"504": {
 		"name": "キラメケ→Shoot it Now!",
 		"data": [
 			"MASTER",
@@ -4472,7 +4544,7 @@
 		],
 		"diff": "13"
 	},
-	"497": {
+	"505": {
 		"name": "Dolphika",
 		"data": [
 			"MASTER",
@@ -4481,7 +4553,7 @@
 		],
 		"diff": "13"
 	},
-	"498": {
+	"506": {
 		"name": "Sword of Secret",
 		"data": [
 			"MASTER",
@@ -4490,7 +4562,7 @@
 		],
 		"diff": "13"
 	},
-	"499": {
+	"507": {
 		"name": "fulgente",
 		"data": [
 			"MASTER",
@@ -4499,7 +4571,7 @@
 		],
 		"diff": "13"
 	},
-	"500": {
+	"508": {
 		"name": "おやすみのうた",
 		"data": [
 			"MASTER",
@@ -4508,7 +4580,7 @@
 		],
 		"diff": "13"
 	},
-	"501": {
+	"509": {
 		"name": "いつか花咲くその前に",
 		"data": [
 			"MASTER",
@@ -4517,7 +4589,7 @@
 		],
 		"diff": "13"
 	},
-	"502": {
+	"510": {
 		"name": "脳天直撃",
 		"data": [
 			"EXPERT",
@@ -4526,7 +4598,7 @@
 		],
 		"diff": "13"
 	},
-	"503": {
+	"511": {
 		"name": "Stargazing Dreamer",
 		"data": [
 			"EXPERT",
@@ -4535,7 +4607,7 @@
 		],
 		"diff": "13"
 	},
-	"504": {
+	"512": {
 		"name": "Don't Fight The Music",
 		"data": [
 			"EXPERT",
@@ -4544,7 +4616,7 @@
 		],
 		"diff": "13"
 	},
-	"505": {
+	"513": {
 		"name": "Cult future",
 		"data": [
 			"EXPERT",
@@ -4553,7 +4625,7 @@
 		],
 		"diff": "13"
 	},
-	"506": {
+	"514": {
 		"name": "其のエメラルドを見よ",
 		"data": [
 			"EXPERT",
@@ -4562,7 +4634,7 @@
 		],
 		"diff": "13"
 	},
-	"507": {
+	"515": {
 		"name": "オンソクデイズ!!",
 		"data": [
 			"EXPERT",
@@ -4571,7 +4643,7 @@
 		],
 		"diff": "13"
 	},
-	"508": {
+	"516": {
 		"name": "淵底のグレイ・ユークロニア",
 		"data": [
 			"EXPERT",
@@ -4580,7 +4652,7 @@
 		],
 		"diff": "13"
 	},
-	"509": {
+	"517": {
 		"name": "グリーンライツ・セレナーデ",
 		"data": [
 			"LUNATIC",
@@ -4589,7 +4661,7 @@
 		],
 		"diff": "13"
 	},
-	"510": {
+	"518": {
 		"name": "夜明けのストリング",
 		"data": [
 			"LUNATIC",
@@ -4598,7 +4670,7 @@
 		],
 		"diff": "13"
 	},
-	"511": {
+	"519": {
 		"name": "Petit Etoile",
 		"data": [
 			"MASTER",
@@ -4607,7 +4679,7 @@
 		],
 		"diff": "13"
 	},
-	"512": {
+	"520": {
 		"name": "スパッと！スパイ＆スパイス",
 		"data": [
 			"MASTER",
@@ -4616,7 +4688,7 @@
 		],
 		"diff": "13"
 	},
-	"513": {
+	"521": {
 		"name": "春を告げる",
 		"data": [
 			"MASTER",
@@ -4625,7 +4697,7 @@
 		],
 		"diff": "13"
 	},
-	"514": {
+	"522": {
 		"name": "アンノウン・マザーグース",
 		"data": [
 			"MASTER",
@@ -4634,7 +4706,7 @@
 		],
 		"diff": "13"
 	},
-	"515": {
+	"523": {
 		"name": "イカサマライフゲイム",
 		"data": [
 			"MASTER",
@@ -4643,7 +4715,7 @@
 		],
 		"diff": "13"
 	},
-	"516": {
+	"524": {
 		"name": "ヴィラン",
 		"data": [
 			"MASTER",
@@ -4652,7 +4724,7 @@
 		],
 		"diff": "13"
 	},
-	"517": {
+	"525": {
 		"name": "おひめさまになりたいのッ！",
 		"data": [
 			"MASTER",
@@ -4661,7 +4733,7 @@
 		],
 		"diff": "13"
 	},
-	"518": {
+	"526": {
 		"name": "妖狐仙楽踏",
 		"data": [
 			"MASTER",
@@ -4670,7 +4742,7 @@
 		],
 		"diff": "13"
 	},
-	"519": {
+	"527": {
 		"name": "サドマミホリック",
 		"data": [
 			"MASTER",
@@ -4679,7 +4751,7 @@
 		],
 		"diff": "13"
 	},
-	"520": {
+	"528": {
 		"name": "天狗の落とし文 feat. ｙｔｒ",
 		"data": [
 			"MASTER",
@@ -4688,7 +4760,7 @@
 		],
 		"diff": "13"
 	},
-	"521": {
+	"529": {
 		"name": "ロストワードクロニカル",
 		"data": [
 			"MASTER",
@@ -4697,7 +4769,7 @@
 		],
 		"diff": "13"
 	},
-	"522": {
+	"530": {
 		"name": "風に乗せた願い",
 		"data": [
 			"MASTER",
@@ -4706,7 +4778,7 @@
 		],
 		"diff": "13"
 	},
-	"523": {
+	"531": {
 		"name": "New World",
 		"data": [
 			"MASTER",
@@ -4715,7 +4787,7 @@
 		],
 		"diff": "13"
 	},
-	"524": {
+	"532": {
 		"name": "花たちに希望を",
 		"data": [
 			"MASTER",
@@ -4724,7 +4796,7 @@
 		],
 		"diff": "13"
 	},
-	"525": {
+	"533": {
 		"name": "Burning Steel Inferno",
 		"data": [
 			"MASTER",
@@ -4733,7 +4805,7 @@
 		],
 		"diff": "13"
 	},
-	"526": {
+	"534": {
 		"name": "rePrayer",
 		"data": [
 			"MASTER",
@@ -4742,7 +4814,7 @@
 		],
 		"diff": "13"
 	},
-	"527": {
+	"535": {
 		"name": "アルカンシエル",
 		"data": [
 			"MASTER",
@@ -4751,7 +4823,7 @@
 		],
 		"diff": "13"
 	},
-	"528": {
+	"536": {
 		"name": "We Gonna Journey",
 		"data": [
 			"MASTER",
@@ -4760,7 +4832,7 @@
 		],
 		"diff": "13"
 	},
-	"529": {
+	"537": {
 		"name": "ライトスピード・デイズ",
 		"data": [
 			"MASTER",
@@ -4769,7 +4841,7 @@
 		],
 		"diff": "13"
 	},
-	"530": {
+	"538": {
 		"name": "ツクヨミステップ",
 		"data": [
 			"MASTER",
@@ -4778,7 +4850,7 @@
 		],
 		"diff": "13"
 	},
-	"531": {
+	"539": {
 		"name": "STAR",
 		"data": [
 			"MASTER",
@@ -4787,7 +4859,7 @@
 		],
 		"diff": "13"
 	},
-	"532": {
+	"540": {
 		"name": "Starlight Disco",
 		"data": [
 			"MASTER",
@@ -4796,7 +4868,7 @@
 		],
 		"diff": "13"
 	},
-	"533": {
+	"541": {
 		"name": "Death Doll",
 		"data": [
 			"MASTER",
@@ -4805,7 +4877,7 @@
 		],
 		"diff": "13"
 	},
-	"534": {
+	"542": {
 		"name": "Jörqer",
 		"data": [
 			"MASTER",
@@ -4814,7 +4886,7 @@
 		],
 		"diff": "13"
 	},
-	"535": {
+	"543": {
 		"name": "fulgente (flip-side color mix)",
 		"data": [
 			"MASTER",
@@ -4823,7 +4895,7 @@
 		],
 		"diff": "13"
 	},
-	"536": {
+	"544": {
 		"name": "Catch Me If You Can",
 		"data": [
 			"MASTER",
@@ -4832,7 +4904,7 @@
 		],
 		"diff": "13"
 	},
-	"537": {
+	"545": {
 		"name": "Butterfly Wave",
 		"data": [
 			"MASTER",
@@ -4841,7 +4913,7 @@
 		],
 		"diff": "13"
 	},
-	"538": {
+	"546": {
 		"name": "超前進！満点スマイル！",
 		"data": [
 			"MASTER",
@@ -4850,7 +4922,7 @@
 		],
 		"diff": "13"
 	},
-	"539": {
+	"547": {
 		"name": "はっぴ〜しゅ〜てぃんぐすた〜",
 		"data": [
 			"MASTER",
@@ -4859,7 +4931,7 @@
 		],
 		"diff": "13"
 	},
-	"540": {
+	"548": {
 		"name": "MANIERA REMASTERED",
 		"data": [
 			"EXPERT",
@@ -4868,7 +4940,7 @@
 		],
 		"diff": "13"
 	},
-	"541": {
+	"549": {
 		"name": "eden",
 		"data": [
 			"EXPERT",
@@ -4877,7 +4949,7 @@
 		],
 		"diff": "13"
 	},
-	"542": {
+	"550": {
 		"name": "the EmpErroR",
 		"data": [
 			"EXPERT",
@@ -4886,7 +4958,7 @@
 		],
 		"diff": "13"
 	},
-	"543": {
+	"551": {
 		"name": "Hainuwele",
 		"data": [
 			"EXPERT",
@@ -4895,7 +4967,7 @@
 		],
 		"diff": "13"
 	},
-	"544": {
+	"552": {
 		"name": "雪男",
 		"data": [
 			"EXPERT",
@@ -4904,7 +4976,7 @@
 		],
 		"diff": "13"
 	},
-	"545": {
+	"553": {
 		"name": "Singularity -technoplanet-",
 		"data": [
 			"EXPERT",
@@ -4913,7 +4985,7 @@
 		],
 		"diff": "13"
 	},
-	"546": {
+	"554": {
 		"name": "MarbleBlue.",
 		"data": [
 			"EXPERT",
@@ -4922,7 +4994,7 @@
 		],
 		"diff": "13"
 	},
-	"547": {
+	"555": {
 		"name": "しとしとと",
 		"data": [
 			"EXPERT",
@@ -4931,7 +5003,7 @@
 		],
 		"diff": "13"
 	},
-	"548": {
+	"556": {
 		"name": "モンダイナイトリッパー！",
 		"data": [
 			"MASTER",
@@ -4940,7 +5012,7 @@
 		],
 		"diff": "13"
 	},
-	"549": {
+	"557": {
 		"name": "恋のイリュージョニスタ",
 		"data": [
 			"MASTER",
@@ -4949,7 +5021,7 @@
 		],
 		"diff": "13"
 	},
-	"550": {
+	"558": {
 		"name": "幻想楼閣",
 		"data": [
 			"MASTER",
@@ -4958,7 +5030,7 @@
 		],
 		"diff": "13"
 	},
-	"551": {
+	"559": {
 		"name": "インビジブル",
 		"data": [
 			"MASTER",
@@ -4967,7 +5039,7 @@
 		],
 		"diff": "13"
 	},
-	"552": {
+	"560": {
 		"name": "幾望の月",
 		"data": [
 			"MASTER",
@@ -4976,7 +5048,7 @@
 		],
 		"diff": "13"
 	},
-	"553": {
+	"561": {
 		"name": "電脳少女は歌姫の夢を見るか？",
 		"data": [
 			"MASTER",
@@ -4985,7 +5057,7 @@
 		],
 		"diff": "13"
 	},
-	"554": {
+	"562": {
 		"name": "ジャンキーナイトタウンオーケストラ",
 		"data": [
 			"MASTER",
@@ -4994,7 +5066,7 @@
 		],
 		"diff": "13"
 	},
-	"555": {
+	"563": {
 		"name": "ずんだパーリナイ",
 		"data": [
 			"MASTER",
@@ -5003,7 +5075,7 @@
 		],
 		"diff": "13"
 	},
-	"556": {
+	"564": {
 		"name": "Destiny Runner",
 		"data": [
 			"MASTER",
@@ -5012,7 +5084,7 @@
 		],
 		"diff": "13"
 	},
-	"557": {
+	"565": {
 		"name": "銀のめぐり",
 		"data": [
 			"MASTER",
@@ -5021,7 +5093,7 @@
 		],
 		"diff": "13"
 	},
-	"558": {
+	"566": {
 		"name": "ナイト・オブ・ナイツ (Cranky Remix)",
 		"data": [
 			"MASTER",
@@ -5030,7 +5102,7 @@
 		],
 		"diff": "13"
 	},
-	"559": {
+	"567": {
 		"name": "疾走あんさんぶる",
 		"data": [
 			"MASTER",
@@ -5039,7 +5111,7 @@
 		],
 		"diff": "13"
 	},
-	"560": {
+	"568": {
 		"name": "Bad Apple!! feat.nomico (豚乙女 Ver.)",
 		"data": [
 			"MASTER",
@@ -5048,7 +5120,7 @@
 		],
 		"diff": "13"
 	},
-	"561": {
+	"569": {
 		"name": "迷える音色は恋の唄",
 		"data": [
 			"MASTER",
@@ -5057,7 +5129,7 @@
 		],
 		"diff": "13"
 	},
-	"562": {
+	"570": {
 		"name": "Once in my life",
 		"data": [
 			"MASTER",
@@ -5066,7 +5138,7 @@
 		],
 		"diff": "13"
 	},
-	"563": {
+	"571": {
 		"name": "Cutter",
 		"data": [
 			"MASTER",
@@ -5075,7 +5147,7 @@
 		],
 		"diff": "13"
 	},
-	"564": {
+	"572": {
 		"name": "BOKUTO",
 		"data": [
 			"MASTER",
@@ -5084,7 +5156,7 @@
 		],
 		"diff": "13"
 	},
-	"565": {
+	"573": {
 		"name": "ユメキキョウ",
 		"data": [
 			"MASTER",
@@ -5093,7 +5165,7 @@
 		],
 		"diff": "13"
 	},
-	"566": {
+	"574": {
 		"name": "Rainbow Rush Story",
 		"data": [
 			"MASTER",
@@ -5102,7 +5174,7 @@
 		],
 		"diff": "13"
 	},
-	"567": {
+	"575": {
 		"name": "Maqrite",
 		"data": [
 			"MASTER",
@@ -5111,7 +5183,7 @@
 		],
 		"diff": "13"
 	},
-	"568": {
+	"576": {
 		"name": "Radiance",
 		"data": [
 			"MASTER",
@@ -5120,7 +5192,7 @@
 		],
 		"diff": "13"
 	},
-	"569": {
+	"577": {
 		"name": "DAWNBREAKER",
 		"data": [
 			"MASTER",
@@ -5129,7 +5201,7 @@
 		],
 		"diff": "13"
 	},
-	"570": {
+	"578": {
 		"name": "All Right!",
 		"data": [
 			"MASTER",
@@ -5138,7 +5210,7 @@
 		],
 		"diff": "13"
 	},
-	"571": {
+	"579": {
 		"name": "Say Goodbye",
 		"data": [
 			"MASTER",
@@ -5147,7 +5219,7 @@
 		],
 		"diff": "13"
 	},
-	"572": {
+	"580": {
 		"name": "Random Access Emotions",
 		"data": [
 			"MASTER",
@@ -5156,7 +5228,7 @@
 		],
 		"diff": "13"
 	},
-	"573": {
+	"581": {
 		"name": "Rhythm of Love",
 		"data": [
 			"MASTER",
@@ -5165,7 +5237,7 @@
 		],
 		"diff": "13"
 	},
-	"574": {
+	"582": {
 		"name": "耐冬花麗",
 		"data": [
 			"MASTER",
@@ -5174,7 +5246,7 @@
 		],
 		"diff": "13"
 	},
-	"575": {
+	"583": {
 		"name": "Invisible Frenzy",
 		"data": [
 			"EXPERT",
@@ -5183,7 +5255,7 @@
 		],
 		"diff": "13"
 	},
-	"576": {
+	"584": {
 		"name": "宿星審判",
 		"data": [
 			"EXPERT",
@@ -5192,7 +5264,7 @@
 		],
 		"diff": "13"
 	},
-	"577": {
+	"585": {
 		"name": "Opfer",
 		"data": [
 			"EXPERT",
@@ -5201,7 +5273,7 @@
 		],
 		"diff": "13"
 	},
-	"578": {
+	"586": {
 		"name": "A Man In The Mirror",
 		"data": [
 			"EXPERT",
@@ -5210,7 +5282,7 @@
 		],
 		"diff": "13"
 	},
-	"579": {
+	"587": {
 		"name": "Diamond Dust",
 		"data": [
 			"EXPERT",
@@ -5219,7 +5291,7 @@
 		],
 		"diff": "13"
 	},
-	"580": {
+	"588": {
 		"name": "Magical Panic Adventure",
 		"data": [
 			"EXPERT",
@@ -5228,7 +5300,7 @@
 		],
 		"diff": "13"
 	},
-	"581": {
+	"589": {
 		"name": "シル・ヴ・プレジデント",
 		"data": [
 			"LUNATIC",
@@ -5237,7 +5309,7 @@
 		],
 		"diff": "13"
 	},
-	"582": {
+	"590": {
 		"name": "Zest of Blue",
 		"data": [
 			"LUNATIC",
@@ -5246,7 +5318,7 @@
 		],
 		"diff": "13"
 	},
-	"583": {
+	"591": {
 		"name": "どうぶつ☆パラダイス",
 		"data": [
 			"LUNATIC",
@@ -5255,7 +5327,7 @@
 		],
 		"diff": "13"
 	},
-	"584": {
+	"592": {
 		"name": "最強 the サマータイム!!!!!",
 		"data": [
 			"LUNATIC",
@@ -5264,7 +5336,7 @@
 		],
 		"diff": "13"
 	},
-	"585": {
+	"593": {
 		"name": "藍の華",
 		"data": [
 			"MASTER",
@@ -5273,7 +5345,7 @@
 		],
 		"diff": "13+"
 	},
-	"586": {
+	"594": {
 		"name": "ぶいちゅっばの歌",
 		"data": [
 			"MASTER",
@@ -5282,7 +5354,7 @@
 		],
 		"diff": "13+"
 	},
-	"587": {
+	"595": {
 		"name": "せーので跳べって言ってんの！",
 		"data": [
 			"MASTER",
@@ -5291,7 +5363,7 @@
 		],
 		"diff": "13+"
 	},
-	"588": {
+	"596": {
 		"name": "偉大なる悪魔は実は大天使パトラちゃん様なのだ！",
 		"data": [
 			"MASTER",
@@ -5300,7 +5372,7 @@
 		],
 		"diff": "13+"
 	},
-	"589": {
+	"597": {
 		"name": "Faith in Expression",
 		"data": [
 			"MASTER",
@@ -5309,7 +5381,7 @@
 		],
 		"diff": "13+"
 	},
-	"590": {
+	"598": {
 		"name": "On your mark (104期 Ver.)",
 		"data": [
 			"MASTER",
@@ -5318,7 +5390,7 @@
 		],
 		"diff": "13+"
 	},
-	"591": {
+	"599": {
 		"name": "get the regret over",
 		"data": [
 			"MASTER",
@@ -5327,7 +5399,7 @@
 		],
 		"diff": "13+"
 	},
-	"592": {
+	"600": {
 		"name": "クイーンオブハート",
 		"data": [
 			"MASTER",
@@ -5336,7 +5408,7 @@
 		],
 		"diff": "13+"
 	},
-	"593": {
+	"601": {
 		"name": "初音ミクの消失",
 		"data": [
 			"MASTER",
@@ -5345,7 +5417,7 @@
 		],
 		"diff": "13+"
 	},
-	"594": {
+	"602": {
 		"name": "裏表ラバーズ",
 		"data": [
 			"MASTER",
@@ -5354,7 +5426,7 @@
 		],
 		"diff": "13+"
 	},
-	"595": {
+	"603": {
 		"name": "夜咄ディセイブ",
 		"data": [
 			"MASTER",
@@ -5363,7 +5435,7 @@
 		],
 		"diff": "13+"
 	},
-	"596": {
+	"604": {
 		"name": "So much loving you★ -DIVA Edit-",
 		"data": [
 			"MASTER",
@@ -5372,7 +5444,7 @@
 		],
 		"diff": "13+"
 	},
-	"597": {
+	"605": {
 		"name": "ド屑",
 		"data": [
 			"MASTER",
@@ -5381,7 +5453,7 @@
 		],
 		"diff": "13+"
 	},
-	"598": {
+	"606": {
 		"name": "孤独の果て",
 		"data": [
 			"MASTER",
@@ -5390,7 +5462,7 @@
 		],
 		"diff": "13+"
 	},
-	"599": {
+	"607": {
 		"name": "オーバーライド",
 		"data": [
 			"MASTER",
@@ -5399,7 +5471,7 @@
 		],
 		"diff": "13+"
 	},
-	"600": {
+	"608": {
 		"name": "Calamity Fortune",
 		"data": [
 			"MASTER",
@@ -5408,7 +5480,7 @@
 		],
 		"diff": "13+"
 	},
-	"601": {
+	"609": {
 		"name": "ウサテイ",
 		"data": [
 			"MASTER",
@@ -5417,7 +5489,7 @@
 		],
 		"diff": "13+"
 	},
-	"602": {
+	"610": {
 		"name": "Doll Judgment",
 		"data": [
 			"MASTER",
@@ -5426,7 +5498,7 @@
 		],
 		"diff": "13+"
 	},
-	"603": {
+	"611": {
 		"name": "Destr0yer",
 		"data": [
 			"MASTER",
@@ -5435,7 +5507,7 @@
 		],
 		"diff": "13+"
 	},
-	"604": {
+	"612": {
 		"name": "僕たちの旅とエピローグ。",
 		"data": [
 			"MASTER",
@@ -5444,7 +5516,7 @@
 		],
 		"diff": "13+"
 	},
-	"605": {
+	"613": {
 		"name": "Löschen",
 		"data": [
 			"MASTER",
@@ -5453,7 +5525,7 @@
 		],
 		"diff": "13+"
 	},
-	"606": {
+	"614": {
 		"name": "Quon",
 		"data": [
 			"MASTER",
@@ -5462,7 +5534,7 @@
 		],
 		"diff": "13+"
 	},
-	"607": {
+	"615": {
 		"name": "風仁雷仁",
 		"data": [
 			"MASTER",
@@ -5471,7 +5543,7 @@
 		],
 		"diff": "13+"
 	},
-	"608": {
+	"616": {
 		"name": "I want You",
 		"data": [
 			"MASTER",
@@ -5480,7 +5552,7 @@
 		],
 		"diff": "13+"
 	},
-	"609": {
+	"617": {
 		"name": "Oshama Scramble!",
 		"data": [
 			"MASTER",
@@ -5489,7 +5561,7 @@
 		],
 		"diff": "13+"
 	},
-	"610": {
+	"618": {
 		"name": "AMAZING MIGHTYYYY!!!!",
 		"data": [
 			"MASTER",
@@ -5498,7 +5570,7 @@
 		],
 		"diff": "13+"
 	},
-	"611": {
+	"619": {
 		"name": "The wheel to the right",
 		"data": [
 			"MASTER",
@@ -5507,7 +5579,7 @@
 		],
 		"diff": "13+"
 	},
-	"612": {
+	"620": {
 		"name": "とびだせ！TO THE COSMIC!!",
 		"data": [
 			"MASTER",
@@ -5516,7 +5588,7 @@
 		],
 		"diff": "13+"
 	},
-	"613": {
+	"621": {
 		"name": "Candy Tall Woman",
 		"data": [
 			"MASTER",
@@ -5525,7 +5597,7 @@
 		],
 		"diff": "13+"
 	},
-	"614": {
+	"622": {
 		"name": "居並ぶ穀物と溜息まじりの運送屋",
 		"data": [
 			"MASTER",
@@ -5534,7 +5606,7 @@
 		],
 		"diff": "13+"
 	},
-	"615": {
+	"623": {
 		"name": "アンバークロニクル",
 		"data": [
 			"MASTER",
@@ -5543,7 +5615,7 @@
 		],
 		"diff": "13+"
 	},
-	"616": {
+	"624": {
 		"name": "ROAD TO DREAM",
 		"data": [
 			"MASTER",
@@ -5552,7 +5624,7 @@
 		],
 		"diff": "13+"
 	},
-	"617": {
+	"625": {
 		"name": "Lazy Addiction",
 		"data": [
 			"MASTER",
@@ -5561,7 +5633,7 @@
 		],
 		"diff": "13+"
 	},
-	"618": {
+	"626": {
 		"name": "Touch and Go",
 		"data": [
 			"MASTER",
@@ -5570,7 +5642,7 @@
 		],
 		"diff": "13+"
 	},
-	"619": {
+	"627": {
 		"name": "HONEY-Q",
 		"data": [
 			"MASTER",
@@ -5579,7 +5651,7 @@
 		],
 		"diff": "13+"
 	},
-	"620": {
+	"628": {
 		"name": "Honey Bear",
 		"data": [
 			"MASTER",
@@ -5588,7 +5660,7 @@
 		],
 		"diff": "13+"
 	},
-	"621": {
+	"629": {
 		"name": "RED to RED",
 		"data": [
 			"MASTER",
@@ -5597,7 +5669,7 @@
 		],
 		"diff": "13+"
 	},
-	"622": {
+	"630": {
 		"name": "Lostwizz",
 		"data": [
 			"MASTER",
@@ -5606,7 +5678,7 @@
 		],
 		"diff": "13+"
 	},
-	"623": {
+	"631": {
 		"name": "I got a gig tonight!",
 		"data": [
 			"MASTER",
@@ -5615,7 +5687,7 @@
 		],
 		"diff": "13+"
 	},
-	"624": {
+	"632": {
 		"name": "Event Horizon",
 		"data": [
 			"MASTER",
@@ -5624,7 +5696,7 @@
 		],
 		"diff": "13+"
 	},
-	"625": {
+	"633": {
 		"name": "ツムギボシ（starring オンゲキシューターズ）",
 		"data": [
 			"MASTER",
@@ -5633,7 +5705,7 @@
 		],
 		"diff": "13+"
 	},
-	"626": {
+	"634": {
 		"name": "がおっと!!最強☆ぱーりーないと",
 		"data": [
 			"MASTER",
@@ -5642,7 +5714,7 @@
 		],
 		"diff": "13+"
 	},
-	"627": {
+	"635": {
 		"name": "ouroboros -twin stroke of the end-",
 		"data": [
 			"EXPERT",
@@ -5651,7 +5723,7 @@
 		],
 		"diff": "13+"
 	},
-	"628": {
+	"636": {
 		"name": "Got more raves? -xiRemix-",
 		"data": [
 			"EXPERT",
@@ -5660,7 +5732,7 @@
 		],
 		"diff": "13+"
 	},
-	"629": {
+	"637": {
 		"name": "蜘蛛の糸",
 		"data": [
 			"EXPERT",
@@ -5669,7 +5741,7 @@
 		],
 		"diff": "13+"
 	},
-	"630": {
+	"638": {
 		"name": "Regulus",
 		"data": [
 			"EXPERT",
@@ -5678,7 +5750,7 @@
 		],
 		"diff": "13+"
 	},
-	"631": {
+	"639": {
 		"name": "Apollo",
 		"data": [
 			"EXPERT",
@@ -5687,7 +5759,7 @@
 		],
 		"diff": "13+"
 	},
-	"632": {
+	"640": {
 		"name": "Stellar:Dream",
 		"data": [
 			"EXPERT",
@@ -5696,7 +5768,7 @@
 		],
 		"diff": "13+"
 	},
-	"633": {
+	"641": {
 		"name": "Sakura Fubuki",
 		"data": [
 			"LUNATIC",
@@ -5705,7 +5777,7 @@
 		],
 		"diff": "13+"
 	},
-	"634": {
+	"642": {
 		"name": "タテマエと本心の大乱闘",
 		"data": [
 			"LUNATIC",
@@ -5714,7 +5786,7 @@
 		],
 		"diff": "13+"
 	},
-	"635": {
+	"643": {
 		"name": "Starring Stars",
 		"data": [
 			"LUNATIC",
@@ -5723,7 +5795,7 @@
 		],
 		"diff": "13+"
 	},
-	"636": {
+	"644": {
 		"name": "アンチグラビティ・ガール",
 		"data": [
 			"MASTER",
@@ -5732,7 +5804,7 @@
 		],
 		"diff": "13+"
 	},
-	"637": {
+	"645": {
 		"name": "カミサマネジマキ",
 		"data": [
 			"MASTER",
@@ -5741,7 +5813,7 @@
 		],
 		"diff": "13+"
 	},
-	"638": {
+	"646": {
 		"name": "ギガンティックO.T.N",
 		"data": [
 			"MASTER",
@@ -5750,7 +5822,7 @@
 		],
 		"diff": "13+"
 	},
-	"639": {
+	"647": {
 		"name": "撥条少女時計",
 		"data": [
 			"MASTER",
@@ -5759,7 +5831,7 @@
 		],
 		"diff": "13+"
 	},
-	"640": {
+	"648": {
 		"name": "サイハテ",
 		"data": [
 			"MASTER",
@@ -5768,7 +5840,7 @@
 		],
 		"diff": "13+"
 	},
-	"641": {
+	"649": {
 		"name": "卑怯戦隊うろたんだー",
 		"data": [
 			"MASTER",
@@ -5777,7 +5849,7 @@
 		],
 		"diff": "13+"
 	},
-	"642": {
+	"650": {
 		"name": "オートファジー",
 		"data": [
 			"MASTER",
@@ -5786,7 +5858,7 @@
 		],
 		"diff": "13+"
 	},
-	"643": {
+	"651": {
 		"name": "トンデモワンダーズ",
 		"data": [
 			"MASTER",
@@ -5795,7 +5867,7 @@
 		],
 		"diff": "13+"
 	},
-	"644": {
+	"652": {
 		"name": "Bad Apple!! feat.nomico (Camellia’s “Bad Psy” Remix)",
 		"data": [
 			"MASTER",
@@ -5804,7 +5876,7 @@
 		],
 		"diff": "13+"
 	},
-	"645": {
+	"653": {
 		"name": "スカーレット警察のゲットーパトロール24時",
 		"data": [
 			"MASTER",
@@ -5813,7 +5885,7 @@
 		],
 		"diff": "13+"
 	},
-	"646": {
+	"654": {
 		"name": "Duello",
 		"data": [
 			"MASTER",
@@ -5822,7 +5894,7 @@
 		],
 		"diff": "13+"
 	},
-	"647": {
+	"655": {
 		"name": "Dreadnought",
 		"data": [
 			"MASTER",
@@ -5831,7 +5903,7 @@
 		],
 		"diff": "13+"
 	},
-	"648": {
+	"656": {
 		"name": "Reach for the Stars",
 		"data": [
 			"MASTER",
@@ -5840,7 +5912,7 @@
 		],
 		"diff": "13+"
 	},
-	"649": {
+	"657": {
 		"name": "CO5M1C R4ILR0AD",
 		"data": [
 			"MASTER",
@@ -5849,7 +5921,7 @@
 		],
 		"diff": "13+"
 	},
-	"650": {
+	"658": {
 		"name": "ニニ",
 		"data": [
 			"MASTER",
@@ -5858,7 +5930,7 @@
 		],
 		"diff": "13+"
 	},
-	"651": {
+	"659": {
 		"name": "Dement ～after legend～",
 		"data": [
 			"MASTER",
@@ -5867,7 +5939,7 @@
 		],
 		"diff": "13+"
 	},
-	"652": {
+	"660": {
 		"name": "STARLIGHT TWILIGHT -GC edit-",
 		"data": [
 			"MASTER",
@@ -5876,7 +5948,7 @@
 		],
 		"diff": "13+"
 	},
-	"653": {
+	"661": {
 		"name": "YO-KAI Disco",
 		"data": [
 			"MASTER",
@@ -5885,7 +5957,7 @@
 		],
 		"diff": "13+"
 	},
-	"654": {
+	"662": {
 		"name": "with U",
 		"data": [
 			"MASTER",
@@ -5894,7 +5966,7 @@
 		],
 		"diff": "13+"
 	},
-	"655": {
+	"663": {
 		"name": "Small Cloud Sugar Candy",
 		"data": [
 			"MASTER",
@@ -5903,7 +5975,7 @@
 		],
 		"diff": "13+"
 	},
-	"656": {
+	"664": {
 		"name": "Summer is over",
 		"data": [
 			"MASTER",
@@ -5912,7 +5984,7 @@
 		],
 		"diff": "13+"
 	},
-	"657": {
+	"665": {
 		"name": "Secret Sleuth",
 		"data": [
 			"MASTER",
@@ -5921,7 +5993,7 @@
 		],
 		"diff": "13+"
 	},
-	"658": {
+	"666": {
 		"name": "U ARE",
 		"data": [
 			"MASTER",
@@ -5930,7 +6002,7 @@
 		],
 		"diff": "13+"
 	},
-	"659": {
+	"667": {
 		"name": "足立オウフwwww",
 		"data": [
 			"MASTER",
@@ -5939,7 +6011,7 @@
 		],
 		"diff": "13+"
 	},
-	"660": {
+	"668": {
 		"name": "CHOCOLATE BOMB!!!!",
 		"data": [
 			"MASTER",
@@ -5948,7 +6020,7 @@
 		],
 		"diff": "13+"
 	},
-	"661": {
+	"669": {
 		"name": "Imitation:Loud Lounge",
 		"data": [
 			"MASTER",
@@ -5957,7 +6029,7 @@
 		],
 		"diff": "13+"
 	},
-	"662": {
+	"670": {
 		"name": "We Gonna Party",
 		"data": [
 			"MASTER",
@@ -5966,7 +6038,7 @@
 		],
 		"diff": "13+"
 	},
-	"663": {
+	"671": {
 		"name": "Sparkle",
 		"data": [
 			"MASTER",
@@ -5975,7 +6047,7 @@
 		],
 		"diff": "13+"
 	},
-	"664": {
+	"672": {
 		"name": "A Day in the Patisserie",
 		"data": [
 			"MASTER",
@@ -5984,7 +6056,7 @@
 		],
 		"diff": "13+"
 	},
-	"665": {
+	"673": {
 		"name": "最っ高のエンタメだ!!",
 		"data": [
 			"MASTER",
@@ -5993,7 +6065,7 @@
 		],
 		"diff": "13+"
 	},
-	"666": {
+	"674": {
 		"name": "Pastel Sprinkles",
 		"data": [
 			"MASTER",
@@ -6002,7 +6074,7 @@
 		],
 		"diff": "13+"
 	},
-	"667": {
+	"675": {
 		"name": "MEGATON BLAST (tpz Overcute Remix)",
 		"data": [
 			"MASTER",
@@ -6011,7 +6083,7 @@
 		],
 		"diff": "13+"
 	},
-	"668": {
+	"676": {
 		"name": "ゲーミングポーラーベア",
 		"data": [
 			"MASTER",
@@ -6020,7 +6092,7 @@
 		],
 		"diff": "13+"
 	},
-	"669": {
+	"677": {
 		"name": "Mizutama-Tripster",
 		"data": [
 			"MASTER",
@@ -6029,7 +6101,7 @@
 		],
 		"diff": "13+"
 	},
-	"670": {
+	"678": {
 		"name": "UTOPIA CRASH",
 		"data": [
 			"MASTER",
@@ -6038,7 +6110,7 @@
 		],
 		"diff": "13+"
 	},
-	"671": {
+	"679": {
 		"name": "Vibes 2k20 (owl＊aging remix)",
 		"data": [
 			"MASTER",
@@ -6047,7 +6119,7 @@
 		],
 		"diff": "13+"
 	},
-	"672": {
+	"680": {
 		"name": "ロッキンピンクモンスター (豚乙女ランコVoVer.)",
 		"data": [
 			"MASTER",
@@ -6056,7 +6128,7 @@
 		],
 		"diff": "13+"
 	},
-	"673": {
+	"681": {
 		"name": "夢を叶える場所",
 		"data": [
 			"MASTER",
@@ -6065,7 +6137,7 @@
 		],
 		"diff": "13+"
 	},
-	"674": {
+	"682": {
 		"name": "Memories of O.N.G.E.K.I.",
 		"data": [
 			"MASTER",
@@ -6074,7 +6146,7 @@
 		],
 		"diff": "13+"
 	},
-	"675": {
+	"683": {
 		"name": "いちげき！のテーマ",
 		"data": [
 			"MASTER",
@@ -6083,7 +6155,7 @@
 		],
 		"diff": "13+"
 	},
-	"676": {
+	"684": {
 		"name": "Apollo -onoken AxSwing Remix-",
 		"data": [
 			"MASTER",
@@ -6092,7 +6164,7 @@
 		],
 		"diff": "13+"
 	},
-	"677": {
+	"685": {
 		"name": "Ai Me",
 		"data": [
 			"MASTER",
@@ -6101,7 +6173,7 @@
 		],
 		"diff": "13+"
 	},
-	"678": {
+	"686": {
 		"name": "Scythe of Death",
 		"data": [
 			"EXPERT",
@@ -6110,7 +6182,7 @@
 		],
 		"diff": "13+"
 	},
-	"679": {
+	"687": {
 		"name": "LAMIA",
 		"data": [
 			"EXPERT",
@@ -6119,7 +6191,7 @@
 		],
 		"diff": "13+"
 	},
-	"680": {
+	"688": {
 		"name": "Op.I 《fear-TITΛN-》",
 		"data": [
 			"EXPERT",
@@ -6128,7 +6200,7 @@
 		],
 		"diff": "13+"
 	},
-	"681": {
+	"689": {
 		"name": "Stardust:RAY",
 		"data": [
 			"EXPERT",
@@ -6137,7 +6209,7 @@
 		],
 		"diff": "13+"
 	},
-	"682": {
+	"690": {
 		"name": "And Revive The Melody",
 		"data": [
 			"EXPERT",
@@ -6146,7 +6218,7 @@
 		],
 		"diff": "13+"
 	},
-	"683": {
+	"691": {
 		"name": "The world of spirit",
 		"data": [
 			"LUNATIC",
@@ -6155,7 +6227,7 @@
 		],
 		"diff": "13+"
 	},
-	"684": {
+	"692": {
 		"name": "Perfect Shining!!",
 		"data": [
 			"LUNATIC",
@@ -6164,7 +6236,7 @@
 		],
 		"diff": "13+"
 	},
-	"685": {
+	"693": {
 		"name": "みんな Happy!!",
 		"data": [
 			"LUNATIC",
@@ -6173,7 +6245,7 @@
 		],
 		"diff": "13+"
 	},
-	"686": {
+	"694": {
 		"name": "SWEET SHAKE!!",
 		"data": [
 			"LUNATIC",
@@ -6182,7 +6254,7 @@
 		],
 		"diff": "13+"
 	},
-	"687": {
+	"695": {
 		"name": "Seventeen Feels",
 		"data": [
 			"MASTER",
@@ -6191,7 +6263,7 @@
 		],
 		"diff": "13+"
 	},
-	"688": {
+	"696": {
 		"name": "サンダーレスキュー！",
 		"data": [
 			"MASTER",
@@ -6200,7 +6272,7 @@
 		],
 		"diff": "13+"
 	},
-	"689": {
+	"697": {
 		"name": "DEEPNESS (ReC Ver.)",
 		"data": [
 			"MASTER",
@@ -6209,7 +6281,7 @@
 		],
 		"diff": "13+"
 	},
-	"690": {
+	"698": {
 		"name": "初音天地開闢神話",
 		"data": [
 			"MASTER",
@@ -6218,7 +6290,7 @@
 		],
 		"diff": "13+"
 	},
-	"691": {
+	"699": {
 		"name": "パラジクロロベンゼン",
 		"data": [
 			"MASTER",
@@ -6227,7 +6299,7 @@
 		],
 		"diff": "13+"
 	},
-	"692": {
+	"700": {
 		"name": "snooze",
 		"data": [
 			"MASTER",
@@ -6236,7 +6308,7 @@
 		],
 		"diff": "13+"
 	},
-	"693": {
+	"701": {
 		"name": "ナイト・オブ・ナイツ (かめりあ's\"ワンス・アポン・ア・ナイト\"Remix)",
 		"data": [
 			"MASTER",
@@ -6245,7 +6317,7 @@
 		],
 		"diff": "13+"
 	},
-	"694": {
+	"702": {
 		"name": "LUNA DIAL -Version X-SAKUYA-",
 		"data": [
 			"MASTER",
@@ -6254,7 +6326,7 @@
 		],
 		"diff": "13+"
 	},
-	"695": {
+	"703": {
 		"name": "断罪は遍く人間の元に",
 		"data": [
 			"MASTER",
@@ -6263,7 +6335,7 @@
 		],
 		"diff": "13+"
 	},
-	"696": {
+	"704": {
 		"name": "conflict",
 		"data": [
 			"MASTER",
@@ -6272,7 +6344,7 @@
 		],
 		"diff": "13+"
 	},
-	"697": {
+	"705": {
 		"name": "エピトゥリカの祀",
 		"data": [
 			"MASTER",
@@ -6281,7 +6353,7 @@
 		],
 		"diff": "13+"
 	},
-	"698": {
+	"706": {
 		"name": "BABYLON",
 		"data": [
 			"MASTER",
@@ -6290,7 +6362,7 @@
 		],
 		"diff": "13+"
 	},
-	"699": {
+	"707": {
 		"name": "Electric Emotion",
 		"data": [
 			"MASTER",
@@ -6299,7 +6371,7 @@
 		],
 		"diff": "13+"
 	},
-	"700": {
+	"708": {
 		"name": "Cyaegha",
 		"data": [
 			"MASTER",
@@ -6308,7 +6380,7 @@
 		],
 		"diff": "13+"
 	},
-	"701": {
+	"709": {
 		"name": "Lethal Dose",
 		"data": [
 			"MASTER",
@@ -6317,7 +6389,7 @@
 		],
 		"diff": "13+"
 	},
-	"702": {
+	"710": {
 		"name": "閃鋼のブリューナク",
 		"data": [
 			"MASTER",
@@ -6326,7 +6398,7 @@
 		],
 		"diff": "13+"
 	},
-	"703": {
+	"711": {
 		"name": "四月の雨",
 		"data": [
 			"MASTER",
@@ -6335,7 +6407,7 @@
 		],
 		"diff": "13+"
 	},
-	"704": {
+	"712": {
 		"name": "L'epilogue",
 		"data": [
 			"MASTER",
@@ -6344,7 +6416,7 @@
 		],
 		"diff": "13+"
 	},
-	"705": {
+	"713": {
 		"name": "夢花火",
 		"data": [
 			"MASTER",
@@ -6353,7 +6425,7 @@
 		],
 		"diff": "13+"
 	},
-	"706": {
+	"714": {
 		"name": "C & B",
 		"data": [
 			"MASTER",
@@ -6362,7 +6434,7 @@
 		],
 		"diff": "13+"
 	},
-	"707": {
+	"715": {
 		"name": "遺伝子レベル∞スパイラル",
 		"data": [
 			"MASTER",
@@ -6371,7 +6443,7 @@
 		],
 		"diff": "13+"
 	},
-	"708": {
+	"716": {
 		"name": "つっぱれ！にゃんきー魂",
 		"data": [
 			"MASTER",
@@ -6380,7 +6452,7 @@
 		],
 		"diff": "13+"
 	},
-	"709": {
+	"717": {
 		"name": "ガチ恋ラビリンス",
 		"data": [
 			"MASTER",
@@ -6389,7 +6461,7 @@
 		],
 		"diff": "13+"
 	},
-	"710": {
+	"718": {
 		"name": "Ai Nov",
 		"data": [
 			"MASTER",
@@ -6398,7 +6470,7 @@
 		],
 		"diff": "13+"
 	},
-	"711": {
+	"719": {
 		"name": "Baqeela",
 		"data": [
 			"MASTER",
@@ -6407,7 +6479,7 @@
 		],
 		"diff": "13+"
 	},
-	"712": {
+	"720": {
 		"name": "Mini skirt",
 		"data": [
 			"MASTER",
@@ -6416,7 +6488,7 @@
 		],
 		"diff": "13+"
 	},
-	"713": {
+	"721": {
 		"name": "Last Kingdom",
 		"data": [
 			"MASTER",
@@ -6425,7 +6497,7 @@
 		],
 		"diff": "13+"
 	},
-	"714": {
+	"722": {
 		"name": "Vibes 2k20",
 		"data": [
 			"MASTER",
@@ -6434,7 +6506,7 @@
 		],
 		"diff": "13+"
 	},
-	"715": {
+	"723": {
 		"name": "Ai Drew",
 		"data": [
 			"MASTER",
@@ -6443,7 +6515,7 @@
 		],
 		"diff": "13+"
 	},
-	"716": {
+	"724": {
 		"name": "アマツカミ",
 		"data": [
 			"MASTER",
@@ -6452,7 +6524,7 @@
 		],
 		"diff": "13+"
 	},
-	"717": {
+	"725": {
 		"name": "Trinity Departure",
 		"data": [
 			"MASTER",
@@ -6461,7 +6533,7 @@
 		],
 		"diff": "13+"
 	},
-	"718": {
+	"726": {
 		"name": "Ruler Count, Zero",
 		"data": [
 			"MASTER",
@@ -6470,7 +6542,7 @@
 		],
 		"diff": "13+"
 	},
-	"719": {
+	"727": {
 		"name": "colorful transparency",
 		"data": [
 			"MASTER",
@@ -6479,7 +6551,7 @@
 		],
 		"diff": "13+"
 	},
-	"720": {
+	"728": {
 		"name": "Suspiro",
 		"data": [
 			"MASTER",
@@ -6488,7 +6560,7 @@
 		],
 		"diff": "13+"
 	},
-	"721": {
+	"729": {
 		"name": "まりもとおもちゃ箱",
 		"data": [
 			"MASTER",
@@ -6497,7 +6569,7 @@
 		],
 		"diff": "13+"
 	},
-	"722": {
+	"730": {
 		"name": "Dramatic…?",
 		"data": [
 			"MASTER",
@@ -6506,7 +6578,7 @@
 		],
 		"diff": "13+"
 	},
-	"723": {
+	"731": {
 		"name": "共鳴合体オトゲリヲン",
 		"data": [
 			"MASTER",
@@ -6515,7 +6587,7 @@
 		],
 		"diff": "13+"
 	},
-	"724": {
+	"732": {
 		"name": "Selenadia",
 		"data": [
 			"EXPERT",
@@ -6524,7 +6596,7 @@
 		],
 		"diff": "13+"
 	},
-	"725": {
+	"733": {
 		"name": "Lazulis Gambit",
 		"data": [
 			"EXPERT",
@@ -6533,7 +6605,7 @@
 		],
 		"diff": "13+"
 	},
-	"726": {
+	"734": {
 		"name": "Sargasso",
 		"data": [
 			"EXPERT",
@@ -6542,7 +6614,7 @@
 		],
 		"diff": "13+"
 	},
-	"727": {
+	"735": {
 		"name": "ジングルベル",
 		"data": [
 			"LUNATIC",
@@ -6551,7 +6623,7 @@
 		],
 		"diff": "13+"
 	},
-	"728": {
+	"736": {
 		"name": "ネ！コ！",
 		"data": [
 			"LUNATIC",
@@ -6560,7 +6632,7 @@
 		],
 		"diff": "13+"
 	},
-	"729": {
+	"737": {
 		"name": "ナイト・オブ・ナイツ",
 		"data": [
 			"LUNATIC",
@@ -6569,7 +6641,7 @@
 		],
 		"diff": "13+"
 	},
-	"730": {
+	"738": {
 		"name": "YO-KAI Disco",
 		"data": [
 			"LUNATIC",
@@ -6578,7 +6650,7 @@
 		],
 		"diff": "13+"
 	},
-	"731": {
+	"739": {
 		"name": "本能的Survivor",
 		"data": [
 			"LUNATIC",
@@ -6587,7 +6659,7 @@
 		],
 		"diff": "13+"
 	},
-	"732": {
+	"740": {
 		"name": "Here We Go",
 		"data": [
 			"LUNATIC",
@@ -6596,7 +6668,7 @@
 		],
 		"diff": "13+"
 	},
-	"733": {
+	"741": {
 		"name": "GAME IS LIFE",
 		"data": [
 			"LUNATIC",
@@ -6605,7 +6677,7 @@
 		],
 		"diff": "13+"
 	},
-	"734": {
+	"742": {
 		"name": "UTAKATA",
 		"data": [
 			"LUNATIC",
@@ -6614,7 +6686,7 @@
 		],
 		"diff": "13+"
 	},
-	"735": {
+	"743": {
 		"name": "ジングルベル",
 		"data": [
 			"MASTER",
@@ -6623,7 +6695,7 @@
 		],
 		"diff": "14"
 	},
-	"736": {
+	"744": {
 		"name": "宣誓センセーション",
 		"data": [
 			"MASTER",
@@ -6632,7 +6704,7 @@
 		],
 		"diff": "14"
 	},
-	"737": {
+	"745": {
 		"name": "INTERNET YAMERO",
 		"data": [
 			"MASTER",
@@ -6641,7 +6713,7 @@
 		],
 		"diff": "14"
 	},
-	"738": {
+	"746": {
 		"name": "星界ちゃんと可不ちゃんのおつかい合騒曲",
 		"data": [
 			"MASTER",
@@ -6650,7 +6722,7 @@
 		],
 		"diff": "14"
 	},
-	"739": {
+	"747": {
 		"name": "きゅうくらりん",
 		"data": [
 			"MASTER",
@@ -6659,7 +6731,7 @@
 		],
 		"diff": "14"
 	},
-	"740": {
+	"748": {
 		"name": "メズマライザー",
 		"data": [
 			"MASTER",
@@ -6668,7 +6740,7 @@
 		],
 		"diff": "14"
 	},
-	"741": {
+	"749": {
 		"name": "ナイト・オブ・ナイツ (xi Remix)",
 		"data": [
 			"MASTER",
@@ -6677,7 +6749,7 @@
 		],
 		"diff": "14"
 	},
-	"742": {
+	"750": {
 		"name": "GOODRAGE",
 		"data": [
 			"MASTER",
@@ -6686,7 +6758,7 @@
 		],
 		"diff": "14"
 	},
-	"743": {
+	"751": {
 		"name": "ENERGY SYNERGY MATRIX",
 		"data": [
 			"MASTER",
@@ -6695,7 +6767,7 @@
 		],
 		"diff": "14"
 	},
-	"744": {
+	"752": {
 		"name": "Ouvertüre",
 		"data": [
 			"MASTER",
@@ -6704,7 +6776,7 @@
 		],
 		"diff": "14"
 	},
-	"745": {
+	"753": {
 		"name": "7thSense",
 		"data": [
 			"MASTER",
@@ -6713,7 +6785,7 @@
 		],
 		"diff": "14"
 	},
-	"746": {
+	"754": {
 		"name": "シャッキーーン！！",
 		"data": [
 			"MASTER",
@@ -6722,7 +6794,7 @@
 		],
 		"diff": "14"
 	},
-	"747": {
+	"755": {
 		"name": "ここからはじまるプロローグ。",
 		"data": [
 			"MASTER",
@@ -6731,7 +6803,7 @@
 		],
 		"diff": "14"
 	},
-	"748": {
+	"756": {
 		"name": "MUSIC PЯAYER",
 		"data": [
 			"MASTER",
@@ -6740,7 +6812,7 @@
 		],
 		"diff": "14"
 	},
-	"749": {
+	"757": {
 		"name": "群青シグナル",
 		"data": [
 			"MASTER",
@@ -6749,7 +6821,7 @@
 		],
 		"diff": "14"
 	},
-	"750": {
+	"758": {
 		"name": "8-EM",
 		"data": [
 			"MASTER",
@@ -6758,7 +6830,7 @@
 		],
 		"diff": "14"
 	},
-	"751": {
+	"759": {
 		"name": "Everlasting Today",
 		"data": [
 			"MASTER",
@@ -6767,7 +6839,7 @@
 		],
 		"diff": "14"
 	},
-	"752": {
+	"760": {
 		"name": "Dazzle hop",
 		"data": [
 			"MASTER",
@@ -6776,7 +6848,7 @@
 		],
 		"diff": "14"
 	},
-	"753": {
+	"761": {
 		"name": "R'N'R Monsta",
 		"data": [
 			"MASTER",
@@ -6785,7 +6857,7 @@
 		],
 		"diff": "14"
 	},
-	"754": {
+	"762": {
 		"name": "GODLINESS",
 		"data": [
 			"MASTER",
@@ -6794,7 +6866,7 @@
 		],
 		"diff": "14"
 	},
-	"755": {
+	"763": {
 		"name": "ICEBURN",
 		"data": [
 			"MASTER",
@@ -6803,7 +6875,7 @@
 		],
 		"diff": "14"
 	},
-	"756": {
+	"764": {
 		"name": "Princesses Holiday",
 		"data": [
 			"MASTER",
@@ -6812,7 +6884,7 @@
 		],
 		"diff": "14"
 	},
-	"757": {
+	"765": {
 		"name": "Livmetarryr",
 		"data": [
 			"MASTER",
@@ -6821,7 +6893,7 @@
 		],
 		"diff": "14"
 	},
-	"758": {
+	"766": {
 		"name": "FestA of PandemoniuM",
 		"data": [
 			"EXPERT",
@@ -6830,7 +6902,7 @@
 		],
 		"diff": "14"
 	},
-	"759": {
+	"767": {
 		"name": "MY GLORY WANTED!!!",
 		"data": [
 			"EXPERT",
@@ -6839,7 +6911,7 @@
 		],
 		"diff": "14"
 	},
-	"760": {
+	"768": {
 		"name": "ハッピータイフーン",
 		"data": [
 			"LUNATIC",
@@ -6848,7 +6920,7 @@
 		],
 		"diff": "14"
 	},
-	"761": {
+	"769": {
 		"name": "Fly to the Leaden Sky -O.N.G.E.K.I. MIX-",
 		"data": [
 			"LUNATIC",
@@ -6857,7 +6929,7 @@
 		],
 		"diff": "14"
 	},
-	"762": {
+	"770": {
 		"name": "No Limit RED Force",
 		"data": [
 			"LUNATIC",
@@ -6866,7 +6938,7 @@
 		],
 		"diff": "14"
 	},
-	"763": {
+	"771": {
 		"name": "カナリア",
 		"data": [
 			"MASTER",
@@ -6875,7 +6947,7 @@
 		],
 		"diff": "14"
 	},
-	"764": {
+	"772": {
 		"name": "ヒアソビ",
 		"data": [
 			"MASTER",
@@ -6884,7 +6956,7 @@
 		],
 		"diff": "14"
 	},
-	"765": {
+	"773": {
 		"name": "神々が恋した幻想郷",
 		"data": [
 			"MASTER",
@@ -6893,7 +6965,7 @@
 		],
 		"diff": "14"
 	},
-	"766": {
+	"774": {
 		"name": "レータイスパークEx",
 		"data": [
 			"MASTER",
@@ -6902,7 +6974,7 @@
 		],
 		"diff": "14"
 	},
-	"767": {
+	"775": {
 		"name": "FREEDOM DiVE (tpz Overcute Remix)",
 		"data": [
 			"MASTER",
@@ -6911,7 +6983,7 @@
 		],
 		"diff": "14"
 	},
-	"768": {
+	"776": {
 		"name": "felys -final remix-",
 		"data": [
 			"MASTER",
@@ -6920,7 +6992,7 @@
 		],
 		"diff": "14"
 	},
-	"769": {
+	"777": {
 		"name": "BBBLOW -rebuild-",
 		"data": [
 			"MASTER",
@@ -6929,7 +7001,7 @@
 		],
 		"diff": "14"
 	},
-	"770": {
+	"778": {
 		"name": "Singularity -MJ-",
 		"data": [
 			"MASTER",
@@ -6938,7 +7010,7 @@
 		],
 		"diff": "14"
 	},
-	"771": {
+	"779": {
 		"name": "c.s.q.n.",
 		"data": [
 			"MASTER",
@@ -6947,7 +7019,7 @@
 		],
 		"diff": "14"
 	},
-	"772": {
+	"780": {
 		"name": "Knight Rider",
 		"data": [
 			"MASTER",
@@ -6956,7 +7028,7 @@
 		],
 		"diff": "14"
 	},
-	"773": {
+	"781": {
 		"name": "OBLIVION",
 		"data": [
 			"MASTER",
@@ -6965,7 +7037,7 @@
 		],
 		"diff": "14"
 	},
-	"774": {
+	"782": {
 		"name": "SILENT BLUE",
 		"data": [
 			"MASTER",
@@ -6974,7 +7046,7 @@
 		],
 		"diff": "14"
 	},
-	"775": {
+	"783": {
 		"name": "Oshama Scramble! (Cranky Remix)",
 		"data": [
 			"MASTER",
@@ -6983,7 +7055,7 @@
 		],
 		"diff": "14"
 	},
-	"776": {
+	"784": {
 		"name": "宙の隣",
 		"data": [
 			"MASTER",
@@ -6992,7 +7064,7 @@
 		],
 		"diff": "14"
 	},
-	"777": {
+	"785": {
 		"name": "Daydreama",
 		"data": [
 			"MASTER",
@@ -7001,7 +7073,7 @@
 		],
 		"diff": "14"
 	},
-	"778": {
+	"786": {
 		"name": "LiftOff",
 		"data": [
 			"MASTER",
@@ -7010,7 +7082,7 @@
 		],
 		"diff": "14"
 	},
-	"779": {
+	"787": {
 		"name": "Daredevil Glaive",
 		"data": [
 			"MASTER",
@@ -7019,7 +7091,7 @@
 		],
 		"diff": "14"
 	},
-	"780": {
+	"788": {
 		"name": "Elusive Emotes",
 		"data": [
 			"MASTER",
@@ -7028,7 +7100,7 @@
 		],
 		"diff": "14"
 	},
-	"781": {
+	"789": {
 		"name": "Knocking Harder",
 		"data": [
 			"MASTER",
@@ -7037,7 +7109,7 @@
 		],
 		"diff": "14"
 	},
-	"782": {
+	"790": {
 		"name": "YURUSHITE (LeaF Remix)",
 		"data": [
 			"MASTER",
@@ -7046,7 +7118,7 @@
 		],
 		"diff": "14"
 	},
-	"783": {
+	"791": {
 		"name": "Azucar",
 		"data": [
 			"MASTER",
@@ -7055,7 +7127,7 @@
 		],
 		"diff": "14"
 	},
-	"784": {
+	"792": {
 		"name": "光焔のラテラルアーク",
 		"data": [
 			"EXPERT",
@@ -7064,7 +7136,7 @@
 		],
 		"diff": "14"
 	},
-	"785": {
+	"793": {
 		"name": "六兆年と一夜物語",
 		"data": [
 			"LUNATIC",
@@ -7073,7 +7145,7 @@
 		],
 		"diff": "14"
 	},
-	"786": {
+	"794": {
 		"name": "ヒバナ",
 		"data": [
 			"LUNATIC",
@@ -7082,7 +7154,7 @@
 		],
 		"diff": "14"
 	},
-	"787": {
+	"795": {
 		"name": "ロキ",
 		"data": [
 			"LUNATIC",
@@ -7091,7 +7163,7 @@
 		],
 		"diff": "14"
 	},
-	"788": {
+	"796": {
 		"name": "Calamity Fortune",
 		"data": [
 			"LUNATIC",
@@ -7100,7 +7172,7 @@
 		],
 		"diff": "14"
 	},
-	"789": {
+	"797": {
 		"name": "GranFatalité",
 		"data": [
 			"LUNATIC",
@@ -7109,7 +7181,7 @@
 		],
 		"diff": "14"
 	},
-	"790": {
+	"798": {
 		"name": "Rule the World!!",
 		"data": [
 			"LUNATIC",
@@ -7118,7 +7190,7 @@
 		],
 		"diff": "14"
 	},
-	"791": {
+	"799": {
 		"name": "あ・り・ま・す・か？",
 		"data": [
 			"MASTER",
@@ -7127,7 +7199,7 @@
 		],
 		"diff": "14"
 	},
-	"792": {
+	"800": {
 		"name": "キライラ",
 		"data": [
 			"MASTER",
@@ -7136,7 +7208,7 @@
 		],
 		"diff": "14"
 	},
-	"793": {
+	"801": {
 		"name": "アリアの最強しもべ計画♡",
 		"data": [
 			"MASTER",
@@ -7145,7 +7217,7 @@
 		],
 		"diff": "14"
 	},
-	"794": {
+	"802": {
 		"name": "初音ミクの激唱",
 		"data": [
 			"MASTER",
@@ -7154,7 +7226,7 @@
 		],
 		"diff": "14"
 	},
-	"795": {
+	"803": {
 		"name": "Imperishable Night 2006 (2016 Refine)",
 		"data": [
 			"MASTER",
@@ -7163,7 +7235,7 @@
 		],
 		"diff": "14"
 	},
-	"796": {
+	"804": {
 		"name": "Satori ～3rd EyEs (2020 Recall)",
 		"data": [
 			"MASTER",
@@ -7172,7 +7244,7 @@
 		],
 		"diff": "14"
 	},
-	"797": {
+	"805": {
 		"name": "U.N.オーエンは彼女なのか？ - Greater Scarlet",
 		"data": [
 			"MASTER",
@@ -7181,7 +7253,7 @@
 		],
 		"diff": "14"
 	},
-	"798": {
+	"806": {
 		"name": "Sound Chimera",
 		"data": [
 			"MASTER",
@@ -7190,7 +7262,7 @@
 		],
 		"diff": "14"
 	},
-	"799": {
+	"807": {
 		"name": "Singularity -ETIA-",
 		"data": [
 			"MASTER",
@@ -7199,7 +7271,7 @@
 		],
 		"diff": "14"
 	},
-	"800": {
+	"808": {
 		"name": "Altale",
 		"data": [
 			"MASTER",
@@ -7208,7 +7280,7 @@
 		],
 		"diff": "14"
 	},
-	"801": {
+	"809": {
 		"name": "竹",
 		"data": [
 			"MASTER",
@@ -7217,7 +7289,7 @@
 		],
 		"diff": "14"
 	},
-	"802": {
+	"810": {
 		"name": "音弾超人ゴリライザー",
 		"data": [
 			"MASTER",
@@ -7226,7 +7298,7 @@
 		],
 		"diff": "14"
 	},
-	"803": {
+	"811": {
 		"name": "PARALLEL★PRISM",
 		"data": [
 			"MASTER",
@@ -7235,7 +7307,7 @@
 		],
 		"diff": "14"
 	},
-	"804": {
+	"812": {
 		"name": "Grayed Out-Antifront-",
 		"data": [
 			"MASTER",
@@ -7244,7 +7316,7 @@
 		],
 		"diff": "14"
 	},
-	"805": {
+	"813": {
 		"name": "エンドマークに希望と涙を添えて",
 		"data": [
 			"MASTER",
@@ -7253,7 +7325,7 @@
 		],
 		"diff": "14"
 	},
-	"806": {
+	"814": {
 		"name": "Genesis",
 		"data": [
 			"MASTER",
@@ -7262,7 +7334,7 @@
 		],
 		"diff": "14"
 	},
-	"807": {
+	"815": {
 		"name": "Blows Up Everything",
 		"data": [
 			"MASTER",
@@ -7271,7 +7343,7 @@
 		],
 		"diff": "14"
 	},
-	"808": {
+	"816": {
 		"name": "Death Scythe",
 		"data": [
 			"MASTER",
@@ -7280,7 +7352,7 @@
 		],
 		"diff": "14"
 	},
-	"809": {
+	"817": {
 		"name": "PinqPiq (xovevox Remix)",
 		"data": [
 			"MASTER",
@@ -7289,7 +7361,7 @@
 		],
 		"diff": "14"
 	},
-	"810": {
+	"818": {
 		"name": "B WiZ U",
 		"data": [
 			"MASTER",
@@ -7298,7 +7370,7 @@
 		],
 		"diff": "14"
 	},
-	"811": {
+	"819": {
 		"name": "Tricky Treat!!!",
 		"data": [
 			"MASTER",
@@ -7307,7 +7379,7 @@
 		],
 		"diff": "14"
 	},
-	"812": {
+	"820": {
 		"name": "ALLNIGHT_DANCER",
 		"data": [
 			"MASTER",
@@ -7316,7 +7388,7 @@
 		],
 		"diff": "14"
 	},
-	"813": {
+	"821": {
 		"name": "レイル・ロマネスク ハチロクver.",
 		"data": [
 			"LUNATIC",
@@ -7325,7 +7397,7 @@
 		],
 		"diff": "14"
 	},
-	"814": {
+	"822": {
 		"name": "初音ミクの激唱",
 		"data": [
 			"LUNATIC",
@@ -7334,7 +7406,7 @@
 		],
 		"diff": "14"
 	},
-	"815": {
+	"823": {
 		"name": "千本桜",
 		"data": [
 			"LUNATIC",
@@ -7343,7 +7415,7 @@
 		],
 		"diff": "14"
 	},
-	"816": {
+	"824": {
 		"name": "Transcend Lights",
 		"data": [
 			"LUNATIC",
@@ -7352,7 +7424,7 @@
 		],
 		"diff": "14"
 	},
-	"817": {
+	"825": {
 		"name": "3分ガール",
 		"data": [
 			"MASTER",
@@ -7361,7 +7433,7 @@
 		],
 		"diff": "14"
 	},
-	"818": {
+	"826": {
 		"name": "マツヨイナイトバグ",
 		"data": [
 			"MASTER",
@@ -7370,7 +7442,7 @@
 		],
 		"diff": "14"
 	},
-	"819": {
+	"827": {
 		"name": "神威",
 		"data": [
 			"MASTER",
@@ -7379,7 +7451,7 @@
 		],
 		"diff": "14"
 	},
-	"820": {
+	"828": {
 		"name": "Jack-the-Ripper◆",
 		"data": [
 			"MASTER",
@@ -7388,7 +7460,7 @@
 		],
 		"diff": "14"
 	},
-	"821": {
+	"829": {
 		"name": "DRAGONLADY",
 		"data": [
 			"MASTER",
@@ -7397,7 +7469,7 @@
 		],
 		"diff": "14"
 	},
-	"822": {
+	"830": {
 		"name": "2112410403927243233368",
 		"data": [
 			"MASTER",
@@ -7406,7 +7478,7 @@
 		],
 		"diff": "14"
 	},
-	"823": {
+	"831": {
 		"name": "BLUE ZONE",
 		"data": [
 			"MASTER",
@@ -7415,7 +7487,7 @@
 		],
 		"diff": "14"
 	},
-	"824": {
+	"832": {
 		"name": "Malicious Mischance",
 		"data": [
 			"MASTER",
@@ -7424,7 +7496,7 @@
 		],
 		"diff": "14"
 	},
-	"825": {
+	"833": {
 		"name": "MEGALOVANIA",
 		"data": [
 			"MASTER",
@@ -7433,7 +7505,7 @@
 		],
 		"diff": "14"
 	},
-	"826": {
+	"834": {
 		"name": "混沌を越えし我らが神聖なる調律主を讃えよ",
 		"data": [
 			"MASTER",
@@ -7442,7 +7514,7 @@
 		],
 		"diff": "14"
 	},
-	"827": {
+	"835": {
 		"name": "Garakuta Doll Play",
 		"data": [
 			"MASTER",
@@ -7451,7 +7523,7 @@
 		],
 		"diff": "14"
 	},
-	"828": {
+	"836": {
 		"name": "folern",
 		"data": [
 			"MASTER",
@@ -7460,7 +7532,7 @@
 		],
 		"diff": "14"
 	},
-	"829": {
+	"837": {
 		"name": "Supersonic Generation",
 		"data": [
 			"MASTER",
@@ -7469,7 +7541,7 @@
 		],
 		"diff": "14"
 	},
-	"830": {
+	"838": {
 		"name": "Galaxy Blaster",
 		"data": [
 			"MASTER",
@@ -7478,7 +7550,7 @@
 		],
 		"diff": "14"
 	},
-	"831": {
+	"839": {
 		"name": "Stargazing Dreamer",
 		"data": [
 			"MASTER",
@@ -7487,7 +7559,7 @@
 		],
 		"diff": "14"
 	},
-	"832": {
+	"840": {
 		"name": "See The Light",
 		"data": [
 			"MASTER",
@@ -7496,7 +7568,7 @@
 		],
 		"diff": "14"
 	},
-	"833": {
+	"841": {
 		"name": "ジャンヌ・ダルクの慟哭",
 		"data": [
 			"MASTER",
@@ -7505,7 +7577,7 @@
 		],
 		"diff": "14"
 	},
-	"834": {
+	"842": {
 		"name": "Starlight★Limited",
 		"data": [
 			"MASTER",
@@ -7514,7 +7586,7 @@
 		],
 		"diff": "14"
 	},
-	"835": {
+	"843": {
 		"name": ".locusignore",
 		"data": [
 			"MASTER",
@@ -7523,7 +7595,7 @@
 		],
 		"diff": "14"
 	},
-	"836": {
+	"844": {
 		"name": "μ3",
 		"data": [
 			"EXPERT",
@@ -7532,7 +7604,7 @@
 		],
 		"diff": "14"
 	},
-	"837": {
+	"845": {
 		"name": "私たち、四季を遊ぶんです！！",
 		"data": [
 			"LUNATIC",
@@ -7541,7 +7613,7 @@
 		],
 		"diff": "14"
 	},
-	"838": {
+	"846": {
 		"name": "最終鬼畜全部声",
 		"data": [
 			"LUNATIC",
@@ -7550,7 +7622,7 @@
 		],
 		"diff": "14"
 	},
-	"839": {
+	"847": {
 		"name": "セガNET麻雀MJ -O.N.G.E.K.I. MIX-",
 		"data": [
 			"LUNATIC",
@@ -7559,7 +7631,7 @@
 		],
 		"diff": "14"
 	},
-	"840": {
+	"848": {
 		"name": "トリドリ⇒モリモリ！Lovely fruits☆",
 		"data": [
 			"LUNATIC",
@@ -7568,7 +7640,7 @@
 		],
 		"diff": "14"
 	},
-	"841": {
+	"849": {
 		"name": "Everything Will Freeze",
 		"data": [
 			"MASTER",
@@ -7577,7 +7649,7 @@
 		],
 		"diff": "14"
 	},
-	"842": {
+	"850": {
 		"name": "Armageddon",
 		"data": [
 			"MASTER",
@@ -7586,7 +7658,7 @@
 		],
 		"diff": "14"
 	},
-	"843": {
+	"851": {
 		"name": "Grievous Lady",
 		"data": [
 			"MASTER",
@@ -7595,7 +7667,7 @@
 		],
 		"diff": "14"
 	},
-	"844": {
+	"852": {
 		"name": "Amphisbaena",
 		"data": [
 			"MASTER",
@@ -7604,7 +7676,7 @@
 		],
 		"diff": "14"
 	},
-	"845": {
+	"853": {
 		"name": "10pt8ion",
 		"data": [
 			"MASTER",
@@ -7613,7 +7685,7 @@
 		],
 		"diff": "14"
 	},
-	"846": {
+	"854": {
 		"name": "L9",
 		"data": [
 			"MASTER",
@@ -7622,7 +7694,7 @@
 		],
 		"diff": "14"
 	},
-	"847": {
+	"855": {
 		"name": "Sulfur",
 		"data": [
 			"MASTER",
@@ -7631,7 +7703,7 @@
 		],
 		"diff": "14"
 	},
-	"848": {
+	"856": {
 		"name": "U.A.D",
 		"data": [
 			"MASTER",
@@ -7640,7 +7712,7 @@
 		],
 		"diff": "14"
 	},
-	"849": {
+	"857": {
 		"name": "雷切 -RAIKIRI-",
 		"data": [
 			"MASTER",
@@ -7649,7 +7721,7 @@
 		],
 		"diff": "14"
 	},
-	"850": {
+	"858": {
 		"name": "宛城、炎上！！",
 		"data": [
 			"MASTER",
@@ -7658,7 +7730,7 @@
 		],
 		"diff": "14"
 	},
-	"851": {
+	"859": {
 		"name": "Trrricksters!!",
 		"data": [
 			"MASTER",
@@ -7667,7 +7739,7 @@
 		],
 		"diff": "14"
 	},
-	"852": {
+	"860": {
 		"name": "TECHNOPOLIS 2085",
 		"data": [
 			"MASTER",
@@ -7676,7 +7748,7 @@
 		],
 		"diff": "14"
 	},
-	"853": {
+	"861": {
 		"name": "Starry Colors",
 		"data": [
 			"MASTER",
@@ -7685,7 +7757,7 @@
 		],
 		"diff": "14"
 	},
-	"854": {
+	"862": {
 		"name": "WE'RE BACK!!",
 		"data": [
 			"MASTER",
@@ -7694,7 +7766,7 @@
 		],
 		"diff": "14"
 	},
-	"855": {
+	"863": {
 		"name": "Blessed Rain",
 		"data": [
 			"MASTER",
@@ -7703,7 +7775,7 @@
 		],
 		"diff": "14"
 	},
-	"856": {
+	"864": {
 		"name": "Desperado Waltz",
 		"data": [
 			"MASTER",
@@ -7712,7 +7784,7 @@
 		],
 		"diff": "14"
 	},
-	"857": {
+	"865": {
 		"name": "美夜月鏡",
 		"data": [
 			"MASTER",
@@ -7721,7 +7793,7 @@
 		],
 		"diff": "14"
 	},
-	"858": {
+	"866": {
 		"name": "霧の書斎",
 		"data": [
 			"MASTER",
@@ -7730,7 +7802,7 @@
 		],
 		"diff": "14"
 	},
-	"859": {
+	"867": {
 		"name": "Baqeela (Creepy Remix)",
 		"data": [
 			"MASTER",
@@ -7739,7 +7811,7 @@
 		],
 		"diff": "14"
 	},
-	"860": {
+	"868": {
 		"name": "Air",
 		"data": [
 			"MASTER",
@@ -7748,7 +7820,7 @@
 		],
 		"diff": "14"
 	},
-	"861": {
+	"869": {
 		"name": "Showguts",
 		"data": [
 			"MASTER",
@@ -7757,7 +7829,7 @@
 		],
 		"diff": "14"
 	},
-	"862": {
+	"870": {
 		"name": "8OROCHI",
 		"data": [
 			"MASTER",
@@ -7766,7 +7838,7 @@
 		],
 		"diff": "14"
 	},
-	"863": {
+	"871": {
 		"name": "Akasagarbha -reincarnate-",
 		"data": [
 			"MASTER",
@@ -7775,7 +7847,7 @@
 		],
 		"diff": "14"
 	},
-	"864": {
+	"872": {
 		"name": "聖者の鼓動",
 		"data": [
 			"MASTER",
@@ -7784,7 +7856,7 @@
 		],
 		"diff": "14"
 	},
-	"865": {
+	"873": {
 		"name": "狂恋ROMANCE",
 		"data": [
 			"MASTER",
@@ -7793,7 +7865,7 @@
 		],
 		"diff": "14"
 	},
-	"866": {
+	"874": {
 		"name": "怒槌",
 		"data": [
 			"MASTER",
@@ -7802,7 +7874,7 @@
 		],
 		"diff": "14"
 	},
-	"867": {
+	"875": {
 		"name": "Glorious Crown (tpz over-Over-OVERCUTE REMIX)",
 		"data": [
 			"MASTER",
@@ -7811,7 +7883,7 @@
 		],
 		"diff": "14"
 	},
-	"868": {
+	"876": {
 		"name": "Climax",
 		"data": [
 			"MASTER",
@@ -7820,7 +7892,7 @@
 		],
 		"diff": "14"
 	},
-	"869": {
+	"877": {
 		"name": "TEmPTaTiON",
 		"data": [
 			"MASTER",
@@ -7829,7 +7901,7 @@
 		],
 		"diff": "14"
 	},
-	"870": {
+	"878": {
 		"name": "ハードコア・シンドローム",
 		"data": [
 			"MASTER",
@@ -7838,7 +7910,7 @@
 		],
 		"diff": "14"
 	},
-	"871": {
+	"879": {
 		"name": "BREaK! BREaK! BREaK!",
 		"data": [
 			"MASTER",
@@ -7847,7 +7919,7 @@
 		],
 		"diff": "14"
 	},
-	"872": {
+	"880": {
 		"name": "月詠に鳴る",
 		"data": [
 			"MASTER",
@@ -7856,7 +7928,7 @@
 		],
 		"diff": "14"
 	},
-	"873": {
+	"881": {
 		"name": "N3V3R G3T OV3R",
 		"data": [
 			"MASTER",
@@ -7865,7 +7937,7 @@
 		],
 		"diff": "14"
 	},
-	"874": {
+	"882": {
 		"name": "#狂った民族2 PRAVARGYAZOOQA",
 		"data": [
 			"MASTER",
@@ -7874,7 +7946,7 @@
 		],
 		"diff": "14"
 	},
-	"875": {
+	"883": {
 		"name": "Megameteor",
 		"data": [
 			"MASTER",
@@ -7883,7 +7955,7 @@
 		],
 		"diff": "14"
 	},
-	"876": {
+	"884": {
 		"name": "Aenbharr",
 		"data": [
 			"MASTER",
@@ -7892,7 +7964,7 @@
 		],
 		"diff": "14"
 	},
-	"877": {
+	"885": {
 		"name": "ヒトリボッチサテライト",
 		"data": [
 			"MASTER",
@@ -7901,7 +7973,7 @@
 		],
 		"diff": "14"
 	},
-	"878": {
+	"886": {
 		"name": "MAGNETAR GIRL",
 		"data": [
 			"MASTER",
@@ -7910,7 +7982,7 @@
 		],
 		"diff": "14"
 	},
-	"879": {
+	"887": {
 		"name": "ミラージュ･フレイグランス",
 		"data": [
 			"MASTER",
@@ -7919,7 +7991,7 @@
 		],
 		"diff": "14"
 	},
-	"880": {
+	"888": {
 		"name": "FLUFFY FLASH (C-Show & Maozon Remix)",
 		"data": [
 			"MASTER",
@@ -7928,7 +8000,7 @@
 		],
 		"diff": "14"
 	},
-	"881": {
+	"889": {
 		"name": "Zitronectar",
 		"data": [
 			"MASTER",
@@ -7937,7 +8009,7 @@
 		],
 		"diff": "14"
 	},
-	"882": {
+	"890": {
 		"name": "Cogito ergo sum",
 		"data": [
 			"MASTER",
@@ -7946,7 +8018,7 @@
 		],
 		"diff": "14"
 	},
-	"883": {
+	"891": {
 		"name": "Earthly Light",
 		"data": [
 			"MASTER",
@@ -7955,7 +8027,7 @@
 		],
 		"diff": "14"
 	},
-	"884": {
+	"892": {
 		"name": "Never Ending Adventure",
 		"data": [
 			"MASTER",
@@ -7964,7 +8036,7 @@
 		],
 		"diff": "14"
 	},
-	"885": {
+	"893": {
 		"name": "脳漿炸裂ガール",
 		"data": [
 			"LUNATIC",
@@ -7973,7 +8045,7 @@
 		],
 		"diff": "14"
 	},
-	"886": {
+	"894": {
 		"name": "What color...",
 		"data": [
 			"LUNATIC",
@@ -7982,7 +8054,7 @@
 		],
 		"diff": "14"
 	},
-	"887": {
+	"895": {
 		"name": "まっすぐ→→→ストリーム！",
 		"data": [
 			"LUNATIC",
@@ -7991,7 +8063,7 @@
 		],
 		"diff": "14"
 	},
-	"888": {
+	"896": {
 		"name": "デアエ・エクス・マキナ！",
 		"data": [
 			"MASTER",
@@ -8000,7 +8072,7 @@
 		],
 		"diff": "14"
 	},
-	"889": {
+	"897": {
 		"name": "ラクガキスト",
 		"data": [
 			"MASTER",
@@ -8009,7 +8081,7 @@
 		],
 		"diff": "14"
 	},
-	"890": {
+	"898": {
 		"name": "妖々跋扈 ～ Who done it!",
 		"data": [
 			"MASTER",
@@ -8018,7 +8090,7 @@
 		],
 		"diff": "14"
 	},
-	"891": {
+	"899": {
 		"name": "BATTLE NO.1",
 		"data": [
 			"MASTER",
@@ -8027,7 +8099,7 @@
 		],
 		"diff": "14"
 	},
-	"892": {
+	"900": {
 		"name": "World Vanquisher",
 		"data": [
 			"MASTER",
@@ -8036,7 +8108,7 @@
 		],
 		"diff": "14"
 	},
-	"893": {
+	"901": {
 		"name": "Caliburne 〜Story of the Legendary sword〜",
 		"data": [
 			"MASTER",
@@ -8045,7 +8117,7 @@
 		],
 		"diff": "14"
 	},
-	"894": {
+	"902": {
 		"name": "花と、雪と、ドラムンベース。",
 		"data": [
 			"MASTER",
@@ -8054,7 +8126,7 @@
 		],
 		"diff": "14"
 	},
-	"895": {
+	"903": {
 		"name": "VIIIbit Explorer",
 		"data": [
 			"MASTER",
@@ -8063,7 +8135,7 @@
 		],
 		"diff": "14"
 	},
-	"896": {
+	"904": {
 		"name": "MEGATON BLAST",
 		"data": [
 			"MASTER",
@@ -8072,7 +8144,7 @@
 		],
 		"diff": "14"
 	},
-	"897": {
+	"905": {
 		"name": "GEOMETRIC DANCE",
 		"data": [
 			"MASTER",
@@ -8081,7 +8153,7 @@
 		],
 		"diff": "14"
 	},
-	"898": {
+	"906": {
 		"name": "心",
 		"data": [
 			"MASTER",
@@ -8090,7 +8162,7 @@
 		],
 		"diff": "14"
 	},
-	"899": {
+	"907": {
 		"name": "エータ・ベータ・イータ",
 		"data": [
 			"MASTER",
@@ -8099,7 +8171,7 @@
 		],
 		"diff": "14"
 	},
-	"900": {
+	"908": {
 		"name": "μάγια",
 		"data": [
 			"MASTER",
@@ -8108,7 +8180,7 @@
 		],
 		"diff": "14"
 	},
-	"901": {
+	"909": {
 		"name": "Diamond Dust -crystal piano Arr.-",
 		"data": [
 			"MASTER",
@@ -8117,7 +8189,7 @@
 		],
 		"diff": "14"
 	},
-	"902": {
+	"910": {
 		"name": "Prominence",
 		"data": [
 			"MASTER",
@@ -8126,7 +8198,7 @@
 		],
 		"diff": "14"
 	},
-	"903": {
+	"911": {
 		"name": "Crazy Party Rush",
 		"data": [
 			"MASTER",
@@ -8135,7 +8207,7 @@
 		],
 		"diff": "14"
 	},
-	"904": {
+	"912": {
 		"name": "Fragrance",
 		"data": [
 			"EXPERT",
@@ -8144,7 +8216,7 @@
 		],
 		"diff": "14"
 	},
-	"905": {
+	"913": {
 		"name": "Destiny Runner",
 		"data": [
 			"LUNATIC",
@@ -8153,7 +8225,7 @@
 		],
 		"diff": "14"
 	},
-	"906": {
+	"914": {
 		"name": "luna blu",
 		"data": [
 			"LUNATIC",
@@ -8162,7 +8234,7 @@
 		],
 		"diff": "14"
 	},
-	"907": {
+	"915": {
 		"name": "End Time",
 		"data": [
 			"MASTER",
@@ -8171,7 +8243,7 @@
 		],
 		"diff": "14+"
 	},
-	"908": {
+	"916": {
 		"name": "Love & Justice",
 		"data": [
 			"MASTER",
@@ -8180,7 +8252,7 @@
 		],
 		"diff": "14+"
 	},
-	"909": {
+	"917": {
 		"name": "ouroboros -twin stroke of the end-",
 		"data": [
 			"MASTER",
@@ -8189,7 +8261,7 @@
 		],
 		"diff": "14+"
 	},
-	"910": {
+	"918": {
 		"name": "クリムゾン帝王",
 		"data": [
 			"MASTER",
@@ -8198,7 +8270,7 @@
 		],
 		"diff": "14+"
 	},
-	"911": {
+	"919": {
 		"name": "最強STRONGER",
 		"data": [
 			"MASTER",
@@ -8207,7 +8279,7 @@
 		],
 		"diff": "14+"
 	},
-	"912": {
+	"920": {
 		"name": "Chronomia",
 		"data": [
 			"MASTER",
@@ -8216,7 +8288,7 @@
 		],
 		"diff": "14+"
 	},
-	"913": {
+	"921": {
 		"name": "otorii INNOVATED -[i]3-",
 		"data": [
 			"MASTER",
@@ -8225,7 +8297,7 @@
 		],
 		"diff": "14+"
 	},
-	"914": {
+	"922": {
 		"name": "larva",
 		"data": [
 			"MASTER",
@@ -8234,7 +8306,7 @@
 		],
 		"diff": "14+"
 	},
-	"915": {
+	"923": {
 		"name": "Xevel",
 		"data": [
 			"MASTER",
@@ -8243,7 +8315,7 @@
 		],
 		"diff": "14+"
 	},
-	"916": {
+	"924": {
 		"name": "Last Celebration",
 		"data": [
 			"MASTER",
@@ -8252,7 +8324,7 @@
 		],
 		"diff": "14+"
 	},
-	"917": {
+	"925": {
 		"name": "Alea jacta est!",
 		"data": [
 			"MASTER",
@@ -8261,7 +8333,7 @@
 		],
 		"diff": "14+"
 	},
-	"918": {
+	"926": {
 		"name": "渦状銀河のシンフォニエッタ",
 		"data": [
 			"MASTER",
@@ -8270,7 +8342,7 @@
 		],
 		"diff": "14+"
 	},
-	"919": {
+	"927": {
 		"name": "Elemental Ethnic",
 		"data": [
 			"MASTER",
@@ -8279,7 +8351,7 @@
 		],
 		"diff": "14+"
 	},
-	"920": {
+	"928": {
 		"name": "AstrøNotes.",
 		"data": [
 			"MASTER",
@@ -8288,7 +8360,7 @@
 		],
 		"diff": "14+"
 	},
-	"921": {
+	"929": {
 		"name": "FLUFFY FLASH",
 		"data": [
 			"MASTER",
@@ -8297,7 +8369,7 @@
 		],
 		"diff": "14+"
 	},
-	"922": {
+	"930": {
 		"name": "Adverse Gaff",
 		"data": [
 			"MASTER",
@@ -8306,7 +8378,7 @@
 		],
 		"diff": "14+"
 	},
-	"923": {
+	"931": {
 		"name": "SUPER AMBULANCE",
 		"data": [
 			"MASTER",
@@ -8315,7 +8387,7 @@
 		],
 		"diff": "14+"
 	},
-	"924": {
+	"932": {
 		"name": "RELOAD",
 		"data": [
 			"MASTER",
@@ -8324,7 +8396,7 @@
 		],
 		"diff": "14+"
 	},
-	"925": {
+	"933": {
 		"name": "Final Flash Flight",
 		"data": [
 			"MASTER",
@@ -8333,7 +8405,7 @@
 		],
 		"diff": "14+"
 	},
-	"926": {
+	"934": {
 		"name": "其のエメラルドを見よ",
 		"data": [
 			"MASTER",
@@ -8342,7 +8414,7 @@
 		],
 		"diff": "14+"
 	},
-	"927": {
+	"935": {
 		"name": "Buck's Fizz",
 		"data": [
 			"MASTER",
@@ -8351,7 +8423,7 @@
 		],
 		"diff": "14+"
 	},
-	"928": {
+	"936": {
 		"name": "THE TRiANGLE",
 		"data": [
 			"MASTER",
@@ -8360,7 +8432,7 @@
 		],
 		"diff": "14+"
 	},
-	"929": {
+	"937": {
 		"name": "Recollect Lines",
 		"data": [
 			"EXPERT",
@@ -8369,7 +8441,7 @@
 		],
 		"diff": "14+"
 	},
-	"930": {
+	"938": {
 		"name": "MEGALOVANIA",
 		"data": [
 			"LUNATIC",
@@ -8378,7 +8450,7 @@
 		],
 		"diff": "14+"
 	},
-	"931": {
+	"939": {
 		"name": "P！P！P！P！がおー!!",
 		"data": [
 			"LUNATIC",
@@ -8387,7 +8459,7 @@
 		],
 		"diff": "14+"
 	},
-	"932": {
+	"940": {
 		"name": "Re：End of a Dream",
 		"data": [
 			"MASTER",
@@ -8396,7 +8468,7 @@
 		],
 		"diff": "14+"
 	},
-	"933": {
+	"941": {
 		"name": "Shamshir -rough Pt.2-",
 		"data": [
 			"MASTER",
@@ -8405,7 +8477,7 @@
 		],
 		"diff": "14+"
 	},
-	"934": {
+	"942": {
 		"name": "Crimson Phoenix",
 		"data": [
 			"MASTER",
@@ -8414,7 +8486,7 @@
 		],
 		"diff": "14+"
 	},
-	"935": {
+	"943": {
 		"name": "In Chaos",
 		"data": [
 			"MASTER",
@@ -8423,7 +8495,7 @@
 		],
 		"diff": "14+"
 	},
-	"936": {
+	"944": {
 		"name": "Tempestissimo",
 		"data": [
 			"MASTER",
@@ -8432,7 +8504,7 @@
 		],
 		"diff": "14+"
 	},
-	"937": {
+	"945": {
 		"name": "Got more raves? -xiRemix-",
 		"data": [
 			"MASTER",
@@ -8441,7 +8513,7 @@
 		],
 		"diff": "14+"
 	},
-	"938": {
+	"946": {
 		"name": "Haunted Dance",
 		"data": [
 			"MASTER",
@@ -8450,7 +8522,7 @@
 		],
 		"diff": "14+"
 	},
-	"939": {
+	"947": {
 		"name": "∀",
 		"data": [
 			"MASTER",
@@ -8459,7 +8531,7 @@
 		],
 		"diff": "14+"
 	},
-	"940": {
+	"948": {
 		"name": "QZKago Requiem",
 		"data": [
 			"MASTER",
@@ -8468,7 +8540,7 @@
 		],
 		"diff": "14+"
 	},
-	"941": {
+	"949": {
 		"name": "TiamaT:F minor",
 		"data": [
 			"MASTER",
@@ -8477,7 +8549,7 @@
 		],
 		"diff": "14+"
 	},
-	"942": {
+	"950": {
 		"name": "Fragrance",
 		"data": [
 			"MASTER",
@@ -8486,7 +8558,7 @@
 		],
 		"diff": "14+"
 	},
-	"943": {
+	"951": {
 		"name": "YURUSHITE",
 		"data": [
 			"MASTER",
@@ -8495,7 +8567,7 @@
 		],
 		"diff": "14+"
 	},
-	"944": {
+	"952": {
 		"name": "Viyella's Tears",
 		"data": [
 			"MASTER",
@@ -8504,7 +8576,7 @@
 		],
 		"diff": "14+"
 	},
-	"945": {
+	"953": {
 		"name": "A Man In The Mirror",
 		"data": [
 			"MASTER",
@@ -8513,7 +8585,7 @@
 		],
 		"diff": "14+"
 	},
-	"946": {
+	"954": {
 		"name": "Singularity -technoplanet-",
 		"data": [
 			"MASTER",
@@ -8522,7 +8594,7 @@
 		],
 		"diff": "14+"
 	},
-	"947": {
+	"955": {
 		"name": "Ai C",
 		"data": [
 			"MASTER",
@@ -8531,7 +8603,7 @@
 		],
 		"diff": "14+"
 	},
-	"948": {
+	"956": {
 		"name": "ゼーレンヴァンデルング",
 		"data": [
 			"MASTER",
@@ -8540,7 +8612,7 @@
 		],
 		"diff": "14+"
 	},
-	"949": {
+	"957": {
 		"name": "しとしとと",
 		"data": [
 			"MASTER",
@@ -8549,7 +8621,7 @@
 		],
 		"diff": "14+"
 	},
-	"950": {
+	"958": {
 		"name": "冥乱幻舞",
 		"data": [
 			"MASTER",
@@ -8558,7 +8630,7 @@
 		],
 		"diff": "14+"
 	},
-	"951": {
+	"959": {
 		"name": "Chant Say Yeah!",
 		"data": [
 			"MASTER",
@@ -8567,7 +8639,7 @@
 		],
 		"diff": "14+"
 	},
-	"952": {
+	"960": {
 		"name": "Flow Into You",
 		"data": [
 			"MASTER",
@@ -8576,7 +8648,7 @@
 		],
 		"diff": "14+"
 	},
-	"953": {
+	"961": {
 		"name": "My First Phone",
 		"data": [
 			"LUNATIC",
@@ -8585,7 +8657,7 @@
 		],
 		"diff": "14+"
 	},
-	"954": {
+	"962": {
 		"name": "Halcyon",
 		"data": [
 			"LUNATIC",
@@ -8594,7 +8666,7 @@
 		],
 		"diff": "14+"
 	},
-	"955": {
+	"963": {
 		"name": "MANIERA REMASTERED",
 		"data": [
 			"MASTER",
@@ -8603,7 +8675,7 @@
 		],
 		"diff": "14+"
 	},
-	"956": {
+	"964": {
 		"name": "FREEDOM DiVE",
 		"data": [
 			"MASTER",
@@ -8612,7 +8684,7 @@
 		],
 		"diff": "14+"
 	},
-	"957": {
+	"965": {
 		"name": "Invisible Frenzy",
 		"data": [
 			"MASTER",
@@ -8621,7 +8693,7 @@
 		],
 		"diff": "14+"
 	},
-	"958": {
+	"966": {
 		"name": "Synthesis.",
 		"data": [
 			"MASTER",
@@ -8630,7 +8702,7 @@
 		],
 		"diff": "14+"
 	},
-	"959": {
+	"967": {
 		"name": "eden",
 		"data": [
 			"MASTER",
@@ -8639,7 +8711,7 @@
 		],
 		"diff": "14+"
 	},
-	"960": {
+	"968": {
 		"name": "the EmpErroR",
 		"data": [
 			"MASTER",
@@ -8648,7 +8720,7 @@
 		],
 		"diff": "14+"
 	},
-	"961": {
+	"969": {
 		"name": "蜘蛛の糸",
 		"data": [
 			"MASTER",
@@ -8657,7 +8729,7 @@
 		],
 		"diff": "14+"
 	},
-	"962": {
+	"970": {
 		"name": "Hainuwele",
 		"data": [
 			"MASTER",
@@ -8666,7 +8738,7 @@
 		],
 		"diff": "14+"
 	},
-	"963": {
+	"971": {
 		"name": "Sage",
 		"data": [
 			"MASTER",
@@ -8675,7 +8747,7 @@
 		],
 		"diff": "14+"
 	},
-	"964": {
+	"972": {
 		"name": "Sparking Revolver",
 		"data": [
 			"MASTER",
@@ -8684,7 +8756,7 @@
 		],
 		"diff": "14+"
 	},
-	"965": {
+	"973": {
 		"name": "Our Wrenally",
 		"data": [
 			"MASTER",
@@ -8693,7 +8765,7 @@
 		],
 		"diff": "14+"
 	},
-	"966": {
+	"974": {
 		"name": "Titania",
 		"data": [
 			"MASTER",
@@ -8702,7 +8774,7 @@
 		],
 		"diff": "14+"
 	},
-	"967": {
+	"975": {
 		"name": "Good bye, Merry-Go-Round.",
 		"data": [
 			"MASTER",
@@ -8711,7 +8783,7 @@
 		],
 		"diff": "14+"
 	},
-	"968": {
+	"976": {
 		"name": "Falsum Atlantis.",
 		"data": [
 			"MASTER",
@@ -8720,7 +8792,7 @@
 		],
 		"diff": "14+"
 	},
-	"969": {
+	"977": {
 		"name": "Don't Fight The Music",
 		"data": [
 			"MASTER",
@@ -8729,7 +8801,7 @@
 		],
 		"diff": "14+"
 	},
-	"970": {
+	"978": {
 		"name": "Viyella's Scream",
 		"data": [
 			"MASTER",
@@ -8738,7 +8810,7 @@
 		],
 		"diff": "14+"
 	},
-	"971": {
+	"979": {
 		"name": "Cult future",
 		"data": [
 			"MASTER",
@@ -8747,7 +8819,7 @@
 		],
 		"diff": "14+"
 	},
-	"972": {
+	"980": {
 		"name": "Diamond Dust",
 		"data": [
 			"MASTER",
@@ -8756,7 +8828,7 @@
 		],
 		"diff": "14+"
 	},
-	"973": {
+	"981": {
 		"name": "オンソクデイズ!!",
 		"data": [
 			"MASTER",
@@ -8765,7 +8837,7 @@
 		],
 		"diff": "14+"
 	},
-	"974": {
+	"982": {
 		"name": "GAME：CHANGER",
 		"data": [
 			"MASTER",
@@ -8774,7 +8846,7 @@
 		],
 		"diff": "14+"
 	},
-	"975": {
+	"983": {
 		"name": "淵底のグレイ・ユークロニア",
 		"data": [
 			"MASTER",
@@ -8783,7 +8855,7 @@
 		],
 		"diff": "14+"
 	},
-	"976": {
+	"984": {
 		"name": "Nȳx",
 		"data": [
 			"MASTER",
@@ -8792,7 +8864,7 @@
 		],
 		"diff": "14+"
 	},
-	"977": {
+	"985": {
 		"name": "シリウスの輝きのように",
 		"data": [
 			"LUNATIC",
@@ -8801,7 +8873,7 @@
 		],
 		"diff": "14+"
 	},
-	"978": {
+	"986": {
 		"name": "天狗の落とし文 feat.ｙｔｒ",
 		"data": [
 			"LUNATIC",
@@ -8810,7 +8882,7 @@
 		],
 		"diff": "14+"
 	},
-	"979": {
+	"987": {
 		"name": "macrocosmos",
 		"data": [
 			"LUNATIC",
@@ -8819,7 +8891,7 @@
 		],
 		"diff": "14+"
 	},
-	"980": {
+	"988": {
 		"name": "GODLINESS",
 		"data": [
 			"LUNATIC",
@@ -8828,7 +8900,7 @@
 		],
 		"diff": "14+"
 	},
-	"981": {
+	"989": {
 		"name": "POTENTIAL",
 		"data": [
 			"MASTER",
@@ -8837,7 +8909,7 @@
 		],
 		"diff": "15"
 	},
-	"982": {
+	"990": {
 		"name": "Scythe of Death",
 		"data": [
 			"MASTER",
@@ -8846,7 +8918,7 @@
 		],
 		"diff": "15"
 	},
-	"983": {
+	"991": {
 		"name": "Opfer",
 		"data": [
 			"MASTER",
@@ -8855,7 +8927,7 @@
 		],
 		"diff": "15"
 	},
-	"984": {
+	"992": {
 		"name": "ω4",
 		"data": [
 			"MASTER",
@@ -8864,7 +8936,7 @@
 		],
 		"diff": "15"
 	},
-	"985": {
+	"993": {
 		"name": "Stellar:Dream",
 		"data": [
 			"MASTER",
@@ -8873,7 +8945,7 @@
 		],
 		"diff": "15"
 	},
-	"986": {
+	"994": {
 		"name": "AMAZING MIGHTYYYY!!!!",
 		"data": [
 			"LUNATIC",
@@ -8882,7 +8954,7 @@
 		],
 		"diff": "15"
 	},
-	"987": {
+	"995": {
 		"name": "怨撃",
 		"data": [
 			"LUNATIC",
@@ -8891,7 +8963,7 @@
 		],
 		"diff": "15"
 	},
-	"988": {
+	"996": {
 		"name": "雪男",
 		"data": [
 			"MASTER",
@@ -8900,7 +8972,7 @@
 		],
 		"diff": "15"
 	},
-	"989": {
+	"997": {
 		"name": "脳天直撃",
 		"data": [
 			"MASTER",
@@ -8909,7 +8981,7 @@
 		],
 		"diff": "15"
 	},
-	"990": {
+	"998": {
 		"name": "Magical Panic Adventure",
 		"data": [
 			"MASTER",
@@ -8918,7 +8990,7 @@
 		],
 		"diff": "15"
 	},
-	"991": {
+	"999": {
 		"name": "Op.I 《fear-TITΛN-》",
 		"data": [
 			"MASTER",
@@ -8927,7 +8999,7 @@
 		],
 		"diff": "15"
 	},
-	"992": {
+	"1000": {
 		"name": "I Wanna",
 		"data": [
 			"MASTER",
@@ -8936,7 +9008,7 @@
 		],
 		"diff": "15"
 	},
-	"993": {
+	"1001": {
 		"name": "宿星審判",
 		"data": [
 			"MASTER",
@@ -8945,7 +9017,7 @@
 		],
 		"diff": "15"
 	},
-	"994": {
+	"1002": {
 		"name": "Regulus",
 		"data": [
 			"MASTER",
@@ -8954,7 +9026,7 @@
 		],
 		"diff": "15"
 	},
-	"995": {
+	"1003": {
 		"name": "Stardust:RAY",
 		"data": [
 			"MASTER",
@@ -8963,7 +9035,7 @@
 		],
 		"diff": "15"
 	},
-	"996": {
+	"1004": {
 		"name": "Lazulis Gambit",
 		"data": [
 			"MASTER",
@@ -8972,7 +9044,7 @@
 		],
 		"diff": "15"
 	},
-	"997": {
+	"1005": {
 		"name": "DIE IN",
 		"data": [
 			"MASTER",
@@ -8981,7 +9053,7 @@
 		],
 		"diff": "15"
 	},
-	"998": {
+	"1006": {
 		"name": "MarbleBlue.",
 		"data": [
 			"MASTER",
@@ -8990,7 +9062,7 @@
 		],
 		"diff": "15"
 	},
-	"999": {
+	"1007": {
 		"name": "光焔のラテラルアーク",
 		"data": [
 			"MASTER",
@@ -8999,7 +9071,7 @@
 		],
 		"diff": "15"
 	},
-	"1000": {
+	"1008": {
 		"name": "MeteorSnow",
 		"data": [
 			"MASTER",
@@ -9008,7 +9080,7 @@
 		],
 		"diff": "15"
 	},
-	"1001": {
+	"1009": {
 		"name": "And Revive The Melody",
 		"data": [
 			"MASTER",
@@ -9017,7 +9089,7 @@
 		],
 		"diff": "15"
 	},
-	"1002": {
+	"1010": {
 		"name": "Sargasso",
 		"data": [
 			"MASTER",
@@ -9026,7 +9098,7 @@
 		],
 		"diff": "15"
 	},
-	"1003": {
+	"1011": {
 		"name": "Apollo",
 		"data": [
 			"MASTER",
@@ -9035,7 +9107,7 @@
 		],
 		"diff": "15"
 	},
-	"1004": {
+	"1012": {
 		"name": "LAMIA",
 		"data": [
 			"MASTER",
@@ -9044,7 +9116,7 @@
 		],
 		"diff": "15"
 	},
-	"1005": {
+	"1013": {
 		"name": "Selenadia",
 		"data": [
 			"MASTER",
@@ -9053,7 +9125,7 @@
 		],
 		"diff": "15"
 	},
-	"1006": {
+	"1014": {
 		"name": "FestA of PandemoniuM",
 		"data": [
 			"MASTER",
@@ -9062,7 +9134,7 @@
 		],
 		"diff": "15"
 	},
-	"1007": {
+	"1015": {
 		"name": "MY GLORY WANTED!!!",
 		"data": [
 			"MASTER",
@@ -9071,7 +9143,7 @@
 		],
 		"diff": "15"
 	},
-	"1008": {
+	"1016": {
 		"name": "μ3",
 		"data": [
 			"MASTER",
@@ -9080,7 +9152,7 @@
 		],
 		"diff": "15"
 	},
-	"1009": {
+	"1017": {
 		"name": "Recollect Lines",
 		"data": [
 			"MASTER",
