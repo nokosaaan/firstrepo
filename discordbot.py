@@ -35,7 +35,7 @@ async def update(ctx, now: str):
         dt_now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
         await ctx.send(f"<@&1272147130743783496>{dt_now.year}年{dt_now.month}月{dt_now.day}日{dt_now.hour}時{dt_now.minute}分{dt_now.second}秒までの更新分を反映しました\n")
     else:
-        async for message in ctx.channel.history(limit=2):
+        async for message in ctx.channel.history(limit=1):
             if bot.user != ctx.author:
                 await message.delete(delay=1.2)
         await ctx.send(f"<@&1272147130743783496>{now}まで更新したよ！")
