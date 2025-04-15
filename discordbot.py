@@ -1,4 +1,5 @@
 import discord
+import asyncio
 import json
 from discord.ext import commands
 import config
@@ -16,20 +17,28 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix='!', description=description, intents=intents, activity=discord.Game("!omi")) # botをプレイ中)
 #intents = discord.Intents.all()
-#client = discord.Client(intents=intents)
+#client = discord.Client(command_prefix='!',intents=intents)
 
 # Bot起動時に呼び出される関数
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user} (ID: {bot.user.id})')
     print('------')
-
+    
 @bot.command()
 async def update(ctx, now: str):
     """Inform the date"""
     if(now=="now"):
+        async for message in ctx.channel.history(limit=2):
+            if bot.user != ctx.author:
+                await message.delete(delay=1.2)
         dt_now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=9)))
         await ctx.send(f"<@&1272147130743783496>{dt_now.year}年{dt_now.month}月{dt_now.day}日{dt_now.hour}時{dt_now.minute}分{dt_now.second}秒までの更新分を反映しました\n")
+    else:
+        async for message in ctx.channel.history(limit=2):
+            if bot.user != ctx.author:
+                await message.delete(delay=1.2)
+        await ctx.send(f"<@&1272147130743783496>{now}まで更新したよ！")
 
 @bot.command()
 async def add(ctx, left: int, right: int):
