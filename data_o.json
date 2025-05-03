@@ -9160,5 +9160,23 @@
 			15.7
 		],
 		"diff": "15+"
+	},
+	"1018": {
+		"name": "一冊のアロー",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.4"
+		],
+		"diff": "13"
+	},
+	"1019": {
+		"name": "Hey Darling!",
+		"data": [
+			"MASTER",
+			"POPS & ANIME",
+			"13.6"
+		],
+		"diff": "13"
 	}
 }
