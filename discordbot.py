@@ -847,6 +847,18 @@ def run():
     port = int(os.environ.get('PORT', 8080))
     app.run(host='0.0.0.0', port=port)
 
+def keep_alive():
+    # RenderのURLを環境変数から取得（なければ何もしない）
+    render_url = os.environ.get("RENDER_EXTERNAL_URL")
+    if render_url:
+        while True:
+            try:
+                requests.get(render_url)
+                print("Sent keep-alive ping.")
+            except Exception as e:
+                print(f"Failed to send keep-alive ping: {e}")
+            time.sleep(14 * 60) # 14分ごとにスリープ
+
 def start_bot():
     bot.run(config.DISCORD_TOKEN)
 
@@ -854,6 +866,8 @@ if __name__ == "__main__":
     # Webサーバーを別のスレッドで起動
     server_thread = Thread(target=run)
     server_thread.start()
+    ping_thread = Thread(target=keep_alive)
+    ping_thread.start()
     
     # メインスレッドでBotを起動
     start_bot()
