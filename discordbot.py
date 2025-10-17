@@ -5,6 +5,9 @@ from discord.ext import commands
 import config
 import random
 import datetime
+from flask import Flask
+from threading import Thread
+import os
 
 description = '''An example bot to showcase the discord.ext.commands extension
 module.
@@ -830,4 +833,27 @@ async def _bot(ctx):
     """Is the bot cool?"""
     await ctx.send('Yes, the bot is cool.')
 
-bot.run(config.DISCORD_TOKEN)
+# Flaskサーバーをセットアップ
+app = Flask('')
+
+@app.route('/')
+def home():
+    # Renderからのアクセスに対して応答を返す
+    return "I'm alive"
+
+def run():
+    # Webサーバーを起動する
+    # hostを0.0.0.0に、portを環境変数PORTから取得（Renderが自動で設定）
+    port = int(os.environ.get('PORT', 8080))
+    app.run(host='0.0.0.0', port=port)
+
+def start_bot():
+    bot.run(config.DISCORD_TOKEN)
+
+if __name__ == "__main__":
+    # Webサーバーを別のスレッドで起動
+    server_thread = Thread(target=run)
+    server_thread.start()
+    
+    # メインスレッドでBotを起動
+    start_bot()
