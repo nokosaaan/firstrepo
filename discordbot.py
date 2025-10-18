@@ -8,6 +8,8 @@ import datetime
 from flask import Flask
 from threading import Thread
 import os
+import requests
+import time
 
 description = '''An example bot to showcase the discord.ext.commands extension
 module.
@@ -853,11 +855,12 @@ def keep_alive():
     if render_url:
         while True:
             try:
+                # 14分ごとに自分自身にアクセス
+                time.sleep(14 * 60) 
                 requests.get(render_url)
                 print("Sent keep-alive ping.")
             except Exception as e:
                 print(f"Failed to send keep-alive ping: {e}")
-            time.sleep(14 * 60) # 14分ごとにスリープ
 
 def start_bot():
     bot.run(config.DISCORD_TOKEN)
