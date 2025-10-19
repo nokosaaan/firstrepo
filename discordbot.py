@@ -390,10 +390,10 @@ async def op(ctx, a: str = None, *names: str):
                     # - If rep_const > 14: prefer score increase and FC (score/FC cheaper)
                     # Note: boundary choice is rep_const <= 14 => AJ-priority; adjust if you prefer 14 to be in the other group.
                     aj_scale = 1.0 + max(0.0, (rep_const - 11.0)) / (15.4 - 11.0)
-                    if rep_const <= 14.0:
-                        cost_aj = 0.5 * aj_scale
+                    if rep_const <= 14.5:
+                        cost_aj = 0.4 * aj_scale
                         cost_ajc = 0.2
-                        cost_fc = 1.2
+                        cost_fc = 0.5
                         cost_step = 0.8
                     else:
                         cost_aj = 2.0 * aj_scale
