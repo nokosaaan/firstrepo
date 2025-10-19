@@ -102,8 +102,10 @@ async def op(ctx, a: str = None, *names: str):
             # detect and extract percent flags and rep-const overrides from parsed_args (they may appear anywhere)
             cleaned = []
             i = 0
-            # ensure aj_max_const exists in scope even if not provided
+            # ensure aj_max_const and assign bounds exist in scope even if not provided
             aj_max_const = None
+            assign_min_const = None
+            assign_max_const = None
             tokens = [t for t in parsed_args]
             while i < len(tokens):
                 tk = tokens[i]
@@ -121,21 +123,32 @@ async def op(ctx, a: str = None, *names: str):
                         cleaned.append(tk)
                         i += 1
                         continue
-                elif low in ('rep-const', '--rep-const', 'repconst', '--repconst'):
+                # rep-const removed; use assign-min/max to derive representative const instead
+                elif low in ('aj-max', 'ajmax', '--aj-max', '--ajmax'):
                     try:
-                        rc = float(tokens[i+1])
-                        rep_const_override = rc
+                        ajm = float(tokens[i+1])
+                        # aj_max_const: user-specified maximum chart const for AJ suggestions
+                        aj_max_const = ajm
                         i += 2
                         continue
                     except Exception:
                         cleaned.append(tk)
                         i += 1
                         continue
-                elif low in ('aj-max', 'ajmax', '--aj-max', '--ajmax'):
+                elif low in ('assign-min', 'min-const', 'minconst', '--assign-min', '--min-const'):
                     try:
-                        ajm = float(tokens[i+1])
-                        # aj_max_const: user-specified maximum chart const for AJ suggestions
-                        aj_max_const = ajm
+                        am = float(tokens[i+1])
+                        assign_min_const = am
+                        i += 2
+                        continue
+                    except Exception:
+                        cleaned.append(tk)
+                        i += 1
+                        continue
+                elif low in ('assign-max', 'max-const', 'maxconst', '--assign-max', '--max-const'):
+                    try:
+                        aM = float(tokens[i+1])
+                        assign_max_const = aM
                         i += 2
                         continue
                     except Exception:
@@ -189,6 +202,41 @@ async def op(ctx, a: str = None, *names: str):
         else:
             # no args provided
             exclude_set = set()
+
+    # Quick-calculation mode: support `!op cal <MAX_OP> <MY_OP>` to show MY_OP as percent of MAX_OP
+    try:
+        cal_trigger = False
+        cal_vals = None
+        # If command used shlex parsing, 'first' and 'rest' are available
+        if 'first' in locals() and first is not None and str(first).lower() == 'cal':
+            cal_trigger = True
+            cal_vals = rest
+        # Or if user invoked as !op cal 10000 1234 without shlex tokens (a holds the first token)
+        elif isinstance(a, str) and str(a).lower() == 'cal':
+            cal_trigger = True
+            cal_vals = list(names)
+
+        if cal_trigger:
+            if not cal_vals or len(cal_vals) < 2:
+                await ctx.send("使い方: !op cal <MAX_OP> <MY_OP> （数値を2つ指定してください）")
+                return
+            try:
+                max_op_val = float(cal_vals[0])
+                my_op_val = float(cal_vals[1])
+            except Exception:
+                await ctx.send("MAX_OP と MY_OP は数値で指定してください。例: `!op cal 12000 3456`")
+                return
+
+            if max_op_val == 0:
+                pct = 0.0
+            else:
+                pct = (my_op_val / max_op_val) * 100.0
+
+            await ctx.send(f"割合: {pct:.5f}% (MY OP: {my_op_val:.2f} / MAX OP: {max_op_val:.2f})")
+            return
+    except Exception:
+        # fall through to normal behavior
+        pass
 
     # Load json if not provided
     if json_data is None:
@@ -369,28 +417,39 @@ async def op(ctx, a: str = None, *names: str):
                     D = remaining
                     candidates = []
 
-                    # apply override if provided
-                    if rep_const_override is not None:
-                        rep_const = rep_const_override
+                    # derive representative const for cost calculation from assign_min_const/assign_max_const
+                    # If only one bound is provided, use it. If both provided, use their average. Otherwise fall back to highest const among selected entries.
+                    rep_const_for_cost = None
+                    if assign_min_const is not None and assign_max_const is not None:
+                        rep_const_for_cost = (assign_min_const + assign_max_const) / 2.0
+                    elif assign_min_const is not None:
+                        rep_const_for_cost = assign_min_const
+                    elif assign_max_const is not None:
+                        rep_const_for_cost = assign_max_const
+                    else:
+                        consts = [v[3] for v in selected_entries.values() if isinstance(v[3], (int, float))]
+                        if consts:
+                            rep_const_for_cost = max(consts)
+                        else:
+                            rep_const_for_cost = 0.0
 
                     # determine eligible AJ slots based on aj_max_const if provided
                     eligible_aj_slots = None
                     if aj_max_const is not None:
-                        # count number of selected entries with const <= aj_max_const
                         eligible_aj_slots = sum(1 for v in selected_entries.values() if isinstance(v[3], (int, float)) and v[3] <= aj_max_const)
 
-                    # determine eligible slots based on rep_const_override if provided
+                    # determine eligible slots based on rep_const_for_cost
                     eligible_rep_slots = None
-                    if rep_const_override is not None:
-                        eligible_rep_slots = sum(1 for v in selected_entries.values() if isinstance(v[3], (int, float)) and v[3] <= rep_const_override)
+                    if rep_const_for_cost is not None:
+                        eligible_rep_slots = sum(1 for v in selected_entries.values() if isinstance(v[3], (int, float)) and v[3] <= rep_const_for_cost)
 
                     # define cost weights: base costs for actions (lower == cheaper)
                     # We change priorities based on rep_const:
                     # - If rep_const <= 14: prefer AJ and AJC (AJ/AJC cheaper)
                     # - If rep_const > 14: prefer score increase and FC (score/FC cheaper)
                     # Note: boundary choice is rep_const <= 14 => AJ-priority; adjust if you prefer 14 to be in the other group.
-                    aj_scale = 1.0 + max(0.0, (rep_const - 11.0)) / (15.4 - 11.0)
-                    if rep_const <= 14.5:
+                    aj_scale = 1.0 + max(0.0, (rep_const_for_cost - 11.0)) / (15.4 - 11.0)
+                    if rep_const_for_cost <= 14.5:
                         cost_aj = 0.4 * aj_scale
                         cost_ajc = 0.2
                         cost_fc = 0.5
@@ -450,7 +509,21 @@ async def op(ctx, a: str = None, *names: str):
                         top_n = candidates[:3]
                         plan_msgs = []
                         rep_limit_val = rep_const_override if rep_const_override is not None else rep_const
-                        pool_titles_all = [name for name, v in selected_entries.items() if isinstance(v[3], (int, float)) and v[3] <= rep_limit_val]
+                        # build pool filtered by rep limit and optional assign min/max
+                        pool_titles_all = []
+                        for name, v in selected_entries.items():
+                            c = v[3]
+                            if not isinstance(c, (int, float)):
+                                continue
+                            # enforce rep limit
+                            if c > rep_limit_val:
+                                continue
+                            # enforce assign min/max if provided
+                            if assign_min_const is not None and c < assign_min_const:
+                                continue
+                            if assign_max_const is not None and c > assign_max_const:
+                                continue
+                            pool_titles_all.append(name)
 
                         for idx, cand in enumerate(top_n, start=1):
                             cost, overshoot, caj, cfc, cajc, csteps = cand
@@ -464,46 +537,80 @@ async def op(ctx, a: str = None, *names: str):
                             if csteps:
                                 msgs.append(f"スコアを {csteps * 500} 点増加する目安 ({csteps} ステップ)")
 
-                            # build assignment from pool
+                                # build assignment from pool
                             assign_msg = ''
                             try:
-                                pool_titles = list(pool_titles_all)
-                                random.shuffle(pool_titles)
-                                if not pool_titles:
+                                # pool_titles_all contains names already filtered by rep limit and assign bounds
+                                if not pool_titles_all:
                                     assign_msg = "\n注: 指定された代表定数以下の候補曲が見つかりません。曲名割当はできません。"
                                 else:
-                                    aj_selected = random.sample(pool_titles, min(caj, len(pool_titles))) if caj else []
+                                    # If assign_min/assign_max were provided, the user requested random selection within that range.
+                                    # We'll detect this by checking if either assign_min_const or assign_max_const is not None.
+                                    use_random_within_bounds = (assign_min_const is not None) or (assign_max_const is not None)
+
+                                    pool_with_consts = [(name, selected_entries[name][3]) for name in pool_titles_all]
+
+                                    if use_random_within_bounds:
+                                        # fully randomize order within the allowed pool
+                                        random.shuffle(pool_with_consts)
+                                    else:
+                                        # preserve previous deterministic high-const ordering when no bounds provided
+                                        pool_with_consts.sort(key=lambda x: x[1], reverse=True)
+
+                                    pool_titles = [p[0] for p in pool_with_consts]
+
+                                    # select AJ targets
+                                    aj_selected = []
+                                    if caj:
+                                        take = min(caj, len(pool_titles))
+                                        aj_selected = pool_titles[:take]
+
+                                    # FC selections: include AJ selections first, then additional picks
                                     fc_selected = list(aj_selected)
                                     if cfc:
                                         remaining_pool = [t for t in pool_titles if t not in fc_selected]
-                                        take2 = min(cfc - len(fc_selected), len(remaining_pool)) if cfc > len(fc_selected) else 0
-                                        if take2 > 0:
-                                            fc_selected.extend(random.sample(remaining_pool, take2))
+                                        need = cfc - len(fc_selected)
+                                        if need > 0:
+                                            take2 = min(need, len(remaining_pool))
+                                            if take2 > 0:
+                                                fc_selected.extend(remaining_pool[:take2])
+                                        # if still short, allow duplicates by repeating top candidates
                                         while len(fc_selected) < cfc and pool_titles:
-                                            fc_selected.append(random.choice(pool_titles))
+                                            fc_selected.append(pool_titles[0])
 
+                                    # AJC selections: pick from remaining pool (not overlapping AJ)
                                     ajc_selected = []
                                     if cajc:
+                                        # build remaining pool excluding AJ-selected songs
                                         remaining_pool = [t for t in pool_titles if t not in aj_selected]
+                                        # If assign_min_const is provided, prefer songs with smaller const first
+                                        # (so songs at the min-const are assigned first). Otherwise keep current ordering.
+                                        if assign_min_const is not None:
+                                            try:
+                                                remaining_pool.sort(key=lambda t: selected_entries[t][3])
+                                            except Exception:
+                                                # fallback: keep as-is
+                                                pass
                                         take3 = min(cajc, len(remaining_pool))
                                         if take3 > 0:
-                                            ajc_selected = random.sample(remaining_pool, take3)
+                                            ajc_selected = remaining_pool[:take3]
                                         while len(ajc_selected) < cajc and pool_titles:
-                                            ajc_selected.append(random.choice(pool_titles))
+                                            ajc_selected.append(pool_titles[0])
 
+                                    # Score targets: pick top N according to current pool ordering
                                     score_targets = []
                                     if csteps:
                                         take4 = min(csteps, len(pool_titles))
                                         if take4 > 0:
-                                            score_targets = random.sample(pool_titles, take4)
+                                            score_targets = pool_titles[:take4]
 
                                     lines = []
                                     if aj_selected:
-                                        lines.append("AJ (判定強化) 対象例: " + ", ".join(aj_selected))
+                                        lines.append("AJ 対象例: " + ", ".join(aj_selected))
                                     if fc_selected:
-                                        lines.append("FC (フルコン) 対象例: " + ", ".join(fc_selected))
+                                        lines.append("FC 対象例: " + ", ".join(fc_selected))
                                     if ajc_selected:
-                                        lines.append("AJC (小判定改善) 対象例: " + ", ".join(ajc_selected))
+                                        lines.append("AJC 対象例: " + ", ".join(ajc_selected))
                                     if score_targets:
                                         lines.append("スコア注力候補: " + ", ".join(score_targets))
 
@@ -511,7 +618,7 @@ async def op(ctx, a: str = None, *names: str):
                             except Exception:
                                 assign_msg = "\n曲名割当の生成中にエラーが発生しました。"
 
-                            header = f"最小化プラン候補 #{idx} (コスト {cost:.2f}, オーバー {overshoot:.3f} OP):\n"
+                            header = f"```最小化プラン候補 #{idx}``` (コスト {cost:.2f}, オーバー {overshoot:.3f} OP):\n"
                             body = " / ".join(msgs) + f"\n想定オーバー分: {overshoot:.3f} OP"
                             if eligible_aj_slots is not None:
                                 body += f"\n注: AJ候補は定数 <= {aj_max_const:.2f} の譜面 {eligible_aj_slots} 曲に制限されています。"
@@ -521,57 +628,6 @@ async def op(ctx, a: str = None, *names: str):
                         await ctx.send("\n\n".join(plan_msgs))
                     else:
                         await ctx.send("最小変更プランを算出できませんでした。")
-                    # best = None
-                    # D = remaining
-                    # # Set reasonable search bounds
-                    # max_aj = min(100, math.ceil(D / 1.0) + 5)
-                    # max_steps = min(200, math.ceil(D / 0.75) + 10)
-
-                    # for aj_cnt in range(0, max_aj + 1):
-                    #     for steps in range(0, max_steps + 1):
-                    #         op_from_aj_and_steps = aj_cnt * 1.0 + steps * 0.75
-                    #         rem = D - op_from_aj_and_steps
-                    #         if rem <= 0:
-                    #             fc_needed = 0
-                    #             ajc_needed = 0
-                    #         else:
-                    #             # Greedy: prefer FC (0.5 per unit) over AJC (0.25) for lower count
-                    #             fc_needed = math.ceil(rem / 0.5)
-                    #             ajc_needed = 0
-
-                    #         total_actions = aj_cnt + steps + fc_needed + ajc_needed
-                    #         total_op_provided = aj_cnt * 1.0 + steps * 0.75 + fc_needed * 0.5 + ajc_needed * 0.25
-                    #         # minimize total actions, then minimize overshoot
-                    #         overshoot = total_op_provided - D
-                    #         candidate = (total_actions, overshoot, aj_cnt, fc_needed, ajc_needed, steps)
-                    #         if best is None:
-                    #             best = candidate
-                    #         else:
-                    #             if candidate[0] < best[0] or (candidate[0] == best[0] and candidate[1] < best[1]):
-                    #                 best = candidate
-
-                    # # Also consider pure score-only solution (no actions) using arbitrary finer steps
-                    # score_only_steps = math.ceil(D / 0.75)
-                    # score_only_actions = score_only_steps
-                    # score_candidate = (score_only_actions, score_only_steps * 0.75 - D, 0, 0, 0, score_only_steps)
-                    # if best is None or score_candidate[0] < best[0] or (score_candidate[0] == best[0] and score_candidate[1] < best[1]):
-                    #     best = score_candidate
-
-                    # if best:
-                    #     _, overshoot, best_aj, best_fc, best_ajc, best_steps = best
-                    #     msgs = []
-                    #     if best_aj:
-                    #         msgs.append(f"AJ を +{best_aj} 回 (AJ 含めて1回で +1.0 OP 相当)")
-                    #     if best_fc:
-                    #         msgs.append(f"FC を +{best_fc} 回 (1回で +0.5 OP)")
-                    #     if best_ajc:
-                    #         msgs.append(f"AJC を +{best_ajc} 回 (1回で +0.25 OP)")
-                    #     if best_steps:
-                    #         msgs.append(f"スコアを {best_steps * 500} 点増加する目安 (500点ごとに +0.75 OP, {best_steps} ステップ)")
-
-                    #     await ctx.send("最小変更プラン（推定） - 代表譜面定数 {:.2f} を想定:\n".format(rep_const) + " / ".join(msgs) + f"\n想定オーバー分: {overshoot:.3f} OP")
-                    # else:
-                    #     await ctx.send("最小変更プランを算出できませんでした。")
                 else:
                     await ctx.send("必要OP差が負またはゼロです。増加提案は不要です。")
         except Exception:
