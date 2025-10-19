@@ -12,6 +12,7 @@ from threading import Thread
 import os
 import requests
 import time
+import math
 
 # Preset named groups for convenience in commands like: !op true ultima
 # Keys are lower-cased alias names; values are lists of exact song titles to expand.
@@ -82,16 +83,76 @@ async def op(ctx, a: str = None, *names: str):
             except Exception:
                 # fallback to simple split if shlex fails
                 parsed_args = raw_args.split()
+        
 
-        # Now parsed_args[0] corresponds to what was passed as `a` and the rest as names
+    # Now parsed_args[0] corresponds to what was passed as `a` and the rest as names
         json_data = None
         op2 = None
         exclude_mode = False
         exclude_set = set()
+    # percent parameters (optional): user may include 'pct' or '--pct' or 'percent' followed by two floats
+        percent_start = None
+        percent_target = None
+    # optional override for representative const
+        rep_const_override = None
         # derive flags and names from parsed_args (safer for quoted names)
         if parsed_args:
             first = parsed_args[0]
             rest = parsed_args[1:]
+            # detect and extract percent flags and rep-const overrides from parsed_args (they may appear anywhere)
+            cleaned = []
+            i = 0
+            # ensure aj_max_const exists in scope even if not provided
+            aj_max_const = None
+            tokens = [t for t in parsed_args]
+            while i < len(tokens):
+                tk = tokens[i]
+                low = str(tk).lower()
+                if low in ('pct', '--pct', 'percent', '--percent'):
+                    # attempt to read two following numeric tokens
+                    try:
+                        s = float(tokens[i+1])
+                        t = float(tokens[i+2])
+                        percent_start = s
+                        percent_target = t
+                        i += 3
+                        continue
+                    except Exception:
+                        cleaned.append(tk)
+                        i += 1
+                        continue
+                elif low in ('rep-const', '--rep-const', 'repconst', '--repconst'):
+                    try:
+                        rc = float(tokens[i+1])
+                        rep_const_override = rc
+                        i += 2
+                        continue
+                    except Exception:
+                        cleaned.append(tk)
+                        i += 1
+                        continue
+                elif low in ('aj-max', 'ajmax', '--aj-max', '--ajmax'):
+                    try:
+                        ajm = float(tokens[i+1])
+                        # aj_max_const: user-specified maximum chart const for AJ suggestions
+                        aj_max_const = ajm
+                        i += 2
+                        continue
+                    except Exception:
+                        cleaned.append(tk)
+                        i += 1
+                        continue
+                else:
+                    cleaned.append(tk)
+                    i += 1
+
+            # rebuild first/rest from cleaned tokens
+            if cleaned:
+                first = cleaned[0]
+                rest = cleaned[1:]
+            else:
+                first = None
+                rest = []
             if str(first).lower() in ("true", "1", "yes", "y", "t"):
                 exclude_mode = True
                 # build initial raw exclude tokens
@@ -163,10 +224,6 @@ async def op(ctx, a: str = None, *names: str):
 
     # sort by const desc
         entries.sort(key=lambda x: x[1], reverse=True)
-
-        # compute number of unique songs that have MAS charts
-        # mas_song_names = {name for name, lst in name_map.items() if any(t[0] == 'MAS' for t in lst)}
-        # mas_song_count = len(mas_song_names)
 
         # send MAS/ULT counts summary (raw chart occurrences and unique MAS-song count)
         try:
@@ -251,6 +308,275 @@ async def op(ctx, a: str = None, *names: str):
             await ctx.send(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\n処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
         except Exception:
             await ctx.send(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}")    
+
+        # パーセント指定がある場合、必要なOP差分を計算して表示する
+        try:
+            if percent_start is not None and percent_target is not None:
+                # accept percent as either 0-1 or 0-100; normalize to fraction
+                def to_frac(x: float) -> float:
+                    if x > 1.0:
+                        return x / 100.0
+                    return x
+
+                ps = to_frac(percent_start)
+                pt = to_frac(percent_target)
+                if total_op <= 0:
+                    await ctx.send("合計OPが0のためパーセント計算はできません。")
+                else:
+                    # current total_op corresponds to 100% of current sum; user wants to know
+                    # how much OP is needed so that OP becomes target% of (total_op + added)
+                    # Solve for added: (total_op + added) * pt = total_op + added_needed_from_some_source?
+                    # Interpreting requirement: compute delta OP such that (total_op + delta) / total_op >= pt/ps ?
+                    # Simpler and practical: compute OP needed to reach target% of the current maximum OP value.
+                    # We'll compute required absolute OP to reach pt of (total_op) and report the difference from the value at ps.
+                    current_value = total_op * ps
+                    target_value = total_op * pt
+                    needed = target_value - current_value
+                    await ctx.send(f"百分率指定: {percent_start} -> {percent_target} ({ps*100:.2f}% -> {pt*100:.2f}%)。現在のOP値: {current_value:.2f}、目標値: {target_value:.2f}、必要なOP差: {needed:.2f}")
+        except Exception:
+            pass
+
+        # 追加提案: 必要OP差からユーザーが増やすべきFC/AJ/AJC数やスコア差を提案する
+        try:
+            if percent_start is not None and percent_target is not None and abs(needed) > 0.0001:
+                # Choose a representative const: prefer the highest const among selected_entries, else average
+                consts = [v[3] for v in selected_entries.values() if isinstance(v[3], (int, float))]
+                if consts:
+                    rep_const = max(consts)
+                else:
+                    # fallback: use average of all entry consts
+                    all_consts = [e[1] for e in entries] if entries else [0]
+                    rep_const = sum(all_consts) / max(1, len(all_consts))
+
+                # Formula components per your rules (when score >= 1007501):
+                # base = (const + 2) * 5
+                base = (rep_const + 2) * 5
+
+                # Each FC adds +0.50, each AJ adds +0.50, each AJC adds +0.25 (AJC stacked on top of AJ/FC)
+                #補正B relates to score: (score - 1007500) * 0.0015
+
+                # We'll estimate how many FC/AJ/AJC or how many score points are needed to cover 'needed'.
+                remaining = needed
+                suggestions = []
+
+                # Optimization search combining 補正A (FC/AJ/AJC) and 補正B (score steps)
+                if remaining > 0:
+                    # Interpret contributions per unit:
+                    # AJ: effectively +1.0 OP (AJ implies FC so stack = 0.5+0.5)
+                    # FC: +0.5 OP
+                    # AJC: +0.25 OP
+                    # score step: we'll use 500-point steps => +0.75 OP per step
+                    D = remaining
+                    candidates = []
+
+                    # apply override if provided
+                    if rep_const_override is not None:
+                        rep_const = rep_const_override
+
+                    # determine eligible AJ slots based on aj_max_const if provided
+                    eligible_aj_slots = None
+                    if aj_max_const is not None:
+                        # count number of selected entries with const <= aj_max_const
+                        eligible_aj_slots = sum(1 for v in selected_entries.values() if isinstance(v[3], (int, float)) and v[3] <= aj_max_const)
+
+                    # determine eligible slots based on rep_const_override if provided
+                    eligible_rep_slots = None
+                    if rep_const_override is not None:
+                        eligible_rep_slots = sum(1 for v in selected_entries.values() if isinstance(v[3], (int, float)) and v[3] <= rep_const_override)
+
+                    # define cost weights: base costs for actions (lower == cheaper)
+                    # We change priorities based on rep_const:
+                    # - If rep_const <= 14: prefer AJ and AJC (AJ/AJC cheaper)
+                    # - If rep_const > 14: prefer score increase and FC (score/FC cheaper)
+                    # Note: boundary choice is rep_const <= 14 => AJ-priority; adjust if you prefer 14 to be in the other group.
+                    aj_scale = 1.0 + max(0.0, (rep_const - 11.0)) / (15.4 - 11.0)
+                    if rep_const <= 14.0:
+                        cost_aj = 0.5 * aj_scale
+                        cost_ajc = 0.2
+                        cost_fc = 1.2
+                        cost_step = 0.8
+                    else:
+                        cost_aj = 2.0 * aj_scale
+                        cost_ajc = 3.0
+                        cost_fc = 0.5
+                        cost_step = 0.4
+
+                    # search bounds: cap AJ count by eligible slots if provided
+                    max_aj_unbounded = min(50, math.ceil(D / 1.0) + 5)
+                    # cap AJ by aj_max_const and also by rep_const_override if provided
+                    if eligible_aj_slots is not None:
+                        max_aj = min(max_aj_unbounded, eligible_aj_slots)
+                    else:
+                        max_aj = max_aj_unbounded
+                    if eligible_rep_slots is not None:
+                        max_aj = min(max_aj, eligible_rep_slots)
+
+                    max_steps = min(200, math.ceil(D / 0.75) + 10)
+
+                    for aj_cnt in range(0, max_aj + 1):
+                        for steps in range(0, max_steps + 1):
+                            op_from_aj_and_steps = aj_cnt * 1.0 + steps * 0.75
+                            rem = D - op_from_aj_and_steps
+                            # compute candidate FC cap: cannot exceed eligible_rep_slots if rep limit is set
+                            computed_fc_cap = min(50, math.ceil(max(0, rem) / 0.5) + 3)
+                            if eligible_rep_slots is not None:
+                                max_fc = min(computed_fc_cap, eligible_rep_slots)
+                            else:
+                                max_fc = computed_fc_cap
+                            for fc_cnt in range(0, max_fc + 1):
+                                op_from_fcs = fc_cnt * 0.5
+                                rem2 = rem - op_from_fcs
+                                if rem2 <= 0:
+                                    ajc_cnt = 0
+                                else:
+                                    ajc_cnt = math.ceil(rem2 / 0.25)
+
+                                total_op_provided = aj_cnt * 1.0 + steps * 0.75 + fc_cnt * 0.5 + ajc_cnt * 0.25
+                                if total_op_provided < D:
+                                    continue
+                                # enforce per-action slot limits if rep-const restriction exists
+                                if eligible_rep_slots is not None:
+                                    if aj_cnt > eligible_rep_slots or fc_cnt > eligible_rep_slots or ajc_cnt > eligible_rep_slots:
+                                        continue
+
+                                total_cost = aj_cnt * cost_aj + fc_cnt * cost_fc + ajc_cnt * cost_ajc + steps * cost_step
+                                overshoot = total_op_provided - D
+                                candidate = (total_cost, overshoot, aj_cnt, fc_cnt, ajc_cnt, steps)
+                                candidates.append(candidate)
+
+                    # pick top N candidates by (cost, overshoot)
+                    if candidates:
+                        candidates.sort(key=lambda c: (c[0], c[1]))
+                        top_n = candidates[:3]
+                        plan_msgs = []
+                        rep_limit_val = rep_const_override if rep_const_override is not None else rep_const
+                        pool_titles_all = [name for name, v in selected_entries.items() if isinstance(v[3], (int, float)) and v[3] <= rep_limit_val]
+
+                        for idx, cand in enumerate(top_n, start=1):
+                            cost, overshoot, caj, cfc, cajc, csteps = cand
+                            msgs = []
+                            if caj:
+                                msgs.append(f"AJ を +{caj} 回")
+                            if cfc:
+                                msgs.append(f"FC を +{cfc} 回")
+                            if cajc:
+                                msgs.append(f"AJC を +{cajc} 回")
+                            if csteps:
+                                msgs.append(f"スコアを {csteps * 500} 点増加する目安 ({csteps} ステップ)")
+
+                            # build assignment from pool
+                            assign_msg = ''
+                            try:
+                                pool_titles = list(pool_titles_all)
+                                random.shuffle(pool_titles)
+                                if not pool_titles:
+                                    assign_msg = "\n注: 指定された代表定数以下の候補曲が見つかりません。曲名割当はできません。"
+                                else:
+                                    aj_selected = random.sample(pool_titles, min(caj, len(pool_titles))) if caj else []
+                                    fc_selected = list(aj_selected)
+                                    if cfc:
+                                        remaining_pool = [t for t in pool_titles if t not in fc_selected]
+                                        take2 = min(cfc - len(fc_selected), len(remaining_pool)) if cfc > len(fc_selected) else 0
+                                        if take2 > 0:
+                                            fc_selected.extend(random.sample(remaining_pool, take2))
+                                        while len(fc_selected) < cfc and pool_titles:
+                                            fc_selected.append(random.choice(pool_titles))
+
+                                    ajc_selected = []
+                                    if cajc:
+                                        remaining_pool = [t for t in pool_titles if t not in aj_selected]
+                                        take3 = min(cajc, len(remaining_pool))
+                                        if take3 > 0:
+                                            ajc_selected = random.sample(remaining_pool, take3)
+                                        while len(ajc_selected) < cajc and pool_titles:
+                                            ajc_selected.append(random.choice(pool_titles))
+
+                                    score_targets = []
+                                    if csteps:
+                                        take4 = min(csteps, len(pool_titles))
+                                        if take4 > 0:
+                                            score_targets = random.sample(pool_titles, take4)
+
+                                    lines = []
+                                    if aj_selected:
+                                        lines.append("AJ (判定強化) 対象例: " + ", ".join(aj_selected))
+                                    if fc_selected:
+                                        lines.append("FC (フルコン) 対象例: " + ", ".join(fc_selected))
+                                    if ajc_selected:
+                                        lines.append("AJC (小判定改善) 対象例: " + ", ".join(ajc_selected))
+                                    if score_targets:
+                                        lines.append("スコア注力候補: " + ", ".join(score_targets))
+
+                                    assign_msg = "\n割当候補:\n" + "\n".join(lines)
+                            except Exception:
+                                assign_msg = "\n曲名割当の生成中にエラーが発生しました。"
+
+                            header = f"最小化プラン候補 #{idx} (コスト {cost:.2f}, オーバー {overshoot:.3f} OP):\n"
+                            body = " / ".join(msgs) + f"\n想定オーバー分: {overshoot:.3f} OP"
+                            if eligible_aj_slots is not None:
+                                body += f"\n注: AJ候補は定数 <= {aj_max_const:.2f} の譜面 {eligible_aj_slots} 曲に制限されています。"
+                            plan_msgs.append(header + body + assign_msg)
+
+                        # send combined message (up to 3 plans)
+                        await ctx.send("\n\n".join(plan_msgs))
+                    else:
+                        await ctx.send("最小変更プランを算出できませんでした。")
+                    # best = None
+                    # D = remaining
+                    # # Set reasonable search bounds
+                    # max_aj = min(100, math.ceil(D / 1.0) + 5)
+                    # max_steps = min(200, math.ceil(D / 0.75) + 10)
+
+                    # for aj_cnt in range(0, max_aj + 1):
+                    #     for steps in range(0, max_steps + 1):
+                    #         op_from_aj_and_steps = aj_cnt * 1.0 + steps * 0.75
+                    #         rem = D - op_from_aj_and_steps
+                    #         if rem <= 0:
+                    #             fc_needed = 0
+                    #             ajc_needed = 0
+                    #         else:
+                    #             # Greedy: prefer FC (0.5 per unit) over AJC (0.25) for lower count
+                    #             fc_needed = math.ceil(rem / 0.5)
+                    #             ajc_needed = 0
+
+                    #         total_actions = aj_cnt + steps + fc_needed + ajc_needed
+                    #         total_op_provided = aj_cnt * 1.0 + steps * 0.75 + fc_needed * 0.5 + ajc_needed * 0.25
+                    #         # minimize total actions, then minimize overshoot
+                    #         overshoot = total_op_provided - D
+                    #         candidate = (total_actions, overshoot, aj_cnt, fc_needed, ajc_needed, steps)
+                    #         if best is None:
+                    #             best = candidate
+                    #         else:
+                    #             if candidate[0] < best[0] or (candidate[0] == best[0] and candidate[1] < best[1]):
+                    #                 best = candidate
+
+                    # # Also consider pure score-only solution (no actions) using arbitrary finer steps
+                    # score_only_steps = math.ceil(D / 0.75)
+                    # score_only_actions = score_only_steps
+                    # score_candidate = (score_only_actions, score_only_steps * 0.75 - D, 0, 0, 0, score_only_steps)
+                    # if best is None or score_candidate[0] < best[0] or (score_candidate[0] == best[0] and score_candidate[1] < best[1]):
+                    #     best = score_candidate
+
+                    # if best:
+                    #     _, overshoot, best_aj, best_fc, best_ajc, best_steps = best
+                    #     msgs = []
+                    #     if best_aj:
+                    #         msgs.append(f"AJ を +{best_aj} 回 (AJ 含めて1回で +1.0 OP 相当)")
+                    #     if best_fc:
+                    #         msgs.append(f"FC を +{best_fc} 回 (1回で +0.5 OP)")
+                    #     if best_ajc:
+                    #         msgs.append(f"AJC を +{best_ajc} 回 (1回で +0.25 OP)")
+                    #     if best_steps:
+                    #         msgs.append(f"スコアを {best_steps * 500} 点増加する目安 (500点ごとに +0.75 OP, {best_steps} ステップ)")
+
+                    #     await ctx.send("最小変更プラン（推定） - 代表譜面定数 {:.2f} を想定:\n".format(rep_const) + " / ".join(msgs) + f"\n想定オーバー分: {overshoot:.3f} OP")
+                    # else:
+                    #     await ctx.send("最小変更プランを算出できませんでした。")
+                else:
+                    await ctx.send("必要OP差が負またはゼロです。増加提案は不要です。")
+        except Exception:
+            pass
+        
         # 追加診断5: 計算対象曲のタイトルとチャート集計のMAS曲タイトルの差分を取り、重複しないものを表示
         try:
             # selected_lines から Title: を抜き出してセット化
