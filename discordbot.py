@@ -166,6 +166,25 @@ async def op(ctx, a: str = None, *names: str):
             else:
                 first = None
                 rest = []
+            # Quick help trigger: !op help -> show usage and helper commands
+            if first is not None and str(first).lower() == 'help':
+                help_lines = [
+                    "!op のヘルプ: 使用可能なオプションと補助コマンド一覧:",
+                    "使い方（基本）: !op <exclude_bool> <曲タイトル...> [options]",
+                    "  - exclude_bool: true/false を指定すると除外モードになります（例: !op true 'Song A'）",
+                    "主なオプション:",
+                    "  --pct <start> <target>        : パーセント差分の計算（例: --pct 99.01 99.02）",
+                    "  --aj-max <const>              : AJ 候補にできる譜面の定数上限を指定",
+                    "  --assign-min <const>          : 割当候補の定数下限（割当生成に影響、AJC は min 優先）",
+                    "  --assign-max <const>          : 割当候補の定数上限（割当生成に影響）",
+                    "クイック補助コマンド:",
+                    "  !op_suggest <partial>         : 曲名やプリセットの候補表示（部分一致）",
+                    "  !op cal <MAX_OP> <MY_OP>      : MY_OP を MAX_OP に対する%で表示（小数点以下5桁）",
+                    "その他: 複数ワードの曲名はダブルクォートで囲んでください（例: \"Song Name\"）",
+                    "例: !op false --pct 99.01 99.02 --assign-min 11 --assign-max 14",
+                ]
+                await ctx.send("\n".join(help_lines))
+                return
             if str(first).lower() in ("true", "1", "yes", "y", "t"):
                 exclude_mode = True
                 # build initial raw exclude tokens
@@ -604,15 +623,26 @@ async def op(ctx, a: str = None, *names: str):
                                         if take4 > 0:
                                             score_targets = pool_titles[:take4]
 
+                                    def fmt_with_const(name):
+                                        try:
+                                            c = selected_entries[name][3]
+                                            return f"{name} ({c:.2f})"
+                                        except Exception:
+                                            return name
+
                                     lines = []
                                     if aj_selected:
-                                        lines.append("AJ 対象例: " + ", ".join(aj_selected))
+                                        lines.append("AJ 対象例:")
+                                        lines.extend([fmt_with_const(n) for n in aj_selected])
                                     if fc_selected:
-                                        lines.append("FC 対象例: " + ", ".join(fc_selected))
+                                        lines.append("FC 対象例:")
+                                        lines.extend([fmt_with_const(n) for n in fc_selected])
                                     if ajc_selected:
-                                        lines.append("AJC 対象例: " + ", ".join(ajc_selected))
+                                        lines.append("AJC 対象例:")
+                                        lines.extend([fmt_with_const(n) for n in ajc_selected])
                                     if score_targets:
-                                        lines.append("スコア注力候補: " + ", ".join(score_targets))
+                                        lines.append("スコア注力候補:")
+                                        lines.extend([fmt_with_const(n) for n in score_targets])
 
                                     assign_msg = "\n割当候補:\n" + "\n".join(lines)
                             except Exception:
@@ -620,6 +650,12 @@ async def op(ctx, a: str = None, *names: str):
 
                             header = f"```最小化プラン候補 #{idx}``` (コスト {cost:.2f}, オーバー {overshoot:.3f} OP):\n"
                             body = " / ".join(msgs) + f"\n想定オーバー分: {overshoot:.3f} OP"
+                            # include the representative const used for cost calculations
+                            try:
+                                body += f"\n代表定数(計算基準): {rep_const_for_cost:.1f}"
+                            except Exception:
+                                # if for some reason the value is unavailable, skip
+                                pass
                             if eligible_aj_slots is not None:
                                 body += f"\n注: AJ候補は定数 <= {aj_max_const:.2f} の譜面 {eligible_aj_slots} 曲に制限されています。"
                             plan_msgs.append(header + body + assign_msg)
@@ -654,6 +690,57 @@ async def op(ctx, a: str = None, *names: str):
     else:
         await ctx.send("不明な op2 オプションです。'sum' を指定するか省略してください。")
         return
+
+
+@bot.command()
+async def op_suggest(ctx, *, partial: str = None):
+    """部分文字列から譜面タイトルやプリセットを候補表示する簡易補完コマンド。
+    使い方: `!op_suggest <部分文字列>`
+    - data_c.json の曲名、及び PRESET_GROUPS のキーを検索して最大 25 件を返します。
+    - 部分一致 (大文字小文字区別なし) でヒットします。
+    """
+    if not partial or not partial.strip():
+        await ctx.send("使い方: `!op_suggest <部分文字列>` — 少なくとも1文字以上入力してください。")
+        return
+
+    q = partial.strip().lower()
+
+    # load data
+    try:
+        with open("data_c.json", 'r') as f:
+            j = json.load(f)
+    except Exception:
+        await ctx.send("データ読み込みに失敗しました。`)" )
+        return
+
+    # collect song title candidates
+    titles = []
+    for v in j.values():
+        try:
+            name = v.get('name', '')
+            if name and q in name.lower():
+                titles.append(name)
+        except Exception:
+            continue
+
+    # collect preset keys that match
+    presets = [k for k in PRESET_GROUPS.keys() if q in k.lower()]
+
+    # dedupe while preserving order
+    seen = set()
+    results = []
+    for t in presets + titles:
+        if t not in seen:
+            seen.add(t)
+            results.append(t)
+        if len(results) >= 25:
+            break
+
+    if not results:
+        await ctx.send("候補が見つかりませんでした。別の文字列でお試しください。")
+    else:
+        # format output in chunks to avoid extremely long messages
+        await ctx.send("候補 (最大25件):\n" + "\n".join(results))
     
 @bot.command()
 async def update(ctx, now: str):
