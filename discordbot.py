@@ -782,6 +782,7 @@ async def op(ctx, a: str = None, *names: str):
         selected_entries, total_op, selected_lines, processed_mas_selected, processed_ult_selected, mas_song_names, entries, mas_count, ult_count, total_charts = calculate_total_op(json_data, exclude_set, exclude_mode)
         msgs = []
         msgs2 = []
+        base_sent = False
         try:
             msgs.append(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")
             msgs2.append(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")
@@ -874,9 +875,10 @@ async def op(ctx, a: str = None, *names: str):
                 # duplicate base summaries.
                 if msgs2 and percent_start is None and percent_target is None:
                     await ctx.send("\n".join(msgs2))
-                elif msgs:
-                    # await ctx.send("\n".join(msgs))
-                    pass
+                    base_sent = True
+                elif msgs and not base_sent:
+                    await ctx.send("\n".join(msgs))
+                    base_sent = True
             except Exception:
                 pass
 
@@ -903,7 +905,9 @@ async def op(ctx, a: str = None, *names: str):
                     target_value = total_op * pt
                     needed = target_value - current_value
                     msgs.append(f"百分率指定: {percent_start} -> {percent_target} ({ps*100:.5f}% -> {pt*100:.2f}%)。現在のOP値: {current_value:.2f}、目標値: {target_value:.2f}、必要なOP差: {needed:.2f}")
-                    await ctx.send("\n".join(msgs))
+                    if not base_sent:
+                        await ctx.send("\n".join(msgs))
+                        base_sent = True
         except Exception:
             pass
 
