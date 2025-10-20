@@ -876,7 +876,7 @@ async def op(ctx, a: str = None, *names: str):
                 if msgs2 and not base_sent and percent_start is None and percent_target is None:
                     await ctx.send("\n".join(msgs2))
                     base_sent = True
-                elif msgs and not base_sent:
+                elif msgs and not base_sent and percent_start is None and percent_target is None:
                     base_sent = True
             except Exception:
                 pass
