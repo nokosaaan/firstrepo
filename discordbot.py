@@ -873,11 +873,10 @@ async def op(ctx, a: str = None, *names: str):
                 # If we computed a strict-exclusion summary (msgs2) and there are no pct flags,
                 # prefer sending msgs2. Otherwise send msgs. Only send one of them to avoid
                 # duplicate base summaries.
-                if msgs2 and percent_start is None and percent_target is None:
+                if msgs2 and not base_sent and percent_start is None and percent_target is None:
                     await ctx.send("\n".join(msgs2))
                     base_sent = True
                 elif msgs and not base_sent:
-                    await ctx.send("\n".join(msgs))
                     base_sent = True
             except Exception:
                 pass
@@ -905,7 +904,7 @@ async def op(ctx, a: str = None, *names: str):
                     target_value = total_op * pt
                     needed = target_value - current_value
                     msgs.append(f"百分率指定: {percent_start} -> {percent_target} ({ps*100:.5f}% -> {pt*100:.2f}%)。現在のOP値: {current_value:.2f}、目標値: {target_value:.2f}、必要なOP差: {needed:.2f}")
-                    if not base_sent:
+                    if base_sent:
                         await ctx.send("\n".join(msgs))
                         base_sent = True
         except Exception:
