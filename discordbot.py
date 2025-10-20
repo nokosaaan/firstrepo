@@ -13,6 +13,7 @@ import os
 import requests
 import time
 import math
+import textwrap
 
 # Preset named groups for convenience in commands like: !op true ultima
 # Keys are lower-cased alias names; values are lists of exact song titles to expand.
@@ -61,7 +62,8 @@ async def op(ctx, a: str = None, *names: str):
     # Detect internal call style: op(ctx, json_data, op2)
     if isinstance(a, dict):
         json_data = a
-        op2 = names[0] if len(names) >= 1 else None
+        # For internal calls, accept the first extra arg as the op mode (e.g. 'sum')
+        op_mode = names[0] if len(names) >= 1 else 'sum'
         exclude_mode = False
         exclude_set = set()
     else:
@@ -86,156 +88,188 @@ async def op(ctx, a: str = None, *names: str):
         
 
     # Now parsed_args[0] corresponds to what was passed as `a` and the rest as names
-        json_data = None
-        op2 = None
-        exclude_mode = False
-        exclude_set = set()
+    json_data = None
+    op2 = None
+    exclude_mode = False
+    exclude_set = set()
+    op_mode = None
     # percent parameters (optional): user may include 'pct' or '--pct' or 'percent' followed by two floats
-        percent_start = None
-        percent_target = None
+    percent_start = None
+    percent_target = None
     # optional override for representative const
-        rep_const_override = None
-        # derive flags and names from parsed_args (safer for quoted names)
-        if parsed_args:
-            first = parsed_args[0]
-            rest = parsed_args[1:]
-            # detect and extract percent flags and rep-const overrides from parsed_args (they may appear anywhere)
-            cleaned = []
-            i = 0
-            # ensure aj_max_const and assign bounds exist in scope even if not provided
-            aj_max_const = None
-            assign_min_const = None
-            assign_max_const = None
-            tokens = [t for t in parsed_args]
-            while i < len(tokens):
-                tk = tokens[i]
-                low = str(tk).lower()
-                if low in ('pct', '--pct', 'percent', '--percent'):
-                    # attempt to read two following numeric tokens
-                    try:
-                        s = float(tokens[i+1])
-                        t = float(tokens[i+2])
-                        percent_start = s
-                        percent_target = t
-                        i += 3
-                        continue
-                    except Exception:
-                        cleaned.append(tk)
-                        i += 1
-                        continue
-                # rep-const removed; use assign-min/max to derive representative const instead
-                elif low in ('aj-max', 'ajmax', '--aj-max', '--ajmax'):
-                    try:
-                        ajm = float(tokens[i+1])
-                        # aj_max_const: user-specified maximum chart const for AJ suggestions
-                        aj_max_const = ajm
-                        i += 2
-                        continue
-                    except Exception:
-                        cleaned.append(tk)
-                        i += 1
-                        continue
-                elif low in ('assign-min', 'min-const', 'minconst', '--assign-min', '--min-const'):
-                    try:
-                        am = float(tokens[i+1])
-                        assign_min_const = am
-                        i += 2
-                        continue
-                    except Exception:
-                        cleaned.append(tk)
-                        i += 1
-                        continue
-                elif low in ('assign-max', 'max-const', 'maxconst', '--assign-max', '--max-const'):
-                    try:
-                        aM = float(tokens[i+1])
-                        assign_max_const = aM
-                        i += 2
-                        continue
-                    except Exception:
-                        cleaned.append(tk)
-                        i += 1
-                        continue
-                else:
+    rep_const_override = None
+    # derive flags and names from parsed_args (safer for quoted names)
+    if parsed_args:
+        first = parsed_args[0]
+        rest = parsed_args[1:]
+        # detect and extract percent flags and rep-const overrides from parsed_args (they may appear anywhere)
+        cleaned = []
+        i = 0
+        # ensure aj_max_const and assign bounds exist in scope even if not provided
+        aj_max_const = None
+        assign_min_const = None
+        assign_max_const = None
+        tokens = [t for t in parsed_args]
+        while i < len(tokens):
+            tk = tokens[i]
+            low = str(tk).lower()
+            if low in ('pct'):
+                # attempt to read two following numeric tokens
+                try:
+                    s = float(tokens[i+1])
+                    t = float(tokens[i+2])
+                    percent_start = s
+                    percent_target = t
+                    i += 3
+                    continue
+                except Exception:
                     cleaned.append(tk)
                     i += 1
+                    continue
+            # rep-const removed; use assign-min/max to derive representative const instead
+            elif low in ('ajmax'):
+                try:
+                    ajm = float(tokens[i+1])
+                    # aj_max_const: user-specified maximum chart const for AJ suggestions
+                    aj_max_const = ajm
+                    i += 2
+                    continue
+                except Exception:
+                    cleaned.append(tk)
+                    i += 1
+                    continue
+            elif low in ('minconst'):
+                try:
+                    am = float(tokens[i+1])
+                    assign_min_const = am
+                    i += 2
+                    continue
+                except Exception:
+                    cleaned.append(tk)
+                    i += 1
+                    continue
+            elif low in ('maxconst'):
+                try:
+                    aM = float(tokens[i+1])
+                    assign_max_const = aM
+                    i += 2
+                    continue
+                except Exception:
+                    cleaned.append(tk)
+                    i += 1
+                    continue
+            else:
+                cleaned.append(tk)
+                i += 1
 
-            # rebuild first/rest from cleaned tokens
-            if cleaned:
-                first = cleaned[0]
-                rest = cleaned[1:]
-            else:
-                first = None
-                rest = []
-            # Quick help trigger: !op help -> show usage and helper commands
-            if first is not None and str(first).lower() == 'help':
-                help_lines = [
-                    "!op のヘルプ: 使用可能なオプションと補助コマンド一覧:",
-                    "使い方（基本）: !op <exclude_bool> <曲タイトル...> [options]",
-                    "  - exclude_bool: true/false を指定すると除外モードになります（例: !op true 'Song A'）",
-                    "主なオプション:",
-                    "  --pct <start> <target>        : パーセント差分の計算（例: --pct 99.01 99.02）",
-                    "  --aj-max <const>              : AJ 候補にできる譜面の定数上限を指定",
-                    "  --assign-min <const>          : 割当候補の定数下限（割当生成に影響、AJC は min 優先）",
-                    "  --assign-max <const>          : 割当候補の定数上限（割当生成に影響）",
-                    "クイック補助コマンド:",
-                    "  !op_suggest <partial>         : 曲名やプリセットの候補表示（部分一致）",
-                    "  !op cal <MAX_OP> <MY_OP>      : MY_OP を MAX_OP に対する%で表示（小数点以下5桁）",
-                    "その他: 複数ワードの曲名はダブルクォートで囲んでください（例: \"Song Name\"）",
-                    "例: !op false --pct 99.01 99.02 --assign-min 11 --assign-max 14",
-                ]
-                await ctx.send("\n".join(help_lines))
-                return
-            if str(first).lower() in ("true", "1", "yes", "y", "t"):
-                exclude_mode = True
-                # build initial raw exclude tokens
-                raw_tokens = [n.strip() for n in rest if n and n.strip()]
-                # expand any preset group aliases (case-insensitive key match)
-                expanded = []
-                # If first token is 'custom', treat remaining tokens as literal titles
-                if raw_tokens and raw_tokens[0].lower() == 'custom':
-                    expanded = raw_tokens[1:]
-                else:
-                    for tok in raw_tokens:
-                        key = tok.lower()
-                        if key in PRESET_GROUPS:
-                            expanded.extend(PRESET_GROUPS[key])
-                        else:
-                            expanded.append(tok)
-                exclude_set = set(expanded)
-            else:
-                exclude_mode = False
-                all_names = ([first] if first is not None else []) + rest
-                raw_tokens = [n.strip() for n in all_names if n and n.strip()]
-                # support `custom` as the first token to mean the rest are literal titles
-                if raw_tokens and raw_tokens[0].lower() == 'custom':
-                    expanded = raw_tokens[1:]
-                else:
-                    expanded = []
-                    for tok in raw_tokens:
-                        key = tok.lower()
-                        if key in PRESET_GROUPS:
-                            expanded.extend(PRESET_GROUPS[key])
-                        else:
-                            expanded.append(tok)
-                exclude_set = set(expanded)
+        # rebuild first/rest from cleaned tokens
+        if cleaned:
+            first = cleaned[0]
+            rest = cleaned[1:]
         else:
-            # no args provided
-            exclude_set = set()
+            first = None
+            rest = []
+
+        # determine op_mode from the first token (if present)
+        if first is not None:
+            lf = str(first).lower()
+            if lf == 'help':
+                op_mode = 'help'
+            elif lf == 'cal':
+                op_mode = 'cal'
+            elif lf == 'true':
+                op_mode = 'true'
+            elif lf == 'false':
+                op_mode = 'false'
+            elif lf == 'suggest':
+                op_mode = 'suggest'
+            else:
+                op_mode = 'sum'
+
+        # set exclude_set based on op_mode and tokens
+        # build the exclude_set / name list by expanding any preset keys
+        if op_mode == 'true':
+            exclude_mode = True
+            raw_tokens = [n.strip() for n in rest if n and n.strip()]
+        else:
+            exclude_mode = False
+            all_names = ([first] if first is not None else []) + rest
+            raw_tokens = [n.strip() for n in all_names if n and n.strip()]
+
+        expanded = []
+        for tok in raw_tokens:
+            key = tok.lower()
+            if key in PRESET_GROUPS:
+                expanded.extend(PRESET_GROUPS[key])
+            else:
+                expanded.append(tok)
+        exclude_set = set(expanded)
+    else:
+        # no args provided
+        exclude_set = set()
+
+    # Decide top-level op mode: help / cal / true (exclude) / sum (default)
+    op_mode = 'sum'
+    # help explicit
+    if 'first' in locals() and first is not None and str(first).lower() == 'help':
+        op_mode = 'help'
+    # cal explicit
+    elif ('first' in locals() and first is not None and str(first).lower() == 'cal') or (isinstance(a, str) and str(a).lower() == 'cal'):
+        op_mode = 'cal'
+    # true/exclude mode explicit
+    elif 'first' in locals() and first is not None and str(first).lower() == 'true':
+        op_mode = 'true'
+    elif 'first' in locals() and first is not None and str(first).lower() == 'false':
+        op_mode = 'false'
+    elif 'first' in locals() and first is not None and str(first).lower() == 'suggest':
+        op_mode = 'suggest'
+    # if invoked internally with op2, prefer that
+    # note: internal-call op_mode already set when a is dict; no additional op2 handling required
+
+    # Handle help quickly
+    if op_mode == 'help':
+        help_text = textwrap.dedent("""\
+        !op のヘルプ: 使用可能なオプションと補助コマンド一覧:
+        使い方（基本）: !op [sum|true|cal|suggest|help] [options]
+
+        - sum:
+        合計オーバーパワー(Max)を計算表示します（デフォルトモード）
+
+        - true:
+        除外モード（例: !op true "songA" "songB"）
+        オプション（trueでもfalseでも利用可能）:
+            pct <start> <target>        : パーセント差分の計算
+            ajmax <const>               : AJ 候補定数上限
+            minconst <const>            : 割当定数下限
+            maxconst <const>            : 割当定数上限
+        例1: !op true ultima "SongA" "SongB" pct 99.0 99.01 minconst 12.0 maxconst 13.5 ajmax 13.2
+        例2: !op false pct 99.0 99.01 minconst 12.0 maxconst 13.5 ajmax 13.2
+
+        - cal:
+        MY_OP を MAX_OP に対する%で表示します(小数点以下5ケタ)
+        使い方: !op cal <MAX_OP> <MY_OP>
+
+        - suggest:
+        入力文字列から曲名候補を表示します
+        使い方: !op suggest <partial>
+
+        - help:
+        このヘルプを表示します
+
+        その他: 複数ワードの曲名はダブルクォートで囲んでください。
+        """)
+        await ctx.send(help_text)
+        return
 
     # Quick-calculation mode: support `!op cal <MAX_OP> <MY_OP>` to show MY_OP as percent of MAX_OP
-    try:
-        cal_trigger = False
-        cal_vals = None
-        # If command used shlex parsing, 'first' and 'rest' are available
-        if 'first' in locals() and first is not None and str(first).lower() == 'cal':
-            cal_trigger = True
-            cal_vals = rest
-        # Or if user invoked as !op cal 10000 1234 without shlex tokens (a holds the first token)
-        elif isinstance(a, str) and str(a).lower() == 'cal':
-            cal_trigger = True
-            cal_vals = list(names)
+    if op_mode == 'cal':
+        try:
+            cal_vals = None
+            if 'first' in locals() and first is not None and str(first).lower() == 'cal':
+                cal_vals = rest
+            elif isinstance(a, str) and str(a).lower() == 'cal':
+                cal_vals = list(names)
 
-        if cal_trigger:
             if not cal_vals or len(cal_vals) < 2:
                 await ctx.send("使い方: !op cal <MAX_OP> <MY_OP> （数値を2つ指定してください）")
                 return
@@ -253,9 +287,9 @@ async def op(ctx, a: str = None, *names: str):
 
             await ctx.send(f"割合: {pct:.5f}% (MY OP: {my_op_val:.2f} / MAX OP: {max_op_val:.2f})")
             return
-    except Exception:
-        # fall through to normal behavior
-        pass
+        except Exception:
+            # fall through to normal behavior
+            return
 
     # Load json if not provided
     if json_data is None:
@@ -266,21 +300,19 @@ async def op(ctx, a: str = None, *names: str):
             await ctx.send(f"データ読み込みエラー: {e}")
             return
 
-    # default op2 behavior
-    if op2 is None or op2 == 'sum':
-        # Build helper lookup: name -> list of entries
+    # extract aggregation into helper to simplify op function
+    def select_entries(data, exclude_set, exclude_mode):
         name_map = {}
         entries = []
         mas_count = 0
         ult_count = 0
-        for v in json_data.values():
+        for v in data.values():
             try:
                 chart_const = float(v['data'][2])
             except Exception:
                 continue
             chart_type = v['data'][0]
             if chart_type in ("ULT", "MAS"):
-                # count chart occurrences
                 if chart_type == 'MAS':
                     mas_count += 1
                 elif chart_type == 'ULT':
@@ -289,37 +321,23 @@ async def op(ctx, a: str = None, *names: str):
                 name_map.setdefault(name, []).append((chart_type, chart_const, v.get('diff', '')))
                 entries.append((name, chart_const, v.get('diff', ''), chart_type, v['data'][1]))
 
-    # sort by const desc
         entries.sort(key=lambda x: x[1], reverse=True)
 
-        # send MAS/ULT counts summary (raw chart occurrences and unique MAS-song count)
-        try:
-            await ctx.send(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {mas_count + ult_count} チャート")
-        except Exception:
-            # ignore send errors here
-            pass
-
-        # Use a map to store the selected entry per song title so we can
-        # prefer ULT over MAS and replace previously-added MAS if a ULT is
-        # encountered later.
-        selected_entries = {}  # name -> (chart_type, max_op, selected_line, const, diffv)
+        # selection
+        selected_entries = {}
         total_op = 0.0
         processed_mas_selected = 0
         processed_ult_selected = 0
         mas_selected_counts = {}
 
         for name, const, diffv, chart_type, genre in entries:
-            # Exclusion handling first
             if exclude_mode and name in exclude_set:
                 if chart_type == 'ULT':
-                    # Try to use MAS instead of ULT when exclusion is requested
                     mas_entries = [t for t in name_map.get(name, []) if t[0] == 'MAS']
                     if mas_entries:
-                        # use the first MAS entry available
                         mas_const = mas_entries[0][1]
                         max_op = (mas_const + 3) * 5
                         sel_line = f"Title: {name}\tDiff:MAS\tType:MAS\tConst:{mas_const}\tMaxOP:{max_op:.2f}"
-                        # If we've already selected something for this name, skip replacing
                         if name in selected_entries:
                             continue
                         selected_entries[name] = ('MAS', max_op, sel_line, mas_const, 'MAS')
@@ -327,19 +345,13 @@ async def op(ctx, a: str = None, *names: str):
                         processed_mas_selected += 1
                         mas_selected_counts[name] = mas_selected_counts.get(name, 0) + 1
                     else:
-                        # No MAS available -> skip entirely
                         continue
                 else:
-                    # current is MAS and excluded -> skip
                     continue
-
             else:
-                # Normal handling
                 max_op = (const + 3) * 5
                 sel_line = f"Title: {name}\tDiff:{diffv}\tType:{chart_type}\tConst:{const}\tMaxOP:{max_op:.2f}"
-
                 if name not in selected_entries:
-                    # first time selecting this title
                     selected_entries[name] = (chart_type, max_op, sel_line, const, diffv)
                     total_op += max_op
                     if chart_type == 'MAS':
@@ -348,33 +360,432 @@ async def op(ctx, a: str = None, *names: str):
                     elif chart_type == 'ULT':
                         processed_ult_selected += 1
                 else:
-                    # we already have a selected entry for this title
                     existing_type, existing_op, existing_line, existing_const, existing_diff = selected_entries[name]
-                    # If existing is MAS and current is ULT, replace MAS with ULT
                     if existing_type == 'MAS' and chart_type == 'ULT':
-                        # remove MAS contribution
                         total_op -= existing_op
                         processed_mas_selected -= 1
                         mas_selected_counts[name] = mas_selected_counts.get(name, 1) - 1
                         if mas_selected_counts.get(name, 0) <= 0:
                             mas_selected_counts.pop(name, None)
-                        # add ULT contribution
                         selected_entries[name] = (chart_type, max_op, sel_line, const, diffv)
                         total_op += max_op
                         processed_ult_selected += 1
                     else:
-                        # otherwise keep the existing selection (including if existing is ULT)
                         continue
 
-        # Build selected_lines from selected_entries preserving a stable order
-        # We'll order by max_op desc so the output is similar to previous behavior
         selected_list = sorted(selected_entries.items(), key=lambda kv: kv[1][1], reverse=True)
         selected_lines = [v[2] for k, v in selected_list]
+        mas_song_names = set([k for k, v in name_map.items() if any(t[0] == 'MAS' for t in v)])
+        total_charts = mas_count + ult_count
+        return selected_entries, total_op, selected_lines, processed_mas_selected, processed_ult_selected, mas_song_names, entries, mas_count, ult_count, total_charts
 
+    def calculate_total_op(json_data, exclude_set, exclude_mode):
+        """
+        Calculate and return the full select_entries outputs so callers can use them.
+        Returns the exact tuple from select_entries.
+        """
+        return select_entries(json_data, exclude_set, exclude_mode)
+
+    def generate_suggestions(selected_entries, entries, total_op, percent_start, percent_target, aj_max_const, assign_min_const, assign_max_const):
+        """
+        Generate human-friendly suggestion messages based on a desired percent delta.
+        This helper is intentionally conservative and works the same whether exclude_mode
+        is True or False as long as the caller provides the selected_entries and entries
+        computed for the current exclude_set/exclude_mode.
+
+        Returns: list of message strings to send (may be empty).
+        """
+        msgs = []
         try:
-            await ctx.send(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\n処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
+            def to_frac(x: float) -> float:
+                try:
+                    xv = float(x)
+                except Exception:
+                    return 0.0
+                if xv > 1.0:
+                    return xv / 100.0
+                return xv
+
+            # Choose representative const according to assign_min_const/maxconst rules:
+            # - If both min and max provided: use their average.
+            # - If only one provided: use that one.
+            # - If neither provided: return an error message and exit early.
+            if assign_min_const is None and assign_max_const is None:
+                msgs.append("エラー: 提案を行うために 'minconst' または 'maxconst' のいずれかを指定してください。例: minconst 12.0 maxconst 13.5")
+                return msgs
+
+            if assign_min_const is not None and assign_max_const is not None:
+                rep_const = (assign_min_const + assign_max_const) / 2.0
+            elif assign_min_const is not None:
+                rep_const = assign_min_const
+            else:
+                rep_const = assign_max_const
+
+            # Simple action-effect model (same as original rules):
+            # AJ (with implied FC) ~= +1.0 OP
+            # FC ~= +0.5 OP
+            # AJC ~= +0.25 OP
+            # score-step (approx): 500 points ~= +0.75 OP (approximation used previously)
+            aj_op = 1.0
+            fc_op = 0.5
+            ajc_op = 0.25
+            score_step_points = 500
+            score_step_op = 0.75
+
+            needed_pos = None if needed is None else (needed if needed > 0 else 0.0)
+
+            # Minimal single-action suggestions
+            aj_only = None
+            fc_only = None
+            ajc_only = None
+            score_only_steps = None
+            if needed_pos is not None:
+                aj_only = math.ceil(needed_pos / aj_op) if aj_op > 0 else None
+                fc_only = math.ceil(needed_pos / fc_op) if fc_op > 0 else None
+                ajc_only = math.ceil(needed_pos / ajc_op) if ajc_op > 0 else None
+                score_only_steps = math.ceil(needed_pos / score_step_op) if score_step_op > 0 else None
+
+                msgs.append("----- 単一手段での概算提案 (必要量の最小整数) -----")
+                if aj_only is not None:
+                    msgs.append(f"AJのみ: {aj_only} 回 (想定増分: {aj_only*aj_op:.2f} OP)")
+                if fc_only is not None:
+                    msgs.append(f"FCのみ: {fc_only} 回 (想定増分: {fc_only*fc_op:.2f} OP)")
+                if ajc_only is not None:
+                    msgs.append(f"AJCのみ: {ajc_only} 回 (想定増分: {ajc_only*ajc_op:.2f} OP)")
+                if score_only_steps is not None:
+                    msgs.append(f"スコア増加(+500基準)のみ: {score_only_steps} ステップ ({score_only_steps*score_step_points} pts, 想定増分: {score_only_steps*score_step_op:.2f} OP)")
+            else:
+                msgs.append("----- パーセント指定がありません: サンプル増分 (1〜5回) を表示します -----")
+                for n in range(1, 6):
+                    msgs.append(f"AJ x{n}: 想定増分 {n*aj_op:.2f} OP | FC x{n}: {n*fc_op:.2f} OP | AJC x{n}: {n*ajc_op:.2f} OP | スコアステップ x{n}: {n*score_step_op:.2f} OP ({n*score_step_points} pts)")
+
+            # Build candidate pool filtered by assign_min_const / assign_max_const for assignment suggestions
+            pool_titles_all = []
+            try:
+                for name, v in selected_entries.items():
+                    try:
+                        c = v[3]
+                    except Exception:
+                        continue
+                    if not isinstance(c, (int, float)):
+                        continue
+                    if assign_min_const is not None and c < assign_min_const:
+                        continue
+                    if assign_max_const is not None and c > assign_max_const:
+                        continue
+                    pool_titles_all.append((name, c))
+                # sort by const desc as a default ordering
+                pool_titles_all.sort(key=lambda x: x[1], reverse=True)
+            except Exception:
+                pool_titles_all = []
+
+            pool_names = [t[0] for t in pool_titles_all]
+
+            def sample_titles(n, avoid=None):
+                if not pool_names or n <= 0:
+                    return []
+                candidates = pool_names if avoid is None else [p for p in pool_names if p not in avoid]
+                if not candidates:
+                    # fallback to full pool with replacement
+                    return [random.choice(pool_names) for _ in range(n)]
+                if n <= len(candidates):
+                    return random.sample(candidates, n)
+                # if n > available, sample all then fill with replacement
+                res = candidates.copy()
+                while len(res) < n:
+                    res.append(random.choice(candidates))
+                return res
+
+            # Mixed-plan optimization: search for integer counts of AJ, AJC, FC, score-step
+            # that reach needed_pos with minimal weighted cost.
+            # Default action gains (OP) are defined above: aj_op, ajc_op, fc_op, score_step_op
+            # Weights represent difficulty/cost from player's perspective (higher = more costly):
+            if rep_const <= 14.5:
+                w_aj = 0.8
+                w_ajc = 0.3
+                w_fc = 1.0
+                w_score = 2.0
+            else:
+                w_aj = 1.5
+                w_ajc = 2.2
+                w_fc = 1.0
+                w_score = 2.0
+
+            best_plan = None
+            best_cost = float('inf')
+            best_gain = 0.0
+            feasible_plans = []  # list of (cost, gain, (aj,ajc,fc,score))
+
+            if needed_pos is not None and needed_pos > 0:
+                # Compute reasonable caps per action to limit search space
+                # Allow a small buffer (+3) beyond theoretical minimum
+                aj_cap = min(20, int(math.ceil(needed_pos / aj_op)) + 3)
+                ajc_cap = min(20, int(math.ceil(needed_pos / ajc_op)) + 3)
+                fc_cap = min(40, int(math.ceil(needed_pos / fc_op)) + 3)
+                score_cap = min(40, int(math.ceil(needed_pos / score_step_op)) + 3)
+
+                # Brute-force search (bounded). Keep loops ordered by expected cost to improve early pruning.
+                for aj_count in range(0, aj_cap + 1):
+                    aj_gain = aj_count * aj_op
+                    aj_cost = aj_count * w_aj
+                    if aj_gain >= needed_pos:
+                        total_cost = aj_cost
+                        if total_cost < best_cost:
+                            best_cost = total_cost
+                            best_plan = (aj_count, 0, 0, 0)
+                            best_gain = aj_gain
+                        continue
+                    # small pruning: if even without other actions aj_cost already >= best_cost, skip
+                    if aj_cost >= best_cost:
+                        continue
+                    for ajc_count in range(0, ajc_cap + 1):
+                        ajc_gain = ajc_count * ajc_op
+                        ajc_cost = ajc_count * w_ajc
+                        gain_aj_ajc = aj_gain + ajc_gain
+                        cost_aj_ajc = aj_cost + ajc_cost
+                        if gain_aj_ajc >= needed_pos:
+                            if cost_aj_ajc < best_cost:
+                                best_cost = cost_aj_ajc
+                                best_plan = (aj_count, ajc_count, 0, 0)
+                                best_gain = gain_aj_ajc
+                            continue
+                        if cost_aj_ajc >= best_cost:
+                            continue
+                        for fc_count in range(0, fc_cap + 1):
+                            fc_gain = fc_count * fc_op
+                            fc_cost = fc_count * w_fc
+                            gain_aj_ajc_fc = gain_aj_ajc + fc_gain
+                            cost_aj_ajc_fc = cost_aj_ajc + fc_cost
+                            if gain_aj_ajc_fc >= needed_pos:
+                                if cost_aj_ajc_fc < best_cost:
+                                    best_cost = cost_aj_ajc_fc
+                                    best_plan = (aj_count, ajc_count, fc_count, 0)
+                                    best_gain = gain_aj_ajc_fc
+                                continue
+                            if cost_aj_ajc_fc >= best_cost:
+                                continue
+                            # compute remaining needed and minimal number of score steps to cover it
+                            rem_needed = needed_pos - gain_aj_ajc_fc
+                            # estimate minimal score steps and search around it rather than full loop
+                            min_score_needed = int(math.ceil(rem_needed / score_step_op))
+                            for score_count in range(0, min(score_cap, min_score_needed + 3) + 1):
+                                score_gain = score_count * score_step_op
+                                total_gain = gain_aj_ajc_fc + score_gain
+                                if total_gain < needed_pos:
+                                    continue
+                                score_cost = score_count * w_score
+                                total_cost = cost_aj_ajc_fc + score_cost
+                                if total_cost < best_cost - 1e-9:
+                                    best_cost = total_cost
+                                    best_plan = (aj_count, ajc_count, fc_count, score_count)
+                                    best_gain = total_gain
+                                # record feasible plan
+                                feasible_plans.append((total_cost, total_gain, (aj_count, ajc_count, fc_count, score_count)))
+
+                # If we found plans, sort and present several alternatives
+                if feasible_plans:
+                    feasible_plans.sort(key=lambda x: (x[0], -x[1]))
+                    # dedupe by (aj,ajc,fc,score) keeping best cost
+                    seen_plans = {}
+                    for cost, gain, tpl in feasible_plans:
+                        if tpl not in seen_plans or cost < seen_plans[tpl][0]:
+                            seen_plans[tpl] = (cost, gain)
+                    unique_plans = sorted([(c,g,t) for t,(c,g) in seen_plans.items()], key=lambda x: (x[0], -x[1]))
+
+                    msgs.append("----- 混合プラン候補（重み付き評価、上位3） -----")
+                    msgs.append(f"代表定数 (rep_const): {rep_const:.2f}")
+                    # present up to 3 strategies: min-cost, AJ-priority, FC-priority/score-priority, then balanced
+                    presented = 0
+                    # helper to build per-action candidate lists for a given plan tpl
+                    def build_action_candidates(plan_tpl):
+                        aj_n, ajc_n, fc_n, sc_n = plan_tpl
+                        selected = set()
+                        lines = []
+
+                        # prepare a quick map from title -> const for display
+                        pool_const_map = {t[0]: t[1] for t in pool_titles_all}
+
+                        def fmt_titles(lst):
+                            # format as: Title (const)
+                            out = []
+                            for t in lst:
+                                c = pool_const_map.get(t)
+                                if c is None:
+                                    out.append(f"{t}")
+                                else:
+                                    out.append(f"{t} ({c})")
+                            return out
+
+                        # AJC: pick from pool sorted by const ascending (starting from minconst)
+                        asc_sorted = sorted(pool_titles_all, key=lambda x: x[1])
+                        ajc_candidates = [n for n, c in asc_sorted]
+                        if ajc_n > 0:
+                            if len(ajc_candidates) >= ajc_n:
+                                ajc_sel = ajc_candidates[:ajc_n]
+                            else:
+                                ajc_sel = ajc_candidates + [p for p in sample_titles(ajc_n - len(ajc_candidates))]
+                        else:
+                            ajc_sel = []
+                        for s in ajc_sel:
+                            selected.add(s)
+
+                        # AJ: random from pool excluding selected
+                        aj_sel = sample_titles(aj_n, avoid=selected) if aj_n > 0 else []
+                        for s in aj_sel:
+                            selected.add(s)
+
+                        # FC: random from pool excluding selected
+                        fc_sel = sample_titles(fc_n, avoid=selected) if fc_n > 0 else []
+                        for s in fc_sel:
+                            selected.add(s)
+
+                        # Score: random from remaining pool (allow reuse if needed)
+                        score_sel = sample_titles(sc_n, avoid=selected) if sc_n > 0 else []
+
+                        if aj_sel:
+                            lines.append("### AJ候補曲：\n\t" + "\n\t".join(fmt_titles(aj_sel)))
+                        if ajc_sel:
+                            # show AJC candidates in ascending-const order
+                            lines.append("### AJC候補曲：\n\t" + "\n\t".join(fmt_titles(ajc_sel)))
+                        if fc_sel:
+                            lines.append("### FC候補曲：\n\t" + "\n\t".join(fmt_titles(fc_sel)))
+                        if score_sel:
+                            lines.append("### スコア増加候補曲：\n\t" + "\n\t".join(fmt_titles(score_sel)))
+                        return lines
+
+                    # 1) min-cost
+                    uc = unique_plans[0]
+                    msgs.append(f"## - [1] 最小コスト案:\n ```\n AJ:{uc[2][0]}回\n AJC:{uc[2][1]}回\n FC:{uc[2][2]}回\n Score:{uc[2][3]}回\n -> 増分 {uc[1]:.2f} OP, コスト {uc[0]:.2f}```")
+                    try:
+                        msgs.extend(build_action_candidates(uc[2]))
+                    except Exception:
+                        pass
+                    presented += 1
+
+                    # 2) AJ-priority: pick plan with largest AJ among feasible but cost within 120% of min-cost
+                    min_cost = uc[0]
+                    aj_pref = None
+                    for c,g,t in unique_plans:
+                        if c <= min_cost * 1.20:
+                            if aj_pref is None or t[0] > aj_pref[2][0] or (t[0] == aj_pref[2][0] and c < aj_pref[0]):
+                                aj_pref = (c,g,t)
+                    if aj_pref and aj_pref[2] != uc[2]:
+                        msgs.append(f"## - [2] AJ優先案:\n ```\n AJ:{aj_pref[2][0]}回\n AJC:{aj_pref[2][1]}回\n FC:{aj_pref[2][2]}回\n Score:{aj_pref[2][3]}回\n -> 増分 {aj_pref[1]:.2f} OP, コスト {aj_pref[0]:.2f}```")
+                        try:
+                            msgs.extend(build_action_candidates(aj_pref[2]))
+                        except Exception:
+                            pass
+                        presented += 1
+
+                    # 3) FC/Score-priority: prefer plan with highest (FC* w_fc + Score * w_score) within cost window
+                    fc_pref = None
+                    best_metric = -1
+                    for c,g,t in unique_plans:
+                        if c <= min_cost * 1.40:
+                            metric = t[2] * w_fc + t[3] * w_score
+                            if metric > best_metric:
+                                best_metric = metric
+                                fc_pref = (c,g,t)
+                    if fc_pref and fc_pref[2] != uc[2] and (aj_pref is None or fc_pref[2] != aj_pref[2]):
+                        msgs.append(f"## - [3] FC/Score優先案:\n ```\n AJ:{fc_pref[2][0]}回\n AJC:{fc_pref[2][1]}回\n FC:{fc_pref[2][2]}回\n Score:{fc_pref[2][3]}回\n -> 増分 {fc_pref[1]:.2f} OP, コスト {fc_pref[0]:.2f}```")
+                        try:
+                            msgs.extend(build_action_candidates(fc_pref[2]))
+                        except Exception:
+                            pass
+                        presented += 1
+
+                    # If fewer than 3 presented, add next best unique plans
+                    idx = 1
+                    while presented < 3 and idx < len(unique_plans):
+                        c,g,t = unique_plans[idx]
+                        msgs.append(f"## - [4] 代替案{presented+1}:\n ```\n AJ:{t[0]}回\n AJC:{t[1]}回\n FC:{t[2]}回\n Score:{t[3]}回\n -> 増分 {g:.2f} OP, コスト {c:.2f}```")
+                        try:
+                            msgs.extend(build_action_candidates(t))
+                        except Exception:
+                            pass
+                        presented += 1
+                        idx += 1
+                else:
+                    msgs.append("----- 混合案の最適化で候補が見つかりませんでした（検索範囲を広げる必要があります） -----")
+            else:
+                # no needed_pos (percent not specified) -> skip optimization
+                pass
         except Exception:
-            await ctx.send(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}")    
+            pass
+        return msgs
+
+    # simple sum-only mode: compute and report total OP
+    if op_mode == 'sum':
+        selected_entries, total_op, selected_lines, processed_mas_selected, processed_ult_selected, mas_song_names, entries, mas_count, ult_count, total_charts = calculate_total_op(json_data, exclude_set, exclude_mode)
+        try:
+            await ctx.send(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート\n計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\n処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
+        except Exception:
+            await ctx.send(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\nチャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")
+        return
+
+    # suggest mode integrated into op: same behavior as !op_suggest
+    if op_mode == 'suggest':
+        # build the partial query from remaining tokens
+        # prefer cleaned/rest if available, fall back to names
+        qtok = None
+        try:
+            if 'rest' in locals() and rest:
+                qtok = " ".join(rest).strip()
+            elif 'names' in locals() and names:
+                qtok = " ".join(names).strip()
+        except Exception:
+            qtok = None
+
+        if not qtok:
+            await ctx.send("使い方: `!op suggest <部分文字列>` — 少なくとも1文字以上入力してください。")
+            return
+
+        q = qtok.strip().lower()
+
+        # load data
+        try:
+            with open("data_c.json", 'r') as f:
+                j = json.load(f)
+        except Exception:
+            await ctx.send("データ読み込みに失敗しました。`)")
+            return
+
+        # collect song title candidates
+        titles = []
+        for v in j.values():
+            try:
+                name = v.get('name', '')
+                if name and q in name.lower():
+                    titles.append(name)
+            except Exception:
+                continue
+
+        # collect preset keys that match
+        presets = [k for k in PRESET_GROUPS.keys() if q in k.lower()]
+
+        # dedupe while preserving order
+        seen = set()
+        results = []
+        for t in presets + titles:
+            if t not in seen:
+                seen.add(t)
+                results.append(t)
+            if len(results) >= 25:
+                break
+
+        if not results:
+            await ctx.send("候補が見つかりませんでした。別の文字列でお試しください。")
+        else:
+            await ctx.send("候補 (最大25件):\n" + "\n".join(results))
+        return
+
+    # Update the 'true' mode to use the new function
+    if op_mode == 'true' or op_mode == 'false':
+        selected_entries, total_op, selected_lines, processed_mas_selected, processed_ult_selected, mas_song_names, entries, mas_count, ult_count, total_charts = calculate_total_op(json_data, exclude_set, exclude_mode)
+        try:
+            await ctx.send(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート\n計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\n処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
+        except Exception:
+            await ctx.send(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\nチャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")    
 
         # パーセント指定がある場合、必要なOP差分を計算して表示する
         try:
@@ -399,348 +810,75 @@ async def op(ctx, a: str = None, *names: str):
                     current_value = total_op * ps
                     target_value = total_op * pt
                     needed = target_value - current_value
-                    await ctx.send(f"百分率指定: {percent_start} -> {percent_target} ({ps*100:.2f}% -> {pt*100:.2f}%)。現在のOP値: {current_value:.2f}、目標値: {target_value:.2f}、必要なOP差: {needed:.2f}")
+                    await ctx.send(f"百分率指定: {percent_start} -> {percent_target} ({ps*100:.5f}% -> {pt*100:.2f}%)。現在のOP値: {current_value:.2f}、目標値: {target_value:.2f}、必要なOP差: {needed:.2f}")
         except Exception:
             pass
 
         # 追加提案: 必要OP差からユーザーが増やすべきFC/AJ/AJC数やスコア差を提案する
         try:
-            if percent_start is not None and percent_target is not None and abs(needed) > 0.0001:
-                # Choose a representative const: prefer the highest const among selected_entries, else average
-                consts = [v[3] for v in selected_entries.values() if isinstance(v[3], (int, float))]
-                if consts:
-                    rep_const = max(consts)
-                else:
-                    # fallback: use average of all entry consts
-                    all_consts = [e[1] for e in entries] if entries else [0]
-                    rep_const = sum(all_consts) / max(1, len(all_consts))
-
-                # Formula components per your rules (when score >= 1007501):
-                # base = (const + 2) * 5
-                base = (rep_const + 2) * 5
-
-                # Each FC adds +0.50, each AJ adds +0.50, each AJC adds +0.25 (AJC stacked on top of AJ/FC)
-                #補正B relates to score: (score - 1007500) * 0.0015
-
-                # We'll estimate how many FC/AJ/AJC or how many score points are needed to cover 'needed'.
-                remaining = needed
-                suggestions = []
-
-                # Optimization search combining 補正A (FC/AJ/AJC) and 補正B (score steps)
-                if remaining > 0:
-                    # Interpret contributions per unit:
-                    # AJ: effectively +1.0 OP (AJ implies FC so stack = 0.5+0.5)
-                    # FC: +0.5 OP
-                    # AJC: +0.25 OP
-                    # score step: we'll use 500-point steps => +0.75 OP per step
-                    D = remaining
-                    candidates = []
-
-                    # derive representative const for cost calculation from assign_min_const/assign_max_const
-                    # If only one bound is provided, use it. If both provided, use their average. Otherwise fall back to highest const among selected entries.
-                    rep_const_for_cost = None
-                    if assign_min_const is not None and assign_max_const is not None:
-                        rep_const_for_cost = (assign_min_const + assign_max_const) / 2.0
-                    elif assign_min_const is not None:
-                        rep_const_for_cost = assign_min_const
-                    elif assign_max_const is not None:
-                        rep_const_for_cost = assign_max_const
-                    else:
-                        consts = [v[3] for v in selected_entries.values() if isinstance(v[3], (int, float))]
-                        if consts:
-                            rep_const_for_cost = max(consts)
-                        else:
-                            rep_const_for_cost = 0.0
-
-                    # determine eligible AJ slots based on aj_max_const if provided
-                    eligible_aj_slots = None
-                    if aj_max_const is not None:
-                        eligible_aj_slots = sum(1 for v in selected_entries.values() if isinstance(v[3], (int, float)) and v[3] <= aj_max_const)
-
-                    # determine eligible slots based on rep_const_for_cost
-                    eligible_rep_slots = None
-                    if rep_const_for_cost is not None:
-                        eligible_rep_slots = sum(1 for v in selected_entries.values() if isinstance(v[3], (int, float)) and v[3] <= rep_const_for_cost)
-
-                    # define cost weights: base costs for actions (lower == cheaper)
-                    # We change priorities based on rep_const:
-                    # - If rep_const <= 14: prefer AJ and AJC (AJ/AJC cheaper)
-                    # - If rep_const > 14: prefer score increase and FC (score/FC cheaper)
-                    # Note: boundary choice is rep_const <= 14 => AJ-priority; adjust if you prefer 14 to be in the other group.
-                    aj_scale = 1.0 + max(0.0, (rep_const_for_cost - 11.0)) / (15.4 - 11.0)
-                    if rep_const_for_cost <= 14.5:
-                        cost_aj = 0.4 * aj_scale
-                        cost_ajc = 0.2
-                        cost_fc = 0.5
-                        cost_step = 0.8
-                    else:
-                        cost_aj = 2.0 * aj_scale
-                        cost_ajc = 3.0
-                        cost_fc = 0.5
-                        cost_step = 0.4
-
-                    # search bounds: cap AJ count by eligible slots if provided
-                    max_aj_unbounded = min(50, math.ceil(D / 1.0) + 5)
-                    # cap AJ by aj_max_const and also by rep_const_override if provided
-                    if eligible_aj_slots is not None:
-                        max_aj = min(max_aj_unbounded, eligible_aj_slots)
-                    else:
-                        max_aj = max_aj_unbounded
-                    if eligible_rep_slots is not None:
-                        max_aj = min(max_aj, eligible_rep_slots)
-
-                    max_steps = min(200, math.ceil(D / 0.75) + 10)
-
-                    for aj_cnt in range(0, max_aj + 1):
-                        for steps in range(0, max_steps + 1):
-                            op_from_aj_and_steps = aj_cnt * 1.0 + steps * 0.75
-                            rem = D - op_from_aj_and_steps
-                            # compute candidate FC cap: cannot exceed eligible_rep_slots if rep limit is set
-                            computed_fc_cap = min(50, math.ceil(max(0, rem) / 0.5) + 3)
-                            if eligible_rep_slots is not None:
-                                max_fc = min(computed_fc_cap, eligible_rep_slots)
-                            else:
-                                max_fc = computed_fc_cap
-                            for fc_cnt in range(0, max_fc + 1):
-                                op_from_fcs = fc_cnt * 0.5
-                                rem2 = rem - op_from_fcs
-                                if rem2 <= 0:
-                                    ajc_cnt = 0
-                                else:
-                                    ajc_cnt = math.ceil(rem2 / 0.25)
-
-                                total_op_provided = aj_cnt * 1.0 + steps * 0.75 + fc_cnt * 0.5 + ajc_cnt * 0.25
-                                if total_op_provided < D:
-                                    continue
-                                # enforce per-action slot limits if rep-const restriction exists
-                                if eligible_rep_slots is not None:
-                                    if aj_cnt > eligible_rep_slots or fc_cnt > eligible_rep_slots or ajc_cnt > eligible_rep_slots:
-                                        continue
-
-                                total_cost = aj_cnt * cost_aj + fc_cnt * cost_fc + ajc_cnt * cost_ajc + steps * cost_step
-                                overshoot = total_op_provided - D
-                                candidate = (total_cost, overshoot, aj_cnt, fc_cnt, ajc_cnt, steps)
-                                candidates.append(candidate)
-
-                    # pick top N candidates by (cost, overshoot)
-                    if candidates:
-                        candidates.sort(key=lambda c: (c[0], c[1]))
-                        top_n = candidates[:3]
-                        plan_msgs = []
-                        rep_limit_val = rep_const_override if rep_const_override is not None else rep_const
-                        # build pool filtered by rep limit and optional assign min/max
-                        pool_titles_all = []
-                        for name, v in selected_entries.items():
+            suggestion_msgs = generate_suggestions(selected_entries, entries, total_op, percent_start, percent_target, aj_max_const, assign_min_const, assign_max_const)
+            if suggestion_msgs:
+                # send as a single message to keep the channel cleaner
+                combined = "\n".join(suggestion_msgs)
+                await ctx.send(combined)
+            else:
+                # diagnostic: explain why no suggestions were produced
+                # build filtered pool here for visibility
+                pool = []
+                try:
+                    for name, v in selected_entries.items():
+                        try:
                             c = v[3]
-                            if not isinstance(c, (int, float)):
-                                continue
-                            # enforce rep limit
-                            if c > rep_limit_val:
-                                continue
-                            # enforce assign min/max if provided
-                            if assign_min_const is not None and c < assign_min_const:
-                                continue
-                            if assign_max_const is not None and c > assign_max_const:
-                                continue
-                            pool_titles_all.append(name)
+                        except Exception:
+                            continue
+                        if not isinstance(c, (int, float)):
+                            continue
+                        if assign_min_const is not None and c < assign_min_const:
+                            continue
+                        if assign_max_const is not None and c > assign_max_const:
+                            continue
+                        pool.append((name, c))
+                except Exception:
+                    pool = []
 
-                        for idx, cand in enumerate(top_n, start=1):
-                            cost, overshoot, caj, cfc, cajc, csteps = cand
-                            msgs = []
-                            if caj:
-                                msgs.append(f"AJ を +{caj} 回")
-                            if cfc:
-                                msgs.append(f"FC を +{cfc} 回")
-                            if cajc:
-                                msgs.append(f"AJC を +{cajc} 回")
-                            if csteps:
-                                msgs.append(f"スコアを {csteps * 500} 点増加する目安 ({csteps} ステップ)")
+                diag_lines = [
+                    "提案が見つかりませんでした。デバッグ情報:",
+                    f"pct: {percent_start} -> {percent_target}",
+                    f"aj_max_const: {aj_max_const}",
+                    f"assign_min_const: {assign_min_const}",
+                    f"assign_max_const: {assign_max_const}",
+                    f"選定済み曲数(selected_entries): {len(selected_entries)}",
+                    f"フィルタ後候補数(pool): {len(pool)}",
+                ]
+                if pool:
+                    diag_lines.append("候補上位5:")
+                    diag_lines.extend([f"{n} ({c:.1f})" for n, c in pool[:5]])
 
-                                # build assignment from pool
-                            assign_msg = ''
-                            try:
-                                # pool_titles_all contains names already filtered by rep limit and assign bounds
-                                if not pool_titles_all:
-                                    assign_msg = "\n注: 指定された代表定数以下の候補曲が見つかりません。曲名割当はできません。"
-                                else:
-                                    # If assign_min/assign_max were provided, the user requested random selection within that range.
-                                    # We'll detect this by checking if either assign_min_const or assign_max_const is not None.
-                                    use_random_within_bounds = (assign_min_const is not None) or (assign_max_const is not None)
-
-                                    pool_with_consts = [(name, selected_entries[name][3]) for name in pool_titles_all]
-
-                                    if use_random_within_bounds:
-                                        # fully randomize order within the allowed pool
-                                        random.shuffle(pool_with_consts)
-                                    else:
-                                        # preserve previous deterministic high-const ordering when no bounds provided
-                                        pool_with_consts.sort(key=lambda x: x[1], reverse=True)
-
-                                    pool_titles = [p[0] for p in pool_with_consts]
-
-                                    # select AJ targets
-                                    aj_selected = []
-                                    if caj:
-                                        take = min(caj, len(pool_titles))
-                                        aj_selected = pool_titles[:take]
-
-                                    # FC selections: include AJ selections first, then additional picks
-                                    fc_selected = list(aj_selected)
-                                    if cfc:
-                                        remaining_pool = [t for t in pool_titles if t not in fc_selected]
-                                        need = cfc - len(fc_selected)
-                                        if need > 0:
-                                            take2 = min(need, len(remaining_pool))
-                                            if take2 > 0:
-                                                fc_selected.extend(remaining_pool[:take2])
-                                        # if still short, allow duplicates by repeating top candidates
-                                        while len(fc_selected) < cfc and pool_titles:
-                                            fc_selected.append(pool_titles[0])
-
-                                    # AJC selections: pick from remaining pool (not overlapping AJ)
-                                    ajc_selected = []
-                                    if cajc:
-                                        # build remaining pool excluding AJ-selected songs
-                                        remaining_pool = [t for t in pool_titles if t not in aj_selected]
-                                        # If assign_min_const is provided, prefer songs with smaller const first
-                                        # (so songs at the min-const are assigned first). Otherwise keep current ordering.
-                                        if assign_min_const is not None:
-                                            try:
-                                                remaining_pool.sort(key=lambda t: selected_entries[t][3])
-                                            except Exception:
-                                                # fallback: keep as-is
-                                                pass
-                                        take3 = min(cajc, len(remaining_pool))
-                                        if take3 > 0:
-                                            ajc_selected = remaining_pool[:take3]
-                                        while len(ajc_selected) < cajc and pool_titles:
-                                            ajc_selected.append(pool_titles[0])
-
-                                    # Score targets: pick top N according to current pool ordering
-                                    score_targets = []
-                                    if csteps:
-                                        take4 = min(csteps, len(pool_titles))
-                                        if take4 > 0:
-                                            score_targets = pool_titles[:take4]
-
-                                    def fmt_with_const(name):
-                                        try:
-                                            c = selected_entries[name][3]
-                                            return f"{name} ({c:.1f})"
-                                        except Exception:
-                                            return name
-
-                                    lines = []
-                                    if aj_selected:
-                                        lines.append("AJ 対象例:")
-                                        lines.extend([fmt_with_const(n) for n in aj_selected])
-                                    if fc_selected:
-                                        lines.append("FC 対象例:")
-                                        lines.extend([fmt_with_const(n) for n in fc_selected])
-                                    if ajc_selected:
-                                        lines.append("AJC 対象例:")
-                                        lines.extend([fmt_with_const(n) for n in ajc_selected])
-                                    if score_targets:
-                                        lines.append("スコア注力候補:")
-                                        lines.extend([fmt_with_const(n) for n in score_targets])
-
-                                    assign_msg = "\n割当候補:\n" + "\n".join(lines)
-                            except Exception:
-                                assign_msg = "\n曲名割当の生成中にエラーが発生しました。"
-
-                            header = f"```最小化プラン候補 #{idx}``` (コスト {cost:.2f}, オーバー {overshoot:.3f} OP):\n"
-                            body = " / ".join(msgs) + f"\n想定オーバー分: {overshoot:.3f} OP"
-                            # include the representative const used for cost calculations
-                            try:
-                                body += f"\n代表定数(計算基準): {rep_const_for_cost:.2f}"
-                            except Exception:
-                                # if for some reason the value is unavailable, skip
-                                pass
-                            if eligible_aj_slots is not None:
-                                body += f"\n注: AJ候補は定数 <= {aj_max_const:.2f} の譜面 {eligible_aj_slots} 曲に制限されています。"
-                            plan_msgs.append(header + body + assign_msg)
-
-                        # send combined message (up to 3 plans)
-                        await ctx.send("\n\n".join(plan_msgs))
-                    else:
-                        await ctx.send("最小変更プランを算出できませんでした。")
-                else:
-                    await ctx.send("必要OP差が負またはゼロです。増加提案は不要です。")
+                await ctx.send("\n".join(diag_lines))
         except Exception:
             pass
         
         # 追加診断5: 計算対象曲のタイトルとチャート集計のMAS曲タイトルの差分を取り、重複しないものを表示
-        try:
-            # selected_lines から Title: を抜き出してセット化
-            sel_titles = set()
-            for line in selected_lines:
-                m = re.match(r"Title:\s*(.*?)\t", line)
-                if m:
-                    sel_titles.add(m.group(1))
+        # try:
+        #     # selected_lines から Title: を抜き出してセット化
+        #     sel_titles = set()
+        #     for line in selected_lines:
+        #         m = re.match(r"Title:\s*(.*?)\t", line)
+        #         if m:
+        #             sel_titles.add(m.group(1))
 
-            # mas_song_names は上で計算済み。対称差分を取り、重複しないリストにする
-            diff_titles = sorted(list((sel_titles - mas_song_names) | (mas_song_names - sel_titles)))
+        #     # mas_song_names は上で計算済み。対称差分を取り、重複しないリストにする
+        #     diff_titles = sorted(list((sel_titles - mas_song_names) | (mas_song_names - sel_titles)))
 
-            if diff_titles:
-                await ctx.send("選定対象とMASチャート集計の差分（どちらか一方にのみ存在するタイトル・重複なし、最大100件）: " + ", ".join(diff_titles[:100]))
-            else:
-                await ctx.send("選定対象とMASチャート集計の差分はありません。")
-        except Exception:
-            pass
+        #     if diff_titles:
+        #         await ctx.send("選定対象とMASチャート集計の差分（どちらか一方にのみ存在するタイトル・重複なし、最大100件）: " + ", ".join(diff_titles[:100]))
+        #     else:
+        #         await ctx.send("選定対象とMASチャート集計の差分はありません。")
+        # except Exception:
+        #     pass
     else:
-        await ctx.send("不明な op2 オプションです。'sum' を指定するか省略してください。")
+        await ctx.send("不明な op2 オプションです。'!op help'で利用可能コマンドを確認してください")
         return
-
-
-@bot.command()
-async def op_suggest(ctx, *, partial: str = None):
-    """部分文字列から譜面タイトルやプリセットを候補表示する簡易補完コマンド。
-    使い方: `!op_suggest <部分文字列>`
-    - data_c.json の曲名、及び PRESET_GROUPS のキーを検索して最大 25 件を返します。
-    - 部分一致 (大文字小文字区別なし) でヒットします。
-    """
-    if not partial or not partial.strip():
-        await ctx.send("使い方: `!op_suggest <部分文字列>` — 少なくとも1文字以上入力してください。")
-        return
-
-    q = partial.strip().lower()
-
-    # load data
-    try:
-        with open("data_c.json", 'r') as f:
-            j = json.load(f)
-    except Exception:
-        await ctx.send("データ読み込みに失敗しました。`)" )
-        return
-
-    # collect song title candidates
-    titles = []
-    for v in j.values():
-        try:
-            name = v.get('name', '')
-            if name and q in name.lower():
-                titles.append(name)
-        except Exception:
-            continue
-
-    # collect preset keys that match
-    presets = [k for k in PRESET_GROUPS.keys() if q in k.lower()]
-
-    # dedupe while preserving order
-    seen = set()
-    results = []
-    for t in presets + titles:
-        if t not in seen:
-            seen.add(t)
-            results.append(t)
-        if len(results) >= 25:
-            break
-
-    if not results:
-        await ctx.send("候補が見つかりませんでした。別の文字列でお試しください。")
-    else:
-        # format output in chunks to avoid extremely long messages
-        await ctx.send("候補 (最大25件):\n" + "\n".join(results))
     
 @bot.command()
 async def update(ctx, now: str):
@@ -1162,11 +1300,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                     u.append(v)
-                elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                elif(op2=="va" and v['data'][1]=="VARIETY"):
                     u.append(v)
-                elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                elif(op2=="to" and v['data'][1]=="東方Project"):
                     u.append(v)
-                elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                elif(op2=="ni" and v['data'][1]=="niconico"):
                     u.append(v)
                 elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                     u.append(v)
@@ -1178,11 +1316,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                     u.append(v)
-                elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                elif(op2=="va" and v['data'][1]=="VARIETY"):
                     u.append(v)
-                elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                elif(op2=="to" and v['data'][1]=="東方Project"):
                     u.append(v)
-                elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                elif(op2=="ni" and v['data'][1]=="niconico"):
                     u.append(v)
                 elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                     u.append(v)
@@ -1195,11 +1333,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1212,11 +1350,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1229,11 +1367,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1246,11 +1384,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1263,11 +1401,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1280,11 +1418,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1297,11 +1435,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1314,11 +1452,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1331,11 +1469,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1347,11 +1485,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                     u.append(v)
-                elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                elif(op2=="va" and v['data'][1]=="VARIETY"):
                     u.append(v)
-                elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                elif(op2=="to" and v['data'][1]=="東方Project"):
                     u.append(v)
-                elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                elif(op2=="ni" and v['data'][1]=="niconico"):
                     u.append(v)
                 elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                     u.append(v)
@@ -1364,11 +1502,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1381,11 +1519,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1398,11 +1536,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1415,11 +1553,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1432,11 +1570,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1466,11 +1604,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1483,11 +1621,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
@@ -1500,11 +1638,11 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
                         u.append(v)
-                    elif(op2=="va" and v['data'][1]=="VARIETYIETY"):
+                    elif(op2=="va" and v['data'][1]=="VARIETY"):
                         u.append(v)
-                    elif(op2=="to" and v['data'][1]=="東方ProjectProject"):
+                    elif(op2=="to" and v['data'][1]=="東方Project"):
                         u.append(v)
-                    elif(op2=="ni" and v['data'][1]=="niconiconiconico"):
+                    elif(op2=="ni" and v['data'][1]=="niconico"):
                         u.append(v)
                     elif(op2=="pa" and v['data'][1]=="POPS & ANIME"):
                         u.append(v)
