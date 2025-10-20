@@ -718,7 +718,7 @@ async def op(ctx, a: str = None, *names: str):
     if op_mode == 'sum':
         selected_entries, total_op, selected_lines, processed_mas_selected, processed_ult_selected, mas_song_names, entries, mas_count, ult_count, total_charts = calculate_total_op(json_data, exclude_set, exclude_mode)
         try:
-            await ctx.send(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\nチャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート\n 処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
+            await ctx.send(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート\n計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\n 処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
         except Exception:
             await ctx.send(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\nチャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")
         return
