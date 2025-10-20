@@ -670,7 +670,7 @@ async def op(ctx, a: str = None, *names: str):
                             if aj_pref is None or t[0] > aj_pref[2][0] or (t[0] == aj_pref[2][0] and c < aj_pref[0]):
                                 aj_pref = (c,g,t)
                     if aj_pref and aj_pref[2] != uc[2]:
-                        msgs.append(f"\n ## - [2] AJ優先案:\n ```\n AJ:{aj_pref[2][0]}回\n AJC:{aj_pref[2][1]}回\n FC:{aj_pref[2][2]}回\n Score:{aj_pref[2][3]}回\n -> 増分 {aj_pref[1]:.2f} OP, コスト {aj_pref[0]:.2f}```")
+                        msgs.append(f"## - [2] AJ優先案:\n ```\n AJ:{aj_pref[2][0]}回\n AJC:{aj_pref[2][1]}回\n FC:{aj_pref[2][2]}回\n Score:{aj_pref[2][3]}回\n -> 増分 {aj_pref[1]:.2f} OP, コスト {aj_pref[0]:.2f}```")
                         try:
                             msgs.extend(build_action_candidates(aj_pref[2]))
                         except Exception:
@@ -687,7 +687,7 @@ async def op(ctx, a: str = None, *names: str):
                                 best_metric = metric
                                 fc_pref = (c,g,t)
                     if fc_pref and fc_pref[2] != uc[2] and (aj_pref is None or fc_pref[2] != aj_pref[2]):
-                        msgs.append(f"\n ## - [3] FC/Score優先案:\n ```\n AJ:{fc_pref[2][0]}回\n AJC:{fc_pref[2][1]}回\n FC:{fc_pref[2][2]}回\n Score:{fc_pref[2][3]}回\n -> 増分 {fc_pref[1]:.2f} OP, コスト {fc_pref[0]:.2f}```")
+                        msgs.append(f"## - [3] FC/Score優先案:\n ```\n AJ:{fc_pref[2][0]}回\n AJC:{fc_pref[2][1]}回\n FC:{fc_pref[2][2]}回\n Score:{fc_pref[2][3]}回\n -> 増分 {fc_pref[1]:.2f} OP, コスト {fc_pref[0]:.2f}```")
                         try:
                             msgs.extend(build_action_candidates(fc_pref[2]))
                         except Exception:
@@ -698,7 +698,7 @@ async def op(ctx, a: str = None, *names: str):
                     idx = 1
                     while presented < 3 and idx < len(unique_plans):
                         c,g,t = unique_plans[idx]
-                        msgs.append(f"\n ## - [4] 代替案{presented+1}:\n ```\n AJ:{t[0]}回\n AJC:{t[1]}回\n FC:{t[2]}回\n Score:{t[3]}回\n -> 増分 {g:.2f} OP, コスト {c:.2f}```")
+                        msgs.append(f"## - [4] 代替案{presented+1}:\n ```\n AJ:{t[0]}回\n AJC:{t[1]}回\n FC:{t[2]}回\n Score:{t[3]}回\n -> 増分 {g:.2f} OP, コスト {c:.2f}```")
                         try:
                             msgs.extend(build_action_candidates(t))
                         except Exception:
@@ -718,7 +718,7 @@ async def op(ctx, a: str = None, *names: str):
     if op_mode == 'sum':
         selected_entries, total_op, selected_lines, processed_mas_selected, processed_ult_selected, mas_song_names, entries, mas_count, ult_count, total_charts = calculate_total_op(json_data, exclude_set, exclude_mode)
         try:
-            await ctx.send(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート\n計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\n処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
+            await ctx.send(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\nチャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート\n 処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
         except Exception:
             await ctx.send(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\nチャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")
         return
@@ -784,14 +784,96 @@ async def op(ctx, a: str = None, *names: str):
         selected_entries, total_op, selected_lines, processed_mas_selected, processed_ult_selected, mas_song_names, entries, mas_count, ult_count, total_charts = calculate_total_op(json_data, exclude_set, exclude_mode)
         msgs = []
         try:
-            msgs.append(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")
-            msgs.append(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}")
+            msgs.append(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")       
+
+            # If exclude_mode with an exclude_set (e.g., !op true ultima), compute a strict
+            # exclusion total that completely removes those titles (no ULT->MAS substitution).
+            if percent_start is None and percent_target is None:
+                try:
+                    def sum_op_excluding_entries(entries_list, excluded_titles):
+                        """
+                        Compute total OP using the same selection and exclusion rules as select_entries.
+                        Behavior:
+                          - Iterate charts sorted by const desc and select one chart per title.
+                          - If a title is not excluded: pick the first-seen chart (highest const by sort),
+                            but if later an ULT is seen and a MAS was selected, prefer the ULT (replace).
+                          - If a title is excluded: skip MAS charts; if encountering an ULT for that title,
+                            try to substitute the first MAS entry from the original name_map (if any).
+                        This mirrors the logic in select_entries so the "一部除外" total matches other outputs.
+                        """
+                        # reconstruct name_map and entries (preserve original append order for name_map)
+                        name_map = {}
+                        entries = []
+                        for name, const, diffv, chart_type, genre in entries_list:
+                            name_map.setdefault(name, []).append((chart_type, const, diffv))
+                            entries.append((name, const, diffv, chart_type, genre))
+
+                        # sort by const desc to mirror select_entries
+                        entries.sort(key=lambda x: x[1], reverse=True)
+
+                        selected = {}
+                        total = 0.0
+
+                        for name, const, diffv, chart_type, genre in entries:
+                            # already selected this title
+                            if name in selected:
+                                # allow replacement: if previously selected was MAS and now we see ULT, replace
+                                existing_type, existing_op, existing_const = selected[name]
+                                if existing_type == 'MAS' and chart_type == 'ULT':
+                                    total -= existing_op
+                                    max_op = (const + 3) * 5
+                                    selected[name] = ('ULT', max_op, const)
+                                    total += max_op
+                                continue
+
+                            if name in excluded_titles:
+                                # exclusion behavior: skip MAS charts entirely; if ULT encountered, try to use
+                                # an existing MAS entry (from name_map) instead
+                                if chart_type == 'ULT':
+                                    mas_entries = [t for t in name_map.get(name, []) if t[0] == 'MAS']
+                                    if mas_entries:
+                                        # use the first MAS entry (preserve original ordering behavior)
+                                        mas_const = mas_entries[0][1]
+                                        max_op = (mas_const + 3) * 5
+                                        selected[name] = ('MAS', max_op, mas_const)
+                                        total += max_op
+                                    else:
+                                        # no MAS to fall back to: skip this title entirely
+                                        continue
+                                else:
+                                    # MAS chart and excluded -> skip
+                                    continue
+                            else:
+                                # not excluded: select this chart
+                                max_op = (const + 3) * 5
+                                selected[name] = (chart_type, max_op, const)
+                                total += max_op
+
+                        return total
+
+                    excluded_total = sum_op_excluding_entries(entries, exclude_set)
+                    msgs.append(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(一部除外): {excluded_total:.2f}")
+                except Exception:
+                    # if anything fails, ignore the excluded total
+                    pass
+            else:
+                msgs.append(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}")
             msgs.append(f"処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
         except Exception:
             pass
 
-        # パーセント指定がある場合、必要なOP差分を計算して表示する
+        # Send the base summary immediately so '!op true ...' prints processed counts even
+        # when pct flags are not present. If pct flags are present, the pct branch will
+        # append additional info and re-send a combined message.
         try:
+            # send base summary now
+            try:
+                if msgs:
+                    await ctx.send("\n".join(msgs))
+            except Exception:
+                pass
+
+            # パーセント指定がある場合、必要なOP差分を計算して表示する
             if percent_start is not None and percent_target is not None:
                 # accept percent as either 0-1 or 0-100; normalize to fraction
                 def to_frac(x: float) -> float:
