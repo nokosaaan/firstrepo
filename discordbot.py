@@ -783,8 +783,10 @@ async def op(ctx, a: str = None, *names: str):
     if op_mode == 'true' or op_mode == 'false':
         selected_entries, total_op, selected_lines, processed_mas_selected, processed_ult_selected, mas_song_names, entries, mas_count, ult_count, total_charts = calculate_total_op(json_data, exclude_set, exclude_mode)
         msgs = []
+        msgs2 = []
         try:
-            msgs.append(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")       
+            msgs.append(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")
+            msgs2.append(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")
 
             # If exclude_mode with an exclude_set (e.g., !op true ultima), compute a strict
             # exclusion total that completely removes those titles (no ULT->MAS substitution).
@@ -852,13 +854,14 @@ async def op(ctx, a: str = None, *names: str):
                         return total
 
                     excluded_total = sum_op_excluding_entries(entries, exclude_set)
-                    msgs.append(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(一部除外): {excluded_total:.2f}")
+                    msgs2.append(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(一部除外): {excluded_total:.2f}")
                 except Exception:
                     # if anything fails, ignore the excluded total
                     pass
             else:
                 msgs.append(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}")
             msgs.append(f"処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
+            msgs2.append(f"処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
         except Exception:
             pass
 
@@ -868,8 +871,8 @@ async def op(ctx, a: str = None, *names: str):
         try:
             # send base summary now
             try:
-                if msgs:
-                    await ctx.send("\n".join(msgs))
+                if msgs2 and percent_start is None and percent_target is None:
+                    await ctx.send("\n".join(msgs2))
             except Exception:
                 pass
 
