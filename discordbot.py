@@ -782,10 +782,13 @@ async def op(ctx, a: str = None, *names: str):
     # Update the 'true' mode to use the new function
     if op_mode == 'true' or op_mode == 'false':
         selected_entries, total_op, selected_lines, processed_mas_selected, processed_ult_selected, mas_song_names, entries, mas_count, ult_count, total_charts = calculate_total_op(json_data, exclude_set, exclude_mode)
+        msgs = []
         try:
-            await ctx.send(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート\n計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\n処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
+            msgs.append(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")
+            msgs.append(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}")
+            msgs.append(f"処理されたMAS曲数(選定): {processed_mas_selected} 曲, 処理されたULT曲数(選定): {processed_ult_selected} 曲")
         except Exception:
-            await ctx.send(f"計算対象曲数: {len(selected_lines)} 合計オーバーパワー(Max): {total_op:.2f}\nチャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")    
+            pass
 
         # パーセント指定がある場合、必要なOP差分を計算して表示する
         try:
@@ -810,7 +813,8 @@ async def op(ctx, a: str = None, *names: str):
                     current_value = total_op * ps
                     target_value = total_op * pt
                     needed = target_value - current_value
-                    await ctx.send(f"百分率指定: {percent_start} -> {percent_target} ({ps*100:.5f}% -> {pt*100:.2f}%)。現在のOP値: {current_value:.2f}、目標値: {target_value:.2f}、必要なOP差: {needed:.2f}")
+                    msgs.append(f"百分率指定: {percent_start} -> {percent_target} ({ps*100:.5f}% -> {pt*100:.2f}%)。現在のOP値: {current_value:.2f}、目標値: {target_value:.2f}、必要なOP差: {needed:.2f}")
+                    await ctx.send("\n".join(msgs))
         except Exception:
             pass
 
