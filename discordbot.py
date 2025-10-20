@@ -869,8 +869,14 @@ async def op(ctx, a: str = None, *names: str):
         try:
             # send base summary now
             try:
+                # If we computed a strict-exclusion summary (msgs2) and there are no pct flags,
+                # prefer sending msgs2. Otherwise send msgs. Only send one of them to avoid
+                # duplicate base summaries.
                 if msgs2 and percent_start is None and percent_target is None:
                     await ctx.send("\n".join(msgs2))
+                elif msgs:
+                    # await ctx.send("\n".join(msgs))
+                    pass
             except Exception:
                 pass
 
