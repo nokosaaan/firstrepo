@@ -626,7 +626,7 @@ async def op(ctx, a: str = None, *names: str):
                                     def fmt_with_const(name):
                                         try:
                                             c = selected_entries[name][3]
-                                            return f"{name} ({c:.2f})"
+                                            return f"{name} ({c:.1f})"
                                         except Exception:
                                             return name
 
@@ -652,7 +652,7 @@ async def op(ctx, a: str = None, *names: str):
                             body = " / ".join(msgs) + f"\n想定オーバー分: {overshoot:.3f} OP"
                             # include the representative const used for cost calculations
                             try:
-                                body += f"\n代表定数(計算基準): {rep_const_for_cost:.1f}"
+                                body += f"\n代表定数(計算基準): {rep_const_for_cost:.2f}"
                             except Exception:
                                 # if for some reason the value is unavailable, skip
                                 pass
