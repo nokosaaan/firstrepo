@@ -502,7 +502,7 @@ async def op(ctx, a: str = None, *names: str):
             # Weights represent difficulty/cost from player's perspective (higher = more costly):
             if rep_const <= 14.5:
                 w_aj = 0.8
-                w_ajc = 0.3
+                w_ajc = 0.2
                 w_fc = 1.0
                 w_score = 2.0
             else:
@@ -670,7 +670,7 @@ async def op(ctx, a: str = None, *names: str):
                             if aj_pref is None or t[0] > aj_pref[2][0] or (t[0] == aj_pref[2][0] and c < aj_pref[0]):
                                 aj_pref = (c,g,t)
                     if aj_pref and aj_pref[2] != uc[2]:
-                        msgs.append(f"## - [2] AJ優先案:\n ```\n AJ:{aj_pref[2][0]}回\n AJC:{aj_pref[2][1]}回\n FC:{aj_pref[2][2]}回\n Score:{aj_pref[2][3]}回\n -> 増分 {aj_pref[1]:.2f} OP, コスト {aj_pref[0]:.2f}```")
+                        msgs.append(f"\n ## - [2] AJ優先案:\n ```\n AJ:{aj_pref[2][0]}回\n AJC:{aj_pref[2][1]}回\n FC:{aj_pref[2][2]}回\n Score:{aj_pref[2][3]}回\n -> 増分 {aj_pref[1]:.2f} OP, コスト {aj_pref[0]:.2f}```")
                         try:
                             msgs.extend(build_action_candidates(aj_pref[2]))
                         except Exception:
@@ -687,7 +687,7 @@ async def op(ctx, a: str = None, *names: str):
                                 best_metric = metric
                                 fc_pref = (c,g,t)
                     if fc_pref and fc_pref[2] != uc[2] and (aj_pref is None or fc_pref[2] != aj_pref[2]):
-                        msgs.append(f"## - [3] FC/Score優先案:\n ```\n AJ:{fc_pref[2][0]}回\n AJC:{fc_pref[2][1]}回\n FC:{fc_pref[2][2]}回\n Score:{fc_pref[2][3]}回\n -> 増分 {fc_pref[1]:.2f} OP, コスト {fc_pref[0]:.2f}```")
+                        msgs.append(f"\n ## - [3] FC/Score優先案:\n ```\n AJ:{fc_pref[2][0]}回\n AJC:{fc_pref[2][1]}回\n FC:{fc_pref[2][2]}回\n Score:{fc_pref[2][3]}回\n -> 増分 {fc_pref[1]:.2f} OP, コスト {fc_pref[0]:.2f}```")
                         try:
                             msgs.extend(build_action_candidates(fc_pref[2]))
                         except Exception:
@@ -698,7 +698,7 @@ async def op(ctx, a: str = None, *names: str):
                     idx = 1
                     while presented < 3 and idx < len(unique_plans):
                         c,g,t = unique_plans[idx]
-                        msgs.append(f"## - [4] 代替案{presented+1}:\n ```\n AJ:{t[0]}回\n AJC:{t[1]}回\n FC:{t[2]}回\n Score:{t[3]}回\n -> 増分 {g:.2f} OP, コスト {c:.2f}```")
+                        msgs.append(f"\n ## - [4] 代替案{presented+1}:\n ```\n AJ:{t[0]}回\n AJC:{t[1]}回\n FC:{t[2]}回\n Score:{t[3]}回\n -> 増分 {g:.2f} OP, コスト {c:.2f}```")
                         try:
                             msgs.extend(build_action_candidates(t))
                         except Exception:
