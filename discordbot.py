@@ -820,45 +820,46 @@ async def op(ctx, a: str = None, *names: str):
 
         # 追加提案: 必要OP差からユーザーが増やすべきFC/AJ/AJC数やスコア差を提案する
         try:
-            suggestion_msgs = generate_suggestions(selected_entries, entries, total_op, percent_start, percent_target, aj_max_const, assign_min_const, assign_max_const)
-            if suggestion_msgs:
-                # send as a single message to keep the channel cleaner
-                combined = "\n".join(suggestion_msgs)
-                await ctx.send(combined)
-            else:
-                # diagnostic: explain why no suggestions were produced
-                # build filtered pool here for visibility
-                pool = []
-                try:
-                    for name, v in selected_entries.items():
-                        try:
-                            c = v[3]
-                        except Exception:
-                            continue
-                        if not isinstance(c, (int, float)):
-                            continue
-                        if assign_min_const is not None and c < assign_min_const:
-                            continue
-                        if assign_max_const is not None and c > assign_max_const:
-                            continue
-                        pool.append((name, c))
-                except Exception:
+            if percent_start is not None and percent_target is not None:
+                suggestion_msgs = generate_suggestions(selected_entries, entries, total_op, percent_start, percent_target, aj_max_const, assign_min_const, assign_max_const)
+                if suggestion_msgs:
+                    # send as a single message to keep the channel cleaner
+                    combined = "\n".join(suggestion_msgs)
+                    await ctx.send(combined)
+                else:
+                    # diagnostic: explain why no suggestions were produced
+                    # build filtered pool here for visibility
                     pool = []
+                    try:
+                        for name, v in selected_entries.items():
+                            try:
+                                c = v[3]
+                            except Exception:
+                                continue
+                            if not isinstance(c, (int, float)):
+                                continue
+                            if assign_min_const is not None and c < assign_min_const:
+                                continue
+                            if assign_max_const is not None and c > assign_max_const:
+                                continue
+                            pool.append((name, c))
+                    except Exception:
+                        pool = []
 
-                diag_lines = [
-                    "提案が見つかりませんでした。デバッグ情報:",
-                    f"pct: {percent_start} -> {percent_target}",
-                    f"aj_max_const: {aj_max_const}",
-                    f"assign_min_const: {assign_min_const}",
-                    f"assign_max_const: {assign_max_const}",
-                    f"選定済み曲数(selected_entries): {len(selected_entries)}",
-                    f"フィルタ後候補数(pool): {len(pool)}",
-                ]
-                if pool:
-                    diag_lines.append("候補上位5:")
-                    diag_lines.extend([f"{n} ({c:.1f})" for n, c in pool[:5]])
+                    diag_lines = [
+                        "提案が見つかりませんでした。デバッグ情報:",
+                        f"pct: {percent_start} -> {percent_target}",
+                        f"aj_max_const: {aj_max_const}",
+                        f"assign_min_const: {assign_min_const}",
+                        f"assign_max_const: {assign_max_const}",
+                        f"選定済み曲数(selected_entries): {len(selected_entries)}",
+                        f"フィルタ後候補数(pool): {len(pool)}",
+                    ]
+                    if pool:
+                        diag_lines.append("候補上位5:")
+                        diag_lines.extend([f"{n} ({c:.1f})" for n, c in pool[:5]])
 
-                await ctx.send("\n".join(diag_lines))
+                    await ctx.send("\n".join(diag_lines))
         except Exception:
             pass
         
