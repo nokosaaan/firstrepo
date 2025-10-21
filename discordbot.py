@@ -629,8 +629,44 @@ async def op(ctx, a: str = None, *names: str):
                         for s in ajc_sel:
                             selected.add(s)
 
-                        # AJ: random from pool excluding selected
-                        aj_sel = sample_titles(aj_n, avoid=selected) if aj_n > 0 else []
+                        # AJ: select from pool filtered by assign_min_const .. aj_max_const (if aj_max_const is set)
+                        aj_sel = []
+                        if aj_n > 0:
+                            # build AJ-specific candidate list honoring aj_max_const and assign_min_const
+                            if aj_max_const is not None or assign_min_const is not None:
+                                aj_candidates = []
+                                for tname, tconst in pool_titles_all:
+                                    if assign_min_const is not None and tconst < assign_min_const:
+                                        continue
+                                    if aj_max_const is not None and tconst > aj_max_const:
+                                        continue
+                                    aj_candidates.append(tname)
+                                # if not enough AJ candidates, fall back to sampling from full pool (excluding selected)
+                                if len(aj_candidates) >= aj_n:
+                                    # sample without replacement from aj_candidates
+                                    aj_sel = random.sample(aj_candidates, aj_n)
+                                elif aj_candidates:
+                                    # take all then fill with samples from remaining pool
+                                    aj_sel = aj_candidates.copy()
+                                    need = aj_n - len(aj_sel)
+                                    # choose from pool_names excluding already selected/aj_sel
+                                    extras = [p for p in pool_names if p not in selected and p not in aj_sel]
+                                    while need > 0 and extras:
+                                        pick = random.choice(extras)
+                                        aj_sel.append(pick)
+                                        extras.remove(pick)
+                                        need -= 1
+                                    # if still need, allow replacement from full pool
+                                    while len(aj_sel) < aj_n:
+                                        aj_sel.append(random.choice(pool_names))
+                                else:
+                                    # no candidates matching constraints -> fallback to sample_titles
+                                    aj_sel = sample_titles(aj_n, avoid=selected)
+                            else:
+                                # no AJ const bounds provided: use existing behavior
+                                aj_sel = sample_titles(aj_n, avoid=selected)
+                        else:
+                            aj_sel = []
                         for s in aj_sel:
                             selected.add(s)
 
