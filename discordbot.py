@@ -42,6 +42,14 @@ bot = commands.Bot(command_prefix='!', description=description, intents=intents,
 async def on_ready():
     print(f'Logged in as {bot.user} (ID: {bot.user.id})')
     print('------')
+    # Set a concise presence that points users to the !op help text.
+    # Keep the string short so it fits in the Discord status area.
+    try:
+        await bot.change_presence(activity=discord.Game("!omi • !op help"))
+        print("Presence updated: !omi • !op help")
+    except Exception as e:
+        # Don't raise; presence update failure shouldn't stop the bot
+        print(f"Failed to update presence: {e}")
 
 @bot.command()
 async def op(ctx, a: str = None, *names: str):
