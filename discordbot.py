@@ -782,7 +782,8 @@ async def op(ctx, a: str = None, *names: str):
         selected_entries, total_op, selected_lines, processed_mas_selected, processed_ult_selected, mas_song_names, entries, mas_count, ult_count, total_charts = calculate_total_op(json_data, exclude_set, exclude_mode)
         msgs = []
         msgs2 = []
-        base_sent = False
+        base_flag_msgs = False
+        base_sent_msgs2 = False
         try:
             msgs.append(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")
             msgs2.append(f"チャート集計(合計チャート数): MAS: {mas_count} 曲, ULT: {ult_count} 曲, 合計: {total_charts} チャート")
@@ -873,11 +874,11 @@ async def op(ctx, a: str = None, *names: str):
                 # If we computed a strict-exclusion summary (msgs2) and there are no pct flags,
                 # prefer sending msgs2. Otherwise send msgs. Only send one of them to avoid
                 # duplicate base summaries.
-                if msgs2 and not base_sent and percent_start is None and percent_target is None:
+                if percent_start is None or percent_target is None:
                     await ctx.send("\n".join(msgs2))
-                    base_sent = True
-                elif msgs and not base_sent and percent_start is None and percent_target is None:
-                    base_sent = True
+                    base_sent_msgs2 = True
+                else:
+                    pass
             except Exception:
                 pass
 
@@ -904,9 +905,8 @@ async def op(ctx, a: str = None, *names: str):
                     target_value = total_op * pt
                     needed = target_value - current_value
                     msgs.append(f"百分率指定: {percent_start} -> {percent_target} ({ps*100:.5f}% -> {pt*100:.2f}%)。現在のOP値: {current_value:.2f}、目標値: {target_value:.2f}、必要なOP差: {needed:.2f}")
-                    if base_sent:
-                        await ctx.send("\n".join(msgs))
-                        base_sent = True
+                    if not base_sent_msgs2:
+                        base_flag_msgs = True
         except Exception:
             pass
 
@@ -915,9 +915,9 @@ async def op(ctx, a: str = None, *names: str):
             if percent_start is not None and percent_target is not None:
                 suggestion_msgs = generate_suggestions(selected_entries, entries, total_op, percent_start, percent_target, aj_max_const, assign_min_const, assign_max_const)
                 if suggestion_msgs:
-                    # send as a single message to keep the channel cleaner
-                    combined = "\n".join(suggestion_msgs)
-                    await ctx.send(combined)
+                    if base_flag_msgs:
+                        await ctx.send("\n".join(msgs))
+                        await ctx.send("\n".join(suggestion_msgs))
                 else:
                     # diagnostic: explain why no suggestions were produced
                     # build filtered pool here for visibility
