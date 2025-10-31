@@ -1,5 +1,7 @@
 .env
 .resource
 /test2.py
-data_c_202505.json
-data_o_202505.json
+# data_c_202505.json
+data_c_*.json
+data_o_*.json
+# data_o_202505.json
