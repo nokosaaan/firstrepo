@@ -1826,6 +1826,195 @@ async def _bot(ctx):
     """Is the bot cool?"""
     await ctx.send('Yes, the bot is cool.')
 
+
+# --- ITO game implementation -------------------------------------------------
+# Per-guild ITO game state
+ITO_GAMES = {}
+
+def _get_game(guild_id):
+    # initialize game state for a guild (or DM channel where guild_id may be None)
+    g = ITO_GAMES.get(guild_id)
+    if g is None:
+        g = {
+            'active': False,
+            'topic': None,
+            'topics': [
+                '最近ハマっている食べ物を、数字の基準で発表してください。',
+                '自分の体調を0~100で表すと？ その理由を述べてください。',
+                '今日の気分を0~100で表すと？',
+                '好きなアニメの順位を0~100で示すと？',
+                '休日の満足度を0~100で表すと？',
+            ],
+            'assigned': {},      # user_id -> assigned secret number
+            'threads': {},       # user_id -> thread id (if created)
+            'submissions': {},   # user_id -> submitted announced number
+            'starter': None,
+            'channel_id': None,
+        }
+        ITO_GAMES[guild_id] = g
+    return g
+
+
+@bot.group()
+async def ito(ctx):
+    """ITO game commands: !ito num | !ito start | !ito submit <num> | !ito status | !ito end"""
+    if ctx.invoked_subcommand is None:
+        await ctx.send("Available subcommands: num, start, submit, status, end. Use `!ito help` for details.")
+
+
+@ito.command()
+async def start(ctx):
+    """Start a new ITO game in this guild/channel and post a topic."""
+    guild_id = ctx.guild.id if ctx.guild else None
+    g = _get_game(guild_id)
+    if g['active']:
+        await ctx.send("既にITOゲームが進行中です。`!ito end`で終了してください。")
+        return
+    # pick random topic
+    topic = random.choice(g['topics'])
+    g['active'] = True
+    g['topic'] = topic
+    g['assigned'].clear()
+    g['threads'].clear()
+    g['submissions'].clear()
+    g['starter'] = ctx.author.id
+    g['channel_id'] = ctx.channel.id
+    await ctx.send(f"ITOゲーム開始！ テーマ: {topic}\n参加者は `!ito num` を使って自分の数字を受け取ってください（数字はあなただけに見せます）。ゲームを終了するときは `!ito end` を実行してください。")
+
+
+@ito.command()
+async def num(ctx):
+    """Assign a private secret number (0-100) to the invoking user and create a private thread if possible."""
+    guild_id = ctx.guild.id if ctx.guild else None
+    g = _get_game(guild_id)
+    if not g['active']:
+        await ctx.send("現在ITOゲームは開始されていません。まず `!ito start` を実行してください。")
+        return
+    user_id = ctx.author.id
+    if user_id in g['assigned']:
+        await ctx.send("既に数字が配布済みです。必要なら `!ito status` で状態を確認してください。")
+        return
+    # assign random number
+    num_assigned = random.randint(0, 100)
+    g['assigned'][user_id] = num_assigned
+
+    thread = None
+    # Try to create a private thread in the invoking channel and add only the user
+    try:
+        # thread name limited length
+        tname = f"ito-{ctx.author.name}-{user_id % 10000}"
+        thread = await ctx.channel.create_thread(name=tname, type=discord.ChannelType.private_thread)
+        # add the invoking user to the private thread (creator may already be included)
+        try:
+            await thread.add_user(ctx.author)
+        except Exception:
+            pass
+        # remember thread id
+        g['threads'][user_id] = thread.id
+        # send the secret number in the thread (only thread participants will see)
+        await thread.send(f"あなたのITOの数字は: {num_assigned} です。これはあなただけに見えます。ゲーム中は外部に見せないでください。")
+        # also notify in the channel that the user received their number
+        await ctx.send(f"{ctx.author.mention} に個別のITO番号を送信しました（プライベートスレッドを作成しました）。")
+    except Exception as e:
+        # fallback: DM the user
+        try:
+            dm = await ctx.author.create_dm()
+            await dm.send(f"あなたのITOの数字は: {num_assigned} です。これはあなただけに見えます。ゲーム中は外部に見せないでください。")
+            await ctx.send(f"{ctx.author.mention} にDMで番号を送信しました。（スレッド作成に失敗しました: {e}）")
+        except Exception as e2:
+            await ctx.send(f"番号の送信に失敗しました: {e2}")
+    return
+
+
+@ito.command()
+async def submit(ctx, value: int):
+    """Submit the final announced number for the invoking user (0-100)."""
+    guild_id = ctx.guild.id if ctx.guild else None
+    g = _get_game(guild_id)
+    if not g['active']:
+        await ctx.send("ITOゲームは進行していません。")
+        return
+    user_id = ctx.author.id
+    if user_id not in g['assigned']:
+        await ctx.send("まだ番号が配られていません。`!ito num` を実行してください。")
+        return
+    if not (0 <= value <= 100):
+        await ctx.send("提出する値は0〜100の範囲で指定してください。")
+        return
+    g['submissions'][user_id] = value
+    await ctx.send(f"{ctx.author.mention} の提出を記録しました。値: {value}")
+
+
+@ito.command()
+async def status(ctx):
+    """Show ITO game status: participants, who submitted, but do not reveal secret numbers."""
+    guild_id = ctx.guild.id if ctx.guild else None
+    g = _get_game(guild_id)
+    if not g['active']:
+        await ctx.send("ITOゲームは進行していません。")
+        return
+    assigned_users = list(g['assigned'].keys())
+    submitted_users = list(g['submissions'].keys())
+    lines = [f"ITO 現在のトピック: {g.get('topic')}"]
+    lines.append(f"配布済みプレイヤー数: {len(assigned_users)}")
+    if assigned_users:
+        mentions = [f"<@{u}>" for u in assigned_users]
+        lines.append("配布済み: " + ", ".join(mentions))
+    lines.append(f"提出済みプレイヤー数: {len(submitted_users)}")
+    if submitted_users:
+        mentions = [f"<@{u}>" for u in submitted_users]
+        lines.append("提出済み: " + ", ".join(mentions))
+    await ctx.send("\n".join(lines))
+
+
+@ito.command()
+async def end(ctx):
+    """End the ITO game, reveal assigned numbers and submissions, and report whether the submissions were in strictly ascending order."""
+    guild_id = ctx.guild.id if ctx.guild else None
+    g = _get_game(guild_id)
+    if not g['active']:
+        await ctx.send("ITOゲームは進行していません。")
+        return
+    # reveal
+    topic = g.get('topic')
+    assigned = g.get('assigned', {})
+    submissions = g.get('submissions', {})
+    if not assigned:
+        await ctx.send("参加者がいないため、ゲームを終了します。")
+        g['active'] = False
+        return
+    lines = [f"ITO ゲーム終了 - トピック: {topic}", "参加者一覧:"]
+    for uid, num_assigned in assigned.items():
+        sub = submissions.get(uid, None)
+        lines.append(f"<@{uid}> - 配布番号: {num_assigned} - 提出: {sub if sub is not None else '(未提出)'}")
+
+    # Determine success: require that all participants who submitted have their submitted numbers in strictly ascending order by their submission order? 
+    # We'll treat success as: when considering only submitted participants, their submission values are in strictly increasing order.
+    submitted_pairs = [(uid, submissions[uid]) for uid in submissions]
+    if submitted_pairs:
+        values = [v for (u, v) in submitted_pairs]
+        is_strict = all(values[i] < values[i+1] for i in range(len(values)-1))
+        if is_strict:
+            lines.append("結果: 提出された数字は厳密に昇順です — クリア！")
+        else:
+            lines.append("結果: 提出された数字は昇順ではありません — 失敗。")
+    else:
+        lines.append("結果: 提出が一つもありませんでした。")
+
+    # send result to channel
+    await ctx.send("\n".join(lines))
+
+    # cleanup game state
+    g['active'] = False
+    g['topic'] = None
+    g['assigned'].clear()
+    g['submissions'].clear()
+    g['threads'].clear()
+    g['starter'] = None
+    g['channel_id'] = None
+
+# --- end of ITO implementation ----------------------------------------------
+
 # Flaskサーバーをセットアップ
 app = Flask('')
 
