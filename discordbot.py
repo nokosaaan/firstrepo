@@ -1927,8 +1927,15 @@ async def num(ctx):
 
 
 @ito.command()
-async def submit(ctx, value: int):
-    """Submit the final announced number for the invoking user (0-100)."""
+async def submit(ctx):
+    """Record the invoking user's submission as their assigned secret number.
+
+    This command takes no argument to avoid accidental public disclosure. The
+    bot records the user's assigned secret number as their submission and
+    confirms only that the submission was recorded (without revealing the
+    number). The user will receive a DM containing the recorded value when
+    possible.
+    """
     guild_id = ctx.guild.id if ctx.guild else None
     g = _get_game(guild_id)
     if not g['active']:
@@ -1938,11 +1945,21 @@ async def submit(ctx, value: int):
     if user_id not in g['assigned']:
         await ctx.send("まだ番号が配られていません。`!ito num` を実行してください。")
         return
-    if not (0 <= value <= 100):
-        await ctx.send("提出する値は0〜100の範囲で指定してください。")
-        return
-    g['submissions'][user_id] = value
-    await ctx.send(f"{ctx.author.mention} の提出を記録しました。値: {value}")
+
+    # Use the previously assigned secret number as the submission
+    num_assigned = g['assigned'][user_id]
+    g['submissions'][user_id] = num_assigned
+
+    # Public confirmation without revealing the number
+    await ctx.send(f"{ctx.author.mention} の提出を記録しました。")
+
+    # Try to DM the user a confirmation that includes the number (DM only)
+    try:
+        dm = await ctx.author.create_dm()
+        await dm.send(f"あなたの提出値（秘匿）は記録されました。値: {num_assigned}")
+    except Exception:
+        # If DM fails, do nothing further to avoid leaking the number
+        pass
 
 
 @ito.command()
@@ -1994,15 +2011,46 @@ async def end(ctx):
     if submitted_pairs:
         values = [v for (u, v) in submitted_pairs]
         is_strict = all(values[i] < values[i+1] for i in range(len(values)-1))
-        if is_strict:
-            lines.append("結果: 提出された数字は厳密に昇順です — クリア！")
-        else:
-            lines.append("結果: 提出された数字は昇順ではありません — 失敗。")
-    else:
-        lines.append("結果: 提出が一つもありませんでした。")
+        # Always show topic and participant list even if some didn't submit
+        if not assigned:
+            await ctx.send("参加者がいないため、ゲームを終了します。")
+            g['active'] = False
+            return
 
-    # send result to channel
-    await ctx.send("\n".join(lines))
+        lines = [f"ITO ゲーム終了 - トピック: {topic}", "参加者一覧:"]
+        for uid, num_assigned in assigned.items():
+            sub = submissions.get(uid, None)
+            lines.append(f"<@{uid}> - 配布番号: {num_assigned} - 提出: {sub if sub is not None else '(未提出)'}")
+
+        # If any participant did NOT submit, skip clear-condition check
+        not_submitted = [uid for uid in assigned.keys() if uid not in submissions]
+        if not_submitted:
+            lines.append("結果: 未提出のプレイヤーがいるためクリア条件の判定は行いませんでした。")
+        else:
+            # All participants submitted -> check strict ascending on submitted values
+            submitted_pairs = [(uid, submissions[uid]) for uid in submissions]
+            values = [v for (u, v) in submitted_pairs]
+            is_strict = all(values[i] < values[i+1] for i in range(len(values)-1))
+            if is_strict:
+                lines.append("結果: 提出された数字は厳密に昇順です — クリア！")
+            else:
+                lines.append("結果: 提出された数字は昇順ではありません — 失敗。")
+
+        # send result to channel
+        await ctx.send("\n".join(lines))
+
+    # Attempt to delete any private threads created for this game
+    try:
+        for uid, thread_id in list(g.get('threads', {}).items()):
+            try:
+                thr = bot.get_channel(thread_id)
+                if thr is not None:
+                    await thr.delete()
+            except Exception:
+                # ignore failures to delete specific threads
+                pass
+    except Exception:
+        pass
 
     # cleanup game state
     g['active'] = False
