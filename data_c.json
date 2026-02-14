@@ -15406,5 +15406,140 @@
 			"14"
 		],
 		"cn": "14.3"
+	},
+	"1712": {
+		"name": "A-Yah-YAh-YaH-YAH!",
+		"data": [
+			"MAS",
+			"東方Project",
+			"13+"
+		],
+		"cn": "13.7"
+	},
+	"1713": {
+		"name": "アマノジャクリバース feat. ｙｔｒ",
+		"data": [
+			"MAS",
+			"東方Project",
+			"13+"
+		],
+		"cn": "13.8"
+	},
+	"1714": {
+		"name": "The Music of Violent Eating",
+		"data": [
+			"MAS",
+			"東方Project",
+			"15"
+		],
+		"cn": "15.1"
+	},
+	"1715": {
+		"name": "New World",
+		"data": [
+			"MAS",
+			"東方Project",
+			"13"
+		],
+		"cn": "13.4"
+	},
+	"1716": {
+		"name": "メイドノココロハアヤツリドール",
+		"data": [
+			"MAS",
+			"東方Project",
+			"12+"
+		],
+		"cn": "12.8"
+	},
+	"1717": {
+		"name": "Choose!!!",
+		"data": [
+			"MAS",
+			"POPS & ANIME",
+			"12"
+		],
+		"cn": "12"
+	},
+	"1718": {
+		"name": "愛と煩悩と輪廻と常識の極彩世界",
+		"data": [
+			"MAS",
+			"VARIETY",
+			"15"
+		],
+		"cn": "15"
+	},
+	"1719": {
+		"name": "ゼイタクするまで抱きしめて",
+		"data": [
+			"MAS",
+			"VARIETY",
+			"14"
+		],
+		"cn": "14.3"
+	},
+	"1720": {
+		"name": "LAST PROPOZE",
+		"data": [
+			"MAS",
+			"VARIETY",
+			"14"
+		],
+		"cn": "14.4"
+	},
+	"1721": {
+		"name": "ソレイユ",
+		"data": [
+			"MAS",
+			"イロドリミドリ",
+			"14"
+		],
+		"cn": "14"
+	},
+	"1722": {
+		"name": "天地のうた",
+		"data": [
+			"MAS",
+			"ORIGINAL",
+			"13+"
+		],
+		"cn": "13.8"
+	},
+	"1723": {
+		"name": "Aether Wind",
+		"data": [
+			"MAS",
+			"ORIGINAL",
+			"13+"
+		],
+		"cn": "13.6"
+	},
+	"1724": {
+		"name": "そして春めくモノローグ",
+		"data": [
+			"MAS",
+			"ORIGINAL",
+			"13+"
+		],
+		"cn": "13.7"
+	},
+	"1725": {
+		"name": "Sweet & Sour",
+		"data": [
+			"MAS",
+			"ORIGINAL",
+			"15+"
+		],
+		"cn": "15.6"
+	},
+	"1726": {
+		"name": "Sweet & Sour",
+		"data": [
+			"EXP",
+			"ORIGINAL",
+			"14"
+		],
+		"cn": "14.4"
 	}
 }
