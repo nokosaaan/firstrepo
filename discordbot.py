@@ -1093,6 +1093,16 @@ async def roll(ctx, dice: str):
 @bot.command()
 async def omi(ctx, game: str, diff: str, op: str, op2: str):
     """Randomly select 3 songs from that game"""
+    def chart_diff(item):
+        """Use explicit diff when available; fall back to data[2] for datasets like data_c.json."""
+        raw = item.get('diff') if isinstance(item, dict) else None
+        if raw is None or str(raw).strip() in ('', 'None'):
+            try:
+                return str(item['data'][2])
+            except Exception:
+                return ''
+        return str(raw)
+
     if(game=='c'):
         f = open("data_c.json", 'r')
 
@@ -1103,7 +1113,8 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
         #u4=[]
         #u5=[]
         for v in json_data.values():
-            if(op=="s" and v['diff']==diff):
+            vdiff = chart_diff(v)
+            if(op=="s" and vdiff==diff):
                 if(op2=="or" and v['data'][1]=="ORIGINAL"):
                     u.append(v)
                 elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1136,7 +1147,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="11+"):
-                if(v['diff']!="11"):
+                if(vdiff!="11"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1153,7 +1164,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="12"):
-                if(v['diff']!="11" and v['diff']!="11+"):
+                if(vdiff!="11" and vdiff!="11+"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1170,7 +1181,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="12+"):
-                if(v['diff']!="11" and v['diff']!="11+" and v['diff']!="12"):
+                if(vdiff!="11" and vdiff!="11+" and vdiff!="12"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1187,7 +1198,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="13"):
-                if(v['diff']!="11" and v['diff']!="11+" and v['diff']!="12" and v['diff']!="12+"):
+                if(vdiff!="11" and vdiff!="11+" and vdiff!="12" and vdiff!="12+"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1204,7 +1215,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="13+"):
-                if(v['diff']!="11" and v['diff']!="11+" and v['diff']!="12" and v['diff']!="12+" and v['diff']!="13"):
+                if(vdiff!="11" and vdiff!="11+" and vdiff!="12" and vdiff!="12+" and vdiff!="13"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1221,7 +1232,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="14"):
-                if(v['diff']=="14" or v['diff']=="14+" or v['diff']=="15" or v['diff']=="15+"):
+                if(vdiff=="14" or vdiff=="14+" or vdiff=="15" or vdiff=="15+"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1238,7 +1249,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="14+"):
-                if(v['diff']=="14+" or v['diff']=="15" or v['diff']=="15+"):
+                if(vdiff=="14+" or vdiff=="15" or vdiff=="15+"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1255,7 +1266,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="15"):
-                if(v['diff']=="15" or v['diff']=="15+"):
+                if(vdiff=="15" or vdiff=="15+"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1272,7 +1283,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="15+"):
-                if(v['diff']=="15+"):
+                if(vdiff=="15+"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1305,7 +1316,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="15"):
-                if(v['diff']!="15+"):
+                if(vdiff!="15+"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1322,7 +1333,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="14+"):
-                if(v['diff']!="15" and v['diff']!="15+"):
+                if(vdiff!="15" and vdiff!="15+"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1339,7 +1350,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="14"):
-                if(v['diff']!="14+" and v['diff']!="15" and v['diff']!="15+"):
+                if(vdiff!="14+" and vdiff!="15" and vdiff!="15+"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1356,7 +1367,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="13+"):
-                if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12" or v['diff']=="12+" or v['diff']=="13" or v['diff']=="13+"):
+                if(vdiff=="11" or vdiff=="11+" or vdiff=="12" or vdiff=="12+" or vdiff=="13" or vdiff=="13+"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1373,7 +1384,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="13"):
-                if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12" or v['diff']=="12+" or v['diff']=="13"):
+                if(vdiff=="11" or vdiff=="11+" or vdiff=="12" or vdiff=="12+" or vdiff=="13"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1390,7 +1401,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="12+"):
-                if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12" or v['diff']=="12+"):
+                if(vdiff=="11" or vdiff=="11+" or vdiff=="12" or vdiff=="12+"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1407,7 +1418,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="12"):
-                if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12"):
+                if(vdiff=="11" or vdiff=="11+" or vdiff=="12"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1424,7 +1435,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="11+"):
-                if(v['diff']=="11" or v['diff']=="11+"):
+                if(vdiff=="11" or vdiff=="11+"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1441,7 +1452,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="11"):
-                if(v['diff']=="11"):
+                if(vdiff=="11"):
                     if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
@@ -1463,7 +1474,8 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
         json_data = json.load(f)
         u=[]
         for v in json_data.values():
-            if(op=="s" and v['diff']==diff):
+            vdiff = chart_diff(v)
+            if(op=="s" and vdiff==diff):
                 if(op2=="on" and v['data'][1]=="オンゲキ"):
                     u.append(v)
                 elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1496,7 +1508,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="11+"):
-                if(v['diff']!="11"):
+                if(vdiff!="11"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1513,7 +1525,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="12"):
-                if(v['diff']!="11" and v['diff']!="11+"):
+                if(vdiff!="11" and vdiff!="11+"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1530,7 +1542,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="12+"):
-                if(v['diff']!="11" and v['diff']!="11+" and v['diff']!="12"):
+                if(vdiff!="11" and vdiff!="11+" and vdiff!="12"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1547,7 +1559,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="13"):
-                if(v['diff']!="11" and v['diff']!="11+" and v['diff']!="12" and v['diff']!="12+"):
+                if(vdiff!="11" and vdiff!="11+" and vdiff!="12" and vdiff!="12+"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1564,7 +1576,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="13+"):
-                if(v['diff']!="11" and v['diff']!="11+" and v['diff']!="12" and v['diff']!="12+" and v['diff']!="13"):
+                if(vdiff!="11" and vdiff!="11+" and vdiff!="12" and vdiff!="12+" and vdiff!="13"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1581,7 +1593,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="14"):
-                if(v['diff']!="11" and v['diff']!="11+" and v['diff']!="12" and v['diff']!="12+" and v['diff']!="13" and v['diff']!="13+"):
+                if(vdiff!="11" and vdiff!="11+" and vdiff!="12" and vdiff!="12+" and vdiff!="13" and vdiff!="13+"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1598,7 +1610,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="14+"):
-                if(v['diff']!="11" and v['diff']!="11+" and v['diff']!="12" and v['diff']!="12+" and v['diff']!="13" and v['diff']!="13+" and v['diff']!="14"):
+                if(vdiff!="11" and vdiff!="11+" and vdiff!="12" and vdiff!="12+" and vdiff!="13" and vdiff!="13+" and vdiff!="14"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1615,7 +1627,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="15"):
-                if(v['diff']=="15" or v['diff']=="15+"):
+                if(vdiff=="15" or vdiff=="15+"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1632,7 +1644,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="h" and diff=="15+"):
-                if(v['diff']=="15+"):
+                if(vdiff=="15+"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1665,7 +1677,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     u.append(v)
                 elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="15"):
-                if(v['diff']!="15+"):
+                if(vdiff!="15+"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1682,7 +1694,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="14+"):
-                if(v['diff']!="15" and v['diff']!="15+"):
+                if(vdiff!="15" and vdiff!="15+"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1699,7 +1711,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="14"):
-                if(v['diff']!="14+" and v['diff']!="15" and v['diff']!="15+"):
+                if(vdiff!="14+" and vdiff!="15" and vdiff!="15+"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1716,7 +1728,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="13+"):
-                if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12" or v['diff']=="12+" or v['diff']=="13" or v['diff']=="13+"):
+                if(vdiff=="11" or vdiff=="11+" or vdiff=="12" or vdiff=="12+" or vdiff=="13" or vdiff=="13+"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1733,7 +1745,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="13"):
-                if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12" or v['diff']=="12+" or v['diff']=="13"):
+                if(vdiff=="11" or vdiff=="11+" or vdiff=="12" or vdiff=="12+" or vdiff=="13"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1750,8 +1762,8 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="12+"):
-                if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12" or v['diff']=="12+"):
-                    if(op2=="or" and v['data'][1]=="ORIGINALGINAL"):
+                if(vdiff=="11" or vdiff=="11+" or vdiff=="12" or vdiff=="12+"):
+                    if(op2=="or" and v['data'][1]=="ORIGINAL"):
                         u.append(v)
                     elif(op2=="ge" and v['data'][1]=="ゲキマイ"):
                         u.append(v)
@@ -1767,7 +1779,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="12"):
-                if(v['diff']=="11" or v['diff']=="11+" or v['diff']=="12"):
+                if(vdiff=="11" or vdiff=="11+" or vdiff=="12"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1784,7 +1796,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="11+"):
-                if(v['diff']=="11" or v['diff']=="11+"):
+                if(vdiff=="11" or vdiff=="11+"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1801,7 +1813,7 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
             elif(op=="l" and diff=="11"):
-                if(v['diff']=="11"):
+                if(vdiff=="11"):
                     if(op2=="on" and v['data'][1]=="オンゲキ"):
                         u.append(v)
                     elif(op2=="cm" and v['data'][1]=="チュウマイ"):
@@ -1817,10 +1829,16 @@ async def omi(ctx, game: str, diff: str, op: str, op2: str):
                     elif(op2=="lu" and v['data'][1]=="LUNATIC"):
                         u.append(v)
                     elif(op2=="no"): u.append(v)
+    if not u:
+        await ctx.send("条件に一致する曲が見つかりませんでした。引数(game/diff/op/op2)を確認してください。")
+        return
+
     await ctx.send(f"本日の{ctx.author.mention}の課題曲\n")
     for a in range(3):
         answer = random.choice(u)
-        await ctx.send("{0}\t Title: {1}\t Difficulty: {2}\t Level: {3}\t Genre: {4}\t CN: {5}\n".format(a+1,answer['name'],answer['diff'],answer['data'][0],answer['data'][1],answer['data'][2]))
+        ans_diff = chart_diff(answer)
+        ans_cn = answer.get('cn', answer['data'][2])
+        await ctx.send("{0}\t Title: {1}\t Difficulty: {2}\t Level: {3}\t Genre: {4}\t CN: {5}\n".format(a+1, answer['name'], ans_diff, answer['data'][0], answer['data'][1], ans_cn))
         '''
         for a in range(3):
             answer = random.choice(u)
