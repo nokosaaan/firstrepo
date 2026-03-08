@@ -308,6 +308,30 @@ async def op(ctx, a: str = None, *names: str):
             await ctx.send(f"データ読み込みエラー: {e}")
             return
 
+    def parse_chart_const(entry):
+        """Read chart const from `cn` first, then fall back to legacy level-like data[2]."""
+        # Preferred source: explicit chart constant in JSON
+        cn = entry.get('cn') if isinstance(entry, dict) else None
+        if cn is not None:
+            return float(cn)
+
+        # Fallback for older records where only data[2] exists
+        raw_const = entry['data'][2]
+        if raw_const is None:
+            raise ValueError("const is None")
+        if isinstance(raw_const, (int, float)):
+            return float(raw_const)
+
+        s = str(raw_const).strip()
+        if not s:
+            raise ValueError("const is empty")
+
+        if s.endswith('+'):
+            base = s[:-1].strip()
+            return float(base) + 0.5
+
+        return float(s)
+
     # extract aggregation into helper to simplify op function
     def select_entries(data, exclude_set, exclude_mode):
         name_map = {}
@@ -315,8 +339,11 @@ async def op(ctx, a: str = None, *names: str):
         mas_count = 0
         ult_count = 0
         for v in data.values():
+            # Exclude inactive charts from all OP aggregations.
+            if str(v.get('alive', '')).strip() == '✕':
+                continue
             try:
-                chart_const = float(v['data'][2])
+                chart_const = parse_chart_const(v)
             except Exception:
                 continue
             chart_type = v['data'][0]
