@@ -2126,6 +2126,345 @@ async def end(ctx):
 
 # --- end of ITO implementation ----------------------------------------------
 
+# --- COR (consensus) game implementation ------------------------------------
+# Per-guild COR game state
+COR_GAMES = {}
+
+
+def _get_cor_game(guild_id):
+    # initialize game state for a guild (or DM channel where guild_id may be None)
+    g = COR_GAMES.get(guild_id)
+    if g is None:
+        g = {
+            'active': False,
+            'topic': None,
+            'topics': [
+                'コンビニでつい買ってしまうものは？',
+                '朝に食べるとテンションが上がるものは？',
+                '学生時代の定番文房具といえば？',
+                '雨の日に聴きたくなる曲の雰囲気は？',
+                '旅行先でまず探す食べ物は？',
+                'ゲームの最初に選びがちな職業は？',
+                '休日の昼にしたくなることは？',
+                '自販機で無難に選ぶ飲み物は？',
+                'カラオケで最初に歌いやすい曲の系統は？',
+                'チュウニズムで初見に選びやすい難易度帯は？',
+            ],
+            'participants': set(),  # user_id set
+            'threads': {},           # user_id -> thread id
+            'submissions': {},       # user_id -> answer string
+            'starter': None,
+            'channel_id': None,
+            'phase': 'idle',         # idle | confirm | collecting
+        }
+        COR_GAMES[guild_id] = g
+    return g
+
+
+def _find_active_cor_game_for_user(user_id):
+    """Find an active collecting COR game that includes the user (for DM submissions)."""
+    for gid, game in COR_GAMES.items():
+        try:
+            if game.get('active') and game.get('phase') == 'collecting' and user_id in game.get('participants', set()):
+                return gid, game
+        except Exception:
+            continue
+    return None, None
+
+
+def _find_active_cor_game_by_thread(thread_id):
+    """Find an active collecting COR game and owner user by private thread id."""
+    for gid, game in COR_GAMES.items():
+        try:
+            if not game.get('active') or game.get('phase') != 'collecting':
+                continue
+            for uid, tid in game.get('threads', {}).items():
+                if tid == thread_id:
+                    return gid, game, uid
+        except Exception:
+            continue
+    return None, None, None
+
+
+def _get_channel_participants(channel):
+    """Collect candidate players from the current channel (non-bot members only)."""
+    try:
+        members = getattr(channel, 'members', None)
+        if members:
+            picked = []
+            for m in members:
+                if getattr(m, 'bot', False):
+                    continue
+                try:
+                    perms = channel.permissions_for(m)
+                    if not perms.view_channel:
+                        continue
+                    # For text channels, require send permission as well.
+                    if hasattr(perms, 'send_messages') and not perms.send_messages:
+                        continue
+                except Exception:
+                    pass
+                picked.append(m)
+            return picked
+    except Exception:
+        pass
+    return []
+
+
+@bot.group()
+async def cor(ctx):
+    """Consensus game commands: !cor start | !cor submit <answer> | !cor status | !cor end"""
+    if ctx.invoked_subcommand is None:
+        await ctx.send("Available subcommands: start, submit, status, end. Use `!help cor` for details.")
+
+
+@bot.event
+async def on_message(message):
+    # Ignore bot/self messages.
+    if message.author.bot:
+        return
+
+    # In COR private threads, accept plain text as submission.
+    try:
+        ch = message.channel
+        if isinstance(ch, discord.Thread):
+            _, g, owner_uid = _find_active_cor_game_by_thread(ch.id)
+            if g is not None and owner_uid is not None:
+                if message.author.id == owner_uid:
+                    content = (message.content or '').strip()
+                    # Let command-style messages be handled by normal command parser.
+                    if content and not content.startswith('!'):
+                        g['submissions'][owner_uid] = content
+                        await message.channel.send("提出を記録しました。")
+                        return
+    except Exception:
+        pass
+
+    # Keep command processing working when custom on_message is defined.
+    await bot.process_commands(message)
+
+
+@cor.command()
+async def start(ctx):
+    """Start a new COR game, present a topic, and wait for 'skip'/'continue'."""
+    guild_id = ctx.guild.id if ctx.guild else None
+    g = _get_cor_game(guild_id)
+    if g['active']:
+        await ctx.send("既にCORゲームが進行中です。`!cor end`で終了してください。")
+        return
+
+    g['active'] = True
+    g['participants'].clear()
+    g['threads'].clear()
+    g['submissions'].clear()
+    g['starter'] = ctx.author.id
+    g['channel_id'] = ctx.channel.id
+    g['phase'] = 'confirm'
+
+    # Topic confirmation loop: skip -> redraw, continue -> proceed
+    topic = None
+    for _ in range(10):
+        topic = random.choice(g['topics'])
+        g['topic'] = topic
+        await ctx.send(
+            f"全員一致ゲーム(COR)のお題: {topic}\n"
+            "このお題で良ければ `continue`、変更したければ `skip` と入力してください（120秒待機）。"
+        )
+
+        def check(m):
+            if m.channel.id != ctx.channel.id:
+                return False
+            c = m.content.strip().lower()
+            return c in ('skip', 'continue')
+
+        try:
+            msg = await bot.wait_for('message', timeout=120.0, check=check)
+        except asyncio.TimeoutError:
+            g['active'] = False
+            g['topic'] = None
+            g['phase'] = 'idle'
+            await ctx.send("確認入力がなかったため、CORゲーム開始をキャンセルしました。")
+            return
+
+        decision = msg.content.strip().lower()
+        if decision == 'skip':
+            continue
+        if decision == 'continue':
+            break
+    else:
+        g['active'] = False
+        g['topic'] = None
+        g['phase'] = 'idle'
+        await ctx.send("お題の再抽選回数が上限に達したため、開始をキャンセルしました。")
+        return
+
+    members = _get_channel_participants(ctx.channel)
+    if not members:
+        g['active'] = False
+        g['topic'] = None
+        g['phase'] = 'idle'
+        await ctx.send("このチャンネルで参加候補を取得できませんでした。")
+        return
+
+    g['participants'] = set([m.id for m in members])
+    g['phase'] = 'collecting'
+
+    created_threads = 0
+    dm_count = 0
+    failed = []
+
+    for member in members:
+        if getattr(member, 'bot', False):
+            # Defensive guard: do not create submission threads for bot accounts.
+            continue
+        try:
+            tname = f"cor-{member.name}-{member.id % 10000}"
+            thread = await ctx.channel.create_thread(name=tname, type=discord.ChannelType.private_thread)
+            try:
+                await thread.add_user(member)
+            except Exception:
+                pass
+            g['threads'][member.id] = thread.id
+            await thread.send(
+                f"{member.mention} あなたの回答提出用スレッドです。\n"
+                "このスレッドで回答文のみ送信すると提出されます。\n"
+                f"現在のお題: {g['topic']}"
+            )
+            created_threads += 1
+        except Exception:
+            # Fallback to DM if private thread creation fails.
+            try:
+                dm = await member.create_dm()
+                await dm.send(
+                    "CORゲームの回答提出を受け付けます。\n"
+                    "`!cor submit <回答>` をこのDMで送ってください。\n"
+                    f"現在のお題: {g['topic']}"
+                )
+                dm_count += 1
+            except Exception:
+                failed.append(member.id)
+
+    await ctx.send(
+        "CORゲームを開始しました。\n"
+        f"参加者数: {len(g['participants'])}\n"
+        f"プライベートスレッド作成: {created_threads}件 / DM送信: {dm_count}件 / 失敗: {len(failed)}件\n"
+        "提出状況は `!cor status`、終了は `!cor end` を使ってください。"
+    )
+
+
+@cor.command()
+async def submit(ctx, *, answer: str = None):
+    """Submit your private answer for the current COR game."""
+    user_id = ctx.author.id
+    if ctx.guild:
+        guild_id = ctx.guild.id
+        g = _get_cor_game(guild_id)
+    else:
+        guild_id, g = _find_active_cor_game_for_user(user_id)
+        if g is None:
+            await ctx.send("現在、回答受付中のCORゲームはありません。")
+            return
+
+    if not g['active'] or g.get('phase') != 'collecting':
+        await ctx.send("現在、回答受付中のCORゲームはありません。")
+        return
+    if answer is None or not str(answer).strip():
+        await ctx.send("使い方: `!cor submit <回答>`")
+        return
+
+    if user_id not in g['participants']:
+        await ctx.send("このCORゲームの参加者ではありません。")
+        return
+
+    g['submissions'][user_id] = str(answer).strip()
+    await ctx.send("提出を記録しました。")
+
+
+@cor.command()
+async def status(ctx):
+    """Show only submission state (submitted / not submitted) for all participants."""
+    guild_id = ctx.guild.id if ctx.guild else None
+    g = _get_cor_game(guild_id)
+    if not g['active']:
+        await ctx.send("CORゲームは進行していません。")
+        return
+
+    participants = sorted(list(g.get('participants', set())))
+    submissions = g.get('submissions', {})
+    lines = [f"COR 現在のお題: {g.get('topic')}"]
+    lines.append(f"参加者数: {len(participants)}")
+    submitted_count = 0
+    for uid in participants:
+        ok = uid in submissions
+        if ok:
+            submitted_count += 1
+        lines.append(f"<@{uid}> - {'提出済み' if ok else '未提出'}")
+    lines.append(f"提出状況: {submitted_count}/{len(participants)}")
+    await ctx.send("\n".join(lines))
+
+
+@cor.command()
+async def end(ctx):
+    """End COR game, show submission status, and ask participants for yes/no final judgment."""
+    guild_id = ctx.guild.id if ctx.guild else None
+    g = _get_cor_game(guild_id)
+    if not g['active']:
+        await ctx.send("CORゲームは進行していません。")
+        return
+
+    participants = sorted(list(g.get('participants', set())))
+    submissions = g.get('submissions', {})
+    if not participants:
+        await ctx.send("参加者がいないため、CORゲームを終了します。")
+    else:
+        lines = [f"COR ゲーム終了 - お題: {g.get('topic')}", "提出状況:"]
+        for uid in participants:
+            lines.append(f"<@{uid}> - {'提出済み' if uid in submissions else '未提出'}")
+        lines.append("一致していると判定する場合は `yes`、失敗判定なら `no` を入力してください（120秒待機）。")
+        await ctx.send("\n".join(lines))
+
+        def check(m):
+            if m.channel.id != ctx.channel.id:
+                return False
+            if m.author.bot:
+                return False
+            if m.author.id not in g.get('participants', set()) and m.author.id != g.get('starter'):
+                return False
+            return m.content.strip().lower() in ('yes', 'no')
+
+        try:
+            msg = await bot.wait_for('message', timeout=120.0, check=check)
+            if msg.content.strip().lower() == 'yes':
+                await ctx.send("結果: 成功（全員一致判定）")
+            else:
+                await ctx.send("結果: 失敗")
+        except asyncio.TimeoutError:
+            await ctx.send("判定入力がなかったため、結果は失敗として終了します。")
+
+    # Attempt to delete private threads used for this game
+    try:
+        for _, thread_id in list(g.get('threads', {}).items()):
+            try:
+                thr = bot.get_channel(thread_id)
+                if thr is not None:
+                    await thr.delete()
+            except Exception:
+                pass
+    except Exception:
+        pass
+
+    # cleanup state
+    g['active'] = False
+    g['topic'] = None
+    g['participants'].clear()
+    g['submissions'].clear()
+    g['threads'].clear()
+    g['starter'] = None
+    g['channel_id'] = None
+    g['phase'] = 'idle'
+
+# --- end of COR implementation ----------------------------------------------
+
 # Flaskサーバーをセットアップ
 app = Flask('')
 
