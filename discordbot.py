@@ -2405,7 +2405,7 @@ async def status(ctx):
 
 @cor.command()
 async def end(ctx):
-    """End COR game, show submission status, and ask participants for yes/no final judgment."""
+    """End COR game, reveal submissions, and ask participants for yes/no final judgment."""
     guild_id = ctx.guild.id if ctx.guild else None
     g = _get_cor_game(guild_id)
     if not g['active']:
@@ -2417,9 +2417,16 @@ async def end(ctx):
     if not participants:
         await ctx.send("参加者がいないため、CORゲームを終了します。")
     else:
-        lines = [f"COR ゲーム終了 - お題: {g.get('topic')}", "提出状況:"]
+        lines = [f"COR ゲーム終了 - お題: {g.get('topic')}", "提出内容:"]
         for uid in participants:
-            lines.append(f"<@{uid}> - {'提出済み' if uid in submissions else '未提出'}")
+            raw_sub = submissions.get(uid)
+            if raw_sub is None:
+                lines.append(f"<@{uid}> - (未提出)")
+            else:
+                sub = str(raw_sub).replace("\n", " ").strip()
+                if not sub:
+                    sub = "(空文字)"
+                lines.append(f"<@{uid}> - {sub}")
         lines.append("一致していると判定する場合は `yes`、失敗判定なら `no` を入力してください（120秒待機）。")
         await ctx.send("\n".join(lines))
 
